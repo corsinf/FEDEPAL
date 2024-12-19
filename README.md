@@ -1,2 +1,0 @@
-# FEDEPAL
-pagina web fedepal
