@@ -3,190 +3,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIDEOS CAPACITACIONES</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Changa:300,400,500,600" rel="stylesheet">
+    <title>Capacitaciones - Plantilla Base</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para los íconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
-        .video-container {
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 15px;
-            background: #f8f9fa;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        .video-container:hover {
-            transform: translateY(-5px);
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            margin-bottom: 15px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
+        /* Estilos generales */
+        html, body {
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
-        .video-description {
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            margin-top: 15px;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-        .video-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 20px;
+
+        /* Barra de navegación */
+        nav {
+    background-color: white;
+    color: #30327d;
+    padding: 5px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3.5px solid #da8f27;
+}
+
+nav img {
+    height: 90px;
+    /* No aplicar hover al logo */
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #345383;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+    padding: 10px 20px; /* Espaciado para el fondo rectangular */
+}
+
+/* Estilo al pasar el mouse sobre los enlaces del menú */
+nav a:hover {
+    background-color: #da8f27; /* Fondo naranja */
+    color: white; /* Cambiar el color del texto a blanco */
+    text-decoration: none; /* Sin subrayado */
+}
+
+
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+            background: none;
+            border: none;
         }
-        .section-title {
-            position: relative;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
-        }
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
+
+        .hamburger span {
+            display: block;
+            width: 25px;
             height: 3px;
-            background: #007bff;
+            background-color: #30327d;
+            margin: 5px 0;
+            transition: 0.3s;
         }
-        .subtitle {
-            text-align: center;
-            color: #6c757d;
-            margin-bottom: 40px;
+
+        /* Sección de tarjetas */
+        .container {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            min-height: auto;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgb(218, 143, 39);
+        }
+
+        .card iframe, .card video {
+            width: 100%;
+            height: 200px;
+            border: none;
+            object-fit: cover;
+        }
+
+        .card .content {
+            padding: 15px;
+        }
+
+        .card .content h3 {
+            margin: 0 0 10px;
+            font-size: 35px;
+            color: #30327d;
+        }
+
+        .card .content p {
+            margin: 0;
+            color: #30327d;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #30327d;
+            color: white;
+            padding: 30px 20px;
+            width: 100%;
+            margin-top: auto;
+            position: relative;
+        }
+
+        footer .footer-content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1px;
+            max-width: 1070px;
+            margin: 0 auto;
+        }
+
+        footer div[id^="footer"] {
+            padding: 10px;
+        }
+
+        footer .cf1 {
+            color: #da8f27;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        footer .cf2 {
+            color: #da8f27;
+        }
+
+        #footerAddress .cf2 {
+        color: #ffffff; 
+        }
+
+        footer a {
+            color: #da8f27;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos para los íconos sociales */
+        #footerSocial {
+            position: absolute;
+            bottom: 10px;
+            right: 230px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .social-icons a {
+            color: #da8f27;
+            font-size: 32px;
+            transition: color 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons a:hover {
+            text-decoration: none;
+        }
+
+        /* Media queries para responsive */
+        @media (max-width: 768px) {
+            nav {
+                padding: 5px 20px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+            
+
+            nav .links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: white;
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+
+            nav .links.active {
+                display: flex;
+            }
+
+            nav .links a {
+                margin: 10px 0;
+            }
+
+            footer .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            #footerSocial {
+                position: static;
+                grid-column: 1 / -1;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            footer .footer-content {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Original Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://www.fedepal.ec/wp-content/uploads/2020/02/cropped-logosmall.png" alt="Logo FEDEPAL" height="40">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="constitucion.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Directorio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="capacitacion.html">Capacitaciónes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contactos</a></li>
-                </ul>
-            </div>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="home.html"><img src="images/Fedepal-Logo.png" alt="Logo Fedepal"></a>
+        <button class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="links">
+            <a href="home.html">Inicio</a>
+            <a href="home.html#Nosotros">Nosotros</a>
+            <a href="home.html#imCell_66">Directorio</a>
+            <a href="capacitaciones.html">Capacitaciones</a>
+            <a href="contactos.html">Contactos</a>
         </div>
     </nav>
 
-    <!-- Videos Section -->
-    <header class="bg-light text-dark py-5">
-        <div class="container">
-            <h1 class="text-center mb-3 section-title">RECURSOS ONLINE</h1>
-            <p class="subtitle">Explora Nuestros Videos de Capacitación 2024</p>
+    <!-- Sección de Capacitaciones -->
+    <section id="capacitaciones" class="container">
+        <!-- Tarjeta 1 - Video de YouTube -->
+        <div class="card">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+            <div class="content">
+                <h3>Octubre</h3>
+                <p>Descripcion video</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 - Video Local -->
+        <div class="card">
+            <video controls>
+                <source src="videos/ejemplo.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="content">
+                <h3>Nobiembre</h3>
+                <p>Descripcion video.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 - Otro Video Web -->
+        <div class="card">
+            <iframe src="https://player.vimeo.com/video/76979871" allowfullscreen></iframe>
+            <div class="content">
+                <h3>Diciembre</h3>
+                <p>Descripcion video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div id="footerServices">
+                <span class="cf1"><b>Servicios</b></span>
+                <div>
+                    <div><a href="convenios.php" class="cf2">Convenios</a></div>
+                    <div><a href="socios.html" class="cf2">Portal de Socios</a></div>
+                    <div><a href="https://webmail.fedepal.ec/" target="_blank" class="cf2">Webmail</a></div>
+                </div>
+            </div>
             
-            <div class="video-grid">
-                <!-- Video 1 -->
-                <div class="video-container">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/iNKIwqRtkNE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-description">
-                        <h3>NOVIEMBRE</h3>
-                        <p>descripcion</p>
-                    </div>
+            <div id="footerContacts">
+                <span class="cf1"><b>Contactos</b></span>
+                <div>
+                    <div><a href="tel:+59322489914" class="cf2">+593-2248914</a></div>
+                    <div><a href="https://api.whatsapp.com/send?phone=+593999247290" class="cf2">+593 9 9924 7290</a></div>
+                    <div class="cf2">Quito - Ecuador</div>
                 </div>
-
-                <!-- Video 2 -->
-                <div class="video-container">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/iNKIwqRtkNE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-description">
-                        <h3>DICIEMBRE</h3>
-                        <p>DESC</p>
-                    </div>
-                </div>
-
-                <!-- Video 3 -->
-                <div class="video-container">
-                    <div class="video-wrapper">
-                        <iframe src="https://www.youtube.com/embed/iNKIwqRtkNE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="video-description">
-                        <h3>DICIEMBRE</h3>
-                        <p>DESC</p>
-                    </div>
+            </div>
+            
+            <div id="footerAddress">
+                <span class="cf1"><b>Dirección</b></span>
+                <div class="cf2">
+                    <div>República del Salvador 525</div>
+                    <div>e Irlanda</div>
                 </div>
             </div>
         </div>
-    </header>
 
-    <!-- Original Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>Servicios</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="convenios.html" class="text-white">Convenios</a></li>
-                        <li><a href="socios.html" class="text-white">Portal de Socios</a></li>
-                        <li><a href="https://www.webmail.com" class="text-white">Webmail</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Contactos</h3>
-                    <ul class="list-unstyled">
-                        <li>Tel: +593-2248914</li>
-                        <li>Tel: +593 9 9924 7290</li>
-                        <li>Email: info@fedepal.ec</li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Dirección</h3>
-                    <p><a href="https://maps.app.goo.gl/jC65xux7XHaxZap39" target="_blank" class="text-white">República del Salvador 525 e Irlanda</a></p>
-                </div>
-                <div class="col-md-3">
-                    <h3>Redes Sociales</h3>
-                    <ul class="list-unstyled social-links">
-                        <li class="mb-2">
-                            <a href="https://www.facebook.com/FEDEPALECUADOR/?locale=es_LA" class="text-white text-decoration-none" target="_blank">
-                                <i class="fab fa-facebook me-2"></i>Facebook
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://www.instagram.com/fedepal_uio/?hl=es-la" class="text-white text-decoration-none" target="_blank">
-                                <i class="fab fa-instagram me-2"></i>Instagram
-                            </a>
-                        </li>
-                        <li class="mb-2">
-                            <a href="https://x.com/fedepal?lang=es" class="text-white text-decoration-none" target="_blank">
-                                <i class="fab fa-x me-2"></i>X
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2024 FEDEPAL. Todos los derechos reservados.</p>
-                </div>
+        <div id="footerSocial">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/FEDEPALECUADOR" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/user/fedepal" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://x.com/fedepal" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=+593999247290" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            const links = document.querySelector('.links');
+            links.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
+
