@@ -37,7 +37,7 @@
 		'zoomEnabled' : true,
 		'showProgress' : true,
 		'shadow' : '',
-		'background' : 'rgba(255, 128, 0, 0.9)',
+		'background' : 'rgba(230, 141, 36, 0.9)',
 		'backgroundBlur' : false,
 		'borderWidth' : {
 			'top': 0,
@@ -55,7 +55,7 @@
 		'buttonZoomRestore': '<svg class=\"im-common-zoom-restore-button\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 50 50\"><defs><style>.a{fill:#fff;opacity:0.5;}.b{fill:#3e3d40;}<\/style><\/defs><rect class=\"a\" x=\"5.02\" y=\"5.03\" width=\"39.94\" height=\"39.94\" rx=\"3.54\" ry=\"3.54\"/><path class=\"b\" d=\"M41,39.35,29.68,28.26l-.44.48-.15.16a10.57,10.57,0,1,1,3.1-7.48A10.36,10.36,0,0,1,32,23.34l-4.79-3.46a.9.9,0,0,0-1.06,1.46l6.09,4.4A1.3,1.3,0,0,0,33,26h0a1.32,1.32,0,0,0,.78-.25l6-4.52a.9.9,0,1,0-1.09-1.44L34.1,23.25a12.18,12.18,0,0,0,.16-1.82,12.74,12.74,0,1,0-4.5,9.62l9.76,9.76A1,1,0,1,0,41,39.35Zm-.33,1.13h0Z\"/><\/svg>',
 		'borderRadius' : '3px 3px 3px 3px',
 		'borderColor' : 'rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1)',
-		'textColor' : 'rgba(52, 83, 139, 1)',
+		'textColor' : 'rgba(49, 52, 118, 1)',
 		'fontFamily' : 'Lato',
 		'fontStyle' : 'normal',
 		'fontWeight' : 'normal',
@@ -70,10 +70,10 @@
 		'effect' : 'websitex5.bl.project.templates.properties.showboxanimation',
 		'width' : 500,
 		'shadow' : '',
-		'background' : 'rgba(255, 128, 0, 0.9)',
+		'background' : 'rgba(230, 141, 36, 0.9)',
 		'backgroundBlur' : false,
 		'borderRadius' : 10,
-		'textColor' : 'rgba(52, 83, 139, 1)',
+		'textColor' : 'rgba(49, 52, 118, 1)',
 		'boxColor' : 'rgba(11, 83, 148, 1)'
 	});
 

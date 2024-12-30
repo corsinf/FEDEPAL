@@ -18,7 +18,7 @@ body { margin: 0; padding: 0; text-align: left; height: 100%; }
 		#imContent { align-self: start; padding: 5px 0 0px 0; }
 		#imContentGraphics { min-height: 600px; background-image: none; background-color: rgba(255, 255, 255, 1); }
 		#imFooterBg { height: 200px; background-image: none; background-color: rgba(255, 255, 255, 1); }
-		#imFooter { background-image: none; background-color: rgba(53, 28, 117, 1); }
+		#imFooter { background-image: none; background-color: rgba(49, 52, 118, 1); }
 		#imFooterObjects { margin-left: auto; margin-right: auto; position: relative; height: 180px; width:1150px; }
 		#imSideBar { background-image: none; background-color: rgba(211, 218, 220, 1); overflow: visible; zoom: 1; z-index: 200; }
 		#imSideBarObjects { position: relative; height: 600px; }
@@ -37,7 +37,7 @@ body { margin: 0; padding: 0; text-align: left; height: 100%; }
 		#imContent { align-self: start; padding: 5px 0 0px 0; }
 		#imContentGraphics { min-height: 600px; background-image: none; background-color: rgba(255, 255, 255, 1); }
 		#imFooterBg { height: 200px; background-image: none; background-color: rgba(255, 255, 255, 1); }
-		#imFooter { background-image: none; background-color: rgba(52, 83, 139, 1); }
+		#imFooter { background-image: none; background-color: rgba(49, 52, 118, 1); }
 		#imFooterObjects { margin-left: auto; margin-right: auto; position: relative; height: 180px; width:720px; }
 		#imSideBar { background-image: none; background-color: rgba(211, 218, 220, 1); overflow: visible; zoom: 1; z-index: 200; }
 		#imSideBarObjects { position: relative; height: 600px; }
@@ -56,7 +56,7 @@ body { margin: 0; padding: 0; text-align: left; height: 100%; }
 		#imContent { align-self: start; padding: 5px 0 0px 0; }
 		#imContentGraphics { min-height: 600px; background-image: none; background-color: rgba(255, 255, 255, 1); }
 		#imFooterBg { height: 200px; background-image: none; background-color: rgba(255, 255, 255, 1); }
-		#imFooter { background-image: none; background-color: rgba(52, 83, 139, 1); }
+		#imFooter { background-image: none; background-color: rgba(49, 52, 118, 1); }
 		#imFooterObjects { margin-left: auto; margin-right: auto; position: relative; height: 180px; width:480px; }
 		#imSideBar { background-image: none; background-color: rgba(211, 218, 220, 1); overflow: visible; zoom: 1; z-index: 200; }
 		#imSideBarObjects { position: relative; height: 600px; }
@@ -75,7 +75,7 @@ body { margin: 0; padding: 0; text-align: left; height: 100%; }
 		#imContent { align-self: start; padding: 0px 0 0px 0; }
 		#imContentGraphics { min-height: 600px; background-image: none; background-color: rgba(255, 255, 255, 1); }
 		#imFooterBg { height: 200px; background-image: none; background-color: rgba(255, 255, 255, 1); }
-		#imFooter { background-image: none; background-color: rgba(52, 83, 139, 1); }
+		#imFooter { background-image: none; background-color: rgba(49, 52, 118, 1); }
 		#imFooterObjects { margin-left: auto; margin-right: auto; position: relative; height: 180px; width:320px; }
 		#imSideBar { background-image: none; background-color: transparent; overflow: visible; zoom: 1; z-index: 200; }
 		#imSideBarObjects { position: relative; height: 600px; }
