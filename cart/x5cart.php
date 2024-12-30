@@ -164,7 +164,7 @@ $products = array(
 #details_tab0 .imVc { vertical-align: middle; }
 #details_tab0 .imVb { vertical-align: bottom; }
 #details_tab0 hr { border-width: 1px 0 0 0; border-style: solid; }
-#details .text-container {width: 100%;}#details .text-container {margin: 0 auto; position: relative;overflow: hidden; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr; background-color: transparent; border-style: solid; border-width: 1px; border-color: rgba(52, 83, 139, 0.3) transparent transparent transparent; }
+#details .text-container {width: 100%;}#details .text-container {margin: 0 auto; position: relative;overflow: hidden; display: grid; grid-template-rows: 1fr; grid-template-columns: 1fr; background-color: transparent; border-style: solid; border-width: 1px; border-color: rgba(49, 52, 118, 0.3) transparent transparent transparent; }
 #details .text-container .grid-prop.current-tab {z-index: 1; opacity: 1; }
 #details .text-container .grid-prop {grid-area: 1 / 1 / 2 / 2; opacity: 0; box-sizing: border-box; position: relative;  }
 #details .text-container .text-tab-content.detach {position: absolute; top: 0; left: 0; width: 100%; display: none; }
