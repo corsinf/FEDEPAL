@@ -41,7 +41,9 @@
                 top: 0px;
                 left: 0px;
             }
+        {{#if misc.layoutHorizontalMediaQueryStart}}
         }
+        {{/if}}
     {{/if}}{{/if}}
 
     {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutCoverAsBackground}}
@@ -72,9 +74,9 @@
             {{#if misc.isRelatedProductCard}}{{else}}height: 100%;{{/if}}
             position: relative;
         }
-    {{#if misc.isLayoutHorizontal}}
+    {{#if misc.isLayoutHorizontal}}{{#if misc.layoutHorizontalMediaQueryStart}}
         }
-    {{/if}}
+    {{/if}}{{/if}}
 
     {{#if misc.isLayoutCoverAsBackground}}
         {{misc.rootSelector}} .im-cc-products-card .im-cc-wrapper-contents {
@@ -87,20 +89,24 @@
     {{/if}}
 
     {{#if misc.isArrangeChangingHeightOrMasonry}}
-        {{#if misc.isLayoutVerticalCoverTop}}
+        {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}{{else}}
             {{misc.layoutHorizontalMediaQueryStart}}
                 {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card .im-cc-wrapper-contents {
                     height: {{card.txtBlock.height}}px; 
                 }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
             }
-        {{/if}}
-        {{#if misc.isLayoutVerticalTitleTop}}{{#if misc.layoutVerticalMediaQueryStart}}{{else}}
-            {{misc.layoutHorizontalMediaQueryStart}}
-                {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card .im-cc-wrapper-contents {
-                    height: {{card.txtBlock.height}}px; 
-                }
-            }
+            {{/if}}
         {{/if}}{{/if}}
+        {{#if misc.isLayoutVerticalTitleTop}}
+            {{misc.layoutHorizontalMediaQueryStart}}
+                {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card .im-cc-wrapper-contents {
+                    height: {{card.txtBlock.height}}px; 
+                }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
+            }
+            {{/if}}
+        {{/if}}
     {{/if}}
 
     {{#if misc.isArrangeSlideshow}}
@@ -111,7 +117,9 @@
             {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card .im-cc-products-description {
                 overflow: hidden;
             }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}
 
     {{#if card.txtBlock.description.show}}
@@ -199,14 +207,17 @@
     {{#if card.txtBlock.details.showPrice}}
     {{misc.rootSelector}} .im-cc-products-card .im-cc-products-qty-discount { 
         display: inline-block;
-        vertical-align: sub;
+        vertical-align: middle;
         font-family: '{{card.txtBlock.details.style.font.familyName}}';
         font-size: {{card.txtBlock.details.style.font.size}}pt; 
         font-style: {{card.txtBlock.details.style.font.style}};
         font-weight: normal;
         color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
         overflow: hidden; 
-    }    
+    }
+    {{misc.rootSelector}} .im-cc-products-card .im-cc-products-qty-discount img {
+        vertical-align: sub;
+    }
     {{/if}}
 
     {{#if card.txtBlock.details.showOptions}}
@@ -318,6 +329,10 @@
         overflow: hidden; 
         background-color: rgba(255,255,255,0.8); 
         color: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
+        font-family: '{{card.txtBlock.details.style.font.familyName}}';
+        font-size: {{card.txtBlock.details.style.font.size}}pt;
+        font-style: {{card.txtBlock.details.style.font.style}};
+        font-weight: {{card.txtBlock.details.style.font.weight}};
     }
     {{/if}}
     {{/if}}

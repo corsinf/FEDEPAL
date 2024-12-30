@@ -7,6 +7,7 @@
         {{#if misc.cardBreakpoint}}breakpoint="{{misc.cardBreakpoint}}" {{/if}}
         fixedHeight="{{#if misc.cardFixedHeight}}true{{else}}false{{/if}}" 
         {{#if misc.isArrangeSlideshow}}{{else}}slot="arrangeable" {{/if}}
+        {{#if misc.layoutVerticalMediaQueryStart}}layoutverticalmediaquerystart="{{misc.layoutVerticalMediaQueryStart}}" {{/if}}
     >
         <div slot="cover" >
             {{>cardEcommerceImagePartial l10n=l10n card=card misc=misc product=product}}

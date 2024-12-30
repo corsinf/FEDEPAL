@@ -1,4 +1,3 @@
-/*minified*/
 /**!
 
  @license

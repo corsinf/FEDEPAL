@@ -6,6 +6,6 @@
 	"theme_color": "#F28D4F",
 	"scope": "http://localhost/admin/",
 	"icons": [
-		{ "src": "http://localhost/admin/images/logo_w48ul5hd.png", "type": "image/png", "sizes": "126x126" }
+		{ "src": "http://localhost/admin/images/logo_w48ul5hd.webp", "type": "image/png", "sizes": "126x126" }
 	]
 }

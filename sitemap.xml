@@ -2,61 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 	<url>
 		<loc>http://localhost/home.html</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/capacitaciones.html</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/convenios.php</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/recursos.php</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://localhost/socios.html</loc>
-		<lastmod>2024-11-19</lastmod>
+		<loc>http://localhost/socios.php</loc>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/contactos.html</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/ficha-de-afiliacion.php</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/fotos.php</loc>
-		<lastmod>2024-10-23</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/videos.php</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.5</priority>
+	</url>
+	<url>
+		<loc>http://localhost/news.php</loc>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
 		<loc>http://localhost/index.php</loc>
-		<lastmod>2024-11-19</lastmod>
+		<lastmod>2024-12-27</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>

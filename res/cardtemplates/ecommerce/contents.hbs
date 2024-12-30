@@ -13,14 +13,14 @@
             <div class="im-cc-products-availability{{#if product.isAvailabilityTypeFixed}} im-cc-products-availability-fixed{{/if}}" >
             {{#if product.isAvailabilityTypeFixed}}
             {{#if product.isStaticAvailValueSet}}
-            {{{product.availabilityImage}}}{{product.availabilityLabel}}
+            {{{product.availabilityImage}}}{{{product.availabilityLabel}}}
             {{/if}}
             {{else}}
             {{#if misc.uploadVersion}}
-                {{{product.availabilityImage}}}{{product.availabilityLabel}}
+                {{{product.availabilityImage}}}{{{product.availabilityLabel}}}
             {{else}}
             {{#if product.isDynamicAvailValueSet}}
-                {{{product.availabilityImage}}}{{product.availabilityLabel}}
+                {{{product.availabilityImage}}}{{{product.availabilityLabel}}}
             {{/if}}
             {{/if}}
             {{/if}}
@@ -39,7 +39,7 @@
                     onchange="x5engine.cart.ui.updateProductListOptions('{{product.productId}}', this, 'product_{{product.productId}}', {{product.isVatIncluded}});"
                 >
                     {{#each product.options}}
-                    <option value="{{id}}" >{{name}}</option>";
+                    <option value="{{id}}">{{{name}}}</option>";
                     {{/each}}
                 </select>
 
@@ -55,12 +55,12 @@
                                 {{#each product.options}}
                                 {
                                     id: '{{id}}',
-                                    name: '{{name}}', 
+                                    name: '{{nameJSEscaped}}', 
                                     weightvar: {{weightvar}}, 
                                     pricevar: {{pricevar}}, 
                                     {{#if suboptions}}
                                     suboptions: [
-                                        {{#each suboptions}}
+                                        {{#each suboptionsJSEscaped}}
                                         '{{.}}', 
                                         {{/each}}
                                     ]
@@ -74,7 +74,7 @@
                     "
                 >
                     {{#each product.options}}
-                    <option value="{{id}}" >{{name}}</option>";
+                    <option value="{{id}}">{{{name}}}</option>";
                     {{/each}}
                 </select><!--
                     Don't remove this comment - needed to avoid empty spaces
@@ -88,7 +88,7 @@
                     {{#with product.options.[0]}}
                     {{#if suboptions}}
                     {{#each suboptions}}
-                    <option value="{{@index}}" >{{.}}</option>";
+                    <option value="{{@index}}">{{{.}}}</option>";
                     {{/each}}
                     {{/if}}
                     {{/with }}
@@ -110,6 +110,7 @@
                     {{#if product.productNotDiscountedRegardlessOfCouponAndQuantity}}
                         <span 
                             id="product_{{product.productId}}_fullprice"
+                            class="product_fullprice"
                         >{{product.productSingleFullPriceCurrency}}</span>
                         {{#if card.txtBlock.details.showVat}}
                             <span 
@@ -117,9 +118,37 @@
                                 style="margin: 3px; font-size: 0.85em;" 
                             >{{product.productVatInfoText}}</span>
                         {{/if}}
+
+                        {{! // Quantity discount }}
+                
+                        {{#if product.hasQuantityDiscounts}}
+                        <div 
+                            class="im-cc-products-qty-discount" 
+                            onmouseover="
+                                x5engine.imTip.Show( 
+                                    this , 
+                                    {
+                                        target : $(this).find('img') ,
+                                        text: '<div>{{l10n.cart_discount}}:</div><ul> {{#each product.quantityDiscountTextCartDiscountPerQty}} <li>{{this}}</li> {{/each}} </ul>'
+                                    }
+                                )
+                            " 
+                        >
+                            <img 
+                                {{#if misc.isLazyLoadingEnabled}}loading="lazy"{{/if}}
+                                alt="{{l10n.cart_qty_discount}}" 
+                                width="16" 
+                                height="16" 
+                                src="{{misc.currentPath}}res/info.png" 
+                            />
+                            {{l10n.cart_qty_discount}}
+                        </div>
+                        {{/if}}
+
                     {{else}}
                         <span 
                             id="product_{{product.productId}}_price"
+                            class="product_price"
                         >{{product.productSinglePriceCurrency}}</span>
                         {{#if card.txtBlock.details.showVat}}
                             <span 
@@ -130,7 +159,7 @@
 
                         {{! // Original price with line-through }}
                         <span
-                            class="full-price"
+                            class="product_fullprice full-price"
                             id="product_{{product.productId}}_fullprice"
                         >{{product.productSingleFullPriceCurrency}}</span>
 
@@ -144,7 +173,7 @@
                                     this , 
                                     {
                                         target : $(this).find('img') ,
-                                        text: '<div>{{l10n.cart_discount}} :</div><ul> {{#each product.quantityDiscountTextCartDiscountPerQty}} <li>{{this}}</li> {{/each}} </ul>'
+                                        text: '<div>{{l10n.cart_discount}}:</div><ul> {{#each product.quantityDiscountTextCartDiscountPerQty}} <li>{{this}}</li> {{/each}} </ul>'
                                     }
                                 )
                             " 
@@ -156,7 +185,7 @@
                                 height="16" 
                                 src="{{misc.currentPath}}res/info.png" 
                             />
-                            {{strings.cart_qty_discount}}
+                            {{l10n.cart_qty_discount}}
                         </div>
                         {{/if}}
 

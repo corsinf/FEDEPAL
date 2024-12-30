@@ -61,7 +61,8 @@
         text-align: left; 
         line-height: 1.5; 
         overflow: hidden; 
-
+        z-index: 1;
+        
     }
 
     {{#if misc.isArrangeChangingHeight}}
@@ -115,33 +116,35 @@
     {{/if}}
 
     {{#if misc.isLayoutVerticalCoverTop}}
-        {{misc.rootSelector}} .im-cc-products-card {
-            grid-template-columns: 100%;
-            grid-template-rows: auto auto minmax(10%, 1fr);
-        }
-
-        {{#if misc.cardFixedHeight}}
-            {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card {
-                grid-template-rows: {{misc.verticalImageHeight}}px auto minmax(0%, 1fr);
-            }
-        {{/if}}
-    {{/if}}
-
-    {{#if misc.isLayoutVerticalTitleTop}}
         {{misc.layoutVerticalMediaQueryStart}}
         {{misc.rootSelector}} .im-cc-products-card {
             grid-template-columns: 100%;
-            grid-template-rows: {{#if misc.isArrangeSlideshow}}auto 40% minmax(10%, 1fr){{else}}auto auto minmax(10%, 1fr){{/if}};
+            grid-template-rows: {{#if misc.layoutVerticalMediaQueryStart}}{{#if card.image.percentSize}}auto{{else}}0px{{/if}}{{else}}auto{{/if}} auto minmax(10%, 1fr);
         }
 
         {{#if misc.layoutVerticalMediaQueryStart}}{{else}}
             {{#if misc.cardFixedHeight}}
                 {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card {
-                    grid-template-rows: auto {{misc.verticalImageHeight}}px minmax(0%, 1fr);
+                    grid-template-rows: {{misc.verticalImageHeight}}px auto minmax(0%, 1fr);
                 }
             {{/if}}
         {{/if}}
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.isLayoutVerticalTitleTop}}
+        {{misc.rootSelector}} .im-cc-products-card {
+            grid-template-columns: 100%;
+            grid-template-rows: {{#if misc.isArrangeSlideshow}}auto 40% minmax(10%, 1fr){{else}}auto auto minmax(10%, 1fr){{/if}};
+        }
+
+        {{#if misc.cardFixedHeight}}
+            {{misc.rootSelector}} .im-cc-products-cardlayout .im-cc-products-card {
+                grid-template-rows: auto {{misc.verticalImageHeight}}px minmax(0%, 1fr);
+            }
+        {{/if}}
     {{/if}}
 
 

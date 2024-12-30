@@ -16,8 +16,8 @@ if(substr(basename($_SERVER['PHP_SELF']), 0, 11) == "imEmailForm") {
 			die("Cannot find db");
 		$db = ImDb::from_db_data($db);		if (!$form->saveToDb($db, 'contactos'))
 			die("Unable to connect to db");
-		$form->mailToOwner('soporte@corsinf.com', '', 'info@fedepal.ec', 'Notificación de ' . $imSettings['general']['url'] . '', 'Nuevos datos recibidos desde mi sitio web:', false);
-		$form->mailToCustomer('soporte@corsinf.com', 'info@fedepal.ec', $_POST['imObjectForm_90_2'], '¡Gracias por contactarnos!', '¡Hola!
+		$form->mailToOwner('admin@fedepal.ec', '', 'info@fedepal.ec', 'Notificación de ' . $imSettings['general']['url'] . '', 'Nuevos datos recibidos desde mi sitio web:', false);
+		$form->mailToCustomer('admin@fedepal.ec', 'info@fedepal.ec', $_POST['imObjectForm_90_2'], '¡Gracias por contactarnos!', '¡Hola!
 Gracias por contactarnos.
 
 Confirmamos que hemos recibido sus datos correctamente y que nuestro equipo responderá a su solicitud lo antes posible.

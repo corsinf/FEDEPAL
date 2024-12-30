@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Corsinf" />
-		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.4 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.8 - www.websitex5.com" />
 		<meta property="og:locale" content="es" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://localhost/convenios.php" />
@@ -15,30 +15,43 @@
 		<meta property="og:site_name" content="Fedepal" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2024-4-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2024-4-4-0" media="print" />
-		<link rel="stylesheet" href="style/style.css?2024-4-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2024-4-4-0" media="screen" />
+		<link rel="stylesheet" href="style/reset.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2024-4-8-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2024-4-8-0" media="screen" />
 		<style type="text/css">#pluginAppObj_12_15 { width: 100%; }</style>
 		<style type="text/css">#pluginAppObj_12_16 { width: 100%; }</style>
 		<style type="text/css">#pluginAppObj_12_19 { width: 100%; }</style>
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_04/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imFooter_pluginAppObj_12/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/convenios.css?2024-4-4-0-638676382340173077" media="screen,print" />
-		<script src="res/jquery.js?2024-4-4-0"></script>
-		<script src="res/x5engine.js?2024-4-4-0" data-files-version="2024-4-4-0"></script>
+		<link rel="stylesheet" href="pcss/convenios.css?2024-4-8-0-638709142473858817" media="screen,print" />
+		<script src="res/jquery.js?2024-4-8-0"></script>
+		<script src="res/x5engine.js?2024-4-8-0" data-files-version="2024-4-8-0"></script>
 		<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.35.4/tsparticles.min.js"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_04/main.js"></script>
 		<script src="pluginAppObj/imFooter_pluginAppObj_12/main.js"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'convenios.php';
-			x5engine.boot.push(function () { x5engine.utils.imCodeProtection('Corsinf'); });
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2024-4-4-0-638676382340003011" type="image/png" />
+		<link rel="icon" href="favicon.png?2024-4-8-0-638709142473352781" type="image/png" />
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	</head>
-	<body>
+	<body <!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->>
 		<div id="imPageExtContainer">
 			<div id="imPageIntContainer">
 				<div id="imHeaderBg"></div>
@@ -77,7 +90,7 @@ x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_02_setting
 $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
 
 </script>
-</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.png" title="" alt="" width="250" height="92" />
+</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
 </div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
@@ -88,7 +101,7 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/Fedepal-Logo.png" title="" alt="" width="198" height="73" />
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall_puahdvcc.webp" title="" alt="" width="198" height="92" />
 </a></div></div></div><div id="imStickyBar_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_02"><div id="imStickyBar_imMenuObject_02_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
@@ -125,7 +138,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					</div>
 					<a class="imHidden" href="#imGoToCont" title="Salta el menu principal">Vaya al Contenido</a>
 					<div id="imSideBar">
-						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.png" title="" alt="" width="140" height="140" />
+						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.webp" title="" alt="" width="140" height="140" />
 </div></div></div></div>
 					</div>
 					<div id="imContentGraphics"></div>
@@ -152,7 +165,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						        </div></div><div id="imPageRow_2" class="imPageRow">
 						
 						</div>
-						<div id="imCell_10" class="animable bounce"> <div id="imCellStyleGraphics_10"></div><div id="imCellStyleBorders_10"></div><div id="imObjectImage_12_10"><div id="imObjectImage_12_10_container"><a href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/unibe.jpg" title="" alt="" width="192" height="181" />
+						<div id="imCell_10" class="animable bounce"> <div id="imCellStyleGraphics_10"></div><div id="imCellStyleBorders_10"></div><div id="imObjectImage_12_10"><div id="imObjectImage_12_10_container"><a href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/unibe.webp" title="" alt="" width="192" height="181" />
 						</a></div></div><div id="imCellStyleDescription_10"><div>Convenio UNIB-E</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -161,7 +174,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_5" class="animable bounce"> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imObjectImage_12_05"><div id="imObjectImage_12_05_container"><a href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large_blob.png" title="" alt="" width="196" height="196" />
+						<div id="imCell_5" class="animable bounce"> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imObjectImage_12_05"><div id="imObjectImage_12_05_container"><a href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large_blob.webp" title="" alt="" width="196" height="196" />
 						</a></div></div><div id="imCellStyleDescription_5"><div>Convenio UIDE</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -170,7 +183,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_9" class="animable bounce"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imObjectImage_12_09"><div id="imObjectImage_12_09_container"><a href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/images.png" title="" alt="" width="237" height="213" />
+						<div id="imCell_9" class="animable bounce"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imObjectImage_12_09"><div id="imObjectImage_12_09_container"><a href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/images.webp" title="" alt="" width="237" height="213" />
 						</a></div></div><div id="imCellStyleDescription_9"><div>Convenio Fundación Movistar</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -179,7 +192,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_14" class="animable bounce"> <div id="imCellStyleGraphics_14"></div><div id="imCellStyleBorders_14"></div><div id="imObjectImage_12_14"><div id="imObjectImage_12_14_container"><a href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/EdinunLogo2019.jpg" title="" alt="" width="230" height="138" />
+						<div id="imCell_14" class="animable bounce"> <div id="imCellStyleGraphics_14"></div><div id="imCellStyleBorders_14"></div><div id="imObjectImage_12_14"><div id="imObjectImage_12_14_container"><a href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/EdinunLogo2019.webp" title="" alt="" width="230" height="138" />
 						</a></div></div><div id="imCellStyleDescription_14"><div>Convenio EDINUN</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -188,7 +201,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_12" class="animable bounce"> <div id="imCellStyleGraphics_12"></div><div id="imCellStyleBorders_12"></div><div id="imObjectImage_12_12"><div id="imObjectImage_12_12_container"><a href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/uce.png" title="" alt="" width="237" height="237" />
+						<div id="imCell_12" class="animable bounce"> <div id="imCellStyleGraphics_12"></div><div id="imCellStyleBorders_12"></div><div id="imObjectImage_12_12"><div id="imObjectImage_12_12_container"><a href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/uce.webp" title="" alt="" width="237" height="237" />
 						</a></div></div><div id="imCellStyleDescription_12"><div>Convenio UCE</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -197,7 +210,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_13" class="animable bounce"> <div id="imCellStyleGraphics_13"></div><div id="imCellStyleBorders_13"></div><div id="imObjectImage_12_13"><div id="imObjectImage_12_13_container"><a href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/logo_uasb2.png" title="" alt="" width="210" height="180" />
+						<div id="imCell_13" class="animable bounce"> <div id="imCellStyleGraphics_13"></div><div id="imCellStyleBorders_13"></div><div id="imObjectImage_12_13"><div id="imObjectImage_12_13_container"><a href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/logo_uasb2.webp" title="" alt="" width="210" height="180" />
 						</a></div></div><div id="imCellStyleDescription_13"><div>Convenio UASB</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
@@ -209,57 +222,41 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imPageRow_3" class="imPageRow">
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_3"></div></div><script>x5engine.boot.push(function () {tsParticles.load('imPageRowGraphics_3', {  "autoPlay": true,  "background": {    "color": {      "value": "#FFFFFF"    },    "image": "",    "position": "50% 50%",    "repeat": "no-repeat",    "size": "cover",    "opacity": 1  },  "backgroundMask": {    "composite": "destination-out",    "cover": {      "color": {        "value": "#fff"      },      "opacity": 1    },    "enable": false  },  "detectRetina": true,  "duration": 0,  "fpsLimit": 60,  "interactivity": {    "detectsOn": "canvas",    "events": {      "onHover": {        "enable": true,        "mode": "repulse",        "parallax": {          "enable": false,          "force": 2,          "smooth": 10        }      },      "resize": true    },    "modes": {      "attract": {        "distance": 200,        "duration": 0.4,        "easing": "ease-out-quad",        "factor": 1,        "maxSpeed": 50,        "speed": 1      },      "bounce": {        "distance": 200      },      "bubble": {        "distance": 400,        "duration": 2,        "mix": false,        "opacity": 0.8,        "size": 40      },      "connect": {        "distance": 80,        "links": {          "opacity": 0.5        },        "radius": 60      },      "grab": {        "distance": 400,        "links": {          "blink": false,          "consent": false,          "opacity": 1        }      },      "light": {        "area": {          "gradient": {            "start": {              "value": "#ffffff"            },            "stop": {              "value": "#000000"            }          },          "radius": 1000        },        "shadow": {          "color": {            "value": "#000000"          },          "length": 2000        }      },      "push": {        "default": true,        "groups": [],        "quantity": 4      },      "remove": {        "quantity": 2      },      "repulse": {        "distance": 200,        "duration": 0.4,        "factor": 100,        "speed": 1,        "maxSpeed": 50,        "easing": "ease-out-quad"      },      "slow": {        "factor": 3,        "radius": 200      },      "trail": {        "delay": 1,        "pauseOnStop": false,        "quantity": 1      },      "absorbers": {        "color": {          "value": "#ff0000"        },        "draggable": false,        "opacity": 1,        "destroy": true,        "orbits": false,        "size": {          "random": {            "enable": true,            "minimumValue": 5          },          "value": {            "min": 5,            "max": 10          },          "density": 5,          "limit": 50        }      }    }  },  "manualParticles": [],  "motion": {    "disable": false,    "reduce": {      "factor": 4,      "value": true    }  },  "particles": {    "bounce": {      "horizontal": {        "random": {          "enable": false,          "minimumValue": 0.1        },        "value": 1      },      "vertical": {        "random": {          "enable": false,          "minimumValue": 0.1        },        "value": 1      }    },    "collisions": {      "bounce": {        "horizontal": {          "random": {            "enable": false,            "minimumValue": 0.1          },          "value": 1        },        "vertical": {          "random": {            "enable": false,            "minimumValue": 0.1          },          "value": 1        }      },      "enable": false,      "mode": "bounce",      "overlap": {        "enable": true,        "retries": 0      }    },    "color": {      "value": "#FFFFFF",      "animation": {        "h": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        },        "s": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        },        "l": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        }      }    },    "destroy": {      "mode": "none",      "split": {        "count": 1,        "factor": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": 3        },        "rate": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": {            "min": 4,            "max": 9          }        },        "sizeOffset": true      }    },    "gradient": [],    "groups": {},    "life": {      "count": 0,      "delay": {        "random": {          "enable": false,          "minimumValue": 0        },        "value": 0,        "sync": false      },      "duration": {        "random": {          "enable": false,          "minimumValue": 0.0001        },        "value": 0,        "sync": false      }    },    "links": {      "blink": false,      "color": {        "value": "#20124D"      },      "consent": false,      "distance": 150,      "enable": true,      "frequency": 1,      "opacity": 0.4,      "shadow": {        "blur": 5,        "color": {          "value": "#00ff00"        },        "enable": false      },      "triangles": {        "enable": false,        "frequency": 1      },      "width": 1,      "warp": false    },    "move": {      "angle": {        "offset": 0,        "value": 90      },      "attract": {        "distance": 200,        "enable": false,        "rotate": {          "x": 600,          "y": 1200        }      },      "decay": 0,      "distance": {},      "direction": "none",      "drift": 0,      "enable": true,      "gravity": {        "acceleration": 9.81,        "enable": false,        "inverse": false,        "maxSpeed": 50      },      "path": {        "clamp": true,        "delay": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": 0        },        "enable": false,        "options": {}      },      "outModes": {        "default": "out",        "bottom": "out",        "left": "out",        "right": "out",        "top": "out"      },      "random": false,      "size": false,      "speed": 2,      "spin": {        "acceleration": 0,        "enable": false      },      "straight": false,      "trail": {        "enable": false,        "length": 10,        "fillColor": {          "value": "#000000"        }      },      "vibrate": false,      "warp": false    },    "number": {      "density": {        "enable": false,        "area": 800,        "factor": 1000      },      "limit": 0,      "value": 80    },    "opacity": {      "random": {        "enable": true,        "minimumValue": 0.1      },      "value": {        "min": 0.1,        "max": 0.5      },      "animation": {        "count": 0,        "enable": true,        "speed": 3,        "sync": false,        "destroy": "none",        "startValue": "random",        "minimumValue": 0.1      }    },    "orbit": {      "animation": {        "count": 0,        "enable": false,        "speed": 1,        "sync": false      },      "enable": false,      "opacity": 1,      "rotation": {        "random": {          "enable": false,          "minimumValue": 0        },        "value": 45      },      "width": 1    },    "reduceDuplicates": false,    "repulse": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "enabled": false,      "distance": 1,      "duration": 1,      "factor": 1,      "speed": 1    },    "roll": {      "darken": {        "enable": false,        "value": 0      },      "enable": false,      "enlighten": {        "enable": false,        "value": 0      },      "mode": "vertical",      "speed": 25    },    "rotate": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "animation": {        "enable": false,        "speed": 0,        "sync": false      },      "direction": "clockwise",      "path": false    },    "shadow": {      "blur": 0,      "color": {        "value": "#000000"      },      "enable": false,      "offset": {        "x": 0,        "y": 0      }    },    "shape": {      "options": {"character": { "value": [ "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" ], "font": "Verdana", "style": "", "weight": "400", "fill": true }},      "type": "char"    },    "size": {      "random": {        "enable": true,        "minimumValue": 1      },      "value": {        "min": 1,        "max": 50      },      "animation": {        "count": 0,        "enable": false,        "speed": 20,        "sync": false,        "destroy": "none",        "startValue": "random",        "minimumValue": 0.1      }    },    "stroke": {      "width": 0    },    "tilt": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "animation": {        "enable": false,        "speed": 0,        "sync": false      },      "direction": "clockwise",      "enable": false    },    "twinkle": {      "lines": {        "enable": false,        "frequency": 0.05,        "opacity": 1      },      "particles": {        "enable": false,        "frequency": 0.05,        "opacity": 1      }    },    "wobble": {      "distance": 5,      "enable": false,      "speed": 50    },    "zIndex": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "opacityRate": 1,      "sizeRate": 1,      "velocityRate": 1    }  },  "pauseOnBlur": true,  "pauseOnOutsideViewport": true,  "responsive": [],  "themes": [],  "zLayers": 100});});</script>
 						</div>
-						<div id="imCell_18" class=""> <div id="imCellStyleGraphics_18"></div><div id="imCellStyleBorders_18"></div><div id="imTextObject_12_18">
+						<div id="imCell_21" class="animable bounce"> <div id="imCellStyleGraphics_21"></div><div id="imCellStyleBorders_21"></div><div id="imObjectImage_12_21"><div id="imObjectImage_12_21_container"><a href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Servicios-y-Beneficios-CCQ.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/Loco-CCQ-nvi.webp" title="" alt="" width="340" height="192" />
+						</a></div></div><div id="imCellStyleDescription_21"><div>Convenio UCE</div></div></div>
+						<script>
+							x5engine.boot.push(function () {
+								x5engine.utils.onElementInViewPort($('#imCell_21').get(0), function () {
+									x5engine.utils.revealObject($("#imCell_21"))
+								}, 100);
+							});
+						</script>
+						<div id="imCell_20" class="animable wobble"> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectImage_12_20"><div id="imObjectImage_12_20_container"><a href="https://drive.google.com/drive/folders/1NuFdLkaipA3PO-ZyW9kPrni-AnlCJbtQ?usp=sharing" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://drive.google.com/drive/folders/1NuFdLkaipA3PO-ZyW9kPrni-AnlCJbtQ?usp=sharing', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large-2761159.webp" title="" alt="" width="340" height="226" />
+						</a></div></div></div>
+						<script>
+							x5engine.boot.push(function () {
+								x5engine.utils.onElementInViewPort($('#imCell_20').get(0), function () {
+									x5engine.utils.revealObject($("#imCell_20"))
+								}, 100);
+							});
+						</script>
+						<div id="imCell_18" class="animable fadeInRight"> <div id="imCellStyleGraphics_18"></div><div id="imCellStyleBorders_18"></div><div id="imTextObject_12_18">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_12_18_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div class="imTACenter"><span class="fs28lh1-5">Accede a las últimas publicaciones más importantes</span></div>
+									<div class="imTACenter"><span class="fs28lh1-5"><b>Accede a publicaciones importantes</b></span></div><div class="imTACenter"><span class="fs28lh1-5">En este Drive podrás revisar los documentos más relevantes, descargarlos o imprimirlos. </span></div>
 								</div>
 							</div>
 						
 						</div>
-						</div><div id="imCell_20" class=""> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectSearch_12_20"><form id="imObjectSearch_12_20_form" action="imsearch.php" method="get"><fieldset><div id="imObjectSearch_12_20_fields_container"><input type="text" id="imObjectSearch_12_20_field" name="search" value="" /><button id="imObjectSearch_12_20_button">Buscar</button></div></fieldset></form><script>$('#imObjectSearch_12_20_button').click(function() { $(this).prop('disabled', true); setTimeout(function(){ $('#imObjectSearch_12_20_button').prop('disabled', false);}, 900); $('#imObjectSearch_12_20_form').submit(); return false; });</script></div></div><div id="imCell_17" class=""> <div id="imCellStyleGraphics_17"></div><div id="imCellStyleBorders_17"></div><div id="imTextObject_12_17">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_12_17_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><div><a href="files/MINEDUC-SEDMQ-2024-05126-M.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-SEDMQ-2024-05126-M.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-SEDMQ-2024-05126-M</a></div></div><div><div><a href="files/MINEDUC-SEDMQ-2024-04389-M.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-SEDMQ-2024-04389-M.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-SEDMQ-2024-04389-M</a></div></div><div><div><a href="files/MINEDUC-MINEDUC-2024-00305-M.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-MINEDUC-2024-00305-M.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-MINEDUC-2024-00305-M</a></div></div><div><div><a href="files/MINEDUC-MINEDUC-2024-00060-A-.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-MINEDUC-2024-00060-A-.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-MINEDUC-2024-00060-A</a></div><div><div><a href="files/MINEDUC-MINEDUC-2024-00068-A.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-MINEDUC-2024-00068-A.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-MINEDUC-2024-00068-A</a></div></div><div><div><a href="files/MINEDUC-MINEDUC-2024-00066-A.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/MINEDUC-MINEDUC-2024-00066-A.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">MINEDUC-MINEDUC-2024-00066-A</a></div></div><div><span class="fs11lh1-5"><a href="files/HEROES-Y-HEROINAS-NACIONALES.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/HEROES-Y-HEROINAS-NACIONALES.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);" class="imCssLink">HEROES Y HEROINAS NACIONALES</a></span></div></div><div><span class="fs11lh1-5"><br></span></div><div><span class="fs11lh1-5"><br></span></div>
-								</div>
-							</div>
-						
 						</div>
-						</div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><!-- search-tag dynObj_12_22 start -->
-						<div id="dynObj_12_22">
-							<div id="dynObj_12_22_container">
-						<?php
-							$dynObj = Configuration::getDynamicObject('dynObj_12_22');
-							$pa = Configuration::getPrivateArea();
-							$user = $pa->whoIsLogged();
-							if ($user !== false && (in_array($user['uid'], array('m4830r87')) || in_array_field($user['groups'], array('isanheja')) || in_array($user['uid'], $imSettings['access']['admins']))) {
-								if (isset($_POST['ObjectId']) && isset($_POST['PageId']) && $_POST['ObjectId'] == '22' && $_POST['PageId'] == '12') {
-									$dynObj->setContent($_POST['DefaultText']);
-									$dynObj->saveToFile(pathCombine(array($imSettings['general']['public_folder'], 'DATOS')));
-									exit("<script>window.top.location.href='" . basename($_SERVER['PHP_SELF']) . "';</script>");
-								}
-						?>
-								<div class="dynamic-object-text staticText"><?php echo $dynObj->getContent() ?></div>
-								<div class="dynamic-object-text dynamicText" style="display: none;">
-									<form action="<?php echo basename($_SERVER['PHP_SELF']) ?>" method="post">
-										<textarea name="DefaultText" class="text-area" style="width: 98%;"><?php echo $dynObj->getContent() ?></textarea>
-										<input type="hidden" name="ObjectType" value="ObjectDynamicText" />
-										<input type="hidden" name="ObjectId" value="22" />
-										<input type="hidden" name="PageId" value="12" />
-										<div style="text-align: center;" class="wysiwyg-buttons">
-											<input type="submit" value="Guardar">
-											<input type="button" value="Cancelar" onclick="window.top.location.reload()">
-										</div>
-									</form>
-									<script>
-										x5engine.boot.push(function () { x5engine.cms.initialize('#dynObj_12_22_container', { autoGrow: true, css: ['style/style.css', 'pcss/convenios.css'], imageuploadurl: 'res/imageupload.php', availableFonts: ['Arial','Arial Black','Book Antiqua','Comic Sans MS','Courier New','Georgia','Impact','Lucida Console','Lucida Sans Unicode','Palatino Linotype','Tahoma','Times New Roman','Trebuchet MS','Verdana'], defaultFontSize: 11, defaultFontFamily: 'Lato'}); });
-									</script>
-								</div>
-						<?php } else { echo $dynObj->getContent(); } ?>
-							</div>
-						</div>
-						<!-- search-tag dynObj_12_22 end -->
-						</div><div id="imCell_19" class=""> <div id="imCellStyleGraphics_19"></div><div id="imCellStyleBorders_19"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_12_19">
+						<script>
+							x5engine.boot.push(function () {
+								x5engine.utils.onElementInViewPort($('#imCell_18').get(0), function () {
+									x5engine.utils.revealObject($("#imCell_18"))
+								}, 100);
+							});
+						</script>
+						<div id="imCell_19" class=""> <div id="imCellStyleGraphics_19"></div><div id="imCellStyleBorders_19"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_12_19">
 						            <div style="width: 100%; height: 100px"></div>
 						        </div></div>
 					</main>
@@ -291,7 +288,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 </div><div id="imFooter_imTextObject_11_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_11">
 	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_11_tab0" style="opacity: 1; ">
 		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.html" class="imCssLink" onclick="return x5engine.utils.location('socios.html', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
+			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.php" class="imCssLink" onclick="return x5engine.utils.location('socios.php', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
 		</div>
 	</div>
 

@@ -7,29 +7,29 @@
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Corsinf" />
-		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.3.4 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.8 - www.websitex5.com" />
 		<meta property="og:locale" content="es" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://186.4.219.172/fedepal/fotos.php" />
+		<meta property="og:url" content="http://localhost/fotos.php" />
 		<meta property="og:title" content="Fotos" />
 		<meta property="og:site_name" content="Fedepal" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2024-3-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2024-3-4-0" media="print" />
-		<link rel="stylesheet" href="style/style.css?2024-3-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2024-3-4-0" media="screen" />
-		<link rel="stylesheet" href="appsresources/swiper.min.css" media="screen, print" />
+		<link rel="stylesheet" href="style/reset.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2024-4-8-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2024-4-8-0" media="screen" />
+		<link rel="stylesheet" href="appsresources/swiper_0vov1qwg.min.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_06/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_07/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_08/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_09/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_04/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imFooter_pluginAppObj_12/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/fotos.css?2024-3-4-0-638652704044856195" media="screen,print" />
-		<script src="res/jquery.js?2024-3-4-0"></script>
-		<script src="res/x5engine.js?2024-3-4-0" data-files-version="2024-3-4-0"></script>
-		<script src="appsresources/swiper.min.js"></script>
+		<link rel="stylesheet" href="pcss/fotos.css?2024-4-8-0-638709142514138313" media="screen,print" />
+		<script src="res/jquery.js?2024-4-8-0"></script>
+		<script src="res/x5engine.js?2024-4-8-0" data-files-version="2024-4-8-0"></script>
+		<script src="appsresources/swiper3.js"></script>
 		<script src="pluginAppObj/pluginAppObj_17_06/main.js"></script>
 		<script src="pluginAppObj/pluginAppObj_17_07/main.js"></script>
 		<script src="pluginAppObj/pluginAppObj_17_08/main.js"></script>
@@ -39,12 +39,25 @@
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'fotos.php';
-			x5engine.boot.push(function () { x5engine.utils.imCodeProtection('Corsinf'); });
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2024-3-4-0-638652704037937133" type="image/png" />
+		<link rel="icon" href="favicon.png?2024-4-8-0-638709142509915372" type="image/png" />
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	</head>
-	<body>
+	<body <!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->>
 		<div id="imPageExtContainer">
 			<div id="imPageIntContainer">
 				<div id="imHeaderBg"></div>
@@ -58,21 +71,21 @@
 	</div>
 </div>
 <ul class="menu-mobile-animated hidden">
-	<li class="imMnMnFirst imPage" data-link-paths=",/fedepal/home.html,/fedepal/">
+	<li class="imMnMnFirst imPage" data-link-paths=",/home.html,/">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="home.html">
 Inicio		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/fedepal/home.html,/fedepal/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/fedepal/home.html,/fedepal/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/fedepal/capacitaciones.html">
+	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="capacitaciones.html">
 Capacitaciones		</a>
 </div>
 </div>
-	</li><li class="imMnMnLast imLevel" data-link-paths=",/fedepal/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
+	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imHeader_imMenuObject_02_settings = {
 	'menuId': 'imHeader_imMenuObject_02',
 	'responsiveMenuEffect': 'slide',
@@ -83,7 +96,7 @@ x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_02_setting
 $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
 
 </script>
-</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.png" title="" alt="" width="250" height="92" />
+</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
 </div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
@@ -94,28 +107,28 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/Fedepal-Logo.png" title="" alt="" width="198" height="73" />
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall_puahdvcc.webp" title="" alt="" width="198" height="92" />
 </a></div></div></div><div id="imStickyBar_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_02"><div id="imStickyBar_imMenuObject_02_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
 	</div>
 </div>
 <ul class="menu-mobile-animated hidden">
-	<li class="imMnMnFirst imPage" data-link-paths=",/fedepal/home.html,/fedepal/">
+	<li class="imMnMnFirst imPage" data-link-paths=",/home.html,/">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="home.html">
 Inicio		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/fedepal/home.html,/fedepal/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/fedepal/home.html,/fedepal/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/fedepal/capacitaciones.html">
+	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="capacitaciones.html">
 Capacitaciones		</a>
 </div>
 </div>
-	</li><li class="imMnMnLast imLevel" data-link-paths=",/fedepal/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
+	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
 	'responsiveMenuEffect': 'slide',
@@ -131,7 +144,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					</div>
 					<a class="imHidden" href="#imGoToCont" title="Salta el menu principal">Vaya al Contenido</a>
 					<div id="imSideBar">
-						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.png" title="" alt="" width="140" height="140" />
+						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.webp" title="" alt="" width="140" height="140" />
 </div></div></div></div>
 					</div>
 					<div id="imContentGraphics"></div>
@@ -154,15 +167,15 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div><div id="imPageRow_2" class="imPageRow">
 						
 						</div>
-						<div id="imCell_6" class="animable fadeInDown"> <div id="imCellStyleGraphics_6"></div><div id="imCellStyleBorders_6"></div><div id="imCellStyleTitle_6">Sesión Solemne</div><!-- Swiper Animated Slider v.20 --><div id="pluginAppObj_17_06">
+						<div id="imCell_6" class="animable fadeInDown"> <div id="imCellStyleGraphics_6"></div><div id="imCellStyleBorders_6"></div><div id="imCellStyleTitle_6">Sesión Solemne</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_06">
 						        <div id="swiper_pluginAppObj_17_06" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.10-PM.jpg)'>
+						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.10-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.52-PM.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.52-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.42.32-PM.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.42.32-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
 						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
@@ -178,21 +191,21 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_7" class="animable fadeInDown"> <div id="imCellStyleGraphics_7"></div><div id="imCellStyleBorders_7"></div><div id="imCellStyleTitle_7">Asamblea de Socios</div><!-- Swiper Animated Slider v.20 --><div id="pluginAppObj_17_07">
+						<div id="imCell_7" class="animable fadeInDown"> <div id="imCellStyleGraphics_7"></div><div id="imCellStyleBorders_7"></div><div id="imCellStyleTitle_7">Asamblea de Socios</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_07">
 						        <div id="swiper_pluginAppObj_17_07" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-1.jpg)'>
+						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-1.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-2.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-2.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-3.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-3.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-4.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-4.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-5.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-5.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
 						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
@@ -211,21 +224,21 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imPageRow_3" class="imPageRow">
 						
 						</div>
-						<div id="imCell_9" class="animable fadeInDown"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imCellStyleTitle_9">Día del Maestro</div><!-- Swiper Animated Slider v.20 --><div id="pluginAppObj_17_09">
+						<div id="imCell_9" class="animable fadeInDown"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imCellStyleTitle_9">Día del Maestro</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_09">
 						        <div id="swiper_pluginAppObj_17_09" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen1.jpg)'>
+						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen1.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen2.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen2.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen3.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen3.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen4.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen4.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen5.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen5.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
 						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
@@ -241,18 +254,18 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_8" class="animable fadeInDown"> <div id="imCellStyleGraphics_8"></div><div id="imCellStyleBorders_8"></div><div id="imCellStyleTitle_8">Café Directivos</div><!-- Swiper Animated Slider v.20 --><div id="pluginAppObj_17_08">
+						<div id="imCell_8" class="animable fadeInDown"> <div id="imCellStyleGraphics_8"></div><div id="imCellStyleBorders_8"></div><div id="imCellStyleTitle_8">Café Directivos</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_08">
 						        <div id="swiper_pluginAppObj_17_08" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.57-PM.jpg)'>
+						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.57-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.59-PM.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.59-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.15.00-PM.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.15.00-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-6.15.19-PM.jpg)'>
+						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-6.15.19-PM.webp)'>
 						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
 						</div>
 						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
@@ -268,6 +281,9 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
+						<div id="imPageRow_4" class="imPageRow">
+						
+						</div>
 						
 					</main>
 					<footer id="imFooter">
@@ -298,7 +314,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 </div><div id="imFooter_imTextObject_11_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_11">
 	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_11_tab0" style="opacity: 1; ">
 		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.html" class="imCssLink" onclick="return x5engine.utils.location('socios.html', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
+			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.php" class="imCssLink" onclick="return x5engine.utils.location('socios.php', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
 		</div>
 	</div>
 

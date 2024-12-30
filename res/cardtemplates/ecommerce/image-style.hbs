@@ -85,7 +85,9 @@
         {{misc.rootSelector}} .im-cc-products-card .im-cc-products-image { 
             min-height: {{card.image.percentSize}}%;
         }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}
 
     {{#if misc.isLayoutVerticalCoverTop}}
@@ -157,7 +159,9 @@
         { 
             width: auto;
         }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}{{/if}}
 
     {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutCoverAsBackground}}
@@ -181,7 +185,15 @@
         height: 100%;
     }
     
-
+    {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}
+        {{misc.layoutVerticalMediaQueryStart}}
+            {{misc.rootSelector}} .im-cc-products-card .im-cc-products-image {
+                object-fit: scale-down;
+                max-height: 30vh;
+                width: auto;
+            }
+        }
+    {{/if}}{{/if}}
 
     {{misc.rootSelector}} .im-cc-products-card .im-cc-wrapper-products-image .im-cc-wrapper-image-icons{
         display:block;

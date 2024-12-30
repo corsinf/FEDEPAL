@@ -23,23 +23,34 @@ $imSettings['access']['users'] = array(
 		'crypt_encoding' => 'csharp_bcrypt',
 		'db_stored' => false,
 		'page' => 'home.html'
+	),
+	'paco@pepe.com' => array(
+		'id' => 'fpj6zs4l',
+		'groups' => array('av8g5bpd'),
+		'firstname' => 'paco',
+		'lastname' => 'pepe',
+		'email' => 'paco@pepe.com',
+		'password' => '$2a$11$r65R7TpjKM2sGqaOty0PyeuNXG7VgS71aEdeaTl/sLWPzoqzPa1Jm',
+		'crypt_encoding' => 'csharp_bcrypt',
+		'db_stored' => false,
+		'page' => false
 	)
 );
 
 // Admins list
-$imSettings['access']['admins'] = array('3uhnijca');
+$imSettings['access']['admins'] = array('3uhnijca', 'fpj6zs4l');
 
 // Page/Users permissions
 $imSettings['access']['pages'] = array(
-	'12' => array('m4830r87'),
 	'13' => array('m4830r87'),
 	'17' => array('m4830r87'),
-	'18' => array('m4830r87')
+	'18' => array('m4830r87'),
+	'20' => array('m4830r87')
 );
 
 // Web registration pages
 $imSettings['access']['webregistrations_gid'] = '6n0xvqqc';
-$imSettings['access']['waitingpages'] = array('12');
+$imSettings['access']['waitingpages'] = array('12', '14');
 $imSettings['access']['entrancepage'] = 'home.html';
 $imSettings['access']['dbid'] = '';
 $imSettings['access']['dbtable'] = 'w5_almkhpcw_access_management';

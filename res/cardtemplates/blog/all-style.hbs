@@ -122,25 +122,10 @@
     {{/if}}
 
     {{#if misc.isLayoutVerticalCoverTop}}
-        {{misc.rootSelector}} .im-cc-BlogPostCard {
-            grid-template-columns: 100%;
-            grid-template-rows: auto auto minmax(10%, 1fr);
-        }
-        {{#if misc.cardFixedHeight}}
-            {{misc.rootSelector}} 
-                .im-cc-blogpost-cardlayout 
-                    .im-cc-BlogPostCard 
-            {
-                grid-template-rows: {{misc.verticalImageHeight}}px auto minmax(0%, 1fr);
-            }
-        {{/if}}
-    {{/if}}
-
-    {{#if misc.isLayoutVerticalTitleTop}}
         {{misc.layoutVerticalMediaQueryStart}}
         {{misc.rootSelector}} .im-cc-BlogPostCard {
             grid-template-columns: 100%;
-            grid-template-rows: {{#if misc.isArrangeSlideshow}}auto 50% minmax(10%, 1fr){{else}}auto auto minmax(10%, 1fr){{/if}};
+            grid-template-rows: {{#if misc.layoutVerticalMediaQueryStart}}{{#if card.image.percentSize}}auto{{else}}0px{{/if}}{{else}}auto{{/if}} auto minmax(10%, 1fr);
         }
         {{#if misc.layoutVerticalMediaQueryStart}}{{else}}
             {{#if misc.cardFixedHeight}}
@@ -148,11 +133,28 @@
                     .im-cc-blogpost-cardlayout 
                         .im-cc-BlogPostCard 
                 {
-                    grid-template-rows: auto {{misc.verticalImageHeight}}px minmax(1%, 1fr);
+                    grid-template-rows: {{misc.verticalImageHeight}}px auto minmax(0%, 1fr);
                 }
             {{/if}}
         {{/if}}
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
+    {{/if}}
+
+    {{#if misc.isLayoutVerticalTitleTop}}
+        {{misc.rootSelector}} .im-cc-BlogPostCard {
+            grid-template-columns: 100%;
+            grid-template-rows: {{#if misc.isArrangeSlideshow}}auto 50% minmax(10%, 1fr){{else}}auto auto minmax(10%, 1fr){{/if}};
+        }
+        {{#if misc.cardFixedHeight}}
+            {{misc.rootSelector}} 
+                .im-cc-blogpost-cardlayout 
+                    .im-cc-BlogPostCard 
+            {
+                grid-template-rows: auto {{misc.verticalImageHeight}}px minmax(1%, 1fr);
+            }
+        {{/if}}
     {{/if}}
 
     {{#if misc.isLayoutCoverAsBackground}}
@@ -283,7 +285,9 @@
                 top: 0px;
                 left: 0px;
             }
+        {{#if misc.layoutHorizontalMediaQueryStart}}
         }
+        {{/if}}
     {{/if}}{{/if}}
 
     {{#if misc.isArrangeSlideshow}}
@@ -294,7 +298,9 @@
             {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardDescription {
                 overflow: hidden;
             }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}
 
     {{! ***** ***** ***** ***** ***** COVER style ***** ***** ***** ***** ***** }}
@@ -331,7 +337,9 @@
         {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCover { 
             min-height: {{card.image.percentSize}}%;
         }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}
 
     {{#if misc.isLayoutVerticalCoverTop}}
@@ -402,7 +410,9 @@
         {
             width: auto;
         }
-        {{misc.layoutVerticalMediaQueryEnd}}
+        {{#if misc.layoutVerticalMediaQueryStart}}
+        }
+        {{/if}}
     {{/if}}{{/if}}
 
     {{#if misc.isArrangeChangingHeightOrMasonry}}{{#if misc.isLayoutCoverAsBackground}}
@@ -426,6 +436,15 @@
         height: 100%;
     }
     
+    {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}
+        {{misc.layoutVerticalMediaQueryStart}}
+            {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-BlogPostCardCover {
+                object-fit: scale-down;
+                max-height: 30vh;
+                width: auto;
+            }
+        }
+    {{/if}}{{/if}}
 
 
     {{! ***** ***** ***** ***** ***** COVER style - end ***** ***** ***** ***** ***** }}
@@ -504,7 +523,10 @@
 
     }
 
-    {{misc.rootSelector}} .im-cc-BlogPostCard :is(.im-cc-BlogPostCardCategory, .im-cc-BlogPostCardAuthor, .im-cc-BlogPostCardDate, .im-cc-BlogPostCardReadTime) { 
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime {
         margin: 0px;
         padding: 0px;
         position: relative;
@@ -514,7 +536,8 @@
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory { 
         margin-left: -5px;
     }
-    {{misc.rootSelector}} .im-cc-BlogPostCard :is(.im-cc-BlogPostCardCategory, .im-cc-BlogPostCardAuthor) > a {
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > a,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > a {
         font-family: '{{card.txtBlock.details.style.font.familyName}}';
         font-size: {{card.txtBlock.details.style.font.size}}pt; 
         font-style: {{card.txtBlock.details.style.font.style}};
@@ -524,14 +547,18 @@
         text-wrap: nowrap;
         white-space: nowrap;
     }
-    {{misc.rootSelector}} .im-cc-BlogPostCard :is(.im-cc-BlogPostCardCategory, .im-cc-BlogPostCardAuthor, .im-cc-BlogPostCardDate, .im-cc-BlogPostCardReadTime) > svg { 
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardCategory > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardAuthor > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate > svg,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime > svg {
         position: relative;
         top: 5px;
         width: 20px; 
         height: 20px; 
         stroke: rgb({{card.txtBlock.details.style.textColor.r}},{{card.txtBlock.details.style.textColor.g}},{{card.txtBlock.details.style.textColor.b}}); 
     }
-    {{misc.rootSelector}} .im-cc-BlogPostCard :is(.im-cc-BlogPostCardDate, .im-cc-BlogPostCardReadTime) { 
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardDate,
+    {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-BlogPostCardReadTime { 
         font-family: '{{card.txtBlock.details.style.font.familyName}}';
         font-size: {{card.txtBlock.details.style.font.size}}pt; 
         font-style: {{card.txtBlock.details.style.font.style}};
@@ -581,9 +608,9 @@
             height: 100%;
             position: relative;
         }
-    {{#if misc.isLayoutHorizontal}}
+    {{#if misc.isLayoutHorizontal}}{{#if misc.layoutHorizontalMediaQueryStart}}
         }
-    {{/if}}
+    {{/if}}{{/if}}
 
     {{misc.rootSelector}} .im-cc-BlogPostCard .im-cc-wrapper-contents {
         max-height:100%;
@@ -614,20 +641,24 @@
     {{/if}}
 
     {{#if misc.isArrangeChangingHeightOrMasonry}}
-        {{#if misc.isLayoutVerticalCoverTop}}
+        {{#if misc.isLayoutVerticalCoverTop}}{{#if misc.layoutVerticalMediaQueryStart}}{{else}}
             {{misc.layoutHorizontalMediaQueryStart}}
                 {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
                     height: {{card.txtBlock.height}}px; 
                 }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
             }
-        {{/if}}
-        {{#if misc.isLayoutVerticalTitleTop}}{{#if misc.layoutVerticalMediaQueryStart}}{{else}}
-            {{misc.layoutHorizontalMediaQueryStart}}
-                {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
-                    height: {{card.txtBlock.height}}px; 
-                }
-            }
+            {{/if}}
         {{/if}}{{/if}}
+        {{#if misc.isLayoutVerticalTitleTop}}
+            {{misc.layoutHorizontalMediaQueryStart}}
+                {{misc.rootSelector}} .im-cc-blogpost-cardlayout .im-cc-BlogPostCard .im-cc-wrapper-contents {
+                    height: {{card.txtBlock.height}}px; 
+                }
+            {{#if misc.layoutHorizontalMediaQueryStart}}
+            }
+            {{/if}}
+        {{/if}}
     {{/if}}
 
 

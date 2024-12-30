@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Corsinf" />
-		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.4 - www.websitex5.com" />
+		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.8 - www.websitex5.com" />
 		<meta property="og:locale" content="es" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="http://localhost/videos.php" />
@@ -15,32 +15,43 @@
 		<meta property="og:site_name" content="Fedepal" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="stylesheet" href="style/reset.css?2024-4-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/print.css?2024-4-4-0" media="print" />
-		<link rel="stylesheet" href="style/style.css?2024-4-4-0" media="screen,print" />
-		<link rel="stylesheet" href="style/template.css?2024-4-4-0" media="screen" />
+		<link rel="stylesheet" href="style/reset.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/print.css?2024-4-8-0" media="print" />
+		<link rel="stylesheet" href="style/style.css?2024-4-8-0" media="screen,print" />
+		<link rel="stylesheet" href="style/template.css?2024-4-8-0" media="screen" />
 		<link rel="stylesheet" href="appsresources/swiper.min.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_18_03/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_18_06/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_04/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imFooter_pluginAppObj_12/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/videos.css?2024-4-4-0-638676382344975766" media="screen,print" />
-		<script src="res/jquery.js?2024-4-4-0"></script>
-		<script src="res/x5engine.js?2024-4-4-0" data-files-version="2024-4-4-0"></script>
+		<link rel="stylesheet" href="pcss/videos.css?2024-4-8-0-638709142474232537" media="screen,print" />
+		<script src="res/jquery.js?2024-4-8-0"></script>
+		<script src="res/x5engine.js?2024-4-8-0" data-files-version="2024-4-8-0"></script>
 		<script src="appsresources/swiper.min.js"></script>
 		<script src="pluginAppObj/pluginAppObj_18_03/main.js"></script>
-		<script src="pluginAppObj/pluginAppObj_18_06/main.js"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_04/main.js"></script>
 		<script src="pluginAppObj/imFooter_pluginAppObj_12/main.js"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'videos.php';
-			x5engine.boot.push(function () { x5engine.utils.imCodeProtection('Corsinf'); });
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2024-4-4-0-638676382344388394" type="image/png" />
+		<link rel="icon" href="favicon.png?2024-4-8-0-638709142473987715" type="image/png" />
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
+		<!-- End Google Tag Manager -->
+		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	</head>
-	<body>
+	<body <!-- Google Tag Manager (noscript) -->
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
+
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- End Google Tag Manager (noscript) -->>
 		<div id="imPageExtContainer">
 			<div id="imPageIntContainer">
 				<div id="imHeaderBg"></div>
@@ -79,7 +90,7 @@ x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_02_setting
 $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
 
 </script>
-</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.png" title="" alt="" width="250" height="92" />
+</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
 </div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
@@ -90,7 +101,7 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/Fedepal-Logo.png" title="" alt="" width="198" height="73" />
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall_puahdvcc.webp" title="" alt="" width="198" height="92" />
 </a></div></div></div><div id="imStickyBar_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_02"><div id="imStickyBar_imMenuObject_02_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
@@ -127,7 +138,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					</div>
 					<a class="imHidden" href="#imGoToCont" title="Salta el menu principal">Vaya al Contenido</a>
 					<div id="imSideBar">
-						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.png" title="" alt="" width="140" height="140" />
+						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.webp" title="" alt="" width="140" height="140" />
 </div></div></div></div>
 					</div>
 					<div id="imContentGraphics"></div>
@@ -167,13 +178,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						        <script>
 						            youtubegallery_pluginAppObj_18_03();
 						        </script>
-						       </div><div id="imCellStyleDescription_3"><div>ABRIL</div></div></div><div id="imCell_6" class=""> <div id="imCellStyleGraphics_6"></div><div id="imCellStyleBorders_6"></div><!-- YouTube Gallery v.11 --><div id="pluginAppObj_18_06">
-						        <div id="youtubegallery_pluginAppObj_18_06" class="bullets">
-						        </div>
-						        <script>
-						            youtubegallery_pluginAppObj_18_06();
-						        </script>
-						       </div><div id="imCellStyleDescription_6"><div>JUNIO</div></div></div>
+						       </div><div id="imCellStyleDescription_3"><div>ABRIL</div></div></div>
 					</main>
 					<footer id="imFooter">
 						<div id="imFooterObjects"><div id="imFooter_imTextObject_06_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_06">
@@ -203,7 +208,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 </div><div id="imFooter_imTextObject_11_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_11">
 	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_11_tab0" style="opacity: 1; ">
 		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.html" class="imCssLink" onclick="return x5engine.utils.location('socios.html', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
+			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.php" class="imCssLink" onclick="return x5engine.utils.location('socios.php', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
 		</div>
 	</div>
 

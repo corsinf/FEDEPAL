@@ -8,11 +8,12 @@ $imSettings['search']['general'] = array(
 	'defaultScope' => array(
 		'0' => 'home.html',
 		'11' => 'capacitaciones.html',
-		'14' => 'socios.html',
 		'15' => 'contactos.html',
 		'16' => 'ficha-de-afiliacion.php'
 	),
 	'extendedScope' => array(
+		'14' => 'socios.php',
+		'20' => 'news.php'
 	)
 );
 
@@ -34,13 +35,13 @@ $imSettings['search']['images'] = array(
 $imSettings['search']['videos'] = array(
 );
 $imSettings['search']['dynamicobjects'] = array(
-	'2212' => array(
-		'Folder' => 'web\DATOS',
-		'DefaultText' => '<p>¡Haz clic aquASDASDASDASDASDí para introducir el texto por defecto!</p>',
-		'Page' => 'convenios.php',
-		'PageTitle' => 'Convenios',
+	'120' => array(
+		'Folder' => 'web',
+		'DefaultText' => '<p>¡Haz clic aquí para introducir el texto por defecto!</p>',
+		'Page' => 'news.php',
+		'PageTitle' => 'News',
 		'ObjectTitle' => '',
-		'ObjectId' => 'dynObj_12_22'
+		'ObjectId' => 'dynObj_20_01'
 	)
 );
 
