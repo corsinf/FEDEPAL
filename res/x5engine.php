@@ -7576,6 +7576,7 @@ class ImDb implements DatabaseAccess
      */
     function query($query)
     {
+        // print_r($query);
         if (is_string($query)) {
             return $this->driver->query($query);
         }
@@ -9726,6 +9727,66 @@ class imPrivateArea
         return $this->_get_db_users($where_conditions, $from, $to);
     }
 
+    public function getNewsById($ids = array(), $from = "", $to = "")
+    {
+        if (is_string($ids)) {
+            if (strlen($ids)) {
+                $ids = array_map('trim', explode(',', $ids));
+            } else {
+                $ids = array();
+            }
+        }
+        $ids_count = count($ids);
+        $where_conditions = array();
+        $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
+        if ($id_condition) {
+            $where_conditions['id'] = $id_condition;
+        }
+        return $this->_get_db_news($where_conditions, $from, $to);
+    }
+
+    public function getSociosById($ids = array(), $from = "", $to = "")
+    {
+        if (is_string($ids)) {
+            if (strlen($ids)) {
+                $ids = array_map('trim', explode(',', $ids));
+            } else {
+                $ids = array();
+            }
+        }
+        $ids_count = count($ids);
+        $where_conditions = array();
+        $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
+        if ($id_condition) {
+            $where_conditions['usu_id'] = $id_condition;
+        }
+        return $this->_get_db_socios($where_conditions, $from, $to);
+    }
+
+     public function getCArpetas($ids = "", $from = "", $to = "")
+    {
+        $where_conditions['arc_tipo'] = $ids;
+        return $this->_get_db_archivos($where_conditions, $from, $to);
+    }
+
+    public function getArchivosById($ids = array(), $from = "", $to = "")
+    {
+        if (is_string($ids)) {
+            if (strlen($ids)) {
+                $ids = array_map('trim', explode(',', $ids));
+            } else {
+                $ids = array();
+            }
+        }
+        $ids_count = count($ids);
+        $where_conditions = array();
+        $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
+        if ($id_condition) {
+            $where_conditions['id'] = $id_condition;
+        }
+        return $this->_get_db_archivos($where_conditions, $from, $to);
+    }
+
     private function _user_query($where_conditions = array(), $from = "", $to = "")
     {
         if ($this->db) {
@@ -9739,6 +9800,84 @@ class imPrivateArea
 
             return $this->db->select(array(
                 'select' => array('id', 'ts', 'ip', 'password', 'firstname', 'lastname', 'email', 'key', 'validated', 'crypt_encoding'),
+                'from' => $this->db_table,
+                'where' => $where_conditions,
+                'where_flat' => $flat_conditions
+            ));
+        }
+        return false;
+    }
+
+    private function _news_query($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            $flat_conditions = array();
+            if (strlen($from)) {
+                $flat_conditions[] = "`ts` >= '" . $this->db->escapeString($from) . "'";
+            }
+            if (strlen($to)) {
+                $flat_conditions[] = "`ts` <= '" . $this->db->escapeString($to) . "'";
+            }
+
+            return $this->db->select(array(
+                'select' => array('id','titulo','fecha','detalle','imagen','estado'),
+                'from' => $this->db_table,
+                'where' => $where_conditions,
+                'where_flat' => $flat_conditions
+            ));
+        }
+        return false;
+    }
+
+    private function _socios_query($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            $flat_conditions = array();
+            if (strlen($from)) {
+                $flat_conditions[] = "`ts` >= '" . $this->db->escapeString($from) . "'";
+            }
+            if (strlen($to)) {
+                $flat_conditions[] = "`ts` <= '" . $this->db->escapeString($to) . "'";
+            }
+
+            return $this->db->select(array(
+                'select' => array("usu_id",
+                                    "usu_nombre_institucion" ,
+                                    "usu_direccion_institucion" ,
+                                    "usu_telefono_convencional_institucion" ,
+                                    "usu_telefono_celular_institucion" ,
+                                    "usu_nombre_completos_rector" ,
+                                    "usu_correo_rector" ,
+                                    "usu_telefono_rector" ,
+                                    "usu_nombre_completos_replegal" ,
+                                    "usu_correo_replegal" ,
+                                    "usu_telefono_replegal" ,
+                                    "usu_cedula_replegal" ,
+                                    "usu_foto_colegio" ,
+                                    "usu_estado",
+                                    "usu_fecha_creacion",
+                                    "usu_fecha_modificacion" ),
+                'from' => $this->db_table,
+                'where' => $where_conditions,
+                'where_flat' => $flat_conditions
+            ));
+        }
+        return false;
+    }
+
+    private function _archivos_query($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            $flat_conditions = array();
+            if (strlen($from)) {
+                $flat_conditions[] = "`ts` >= '" . $this->db->escapeString($from) . "'";
+            }
+            if (strlen($to)) {
+                $flat_conditions[] = "`ts` <= '" . $this->db->escapeString($to) . "'";
+            }
+
+            return $this->db->select(array(
+                'select' => array('arc_id','arc_nombre','arc_ruta','arc_usuario_id','arc_fecha_creacion','arc_fecha_modificacion','arc_tipo','arc_id_padre'),
                 'from' => $this->db_table,
                 'where' => $where_conditions,
                 'where_flat' => $flat_conditions
@@ -9781,6 +9920,84 @@ class imPrivateArea
         return $users;
     }
 
+     private function _get_db_news($where_conditions = array(), $from = "", $to = "")
+    {
+        $news = array();
+        $db_news = $this->_news_query($where_conditions, $from, $to);
+        if ($db_news) {
+            $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
+            $ecommerce = Configuration::getCart();
+            foreach ($db_news as $user) {
+                $news[] = array(                   
+                    "id"        => $user['id'],
+                    'titulo'    => $user['titulo'],
+                    "detalle"   => $user['detalle'],
+                    "imagen"    => $user['imagen'],
+                    "estado"    => $user['estado'],
+                    "fecha"    => $user['fecha'],
+                    
+                );
+            }
+        }
+        return $news;
+    }
+
+    private function _get_db_socios($where_conditions = array(), $from = "", $to = "")
+    {
+        $news = array();
+        $db_news = $this->_socios_query($where_conditions, $from, $to);
+        if ($db_news) {
+            $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
+            $ecommerce = Configuration::getCart();
+            foreach ($db_news as $user) {
+                $news[] = array(                   
+                  "id" =>$user["usu_id"],
+                  "institucion"  =>$user["usu_nombre_institucion"],
+                  "direccion"  =>$user["usu_direccion_institucion"],
+                  "telefono_ins"  =>$user["usu_telefono_convencional_institucion"],
+                  "telefono_ins2"  =>$user["usu_telefono_celular_institucion"],
+                  "rector"  =>$user["usu_nombre_completos_rector"],
+                  "correo_rector"  =>$user["usu_correo_rector"],
+                  "telefonoRector"  =>$user["usu_telefono_rector"],
+                  "replegal"  =>$user["usu_nombre_completos_replegal"],
+                  "correoReplegal"  =>$user["usu_correo_replegal"],
+                  "telefonoRep"  =>$user["usu_telefono_replegal"],
+                  "cedula"  =>$user["usu_cedula_replegal"],
+                  "foto"  =>$user["usu_foto_colegio"],
+                  "estado"  =>$user["usu_estado"],
+                  "fecha"  =>$user["usu_fecha_creacion"],
+                  "modificacion"  =>$user["usu_fecha_modificacion"],
+                );
+            }
+        }
+        return $news;
+    }
+
+    private function _get_db_archivos($where_conditions = array(), $from = "", $to = "")
+    {
+        $files = array();
+        $db_files = $this->_archivos_query($where_conditions, $from, $to);
+        // print_r($db_files);die();
+        if ($db_files) {
+            $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
+            $ecommerce = Configuration::getCart();
+            foreach ($db_files as $user) {
+                $files[] = array(
+                'id'                => $user['arc_id'],
+                'nombre'            => $user['arc_nombre'],
+                'ruta'              => $user['arc_ruta'],
+                'usuario_id'        => $user['arc_usuario_id'],
+                'fecha_creacion'    => $user['arc_fecha_creacion'],
+                'fecha_modificacion'=> $user['arc_fecha_modificacion'],
+                'tipo'              => $user['arc_tipo'],
+                'id_padre'          => $user['arc_id_padre']                    
+                );
+            }
+        }
+        // print_r($files);die();
+        return $files;
+    }
+
     /**
      * Setup the db connection.
      * This method is only available in the **Professional edition**.
@@ -9804,6 +10021,44 @@ class imPrivateArea
         }
         die("Unable to connect to DB");
     }
+
+
+    public function setDBDataNews($db, $dbtable, $datadbtable)
+    {
+        $this->db = $db;
+        if ($this->db->testConnection()) {
+            $this->db_table = $dbtable;
+            $this->data_db_table = $datadbtable;
+            $this->createNewsTable();
+            return $this->db;
+        }
+        die("Unable to connect to DB");
+    }
+
+    public function setDBDataArchivos($db, $dbtable, $datadbtable)
+    {
+        $this->db = $db;
+        if ($this->db->testConnection()) {
+            $this->db_table = $dbtable;
+            $this->data_db_table = $datadbtable;
+            $this->createArchivosTable();
+            return $this->db;
+        }
+        die("Unable to connect to DB");
+    }
+
+    public function setDBDataSocios($db, $dbtable, $datadbtable)
+    {
+        $this->db = $db;
+        if ($this->db->testConnection()) {
+            $this->db_table = $dbtable;
+            $this->data_db_table = $datadbtable;
+            $this->createSociosTable();
+            return $this->db;
+        }
+        die("Unable to connect to DB");
+    }
+
 
     /**
      * Get an encoded JSON list of the waiting users' data.
@@ -10108,6 +10363,91 @@ class imPrivateArea
         }
     }
 
+    public function createNewsTable()
+    {
+        // print_r($this->db_table);
+        if ($this->db) {
+            $this->db->createTable(
+                $this->db_table,
+                array(
+                    "id"        => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
+                    "fecha"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "titulo"        => array('type' => 'VARCHAR(45)'),
+                    "detalle" => array('type' => 'TEXT', "default" => "NULL"),
+                    "imagen"  => array('type' => 'TEXT', "default" => "."),
+                    "estado" => array('type' => 'INT(1)'),
+                )
+            );
+            // Compatibility: the realname field used in the old tables
+            // did not set a default text...so it fails during inserts
+            $col = $this->db->tableColumns(array('table'=>$this->db_table, 'like' => 'realname'));
+            if (is_array($col) && count($col)) {
+                $this->db->query("ALTER TABLE `" . $this->db->table($this->db_table) . "` CHANGE `realname` `realname` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL");
+            }
+        }
+    }
+
+
+    public function createArchivosTable()
+    {
+        // print_r($this->db_table);
+        if ($this->db) {
+            $this->db->createTable(
+                $this->db_table,
+                array(
+                    "arc_id"        => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
+                    "arc_fecha_creacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "arc_fecha_modificacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "arc_nombre" => array('type' => 'TEXT', "default" => "NULL"),
+                    "arc_ruta"  => array('type' => 'TEXT', "default" => "."),
+                    "arc_usuario_id"  => array('type' => 'TEXT', "default" => "."),
+                    "arc_tipo"  => array('type' => 'TEXT', "default" => "."),
+                    "arc_id_padre" => array('type' => 'INT(1)'),
+                )
+            );
+            // Compatibility: the realname field used in the old tables
+            // did not set a default text...so it fails during inserts
+            $col = $this->db->tableColumns(array('table'=>$this->db_table, 'like' => 'realname'));
+            if (is_array($col) && count($col)) {
+                $this->db->query("ALTER TABLE `" . $this->db->table($this->db_table) . "` CHANGE `realname` `realname` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL");
+            }
+        }
+    }
+    public function createSociosTable()
+    {
+        // print_r($this->db_table);
+        if ($this->db) {
+            $this->db->createTable(
+                $this->db_table,
+                array(
+                    "usu_id"        => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
+                    "usu_nombre_institucion" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_direccion_institucion" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_telefono_convencional_institucion" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_telefono_celular_institucion" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_nombre_completos_rector" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_correo_rector" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_telefono_rector" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_nombre_completos_replegal" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_correo_replegal" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_telefono_replegal" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_cedula_replegal" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_foto_colegio" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_estado" => array('type' => 'INT(1)'),
+                    "usu_fecha_creacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "usu_fecha_modificacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL')                   
+                )
+            );
+
+            // Compatibility: the realname field used in the old tables
+            // did not set a default text...so it fails during inserts
+            $col = $this->db->tableColumns(array('table'=>$this->db_table, 'like' => 'realname'));
+            if (is_array($col) && count($col)) {
+                $this->db->query("ALTER TABLE `" . $this->db->table($this->db_table) . "` CHANGE `realname` `realname` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL");
+            }
+        }
+    }
+
     /**
      * Create the users data table if it doesn't exist
      * This method is only available in the **Professional edition**.
@@ -10167,6 +10507,127 @@ class imPrivateArea
         return $this->createUser($email, $password, $firstname, $lastname, $validated);
     }
 
+    public function registerNewNews($titulo, $cuerpo, $file)
+    {
+        $imSettings = Configuration::getSettings();
+        $patch = '../images/imgNews';
+        if (!file_exists($patch)) {
+           mkdir($patch, 0777, true);
+        }
+        
+        $uploadfile_temporal=$file['txt_img']['tmp_name'];
+        $tipoImg = explode('.',$file['txt_img']['name']);
+        $imagen = str_replace(' ','_',$titulo).'.'.$tipoImg[1];
+        $nuevo_nom = $patch.'/'.$imagen;
+        if (is_uploaded_file($uploadfile_temporal))
+        {
+            move_uploaded_file($uploadfile_temporal,$nuevo_nom);
+        }       
+        return $this->createNews($titulo, $cuerpo, $nuevo_nom);
+    }
+
+    public function registerNewSocios($data,$file)
+    {
+        $ruta = '';
+        $imSettings = Configuration::getSettings();
+        if($file['txt_img']['tmp_name']!='')
+        {
+            $patch = '../images/';
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            } 
+            $patch = '../images/socios/';
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            }
+
+            // print_r($file);die();
+
+            $uploadfile_temporal=$file['txt_img']['tmp_name'];
+            // $tipoImg = explode('.',$file['txt_archivo']['name']);
+            $imagen = str_replace(' ','_',$file['txt_img']['name']);
+            $nuevo_nom = $patch.'/'.$imagen;
+            if (is_uploaded_file($uploadfile_temporal))
+            {
+                move_uploaded_file($uploadfile_temporal,$nuevo_nom);
+            }       
+            $ruta = $nuevo_nom;
+        }
+        return $this->createSocios($data,$ruta);
+    }
+
+    public function registerUpdateSocios($data,$file,$id)
+    {
+        $ruta = '';
+        $imSettings = Configuration::getSettings();
+        if($file['txt_img']['tmp_name']!='')
+        {
+            $patch = '../images/';
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            } 
+            $patch = '../images/socios/';
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            }
+
+            // print_r($file);die();
+
+            $uploadfile_temporal=$file['txt_img']['tmp_name'];
+            // $tipoImg = explode('.',$file['txt_archivo']['name']);
+            $imagen = str_replace(' ','_',$file['txt_img']['name']);
+            $nuevo_nom = $patch.'/'.$imagen;
+            if (is_uploaded_file($uploadfile_temporal))
+            {
+                move_uploaded_file($uploadfile_temporal,$nuevo_nom);
+            }       
+            $ruta = $nuevo_nom;
+        }
+        if($ruta=='')
+        {
+           $dt = $this->getSociosById(array($id));
+           $ruta = $dt[0]['foto'];
+        }
+        return $this->UpdateSocios($data,$ruta,$id);
+    }
+
+    public function registerNewArchivo($post, $file)
+    {
+        // print_r($post);die();
+        $nombre = $post['txt_titulo'];
+        $ruta = '';
+        $user = '';
+        $tipo = $post['ddl_tipo'];
+        $padre = $post['ddl_carpeta'];
+        $imSettings = Configuration::getSettings();
+        if($post['ddl_tipo']=='archivo')
+        {
+            $patch = '../files/';
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            } 
+            $patch = '../files/'.str_replace(' ',"_", $padre);
+            if (!file_exists($patch)) {
+               mkdir($patch, 0777, true);
+            }
+
+            // print_r($file);die();
+
+            $uploadfile_temporal=$file['txt_archivo']['tmp_name'];
+            // $tipoImg = explode('.',$file['txt_archivo']['name']);
+            $imagen = str_replace(' ','_',$file['txt_archivo']['name']);
+            $nuevo_nom = $patch.'/'.$imagen;
+            if (is_uploaded_file($uploadfile_temporal))
+            {
+                move_uploaded_file($uploadfile_temporal,$nuevo_nom);
+            }       
+            $ruta = $nuevo_nom;
+        }
+        
+       
+        return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre);
+    }
+
     private static function _check_password_policy(string $password): bool
     {
         $imSettings = Configuration::getSettings();
@@ -10177,6 +10638,86 @@ class imPrivateArea
                 && (!isset($imSettings['password_policy']['include_special']) || !$imSettings['password_policy']['include_special'] || preg_match("/[!?<>#$%&*@()]/", $password));
         }
         return strlen($password) > 0;
+    }
+
+    public function createNews($titulo, $cuerpo, $imagen)
+    {
+        $this->db->insert(array(
+            'into' => $this->db_table,
+            'values' => array(
+                'fecha' => date("Y-m-d"),
+                'titulo' => $titulo,
+                'detalle' => $cuerpo,
+                'imagen' =>$imagen,
+                'estado'=>1
+            )
+        ));
+        return $this->db->lastInsertId();
+    }
+
+    public function createArchivos($nombre,$ruta,$user,$tipo,$padre)
+    {
+        $this->db->insert(array(
+            'into' => $this->db_table,
+            'values' => array(
+                'arc_nombre' =>$nombre,
+                'arc_ruta' =>$ruta,
+                'arc_usuario_id' =>$user,
+                'arc_fecha_creacion' =>date('Y-m-d'),
+                'arc_fecha_modificacion' =>date('Y-m-d'),
+                'arc_tipo' =>$tipo,
+                'arc_id_padre' =>$padre,
+            )
+        ));
+        return $this->db->lastInsertId();
+    }
+    public function createSocios($data,$rutafile)
+    {
+        $this->db->insert(array(
+            'into' => $this->db_table,
+            'values' => array(
+                "usu_nombre_institucion" => $data['txt_nombre_ins'],
+                "usu_direccion_institucion" => $data['txt_direccion_ins'],
+                "usu_telefono_convencional_institucion" => $data['txt_telefono_ins'],
+                "usu_telefono_celular_institucion" => $data['txt_celular_ins'],
+                "usu_nombre_completos_rector" => $data['txt_nombre_rector'],
+                "usu_correo_rector" => $data['txt_correo_rector'],
+                "usu_telefono_rector" => $data['txt_telefono_rector'],
+                "usu_nombre_completos_replegal" => $data['txt_nombre_rep'],
+                "usu_correo_replegal" => $data['txt_correo_rep'],
+                "usu_telefono_replegal" => $data['txt_telefono_rep'],
+                "usu_cedula_replegal" => $data['txt_cedula_rep'],
+                "usu_foto_colegio" =>$rutafile,
+                "usu_estado" => 1,
+                "usu_fecha_creacion"        => date('Y-m-d'),
+                "usu_fecha_modificacion"        => date('Y-m-d'), 
+            )
+        ));
+        return $this->db->lastInsertId();
+    }
+
+    public function UpdateSocios($data,$rutafile,$id)
+    {
+        return $this->db->update(array(
+                'update' => $this->db_table,
+                'set' => array(
+                    "usu_nombre_institucion" => $data['txt_nombre_ins'],
+                    "usu_direccion_institucion" => $data['txt_direccion_ins'],
+                    "usu_telefono_convencional_institucion" => $data['txt_telefono_ins'],
+                    "usu_telefono_celular_institucion" => $data['txt_celular_ins'],
+                    "usu_nombre_completos_rector" => $data['txt_nombre_rector'],
+                    "usu_correo_rector" => $data['txt_correo_rector'],
+                    "usu_telefono_rector" => $data['txt_telefono_rector'],
+                    "usu_nombre_completos_replegal" => $data['txt_nombre_rep'],
+                    "usu_correo_replegal" => $data['txt_correo_rep'],
+                    "usu_telefono_replegal" => $data['txt_telefono_rep'],
+                    "usu_cedula_replegal" => $data['txt_cedula_rep'],
+                    "usu_foto_colegio" =>$rutafile,
+                    "usu_estado" => 1,
+                    "usu_fecha_modificacion" => date('Y-m-d'), 
+                ),
+                'where' => array('usu_id' => $id)
+        ));
     }
 
     public function createUser($email, $password, $firstname, $lastname, $validated)
@@ -10209,6 +10750,36 @@ class imPrivateArea
             $this->db->delete(array(
                 'from' => $this->db_table,
                 'where' => array('email' => $email)
+            ));
+        }
+    }
+
+    public function deleteNews($id)
+    {
+        if ($this->db) {
+            $this->db->delete(array(
+                'from' => $this->db_table,
+                'where' => array('id' => $id)
+            ));
+        }
+    }
+
+    public function deleteSocios($id)
+    {
+        if ($this->db) {
+            $this->db->delete(array(
+                'from' => $this->db_table,
+                'where' => array('usu_id' => $id)
+            ));
+        }
+    }
+
+    public function deleteArchivos($id)
+    {
+        if ($this->db) {
+            $this->db->delete(array(
+                'from' => $this->db_table,
+                'where' => array('arc_id' => $id)
             ));
         }
     }
