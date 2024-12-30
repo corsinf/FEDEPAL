@@ -42,6 +42,15 @@ CREATE TABLE `w5_almkhpcw_access_management` (
   `cng_pwd_token_expire` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+
+CREATE TABLE `w5_news` (
+  `id` int(11) NOT NULL,
+  `fecha` timestamp NULL DEFAULT NULL,
+  `titulo` varchar(45) NOT NULL,
+  `detalle` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `estado` int(1) NOT NULL,
+  `imagen` varchar(64) DEFAULT NULL,
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --
 -- Volcado de datos para la tabla `w5_almkhpcw_access_management`
 --
@@ -60,6 +69,9 @@ ALTER TABLE `w5_almkhpcw_access_management`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `cng_pwd_token` (`cng_pwd_token`);
 
+ALTER TABLE `w5_news`
+  ADD PRIMARY KEY (`id`),
+
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
@@ -71,6 +83,9 @@ ALTER TABLE `w5_almkhpcw_access_management`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
+ALTER TABLE `w5_news`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

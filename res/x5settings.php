@@ -80,10 +80,10 @@ $imSettings['admin'] = array(
 $imSettings['databases'] = array(
 	'uogeqgd9' => array(
 		'description' => '',
-		'host' => '192.168.1.9',
+		'host' => 'localhost',
 		'database' => 'fedepal',
-		'user' => 'miltonrubio',
-		'password' => 'LTBoz3RK3@.yoEYu',
+		'user' => 'root',
+		'password' => '',
 		'table_prefix' => ''
 	)
 );

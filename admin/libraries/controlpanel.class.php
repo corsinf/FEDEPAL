@@ -105,6 +105,36 @@ class ControlPanel {
             "text" => $loc->get("dashboard_title", "Dashboard"),
             "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "index.php"
         );
+        $menu[] = array(
+            "url" => "news.php",
+            "image" => "images/news.png",
+            "text" => $loc->get("Noticias", "Noticias"),
+            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "news.php"
+        );
+        // $menu[] = array(
+        //     "url" => "addNews.php",
+        //     "image" => "images/dashboard_white.png",
+        //     "text" => $loc->get("Noticias", "Noticias"),
+        //     "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "addNews.php"
+        // );
+         $menu[] = array(
+            "url" => "archivos.php",
+            "image" => "images/files.png",
+            "text" => $loc->get("Archivos", "Archivos"),
+            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "archivos.php"
+        );
+        $menu[] = array(
+            "url" => "roles.php",
+            "image" => "images/roles.png",
+            "text" => $loc->get("Roles", "Roles"),
+            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "roles.php"
+        );
+        $menu[] = array(
+            "url" => "socios.php",
+            "image" => "images/socios.png",
+            "text" => $loc->get("Socios", "Socios"),
+            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "socios.php"
+        );
         if (isset($settings['blog']) && $settings['blog']['comments_source'] == 'wsx5') {
             $menu[] = array(
                 "url" => "blog.php",
