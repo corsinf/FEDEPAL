@@ -11,21 +11,30 @@ $imSettings['access']['datadbtable'] = 'w5_archivos_data';
 
 $db = getDbData($imSettings['access']['dbid']);
 $pa = new ImPrivateArea();
-$pa->setDBDataArchivos(ImDb::from_db_data($db),$imSettings['access']['dbtable'],$imSettings['access']['datadbtable']);
+$pa->setDBDataArchivos(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+
 if (isset($_GET['validate'])) {
 	$pa->validateWaitingUserById($_GET['validate']);
 	echo "<script>location.href='news.php#user_" . $_GET['validate'] . "';</script>";
 	exit;
 }
+
 if (isset($_GET['saveArchivo'])) {
 
-	$res = $pa->registerNewARchivo($_POST,$_FILES);
-	if ($res > 0)
-	{
+	$res = $pa->registerNewARchivo($_POST, $_FILES);
+	if ($res > 0) {
 		header('Location: archivos.php');
 	}
 	exit();
 }
+
+if (isset($_GET['listArchivos'])) {
+
+	echo json_encode($pa->getArchivosRecursos());
+
+	exit();
+}
+
 
 if (isset($_GET['validationemail'])) {
 	$pa->sendValidationEmail($_GET['validationemail'], $imSettings['access']['emailfrom']);
@@ -38,10 +47,9 @@ if (isset($_GET['delete'])) {
 	exit;
 }
 
-if (isset($_GET['insertar'])) 
-{
+if (isset($_GET['insertar'])) {
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Archivos","Gestor de Archivos");
+	$mainT->pagetitle = l10n("Archivos", "Gestor de Archivos");
 	$mainT->content = "";
 	$contentT = new Template("templates/archivos/addArchivos.php");
 	$contentT->cssClass = "privatearea";
@@ -50,11 +58,10 @@ if (isset($_GET['insertar']))
 
 	$mainT->content = $contentT->render();
 	echo $mainT->render();
-}else
-{
+} else {
 	// Load the main template
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Noticias","Gestor de archivos");
+	$mainT->pagetitle = l10n("Noticias", "Gestor de archivos");
 	$mainT->content = "";
 	$contentT = new Template("templates/archivos/bodyFile.php");
 	$contentT->cssClass = "privatearea";

@@ -44,13 +44,13 @@
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	</head>
-	<body <!-- Google Tag Manager (noscript) -->
+	<body> <!-- Google Tag Manager (noscript) -->
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
 
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- End Google Tag Manager (noscript) -->>
+<!-- End Google Tag Manager (noscript) -->
 		<div id="imPageExtContainer">
 			<div id="imPageIntContainer">
 				<div id="imHeaderBg"></div>
@@ -145,7 +145,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<a id="imGoToCont"></a>
 						<header>
 							<h2 id="imPgTitle">Socios</h2>
-							<div id="imBreadcrumb"><a href="home.html#Nosotros" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div>
+							<!-- <div id="imBreadcrumb"><a href="home.html#Nosotros" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div> -->
 						</header>
 						<div id="imPageRow_1" class="imPageRow">
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_1"><div id="imPageRowGraphicsVideo_1_wrapper"><video id="imPageRowGraphicsVideo_1" class="imPageRowGraphicsVideo" src="video/medium-3161.mp4" autoplay loop playsinline muted></video>

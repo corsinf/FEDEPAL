@@ -9763,7 +9763,7 @@ class imPrivateArea
         return $this->_get_db_socios($where_conditions, $from, $to);
     }
 
-     public function getCArpetas($ids = "", $from = "", $to = "")
+    public function getCArpetas($ids = "", $from = "", $to = "")
     {
         $where_conditions['arc_tipo'] = $ids;
         return $this->_get_db_archivos($where_conditions, $from, $to);
@@ -9785,6 +9785,11 @@ class imPrivateArea
             $where_conditions['id'] = $id_condition;
         }
         return $this->_get_db_archivos($where_conditions, $from, $to);
+    }
+
+    public function getArchivosRecursos($ids = "", $from = "", $to = "")
+    {
+        return $this->_get_db_archivos_recursos('', $from, $to);
     }
 
     private function _user_query($where_conditions = array(), $from = "", $to = "")
@@ -9883,6 +9888,37 @@ class imPrivateArea
                 'where_flat' => $flat_conditions
             ));
         }
+        return false;
+    }
+
+    //Arma la sentencia para mostrar en recursos
+    private function _archivos_query_recuros($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            return $this->db->query("WITH RECURSIVE tree AS (
+                                        SELECT 
+                                            arc_id AS node_key,  -- Usamos node_key en lugar de key
+                                            arc_nombre AS title, 
+                                            arc_ruta, 
+                                            arc_id_padre, 
+                                            arc_tipo AS folder
+                                        FROM $this->db_table
+                                        WHERE arc_id_padre IS NULL  -- Comienza desde la raíz (carpetas principales)
+                                        
+                                        UNION ALL
+                                        
+                                        SELECT 
+                                            a.arc_id AS node_key,  -- Usamos node_key en lugar de key
+                                            a.arc_nombre AS title, 
+                                            a.arc_ruta, 
+                                            a.arc_id_padre, 
+                                            a.arc_tipo AS folder
+                                        FROM $this->db_table a
+                                        INNER JOIN tree t ON a.arc_id_padre = t.node_key  -- Usamos node_key en lugar de key
+                                    )
+                                    SELECT * FROM tree;");
+        }
+        
         return false;
     }
   
@@ -9997,6 +10033,55 @@ class imPrivateArea
         // print_r($files);die();
         return $files;
     }
+
+    private function _get_db_archivos_recursos($where_conditions = array(), $from = "", $to = "")
+    {
+        $db_files = $this->_archivos_query_recuros($where_conditions, $from, $to);
+
+        $arbol = [];
+        $items = [];
+
+        if ($db_files) {
+
+            // Preparamos el array con los datos
+            foreach ($db_files as $row) {
+                // Verificamos si es un folder o un archivo
+                $isFolder = ($row['folder'] == 'carpeta') ? true : false;
+
+                $items[$row['node_key']] = [
+                    'key' => $row['node_key'],
+                    'title' => $row['title'],
+                    'children' => [],
+                    'folder' => $isFolder,  // true si es una carpeta, false si es un archivo
+                    'url' => $row['arc_ruta'],
+                ];
+            }
+
+            // Ahora creamos las relaciones entre padres e hijos
+            foreach ($items as $key => &$item) {
+                $parent_id = $this->getParentId($key, $db_files);
+
+                if ($parent_id !== null) {
+                    $items[$parent_id]['children'][] = &$item;
+                } else {
+                    $arbol[] = &$item;
+                }
+            }
+        }
+
+        return $arbol;
+    }
+
+     // Función auxiliar para obtener el padre de un nodo
+     private function getParentId($key, $data)
+     {
+         foreach ($data as $row) {
+             if ($row['node_key'] == $key) {  // Usamos node_key en lugar de key
+                 return $row['arc_id_padre'] ? $row['arc_id_padre'] : null;
+             }
+         }
+         return null;
+     }
 
     /**
      * Setup the db connection.
@@ -10395,14 +10480,14 @@ class imPrivateArea
             $this->db->createTable(
                 $this->db_table,
                 array(
-                    "arc_id"        => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
-                    "arc_fecha_creacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
-                    "arc_fecha_modificacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
-                    "arc_nombre" => array('type' => 'TEXT', "default" => "NULL"),
-                    "arc_ruta"  => array('type' => 'TEXT', "default" => "."),
-                    "arc_usuario_id"  => array('type' => 'TEXT', "default" => "."),
-                    "arc_tipo"  => array('type' => 'TEXT', "default" => "."),
-                    "arc_id_padre" => array('type' => 'INT(1)'),
+                    "arc_id"                  => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
+                    "arc_nombre"              => array('type' => 'TEXT', "default" => 'NULL'),
+                    "arc_ruta"                => array('type' => 'TEXT', "default" => '.'),
+                    "arc_usuario_id"          => array('type' => 'TEXT', "default" => '.'),
+                    "arc_tipo"                => array('type' => 'TEXT', "default" => '.'),
+                    "arc_id_padre"            => array('type' => 'INT(10)', 'more' => 'NULL', "default" => 'NULL'),
+                    "arc_fecha_creacion"      => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "arc_fecha_modificacion"  => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
                 )
             );
             // Compatibility: the realname field used in the old tables

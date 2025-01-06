@@ -41,14 +41,22 @@
 		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
+
+		<!-- Para las librerias utilizadas -->
+
+		<link rel="stylesheet" href="libs/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/fancytree/skin-lion/ui.fancytree.css">
+
+
+		<script src="libs/bootstrap.bundle.min.js"></script>
+		<script src="libs/jquery.fancytree-all-deps.min.js"></script>
+
 	</head>
-	<body <!-- Google Tag Manager (noscript) -->
+	<body>
 
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-<!-- End Google Tag Manager (noscript) -->>
+<!-- End Google Tag Manager (noscript) -->
 		<div id="imPageExtContainer">
 			<div id="imPageIntContainer">
 				<div id="imHeaderBg"></div>
@@ -88,12 +96,17 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 
 </script>
 </div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
-</div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
+</div></div></div>
+
+<div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 -->
+	<div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
             loginlogout_imHeader_pluginAppObj_04();
         </script>
-       </div></div></div>
+    </div>
+</div></div>
+
 					</header>
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
@@ -139,11 +152,13 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 </div></div></div></div>
 					</div>
 					<div id="imContentGraphics"></div>
+					
 					<main id="imContent">
 						<a id="imGoToCont"></a>
 						<header>
 							<h2 id="imPgTitle">Recursos</h2>
 						</header>
+
 						<div id="imPageRow_1" class="imPageRow">
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_1"><div id="imPageRowGraphicsVideo_1_wrapper"><video id="imPageRowGraphicsVideo_1" class="imPageRowGraphicsVideo" src="video/medium-185096.mp4" autoplay loop playsinline muted></video>
 						<script>
@@ -161,22 +176,72 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</script>
 						</div></div></div>
 						</div>
+
+						
 						<div id="imCell_2" class=""> <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imObjectTitle_13_02"><span id ="imObjectTitle_13_02_text" >BENEFICIOS PARA LAS INSTITUCIONES EDUCATIVAS FEDERADAS</span></div></div><div id="imCell_12" class=""> <div id="imCellStyleGraphics_12"></div><div id="imCellStyleBorders_12"></div><!-- Simple Separator v.2 --><div id="pluginAppObj_13_12">
 						            <div style="width: 100%; height: 100px"></div>
 						        </div></div><div id="imPageRow_2" class="imPageRow">
 						
 						</div>
-						<div id="imCell_11" class=""> <div id="imCellStyleGraphics_11"></div><div id="imCellStyleBorders_11"></div><div id="imTextObject_13_11">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_13_11_tab0" style="opacity: 1; ">
+
+						<style>
+							.borde {
+								box-shadow: 0 4px 8px 0 rgba(184, 113, 29, 0.8); /* Sombra color tomate */
+								border: 1px solid rgba(255, 99, 71, 0.5); /* (Opcional) Borde color tomate */
+								border-radius: 8px; /* (Opcional) Esquinas redondeadas */
+							}
+						</style>
+
+						<div id="imCell_11" class=""> 
+							<div id="imTextObject_13_11">
+								<div class="container mt-5">
+									
+									<div class="row pt-3">
+										<div class="col-6">
+											<div class="mb-3">
+												<input type="text" id="tree-search" class="form-control"
+													placeholder="Buscar archivos o carpetas...">
+											</div>
+
+											<div id="fancytree-container" class=""></div>
+										</div>
+
+										<div class="col-6">
+											<div class="d-flex justify-content-center">
+												<iframe class="borde" src='' id="iframe_recursos_pdf" frameborder="0" width="900px" height="700px"></iframe>
+											</div>
+										</div>
+									</div>
+								</div>							
+
+							<div data-index="0"  class="text-tab-content grid-prop current-tab pt-5"  id="imTextObject_13_11_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div class="imTACenter"><span class="fs48lh1-5 cf1 ff1">Te perdiste alguna charla….no hay problema, pensamos en ti</span></div>
+									<div class="imTACenter"><span class="fs48lh1-5 cf1 ff1">Si no pudiste asistir a alguna de las charlas, no te preocupes. Hemos preparado los documentos correspondientes para que puedas ponerte al día con todo el contenido.</span></div>
 								</div>
 							</div>
 						
 						</div>
-						</div><div id="imCell_18" class=""> <div id="imCellStyleGraphics_18"></div><div id="imCellStyleBorders_18"></div><div id="imObjectImage_13_18"><div id="imObjectImage_13_18_container"><img src="images/large-5662435.webp" title="" alt="" width="530" height="353" />
-						</div></div></div><div id="imCell_23" class=""> <div id="imCellStyleGraphics_23"></div><div id="imCellStyleBorders_23"></div><div id="imObjectButton_13_23"><button type="button" id="imObjectButton_13_23_button" onclick="x5engine.utils.imPopUpWin('https://drive.google.com/drive/folders/17xB-nMg95dVh1rNfgmuFkXtgG2DoNzhc?usp=sharing', '', -1, -1, true);">Repositorio de capacitaciones</button></div></div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><div id="imObjectButton_13_22"><button type="button" id="imObjectButton_13_22_button" onclick="x5engine.utils.location('fotos.php', null, false);">Memorias 2024 - 2028</button></div></div>
+						</div>
+
+						<div id="imCell_18" class=""> 
+							<div id="imCellStyleGraphics_18"></div>
+							<div id="imCellStyleBorders_18"></div>
+							<div id="imObjectImage_13_18">
+								<!-- <div id="imObjectImage_13_18_container">
+									<img src="images/large-5662435.webp" title="" alt="" width="530" height="353" />
+								</div> -->
+							</div>
+						</div>
+
+						
+
+						
+						<div id="imCell_23" class=""> <div id="imCellStyleGraphics_23"></div><div id="imCellStyleBorders_23"></div><div id="imObjectButton_13_23"><button type="button" id="imObjectButton_13_23_button" onclick="x5engine.utils.imPopUpWin('https://drive.google.com/drive/folders/17xB-nMg95dVh1rNfgmuFkXtgG2DoNzhc?usp=sharing', '', -1, -1, true);">Repositorio de capacitaciones</button></div></div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><div id="imObjectButton_13_22"><button type="button" id="imObjectButton_13_22_button" onclick="x5engine.utils.location('fotos.php', null, false);">Memorias 2024 - 2028</button></div></div>
+
+						
 					</main>
+
+
 					<footer id="imFooter">
 						<div id="imFooterObjects"><div id="imFooter_imTextObject_06_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_06">
 	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_06_tab0" style="opacity: 1; ">
@@ -228,5 +293,54 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		</div>
 		
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
+	
+	<!-- <script src="libs/bootstrap.bundle.min.js"></script>
+	<script src="libs/jquery.fancytree-all-deps.min.js"></script> -->
+
+	<style>
+        /* Ocultar checkbox en carpetas */
+        .fancytree-node.fancytree-folder .fancytree-checkbox {
+            display: none;
+        }
+    </style>
+	
+    <script>
+        $(document).ready(function() {
+            $("#fancytree-container").fancytree({
+                extensions: ["edit", "filter"],
+                //quicksearch: true,
+                source: { //function (event, data) {
+                    url: 'admin/archivos.php?listArchivos=true'
+                },
+                checkbox: true, 
+                selectMode: 1, 
+                icons: true,
+                select: function(event, data) {
+                    var node = data.node; // Nodo seleccionado
+                    var url = (data.node.data.url);
+                    definir_ruta_iframe_referencias_laborales(url);
+                },
+            });
+
+            // Función de búsqueda
+            $("#tree-search").on("keyup", function() {
+                var tree = $.ui.fancytree.getTree("#fancytree-container");
+                var match = $(this).val();
+                if (match) {
+                    tree.filterNodes(match, {
+                        autoExpand: true
+                    }); 
+                } else {
+                    tree.clearFilter();
+                }
+            });
+        });
+
+        function definir_ruta_iframe_referencias_laborales(url) {
+            url_def = 'REPOSITORIO' + url
+            var cambiar_ruta = $('#iframe_recursos_pdf').attr('src', url_def);
+        }
+    </script>
+
 	</body>
 </html>

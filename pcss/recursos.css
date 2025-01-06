@@ -7,6 +7,13 @@
     grid-template-rows: 100px auto 180px
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* 12 columnas */
+    gap: 10px; /* Espacio entre celdas */
+    grid-template-rows: auto; /* Tamaño automático de las filas */
+}
+
 #imHeader {
     display: block;
     grid-column: 2/3;
@@ -175,7 +182,7 @@
 
 #imCell_11 {
     display: grid;
-    grid-column: 2/26;
+    grid-column: 1/51;
     grid-row: 5/6
 }
 
@@ -2029,8 +2036,8 @@ h2#imPgTitle {
 
 #imTextObject_13_11_tab0 .fs48lh1-5 {
     vertical-align: baseline;
-    font-size: 48pt;
-    line-height: 96px
+    font-size: 18pt;
+    line-height: 10px
 }
 
 #imTextObject_13_11_tab0 .cf1 {
