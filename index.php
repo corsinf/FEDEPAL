@@ -29,7 +29,7 @@
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'index.php';
 		</script>
-		GTM-TR6L3QCK
+		<!-- GTM-TR6L3QCK -->
 		<link rel="icon" href="favicon.png?2024-4-8-0-638709142472539160" type="image/png" />
 		<meta http-equiv="refresh" content="4; url=home.html">
 		<!-- Google Tag Manager -->
