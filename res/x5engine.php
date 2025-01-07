@@ -10644,6 +10644,8 @@ class imPrivateArea
             }       
             $ruta = $nuevo_nom;
         }
+
+        $ruta = str_replace('../',"",$ruta);
         return $this->createSocios($data,$ruta);
     }
 
@@ -10699,14 +10701,14 @@ class imPrivateArea
             $uploadfile_temporal=$file['txt_archivo']['tmp_name'];
             // $tipoImg = explode('.',$file['txt_archivo']['name']);
             $imagen = str_replace(' ','_',$file['txt_archivo']['name']);
-            $nuevo_nom = $ruta_general.'/'.$imagen;
+            $nuevo_nom = $ruta_general.$imagen;
             if (is_uploaded_file($uploadfile_temporal))
             {
                 move_uploaded_file($uploadfile_temporal,$nuevo_nom);
             }       
             $ruta = $nuevo_nom;
-        }
-        
+        }        
+        $ruta = str_replace('../',"",$ruta);        
         return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre_id);
     }
 
