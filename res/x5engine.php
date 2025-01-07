@@ -9768,6 +9768,11 @@ class imPrivateArea
         $where_conditions['arc_tipo'] = $ids;
         return $this->_get_db_archivos($where_conditions, $from, $to);
     }
+    public function getCArpetasVideos($ids = "", $from = "", $to = "")
+    {
+        $where_conditions['vid_tipo'] = $ids;
+        return $this->_get_db_videos($where_conditions, $from, $to);
+    }
 
     public function getArchivosById($ids = array(), $from = "", $to = "")
     {
@@ -9785,6 +9790,24 @@ class imPrivateArea
             $where_conditions['arc_id'] = $id_condition;
         }
         return $this->_get_db_archivos($where_conditions, $from, $to);
+    }
+
+    public function getVideosById($ids = array(), $from = "", $to = "")
+    {
+        if (is_string($ids)) {
+            if (strlen($ids)) {
+                $ids = array_map('trim', explode(',', $ids));
+            } else {
+                $ids = array();
+            }
+        }
+        $ids_count = count($ids);
+        $where_conditions = array();
+        $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
+        if ($id_condition) {
+            $where_conditions['vid_id'] = $id_condition;
+        }
+        return $this->_get_db_videos($where_conditions, $from, $to);
     }
 
     public function getArchivosRecursos($ids = "", $from = "", $to = "")
@@ -9885,6 +9908,27 @@ class imPrivateArea
 
             return $this->db->select(array(
                 'select' => array('arc_id','arc_nombre','arc_ruta','arc_usuario_id','arc_fecha_creacion','arc_fecha_modificacion','arc_tipo','arc_id_padre'),
+                'from' => $this->db_table,
+                'where' => $where_conditions,
+                'where_flat' => $flat_conditions
+            ));
+        }
+        return false;
+    }
+
+    private function _videos_query($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            $flat_conditions = array();
+            if (strlen($from)) {
+                $flat_conditions[] = "`ts` >= '" . $this->db->escapeString($from) . "'";
+            }
+            if (strlen($to)) {
+                $flat_conditions[] = "`ts` <= '" . $this->db->escapeString($to) . "'";
+            }
+
+            return $this->db->select(array(
+                'select' => array('vid_id','vid_nombre','vid_ruta','vid_usuario_id','vid_fecha_creacion','vid_fecha_modificacion','vid_tipo','vid_id_padre'),
                 'from' => $this->db_table,
                 'where' => $where_conditions,
                 'where_flat' => $flat_conditions
@@ -10038,6 +10082,31 @@ class imPrivateArea
         return $files;
     }
 
+    private function _get_db_videos($where_conditions = array(), $from = "", $to = "")
+    {
+        $files = array();
+        $db_files = $this->_videos_query($where_conditions, $from, $to);
+        // print_r($db_files);die();
+        if ($db_files) {
+            $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
+            $ecommerce = Configuration::getCart();
+            foreach ($db_files as $user) {
+                $files[] = array(
+                'id'                => $user['vid_id'],
+                'nombre'            => $user['vid_nombre'],
+                'ruta'              => $user['vid_ruta'],
+                'usuario_id'        => $user['vid_usuario_id'],
+                'fecha_creacion'    => $user['vid_fecha_creacion'],
+                'fecha_modificacion'=> $user['vid_fecha_modificacion'],
+                'tipo'              => $user['vid_tipo'],
+                'id_padre'          => $user['vid_id_padre']                    
+                );
+            }
+        }
+        // print_r($files);die();
+        return $files;
+    }
+
     private function _get_db_archivos_recursos($where_conditions = array(), $from = "", $to = "")
     {
         $db_files = $this->_archivos_query_recuros($where_conditions, $from, $to);
@@ -10131,6 +10200,18 @@ class imPrivateArea
             $this->db_table = $dbtable;
             $this->data_db_table = $datadbtable;
             $this->createArchivosTable();
+            return $this->db;
+        }
+        die("Unable to connect to DB");
+    }
+
+    public function setDBDataVideos($db, $dbtable, $datadbtable)
+    {
+        $this->db = $db;
+        if ($this->db->testConnection()) {
+            $this->db_table = $dbtable;
+            $this->data_db_table = $datadbtable;
+            $this->createVideosTable();
             return $this->db;
         }
         die("Unable to connect to DB");
@@ -10502,6 +10583,32 @@ class imPrivateArea
             }
         }
     }
+
+    public function createVideosTable()
+    {
+        // print_r($this->db_table);
+        if ($this->db) {
+            $this->db->createTable(
+                $this->db_table,
+                array(
+                    "vid_id"                  => array('type' => 'INT(11)', 'primary' => true, 'auto_increment' => true),
+                    "vid_nombre"              => array('type' => 'TEXT', "default" => 'NULL'),
+                    "vid_ruta"                => array('type' => 'TEXT', "default" => '.'),
+                    "vid_usuario_id"          => array('type' => 'TEXT', "default" => '.'),
+                    "vid_tipo"                => array('type' => 'TEXT', "default" => '.'),
+                    "vid_id_padre"            => array('type' => 'INT(10)', 'more' => 'NULL', "default" => 'NULL'),
+                    "vid_fecha_creacion"      => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                    "vid_fecha_modificacion"  => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
+                )
+            );
+            // Compatibility: the realname field used in the old tables
+            // did not set a default text...so it fails during inserts
+            $col = $this->db->tableColumns(array('table'=>$this->db_table, 'like' => 'realname'));
+            if (is_array($col) && count($col)) {
+                $this->db->query("ALTER TABLE `" . $this->db->table($this->db_table) . "` CHANGE `realname` `realname` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL");
+            }
+        }
+    }
     public function createSociosTable()
     {
         // print_r($this->db_table);
@@ -10681,7 +10788,7 @@ class imPrivateArea
            $dt = $this->getSociosById(array($id));
            $ruta = $dt[0]['foto'];
         }
-        
+
         $ruta = str_replace('../',"",$ruta);
         return $this->UpdateSocios($data,$ruta,$id);
     }
@@ -10712,6 +10819,22 @@ class imPrivateArea
         }        
         $ruta = str_replace('../',"",$ruta);        
         return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre_id);
+    }
+
+    public function registerNewVideos($post)
+    {
+        // print_r($post);die();
+        $ruta_general = $this->patch_files($post);
+        $nombre = $post['txt_titulo'];
+        $ruta = '';
+        $user = '';
+        $tipo = $post['ddl_tipo'];
+        $padre_id = $post['ddl_carpeta'];
+        $padre_nom = $post['txt_nombre_carpeta'];
+        $imSettings = Configuration::getSettings();
+       
+        $ruta = $post['txt_url'];        
+        return $this->createvideos($nombre,$ruta,$user,$tipo,$padre_id);
     }
 
     function patch_files($post)
@@ -10783,6 +10906,23 @@ class imPrivateArea
                 'arc_fecha_modificacion' =>date('Y-m-d'),
                 'arc_tipo' =>$tipo,
                 'arc_id_padre' =>$padre,
+            )
+        ));
+        return $this->db->lastInsertId();
+    }
+
+    public function createVideos($nombre,$ruta,$user,$tipo,$padre)
+    {
+        $this->db->insert(array(
+            'into' => $this->db_table,
+            'values' => array(
+                'vid_nombre' =>$nombre,
+                'vid_ruta' =>$ruta,
+                'vid_usuario_id' =>$user,
+                'vid_fecha_creacion' =>date('Y-m-d'),
+                'vid_fecha_modificacion' =>date('Y-m-d'),
+                'vid_tipo' =>$tipo,
+                'vid_id_padre' =>$padre,
             )
         ));
         return $this->db->lastInsertId();
