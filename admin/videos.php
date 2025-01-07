@@ -42,7 +42,7 @@ if (isset($_GET['validationemail'])) {
 	exit;
 }
 if (isset($_GET['delete'])) {
-	$pa->deleteArchivos($_GET['delete']);
+	$pa->deleteVideos($_GET['delete']);
 	echo "<script>location.href='videos.php?ok';</script>";
 	exit;
 }

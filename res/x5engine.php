@@ -11045,6 +11045,16 @@ class imPrivateArea
         }
     }
 
+    public function deleteVideos($id)
+    {
+        if ($this->db) {
+            $this->db->delete(array(
+                'from' => $this->db_table,
+                'where' => array('vid_id' => $id)
+            ));
+        }
+    }
+
     /**
      * Notify the registration of a new user to the site's owner.
      * This method is only available in the **Professional edition**.

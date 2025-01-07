@@ -24,7 +24,7 @@
 			<td class="no-phone"><?php echo formatDate(DateTimeImmutable::createFromFormat("Y-m-d H:i:s", $user['fecha_creacion']), false, true, true) ?></td>
 			
 			<td class="<?php echo $i % 2 ? 'even-dark' : 'odd-dark' ?>">			
-				<a class="fa margin-left icon-large fa-times fore-red" href="archivos.php?delete=<?php echo urlencode($user['id']) ?>" onclick="return confirm('<?php echo str_replace("'", "\\'", l10n("private_area_confirm_remove", "Do you want to remove this user?")) ?>');" title="<?php echo l10n("private_area_remove_user", "Remove this user") ?>"></a>
+				<a class="fa margin-left icon-large fa-times fore-red" href="videos.php?delete=<?php echo urlencode($user['id']) ?>" onclick="return confirm('<?php echo str_replace("'", "\\'", l10n("private_area_confirm_remove", "Do you want to remove this user?")) ?>');" title="<?php echo l10n("private_area_remove_user", "Remove this user") ?>"></a>
 			</td>
 		</tr>
 	<?php endforeach; ?>
