@@ -18,12 +18,23 @@
 						<div class="padding-left fore-color-1">Celular de Institucion</div>
 						<input class="border border-mute-light background-transparent" placeholder="Celular Institucion" type="text" name="txt_celular_ins" id="txt_celular_ins" value="<?php echo $data['telefono_ins2']; ?>" style="width:100%;">
 					</td>
-				<tr>
 				</tr>
+				<tr>
+					<td class="small div-phone" colspan="2">
+						<div class="padding-left fore-color-1">Url Institucion</div>
+						<input class="border border-mute-light background-transparent" placeholder="Url institucion" type="text" name="txt_url_inst" id="txt_url_inst" value="<?php echo $data['url']; ?>" style="width:100%;">
+					</td>
+					<td class="small div-phone">
+						<div class="padding-left fore-color-1">Region</div>
+						<input class="border border-mute-light background-transparent" placeholder="Region" type="text" name="txt_region" id="txt_region" value="<?php echo $data['url']; ?>" style="width:100%;">
+					</td>
+				</tr>
+				<tr>
 					<td class="small div-phone" colspan="4">
 						<div class="padding-left fore-color-1">Direccion Institucion</div>
 						<textarea class="border border-mute-light background-transparent" name="txt_direccion_ins" id="txt_direccion_ins" style="width: 99%;" rows="3" placeholder="Direccion Institucion"><?php echo $data['direccion']; ?></textarea>	
 					</td>
+				
 				</tr>		
 				<tr class="div-phone">
 					<td class="small div-phone" colspan="2">
@@ -58,6 +69,8 @@
 						<div class="padding-left fore-color-1">Telefono de replegal</div>
 						<input class="border border-mute-light background-transparent" placeholder="Telefono replegal" type="text" name="txt_telefono_rep" id="txt_telefono-rep" value="<?php echo $data['telefonoRep']; ?>" style="width:100%;">
 					</td>
+					
+					
 					
 				</tr>
 				<tr class="div-phone">
@@ -96,8 +109,18 @@
 						<div class="padding-left fore-color-1">Celular de Institucion</div>
 						<input class="border border-mute-light background-transparent" placeholder="Celular Institucion" type="text" name="txt_celular_ins" id="txt_celular_ins" value="" style="width:100%;">
 					</td>
-				<tr>
 				</tr>
+				<tr>
+					<td class="small div-phone" colspan="2">
+						<div class="padding-left fore-color-1">Url Institucion</div>
+						<input class="border border-mute-light background-transparent" placeholder="Url institucion" type="text" name="txt_url_inst" id="txt_url_inst" style="width:100%;">
+					</td>
+					<td class="small div-phone">
+						<div class="padding-left fore-color-1">Region</div>
+						<input class="border border-mute-light background-transparent" placeholder="Region" type="text" name="txt_region" id="txt_region" style="width:100%;">
+					</td>
+				</tr>
+				<tr>
 					<td class="small div-phone" colspan="4">
 						<div class="padding-left fore-color-1">Direccion Institucion</div>
 						<textarea class="border border-mute-light background-transparent" name="txt_direccion_ins" id="txt_direccion_ins" style="width: 99%;" rows="3" placeholder="Direccion Institucion"></textarea>	

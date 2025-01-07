@@ -25,6 +25,7 @@ if (isset($_GET['saveNews'])) {
 	}else
 	{		
 		$res = $pa->registerNewSocios($_POST,$_FILES);
+		// print_r($res);die();
 	}
 	if ($res > 0)
 	{

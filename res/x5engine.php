@@ -9859,6 +9859,8 @@ class imPrivateArea
                                     "usu_telefono_replegal" ,
                                     "usu_cedula_replegal" ,
                                     "usu_foto_colegio" ,
+                                    "usu_url_colegio",
+                                    "usu_region",
                                     "usu_estado",
                                     "usu_fecha_creacion",
                                     "usu_fecha_modificacion" ),
@@ -10000,6 +10002,8 @@ class imPrivateArea
                   "telefonoRep"  =>$user["usu_telefono_replegal"],
                   "cedula"  =>$user["usu_cedula_replegal"],
                   "foto"  =>$user["usu_foto_colegio"],
+                  "url" => $user['usu_url_colegio'],
+                  "region" => $user['usu_region'],
                   "estado"  =>$user["usu_estado"],
                   "fecha"  =>$user["usu_fecha_creacion"],
                   "modificacion"  =>$user["usu_fecha_modificacion"],
@@ -10518,6 +10522,8 @@ class imPrivateArea
                     "usu_telefono_replegal" => array('type' => 'TEXT', "default" => "NULL"),
                     "usu_cedula_replegal" => array('type' => 'TEXT', "default" => "NULL"),
                     "usu_foto_colegio" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_url_colegio" => array('type' => 'TEXT', "default" => "NULL"),
+                    "usu_region" => array('type' => 'TEXT', "default" => "NULL"),
                     "usu_estado" => array('type' => 'INT(1)'),
                     "usu_fecha_creacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL'),
                     "usu_fecha_modificacion"        => array('type' => 'TIMESTAMP', 'more' => 'NULL')                   
@@ -10758,6 +10764,7 @@ class imPrivateArea
     }
     public function createSocios($data,$rutafile)
     {
+        // print_r($data);die();
         $this->db->insert(array(
             'into' => $this->db_table,
             'values' => array(
@@ -10773,6 +10780,8 @@ class imPrivateArea
                 "usu_telefono_replegal" => $data['txt_telefono_rep'],
                 "usu_cedula_replegal" => $data['txt_cedula_rep'],
                 "usu_foto_colegio" =>$rutafile,
+                "usu_url_colegio" =>$data['txt_url_inst'],
+                "usu_region" => $data['txt_region'], 
                 "usu_estado" => 1,
                 "usu_fecha_creacion"        => date('Y-m-d'),
                 "usu_fecha_modificacion"        => date('Y-m-d'), 
@@ -10798,6 +10807,8 @@ class imPrivateArea
                     "usu_telefono_replegal" => $data['txt_telefono_rep'],
                     "usu_cedula_replegal" => $data['txt_cedula_rep'],
                     "usu_foto_colegio" =>$rutafile,
+                    "usu_url_colegio" => $data['txt_url_inst'],
+                    "usu_region" => $data['txt_region'],
                     "usu_estado" => 1,
                     "usu_fecha_modificacion" => date('Y-m-d'), 
                 ),
