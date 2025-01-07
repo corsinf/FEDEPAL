@@ -10635,9 +10635,9 @@ class imPrivateArea
             // print_r($file);die();
 
             $uploadfile_temporal=$file['txt_img']['tmp_name'];
-            // $tipoImg = explode('.',$file['txt_archivo']['name']);
+            $tipoImg = explode('.',$file['txt_img']['name']);
             $imagen = str_replace(' ','_',$file['txt_img']['name']);
-            $nuevo_nom = $patch.'/'.$imagen;
+            $nuevo_nom = $patch.'/'.str_replace(" ","_", $data['txt_nombre_ins']).'.'.$tipoImg[1];
             if (is_uploaded_file($uploadfile_temporal))
             {
                 move_uploaded_file($uploadfile_temporal,$nuevo_nom);
@@ -10665,9 +10665,9 @@ class imPrivateArea
             // print_r($file);die();
 
             $uploadfile_temporal=$file['txt_img']['tmp_name'];
-            // $tipoImg = explode('.',$file['txt_archivo']['name']);
+            $tipoImg = explode('.',$file['txt_img']['name']);
             $imagen = str_replace(' ','_',$file['txt_img']['name']);
-            $nuevo_nom = $patch.'/'.$imagen;
+            $nuevo_nom = $patch.'/'.str_replace(" ","_", $data['txt_nombre_ins']).'.'.$tipoImg[1];
             if (is_uploaded_file($uploadfile_temporal))
             {
                 move_uploaded_file($uploadfile_temporal,$nuevo_nom);
