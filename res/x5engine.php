@@ -9815,6 +9815,11 @@ class imPrivateArea
         return $this->_get_db_archivos_recursos('', $from, $to);
     }
 
+    public function getArchivosVideos($ids = "", $from = "", $to = "")
+    {
+        return $this->_get_db_archivos_videos('', $from, $to);
+    }
+
     private function _user_query($where_conditions = array(), $from = "", $to = "")
     {
         if ($this->db) {
@@ -9949,7 +9954,7 @@ class imPrivateArea
                                             arc_id_padre, 
                                             arc_tipo AS folder
                                         FROM $this->db_table
-                                        WHERE arc_id_padre IS NULL  -- Comienza desde la raíz (carpetas principales)
+                                        WHERE arc_id_padre = 0  -- Comienza desde la raíz (carpetas principales)
                                         
                                         UNION ALL
                                         
@@ -9961,6 +9966,36 @@ class imPrivateArea
                                             a.arc_tipo AS folder
                                         FROM $this->db_table a
                                         INNER JOIN tree t ON a.arc_id_padre = t.node_key  -- Usamos node_key en lugar de key
+                                    )
+                                    SELECT * FROM tree;");
+        }
+        
+        return false;
+    }
+
+    private function _archivos_query_videos($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            return $this->db->query("WITH RECURSIVE tree AS (
+                                        SELECT 
+                                            vid_id AS node_key,  -- Usamos node_key en lugar de key
+                                            vid_nombre AS title, 
+                                            vid_ruta, 
+                                            vid_id_padre, 
+                                            vid_tipo AS folder
+                                        FROM $this->db_table
+                                        WHERE vid_id_padre = 0  -- Comienza desde la raíz (carpetas principales)
+                                        
+                                        UNION ALL
+                                        
+                                        SELECT 
+                                            a.vid_id AS node_key,  -- Usamos node_key en lugar de key
+                                            a.vid_nombre AS title, 
+                                            a.vid_ruta, 
+                                            a.vid_id_padre, 
+                                            a.vid_tipo AS folder
+                                        FROM $this->db_table a
+                                        INNER JOIN tree t ON a.vid_id_padre = t.node_key  -- Usamos node_key en lugar de key
                                     )
                                     SELECT * FROM tree;");
         }
@@ -10145,6 +10180,44 @@ class imPrivateArea
         return $arbol;
     }
 
+    private function _get_db_archivos_videos($where_conditions = array(), $from = "", $to = "")
+    {
+        $db_files = $this->_archivos_query_videos($where_conditions, $from, $to);
+
+        $arbol = [];
+        $items = [];
+
+        if ($db_files) {
+
+            // Preparamos el array con los datos
+            foreach ($db_files as $row) {
+                // Verificamos si es un folder o un archivo
+                $isFolder = ($row['folder'] == 'carpeta') ? true : false;
+
+                $items[$row['node_key']] = [
+                    'key' => $row['node_key'],
+                    'title' => $row['title'],
+                    'children' => [],
+                    'folder' => $isFolder,  // true si es una carpeta, false si es un archivo
+                    'url' => $row['vid_ruta'],
+                ];
+            }
+
+            // Ahora creamos las relaciones entre padres e hijos
+            foreach ($items as $key => &$item) {
+                $parent_id = $this->getParentIdVideos($key, $db_files);
+
+                if ($parent_id !== null) {
+                    $items[$parent_id]['children'][] = &$item;
+                } else {
+                    $arbol[] = &$item;
+                }
+            }
+        }
+
+        return $arbol;
+    }
+
      // Función auxiliar para obtener el padre de un nodo
      private function getParentId($key, $data)
      {
@@ -10155,6 +10228,17 @@ class imPrivateArea
          }
          return null;
      }
+
+      // Función auxiliar para obtener el padre de un nodo
+      private function getParentIdVideos($key, $data)
+      {
+          foreach ($data as $row) {
+              if ($row['node_key'] == $key) {  // Usamos node_key en lugar de key
+                  return $row['vid_id_padre'] ? $row['vid_id_padre'] : null;
+              }
+          }
+          return null;
+      }
 
     /**
      * Setup the db connection.

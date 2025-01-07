@@ -30,7 +30,7 @@ if (isset($_GET['saveVideo'])) {
 
 if (isset($_GET['listArchivos'])) {
 
-	echo json_encode($pa->getArchivosRecursos());
+	echo json_encode($pa->getArchivosVideos());
 
 	exit();
 }

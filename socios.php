@@ -172,1012 +172,71 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 							</div>
 						
 						</div>
-						</div><div id="imCell_127" class=""> <div id="imCellStyleGraphics_127"></div><div id="imCellStyleBorders_127"></div><div id="imObjectPortfolio_14_127">
-						  <div class="portfolio">
-						    <div class="portfolio__container">
-						  <div class="portfolio__category-bar">
-						    <ul class="portfolio__category-bar__nav">
-						      <li><a data-category-id="*" href="#">Todas las categor&#237;as</a></li>
-						      <li><a data-category-id="087slr7i" href="#">Sierra</a></li>
-						      <li><a data-category-id="z0yjwlp1" href="#">Amazon&#237;a</a></li>
-						    </ul>
-						  </div>
-						  <div class="portfolio__search-bar">
-						      <div class="portfolio__search-bar__search-field">
-						        <input type="text" placeholder="Buscar...">
-						        <div class="portfolio__search-bar__search-field__img">
-						          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250.313 250.313" xml:space="preserve"><g><path style="fill-rule:evenodd;clip-rule:evenodd;" d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911	c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38	c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146	c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z"></path></g></svg>
-						        </div>
-						      </div>
-						    <div class="portfolio__search-bar__sort-field">
-						          <ul>
-						            <li class="portfolio__search-bar__sort-field__text">
-						              <div>Ordenar por: <span>Predefinido</span></div>
-						              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="11.97px" height="11.97px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.811 240.811" xml:space="preserve"><g><path d="M220.088,57.667l-99.671,99.695L20.746,57.655c-4.752-4.752-12.439-4.752-17.191,0 c-4.74,4.752-4.74,12.451,0,17.203l108.261,108.297l0,0l0,0c4.74,4.752,12.439,4.752,17.179,0L237.256,74.859 c4.74-4.752,4.74-12.463,0-17.215C232.528,52.915,224.828,52.915,220.088,57.667z"></path></g></svg>
-						            </li>
-						            <li class="portfolio__search-bar__sort-field__dropdown">
-						              <ul>
-						                <li data-value="default">Predefinido</li>
-						                <li data-value="date_desc">M&#225;s reciente</li>
-						                <li data-value="date_asc">M&#225;s antiguo </li>
-						                <li data-value="title">T&#237;tulo</li>
-						              </ul>
-						            </li>
-						          </ul>
-						    </div>
-						  </div>
-						      <div class="portfolio__container-items hidden">
-						<div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="0" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Angel-de-la-Guarda.webp" alt="" width="800" height="777">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA DE EDUCACIÓN BÁSICA ÁNGEL DE LA GUARDA </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA DE EDUCACIÓN BÁSICA ÁNGEL DE LA GUARDA</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/angeldelaguardaciag/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/angeldelaguardaciag/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="1" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">COLEGIO JOHANNES KEPLER </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">COLEGIO JOHANNES KEPLER</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.jkepler.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.jkepler.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="2" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/COLEGIO-PARTICULAR-BATALLA-DE-JAMBEL-.webp" alt="" width="804" height="930">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">COLEGIO PARTICULAR "BATALLA DE JAMBELÍ" </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">COLEGIO PARTICULAR "BATALLA DE JAMBELÍ"</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/ColegioBatalladeJambeli/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/ColegioBatalladeJambeli/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="3" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LEON COOPER </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LEON COOPER</div>
-						          <div class="portfolio__card__overlay__button"> <a href="http://www.colegiocooper.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'http://www.colegiocooper.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="4" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LUDOTECA PADRE VICTOR GRADOS CIA. LTDA. </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LUDOTECA PADRE VICTOR GRADOS CIA. LTDA.</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.ibo.org/es/school/002998" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.ibo.org/es/school/002998', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="5" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR "DE AMERICA MARÍA A. CARRILLO DE MATA M." </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR "DE AMERICA MARÍA A. CARRILLO DE MATA M."</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://losmejorescolegios.com/ec/colegio-ecuador/unidad-educativa-particular-de-america-maria-a-carrillo-de-mata-m-quito/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://losmejorescolegios.com/ec/colegio-ecuador/unidad-educativa-particular-de-america-maria-a-carrillo-de-mata-m-quito/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="6" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-ACADEMIA-ALIANZA-INTERNACIONAL.webp" alt="" width="806" height="303">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ACADEMIA ALIANZA INTERNACIONAL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ACADEMIA ALIANZA INTERNACIONAL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://alliance.k12.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://alliance.k12.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="7" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Antonio-Flores.webp" alt="" width="801" height="978">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ANTONIO FLORES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ANTONIO FLORES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://ceiaf.edu.ec/
-						" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://ceiaf.edu.ec/
-						', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="8" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Log-Apch2.webp" alt="" width="441" height="503">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR BILINGÜE ÁNGEL POLIBIO CHAVES (APCH) </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR BILINGÜE ÁNGEL POLIBIO CHAVES (APCH)</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://ueapch.net/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://ueapch.net/', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="9" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/INSTITUCI-N-EDUCATIVA-DE-LAS-AM-RICAS.webp" alt="" width="924" height="1183">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">INSTITUCIÓN EDUCATIVA DE LAS AMÉRICAS </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">INSTITUCIÓN EDUCATIVA DE LAS AMÉRICAS</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.delasamericas.net/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.delasamericas.net/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="10" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Atenas-School.webp" alt="" width="828" height="278">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR ATENAS SCHOOL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR ATENAS SCHOOL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.atenas-school.edu.ec/#0" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.atenas-school.edu.ec/#0', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="11" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Benedetti.webp" alt="" width="851" height="704">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA DE EDUCACIÓN BÁSICA MARIO BENEDETTI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA DE EDUCACIÓN BÁSICA MARIO BENEDETTI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="http://benedetti.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'http://benedetti.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="12" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA DE EDUCACIÓN BÁSICA ESTANCIA PEKES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA DE EDUCACIÓN BÁSICA ESTANCIA PEKES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="ESCUELA DE EDUCACIÓN BÁSICA ESTANCIA PEKES" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'ESCUELA DE EDUCACIÓN BÁSICA ESTANCIA PEKES', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="13" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">CENTRO DE EDUCACIÓN BILINGÜE  MARY BOSCHETTI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">CENTRO DE EDUCACIÓN BILINGÜE  MARY BOSCHETTI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/EducacionMaryBoschetti/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/EducacionMaryBoschetti/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="14" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-INDIRA-GANDHI.webp" alt="" width="900" height="954">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA INDIRA GANDHI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA INDIRA GANDHI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.indiragandhi.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.indiragandhi.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="15" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Colegio-Frances.webp" alt="" width="900" height="588">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA COLEGIO FRANCES DE QUITO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA COLEGIO FRANCES DE QUITO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://colegiofrances.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://colegiofrances.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="16" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA JAHIBÉ </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA JAHIBÉ</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/jahibe.ec/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/jahibe.ec/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="17" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">LOS OLIVOS SCHOOL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">LOS OLIVOS SCHOOL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://olivosschool.com/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://olivosschool.com/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="18" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/El-Sauce.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">EL SAUCE SCHOOL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">EL SAUCE SCHOOL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://elsauce.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://elsauce.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="19" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Glenn-Doman.webp" alt="" width="924" height="916">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA GLENN DOMAN </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA GLENN DOMAN</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.glenndoman.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.glenndoman.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="20" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/HCA.webp" alt="" width="908" height="265">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA HOPE CHRISTIAN ACADEMY </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA HOPE CHRISTIAN ACADEMY</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.hopeacademy.edu.ec/
-						" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.hopeacademy.edu.ec/
-						', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="21" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Hontanar.webp" alt="" width="800" height="692">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA BILINGÜE HONTANAR </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA BILINGÜE HONTANAR</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://hontanar.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://hontanar.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="22" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA GIOVANNI BATISTA MONTINI PAULO VI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA GIOVANNI BATISTA MONTINI PAULO VI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://gbmpaulovi.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://gbmpaulovi.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="23" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Intisana.webp" alt="" width="780" height="173">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">COLEGIO INTISANA </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">COLEGIO INTISANA</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.intisana.com/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.intisana.com/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="24" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA PARTICULAR EFRATA </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA PARTICULAR EFRATA</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://efrata.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://efrata.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="25" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ESCUELA VOLCÁN COTOPAXI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ESCUELA VOLCÁN COTOPAXI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.volcancotopaxi.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.volcancotopaxi.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="26" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Ism.webp" alt="" width="828" height="356">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ISM ACADEMY QUITO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ISM ACADEMY QUITO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.ism.edu.ec/ism-quito/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.ism.edu.ec/ism-quito/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="27" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Ism.webp" alt="" width="828" height="356">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ISM NORTH </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ISM NORTH</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.ism.edu.ec/ism-north/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.ism.edu.ec/ism-north/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="28" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Jaques-Dalcroze.webp" alt="" width="974" height="220">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA JAQUES - DALCROZE </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA JAQUES - DALCROZE</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://ejd.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://ejd.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="29" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ARISTOTELES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ARISTOTELES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/aristotelesunidadeducativa/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/aristotelesunidadeducativa/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="30" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PENSIONADO AMERICANO INTERNATIONAL SCHOOL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PENSIONADO AMERICANO INTERNATIONAL SCHOOL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/uepensionadoamericano/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/uepensionadoamericano/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="31" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA SAN MARINO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA SAN MARINO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://colegiosanmarino.com/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://colegiosanmarino.com/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="32" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA SANTO DOMINGO SAVIO DE POMASQUI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA SANTO DOMINGO SAVIO DE POMASQUI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://domingosavio.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://domingosavio.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="33" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA BILINGÜE SCOTLAND HIGH SCHOOL CIA LTDA. </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA BILINGÜE SCOTLAND HIGH SCHOOL CIA LTDA.</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://scotlandschool.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://scotlandschool.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="34" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA VICTORIA BILINGUAL CHRISTIAN ACADEMY </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA VICTORIA BILINGUAL CHRISTIAN ACADEMY</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/VictoriaChristianAcademy/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/VictoriaChristianAcademy/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="35" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR JEZREEL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR JEZREEL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://jezreelacademy.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://jezreelacademy.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="36" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR JIM IRWIN </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR JIM IRWIN</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.colegiojimirwin.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.colegiojimirwin.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="37" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-BRIT-NICO-LOS-ANDES_.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA BRITÁNICO LOS ANDES (MACHACHI) </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA BRITÁNICO LOS ANDES (MACHACHI)</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/britanicolosandes/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/britanicolosandes/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="38" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-CEBI--1.webp" alt="" width="800" height="960">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA CEBI (AMBATO) </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA CEBI (AMBATO)</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://cebi.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://cebi.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="39" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="res/no-preview.svg" alt="">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATVA CONTINENTAL SCHOOL (PILLARO) </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATVA CONTINENTAL SCHOOL (PILLARO)</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://continentaltiamarita.com/about" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://continentaltiamarita.com/about', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="40" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR REY SALOMÓN (CAYAMBE) </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR REY SALOMÓN (CAYAMBE)</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.reysalomon.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.reysalomon.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="41" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA DE EDUCACIÓN BÁSICA PARTICULAR DESCUBRIR </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA DE EDUCACIÓN BÁSICA PARTICULAR DESCUBRIR</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/p/Escuela-De-Educaci%C3%B3n-Basica-Particular-Descubrir-100063535841570/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/p/Escuela-De-Educaci%C3%B3n-Basica-Particular-Descubrir-100063535841570/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="42" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA CELITE </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA CELITE</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://institucion.celite.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://institucion.celite.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="43" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA PARTICULAR LOS SAUCES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA PARTICULAR LOS SAUCES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/lossaucesescuela/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/lossaucesescuela/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">LInk</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="44" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR CRISTIANA HENRY DAVIS </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR CRISTIANA HENRY DAVIS</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/UEPC.HDavis/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/UEPC.HDavis/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="45" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/INSTITUCION-EDUCATIVA-FRANKLIN-ROOSEVELT.webp" alt="" width="800" height="1000">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">INSTITUCION EDUCATIVA FRANKLIN ROOSEVELT </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">INSTITUCION EDUCATIVA FRANKLIN ROOSEVELT</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/p/Pensionado-Roosevelt-100063644948544/?locale=" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/p/Pensionado-Roosevelt-100063644948544/?locale=', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="46" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/EDUKASA-LEARNING-TOGETHER.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">EDUKASA LEARNING TOGETHER </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">EDUKASA LEARNING TOGETHER</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://edukasalearning.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://edukasalearning.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="47" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA PARTICULAR SOCRATES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA PARTICULAR SOCRATES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.instagram.com/socratesescuelaparticular/?hl=es-la" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.instagram.com/socratesescuelaparticular/?hl=es-la', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="48" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Jean-Jacques-Rousseau.webp" alt="" width="1100" height="550">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA JEAN-JACQUES ROUSSEAU </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA JEAN-JACQUES ROUSSEAU</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.rousseau.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.rousseau.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="49" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Pensionado-Sudamericano.webp" alt="" width="930" height="926">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PENSIONADO SUDAMERICANO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PENSIONADO SUDAMERICANO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://sudamericano.ec/tarifas/
-						" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://sudamericano.ec/tarifas/
-						', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="50" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA--RBOL-DE-VIDA.webp" alt="" width="800" height="952">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA ÁRBOL DE VIDA </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA ÁRBOL DE VIDA</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://arboldevida.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://arboldevida.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="51" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA COLEGIO PARTICULAR PÍO JARAMILLO ALVARADO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA COLEGIO PARTICULAR PÍO JARAMILLO ALVARADO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="http://uepja.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'http://uepja.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="52" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Planeta-Azul.webp" alt="" width="827" height="358">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PLANETA AZUL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PLANETA AZUL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://planetaazul.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://planetaazul.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="53" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Sacha-Mayu.webp" alt="" width="900" height="250">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA DE EDUCACIÓN BÁSICA PARTICULAR SACHA MAYU SCHOOL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA DE EDUCACIÓN BÁSICA PARTICULAR SACHA MAYU SCHOOL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/p/Sacha-Mayu-School-100083053496189/?locale=es_LA " onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/p/Sacha-Mayu-School-100083053496189/?locale=es_LA ', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="54" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/Thomas-Russel.webp" alt="" width="824" height="822">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA "THOMAS RUSSELL CRAMPTON" </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA "THOMAS RUSSELL CRAMPTON"</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://trc.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://trc.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="55" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-PARTICULAR-GENERAL-ELOY-ALFARO.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR GENERAL ELOY ALFARO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR GENERAL ELOY ALFARO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://uegea.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://uegea.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="56" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDCUATIVA-LICEO-DE-CIENCIAS-Y-ARTES.webp" alt="" width="800" height="640">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDCUATIVA LICEO DE CIENCIAS Y ARTES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDCUATIVA LICEO DE CIENCIAS Y ARTES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/uelcaedu/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/uelcaedu/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="57" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-LATINOAMERICANO.webp" alt="" width="725" height="1043">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LATINOAMERICANO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LATINOAMERICANO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.colegiolatinoamericano.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.colegiolatinoamericano.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="58" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">INSTITUCIÓN EDUCATIVA ALEXANDER FERSMAN </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">INSTITUCIÓN EDUCATIVA ALEXANDER FERSMAN</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/escuelalexanderfersman/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/escuelalexanderfersman/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="59" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA BATALLA NAVAL DE JAMBELI </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA BATALLA NAVAL DE JAMBELI</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://e-b-n-j.webnode.es/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://e-b-n-j.webnode.es/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="60" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-BILINGUE-INTERAMERICANA.webp" alt="" width="800" height="787">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA "BILINGUE INTERAMERICANA" </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA "BILINGUE INTERAMERICANA"</div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="61" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-PARTICULAR-YANUNCAY.webp" alt="" width="800" height="799">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR YANUNCAY </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR YANUNCAY</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/UEYanuncay/photos/?locale=es_LA&_rdr" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/UEYanuncay/photos/?locale=es_LA&_rdr', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="62" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/ESCUELA-PARTICULAR-LOS-ALPES.webp" alt="" width="800" height="743">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">ESCUELA PARTICULAR LOS ALPES </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">ESCUELA PARTICULAR LOS ALPES</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/ueplosalpes/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/ueplosalpes/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="63" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-LA-GRANJA-CEBLAG.webp" alt="" width="800" height="355">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LA GRANJA CEBLAG </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LA GRANJA CEBLAG</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/p/La-Granja-Ceblag-100063523133278/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/p/La-Granja-Ceblag-100063523133278/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="64" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA NUEVO MUNDO - AMBATO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA NUEVO MUNDO - AMBATO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://nuevomundoambato.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://nuevomundoambato.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="65" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR SAMUEL BACKETT </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR SAMUEL BACKETT</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/samuelbeckettuep/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/samuelbeckettuep/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="66" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA EL PRADO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA EL PRADO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://colegioelprado.edu.ec/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://colegioelprado.edu.ec/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="67" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LICEO MYR. GALO MIÑO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LICEO MYR. GALO MIÑO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="UNIDAD EDUCATIVA LICEO MYR. GALO MIÑO" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'UNIDAD EDUCATIVA LICEO MYR. GALO MIÑO', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="68" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-PARTICULAR-BILING-E-COMPUTER-WORLD.webp" alt="" width="800" height="546">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR BILINGÜE COMPUTER WORLD </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR BILINGÜE COMPUTER WORLD</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.uecomputerworld.com/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.uecomputerworld.com/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="69" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-EMANUEL.webp" alt="" width="800" height="736">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA EMANUEL </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA EMANUEL</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/SomosEmanuel/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/SomosEmanuel/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card 087slr7i overlay-effect-follow image-effect-zoom" data-index="70" data-ts="" data-category-id="087slr7i" data-category-text="Sierra">
-						  <div class="portfolio__content">
-						    <img src="res/no-preview.svg" alt="">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR ENMA GRACIELA ROMERO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR ENMA GRACIELA ROMERO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://uepenmagraciela.edu.ec/eva/?lang=en" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://uepenmagraciela.edu.ec/eva/?lang=en', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card z0yjwlp1 overlay-effect-follow image-effect-zoom" data-index="71" data-ts="" data-category-id="z0yjwlp1" data-category-text="Amazon&#237;a">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-LAGO-AGRIO-AMAZ-NICO.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA LAGO AGRIO AMAZÓNICO </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA LAGO AGRIO AMAZÓNICO</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://ceila.edu.ec/about/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://ceila.edu.ec/about/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card z0yjwlp1 overlay-effect-follow image-effect-zoom" data-index="72" data-ts="" data-category-id="z0yjwlp1" data-category-text="Amazon&#237;a">
-						  <div class="portfolio__content">
-						    <img src="images/UNIDAD-EDUCATIVA-PARTICULAR-AMAZONAS.webp" alt="" width="800" height="800">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR AMAZONAS </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR AMAZONAS</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://www.facebook.com/p/Colegio-Iebysa-100063554201105/?locale=es_LA" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://www.facebook.com/p/Colegio-Iebysa-100063554201105/?locale=es_LA', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div><div class="portfolio__card z0yjwlp1 overlay-effect-follow image-effect-zoom" data-index="73" data-ts="" data-category-id="z0yjwlp1" data-category-text="Amazon&#237;a">
-						  <div class="portfolio__content">
-						    <img src="images/75-755488_logo-en-construccion-png-png-download-we-are.webp" alt="" width="860" height="773">
-						    <div class="portfolio__card__bottom-bar">
-						      <div class="portfolio__card__bottom-bar__title">UNIDAD EDUCATIVA PARTICULAR SIMON BOLIVAR </div>
-						    </div>
-						    <div class="portfolio__card__overlay">
-						      <div class="portfolio__card__overlay__content">
-						          <div class="portfolio__card__overlay__title">UNIDAD EDUCATIVA PARTICULAR SIMON BOLIVAR</div>
-						          <div class="portfolio__card__overlay__button"> <a href="https://simonbolivar-ec.com/" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://simonbolivar-ec.com/', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a></div>
-						      </div>
-						    </div>
-						  </div>
-						</div>      </div>
-						    </div>
-						  </div>
-						</div><script>
+						</div>
+						
+						<div id="imCell_127" class=""> 
+							<div id="imCellStyleGraphics_127"></div>
+							<div id="imCellStyleBorders_127"></div>
+							
+							<div id="imObjectPortfolio_14_127">
+								<div class="portfolio">
+									<div class="portfolio__container">
+										<div class="portfolio__category-bar">
+											<ul class="portfolio__category-bar__nav">
+												<li><a data-category-id="*" href="#">Todas las categor&#237;as</a></li>
+												<li><a data-category-id="087slr7i" href="#">Sierra</a></li>
+												<li><a data-category-id="z0yjwlp1" href="#">Amazon&#237;a</a></li>
+											</ul>
+										</div>
+										<div class="portfolio__search-bar">
+											<div class="portfolio__search-bar__search-field">
+												<input type="text" placeholder="Buscar...">
+												<div class="portfolio__search-bar__search-field__img">
+													<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+														x="0px" y="0px" viewBox="0 0 250.313 250.313" xml:space="preserve">
+														<g>
+															<path style="fill-rule:evenodd;clip-rule:evenodd;"
+																d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911	c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38	c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146	c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z">
+															</path>
+														</g>
+													</svg>
+												</div>
+											</div>
+											<div class="portfolio__search-bar__sort-field">
+												<ul>
+													<li class="portfolio__search-bar__sort-field__text">
+														<div>Ordenar por: <span>Predefinido</span></div>
+														<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="11.97px" height="11.97px"
+															xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.811 240.811"
+															xml:space="preserve">
+															<g>
+																<path
+																	d="M220.088,57.667l-99.671,99.695L20.746,57.655c-4.752-4.752-12.439-4.752-17.191,0 c-4.74,4.752-4.74,12.451,0,17.203l108.261,108.297l0,0l0,0c4.74,4.752,12.439,4.752,17.179,0L237.256,74.859 c4.74-4.752,4.74-12.463,0-17.215C232.528,52.915,224.828,52.915,220.088,57.667z">
+																</path>
+															</g>
+														</svg>
+													</li>
+													<li class="portfolio__search-bar__sort-field__dropdown">
+														<ul>
+															<li data-value="default">Predefinido</li>
+															<li data-value="date_desc">M&#225;s reciente</li>
+															<li data-value="date_asc">M&#225;s antiguo </li>
+															<li data-value="title">T&#237;tulo</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="portfolio__container-items hidden" id="pnl_portafolio_socios">
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							
+							<script>
 						  x5engine.boot.push(function () {
 						    let sizes = {};
 						    sizes['ea2f0ee4d5cbb25e1ee6c7c4378fee7b'] = {};
@@ -1211,7 +270,11 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						      items_effect : 'fadeInDown'
 						    });
 						  })
-						</script></div><div id="imPageRow_2" class="imPageRow imParallax">
+						</script>
+						
+						</div>
+						
+						<div id="imPageRow_2" class="imPageRow imParallax">
 						<div id="Delimitador"></div>
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_2"></div></div>
 						</div>
@@ -1295,5 +358,51 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		</div>
 		
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
+
+		<script>
+			$(document).ready(function () {
+			var container = $("#pnl_portafolio_socios");
+			var url = "admin/socios.php?listSocios=true";
+			var id_categoria = "";
+
+			$.getJSON(url, function (data) {
+				if (data && Array.isArray(data)) {
+				data.forEach((item, index) => {
+					//console.log(item)
+					if(item.region == "Sierra"){
+						id_categoria = "087slr7i";
+					}else if(item.region == "Amazonía"){
+						id_categoria = "z0yjwlp1";
+					}
+
+					var block = `
+					<div class="portfolio__card ${item.id} overlay-effect-follow image-effect-zoom" data-index="${index}" data-ts=""
+						data-category-id="${id_categoria || ''}" data-category-text="${item.region || ''}">
+						<div class="portfolio__content">
+						<img src="${item.foto || 'images/Logo-Atenas-UE_efif7e52.png'}" alt="" width="800" height="777">
+						<div class="portfolio__card__bottom-bar">
+							<div class="portfolio__card__bottom-bar__title">${item.institucion || 'Título no disponible'}</div>
+						</div>
+						<div class="portfolio__card__overlay">
+							<div class="portfolio__card__overlay__content">
+							<div class="portfolio__card__overlay__title">${item.institucion || 'Título no disponible'}</div>
+							<div class="portfolio__card__overlay__button">
+								<a href="${item.url || '#'}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${item.url || '#'}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>`;
+					container.append(block);
+				});
+				} else {
+				console.error("La respuesta no contiene datos válidos.");
+				}
+			}).fail(function () {
+				console.error("Error al obtener los datos del JSON.");
+			});
+			});
+		</script>
+
 	</body>
 </html>

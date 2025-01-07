@@ -157,6 +157,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<a id="imGoToCont"></a>
 						<header>
 							<h2 id="imPgTitle">Recursos</h2>
+							<div id="imBreadcrumb"><a href="#"> Archivos</a></div>
 						</header>
 
 						<div id="imPageRow_1" class="imPageRow">
@@ -214,13 +215,14 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 									</div>
 								</div>							
 
-							<div data-index="0"  class="text-tab-content grid-prop current-tab pt-5"  id="imTextObject_13_11_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTACenter"><span class="fs48lh1-5 cf1 ff1">Si no pudiste asistir a alguna de las charlas, no te preocupes. Hemos preparado los documentos correspondientes para que puedas ponerte al día con todo el contenido.</span></div>
+								<div data-index="0"  class="text-tab-content grid-prop current-tab pt-5"  id="imTextObject_13_11_tab0" style="opacity: 1; ">
+									<div class="text-inner">
+										<div class="imTACenter"><span class="fs48lh1-5 cf1 ff1">Si no pudiste asistir a alguna de las charlas, no te preocupes. Hemos preparado los documentos correspondientes para que puedas ponerte al día con todo el contenido.</span></div>
+									</div>
 								</div>
-							</div>
 						
-						</div>
+							</div>
+
 						</div>
 
 						<div id="imCell_18" class=""> 
@@ -236,7 +238,13 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						
 
 						
-						<div id="imCell_23" class=""> <div id="imCellStyleGraphics_23"></div><div id="imCellStyleBorders_23"></div><div id="imObjectButton_13_23"><button type="button" id="imObjectButton_13_23_button" onclick="x5engine.utils.imPopUpWin('https://drive.google.com/drive/folders/17xB-nMg95dVh1rNfgmuFkXtgG2DoNzhc?usp=sharing', '', -1, -1, true);">Repositorio de capacitaciones</button></div></div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><div id="imObjectButton_13_22"><button type="button" id="imObjectButton_13_22_button" onclick="x5engine.utils.location('fotos.php', null, false);">Memorias 2024 - 2028</button></div></div>
+						<div id="imCell_23" class=""> <div id="imCellStyleGraphics_23"></div><div id="imCellStyleBorders_23"></div><div id="imObjectButton_13_23">
+							
+						<!-- <button type="button" id="imObjectButton_13_23_button" onclick="x5engine.utils.imPopUpWin('', '', -1, -1, true);">Repositorio de capacitaciones</button></div></div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><div id="imObjectButton_13_22"> -->
+
+						<button type="button" id="imObjectButton_13_23_button" onclick="x5engine.utils.location('videos.php', null, false);">Repositorio de capacitaciones</button></div></div><div id="imCell_22" class=""> <div id="imCellStyleGraphics_22"></div><div id="imCellStyleBorders_22"></div><div id="imObjectButton_13_22">
+							
+						<button type="button" id="imObjectButton_13_22_button" onclick="x5engine.utils.location('fotos.php', null, false);">Memorias 2024 - 2028</button></div></div>
 
 						
 					</main>
@@ -337,7 +345,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
         });
 
         function definir_ruta_iframe_referencias_laborales(url) {
-            url_def = 'REPOSITORIO' + url
+            url_def = url
             var cambiar_ruta = $('#iframe_recursos_pdf').attr('src', url_def);
         }
     </script>

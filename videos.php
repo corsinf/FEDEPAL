@@ -44,6 +44,15 @@
 		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
+	
+		<!-- Para las librerias utilizadas -->
+
+		<link rel="stylesheet" href="libs/bootstrap.min.css">
+		<link rel="stylesheet" href="libs/fancytree/skin-lion/ui.fancytree.css">
+
+		<script src="libs/bootstrap.bundle.min.js"></script>
+		<script src="libs/jquery.fancytree-all-deps.min.js"></script>
+
 	</head>
 	<body> <!-- Google Tag Manager (noscript) -->
 
@@ -153,7 +162,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imCell_4" class=""> <div id="imCellStyleGraphics_4"></div><div id="imCellStyleBorders_4"></div><div id="imTextObject_18_04">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_18_04_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div class="imTACenter"><span class="fs48lh1-5">Ahora puedes acceder a nuestras, capacitaciones y mucho más</span></div><div><br></div>
+									<div class="imTACenter"><span class="fs48lh1-5">Ahora puedes acceder a nuestras capacitaciones, recursos y mucho más.</span></div><div><br></div>
 								</div>
 							</div>
 						
@@ -164,21 +173,63 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imCell_5" class=""> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imTextObject_18_05">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_18_05_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div><span class="fs20lh1-5 ff1">Te lo perdiste...........No hay problema un beneficio más de ser socio es que puedes ingresar y revisarlo cuando puedas</span></div>
+									<div><span class="fs20lh1-5 ff1">¿Te lo perdiste? No te preocupes. Uno de los beneficios de ser socio es que puedes acceder y revisarlo cuando quieras.</span></div>
 								</div>
+							</div>
+
+							<style>
+								.borde {
+									box-shadow: 0 4px 8px 0 rgba(184, 113, 29, 0.8); /* Sombra color tomate */
+									border: 1px solid rgba(255, 99, 71, 0.5); /* (Opcional) Borde color tomate */
+									border-radius: 8px; /* (Opcional) Esquinas redondeadas */
+								}
+							</style>
+
+							<div id="imTextObject_13_11">
+								<div class="container mt-5">
+									
+									<div class="row pt-3">
+										<div class="col-6">
+											<div class="mb-3">
+												<input type="text" id="tree-search" class="form-control"
+													placeholder="Buscar archivos o carpetas...">
+											</div>
+
+											<div id="fancytree-container" class=""></div>
+										</div>
+
+										<div class="col-6">
+											<div class="d-flex justify-content-center">
+												<iframe class="borde" src='' id="iframe_recursos_pdf" frameborder="0" width="900px" height="400px"></iframe>
+											</div>
+										</div>
+									</div>
+								</div>							
 							</div>
 						
 						</div>
 						</div><div id="imPageRow_3" class="imPageRow">
 						
 						</div>
-						<div id="imCell_3" class=""> <div id="imCellStyleGraphics_3"></div><div id="imCellStyleBorders_3"></div><!-- YouTube Gallery v.11 --><div id="pluginAppObj_18_03">
+
+						<!-- <div id="imCell_3" class=""> 
+							<div id="imCellStyleGraphics_3"></div>
+							<div id="imCellStyleBorders_3"></div>
+							<div id="pluginAppObj_18_03">
 						        <div id="youtubegallery_pluginAppObj_18_03" class="bullets">
 						        </div>
 						        <script>
 						            youtubegallery_pluginAppObj_18_03();
 						        </script>
-						       </div><div id="imCellStyleDescription_3"><div>ABRIL</div></div></div>
+
+						       </div>
+							   <div id="imCellStyleDescription_3">
+								<div>
+								ABRIL
+								</div>
+							</div>
+						</div> -->
+
 					</main>
 					<footer id="imFooter">
 						<div id="imFooterObjects"><div id="imFooter_imTextObject_06_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_06">
@@ -231,6 +282,53 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		</div>
 		
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
+
+		<style>
+			/* Ocultar checkbox en carpetas */
+			.fancytree-node.fancytree-folder .fancytree-checkbox {
+				display: none;
+			}
+		</style>
+		
+		<script>
+			$(document).ready(function() {
+				$("#fancytree-container").fancytree({
+					extensions: ["edit", "filter"],
+					//quicksearch: true,
+					source: { //function (event, data) {
+						url: 'admin/videos.php?listArchivos=true'
+					},
+					checkbox: true, 
+					selectMode: 1, 
+					icons: true,
+					select: function(event, data) {
+						var node = data.node; // Nodo seleccionado
+						var url = (data.node.data.url);
+						definir_ruta_iframe_referencias_laborales(url);
+					},
+				});
+
+				// Función de búsqueda
+				$("#tree-search").on("keyup", function() {
+					var tree = $.ui.fancytree.getTree("#fancytree-container");
+					var match = $(this).val();
+					if (match) {
+						tree.filterNodes(match, {
+							autoExpand: true
+						}); 
+					} else {
+						tree.clearFilter();
+					}
+				});
+			});
+
+			function definir_ruta_iframe_referencias_laborales(url) {
+				url_def = url
+				var cambiar_ruta = $('#iframe_recursos_pdf').attr('src', url_def);
+			}
+		</script>
+
+
 	</body>
 </html>
 

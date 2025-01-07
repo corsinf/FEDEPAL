@@ -231,8 +231,11 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}, 100);
 							});
 						</script>
-						<div id="imCell_20" class="animable wobble"> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectImage_12_20"><div id="imObjectImage_12_20_container"><a href="https://drive.google.com/drive/folders/1NuFdLkaipA3PO-ZyW9kPrni-AnlCJbtQ?usp=sharing" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://drive.google.com/drive/folders/1NuFdLkaipA3PO-ZyW9kPrni-AnlCJbtQ?usp=sharing', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large-2761159.webp" title="" alt="" width="340" height="226" />
-						</a></div></div></div>
+						<div id="imCell_20" class="animable wobble"> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectImage_12_20"><div id="imObjectImage_12_20_container">
+
+						<a type="button" id="" onclick="x5engine.utils.location('recursos.php', null, false);"><img src="images/large-2761159.webp" title="" alt="" width="340" height="226" /></a>
+					
+					</div></div></div>
 						<script>
 							x5engine.boot.push(function () {
 								x5engine.utils.onElementInViewPort($('#imCell_20').get(0), function () {
@@ -243,7 +246,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imCell_18" class="animable fadeInRight"> <div id="imCellStyleGraphics_18"></div><div id="imCellStyleBorders_18"></div><div id="imTextObject_12_18">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_12_18_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div class="imTACenter"><span class="fs28lh1-5"><b>Accede a publicaciones importantes</b></span></div><div class="imTACenter"><span class="fs28lh1-5">En este Drive podrás revisar los documentos más relevantes, descargarlos o imprimirlos. </span></div>
+									<div class="imTACenter"><span class="fs28lh1-5"><b>Accede a publicaciones importantes</b></span></div><div class="imTACenter"><span class="fs28lh1-5">En este repositorio podrás acceder a los recursos más relevantes, incluyendo documentos y videos. Puedes revisarlos, descargarlos o imprimirlos según sea necesario. </span></div>
 								</div>
 							</div>
 						

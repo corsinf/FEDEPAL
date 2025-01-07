@@ -11,38 +11,40 @@ $imSettings['access']['datadbtable'] = 'w5_socios_data';
 
 $db = getDbData($imSettings['access']['dbid']);
 $pa = new ImPrivateArea();
-$pa->setDBDataSocios(ImDb::from_db_data($db),$imSettings['access']['dbtable'],$imSettings['access']['datadbtable']);
+$pa->setDBDataSocios(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+
 if (isset($_GET['validate'])) {
 	$pa->validateWaitingUserById($_GET['validate']);
 	echo "<script>location.href='news.php#user_" . $_GET['validate'] . "';</script>";
 	exit;
 }
+
+if (isset($_GET['listSocios'])) {
+	echo json_encode($pa->getSociosById());
+	exit();
+}
+
 if (isset($_GET['saveNews'])) {
-	if(isset($_GET['id']))
-	{
-	// print_r($_FILES);die();
-		$res = $pa->registerUpdateSocios($_POST,$_FILES,$_GET['id']);
-	}else
-	{		
-		$res = $pa->registerNewSocios($_POST,$_FILES);
+	if (isset($_GET['id'])) {
+		// print_r($_FILES);die();
+		$res = $pa->registerUpdateSocios($_POST, $_FILES, $_GET['id']);
+	} else {
+		$res = $pa->registerNewSocios($_POST, $_FILES);
 		// print_r($res);die();
 	}
-	if ($res > 0)
-	{
+	if ($res > 0) {
 		header('Location: socios.php');
 	}
 	exit();
 }
 
 if (isset($_GET['editSocios'])) {
-	$res = $pa->registerUpdateSocios($_POST,$_FILES,$_GET['id']);
-	if ($res > 0)
-	{
+	$res = $pa->registerUpdateSocios($_POST, $_FILES, $_GET['id']);
+	if ($res > 0) {
 		header('Location: socios.php');
 	}
 	exit();
 }
-
 
 if (isset($_GET['validationemail'])) {
 	$pa->sendValidationEmail($_GET['validationemail'], $imSettings['access']['emailfrom']);
@@ -55,12 +57,9 @@ if (isset($_GET['delete'])) {
 	exit;
 }
 
-
-
-if (isset($_GET['insertar'])) 
-{
+if (isset($_GET['insertar'])) {
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Socios","Gestor de socios");
+	$mainT->pagetitle = l10n("Socios", "Gestor de socios");
 	$mainT->content = "";
 	$contentT = new Template("templates/socios/addSocios.php");
 	$contentT->cssClass = "privatearea";
@@ -73,10 +72,11 @@ if (isset($_GET['insertar']))
 
 	$mainT->content = $contentT->render();
 	echo $mainT->render();
-}else if (isset($_GET['edit'])) {	
+
+} else if (isset($_GET['edit'])) {
 
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Socios","Gestor de socios");
+	$mainT->pagetitle = l10n("Socios", "Gestor de socios");
 	$mainT->content = "";
 	$contentT = new Template("templates/socios/addSocios.php");
 	$contentT->cssClass = "privatearea";
@@ -85,11 +85,11 @@ if (isset($_GET['insertar']))
 
 	$mainT->content = $contentT->render();
 	echo $mainT->render();
-}else
-{
+
+} else {
 	// Load the main template
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Socios","Gestor de socios");
+	$mainT->pagetitle = l10n("Socios", "Gestor de socios");
 	$mainT->content = "";
 	$contentT = new Template("templates/socios/bodySocios.php");
 	$contentT->cssClass = "privatearea";
@@ -101,6 +101,7 @@ if (isset($_GET['insertar']))
 		$messageT->message = l10n('private_area_success', 'Completed Succesfully');
 		$messageT->extraCssClass = "fore-green";
 		$contentT->content .= $messageT->render();
+
 	}
 
 	// Show the table
