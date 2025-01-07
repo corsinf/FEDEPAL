@@ -10681,6 +10681,8 @@ class imPrivateArea
            $dt = $this->getSociosById(array($id));
            $ruta = $dt[0]['foto'];
         }
+        
+        $ruta = str_replace('../',"",$ruta);
         return $this->UpdateSocios($data,$ruta,$id);
     }
 

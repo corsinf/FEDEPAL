@@ -81,7 +81,7 @@
 						<input type="file" name="txt_img" id="txt_img" style="display: block;">
 					</td>
 					<td class="small div-phone">
-						<img  src="<?php echo $data['foto'] ?>" style="width: 50%;" >
+						<img  src="../<?php echo $data['foto'] ?>" style="width: 50%;" >
 					</td>
 				</tr>
 				<tr class="div-phone">				

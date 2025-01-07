@@ -18,7 +18,7 @@
 <?php else:?>
 	<?php $i = 0; foreach ($users as $user): $i++ ?>
 		<tr id="id_<?php echo $user['id']?>" class="<?php echo $i % 2 == 0 ? 'background-blue-light' : '' ?>">
-			<td><img  src="<?php echo $user['foto'] ?>" style="width: 25%;" ></td>
+			<td><img  src="../<?php echo $user['foto'] ?>" style="width: 25%;" ></td>
 			<td><?php echo $user['institucion'] ?></td>
 			<td class="no-phone"><?php echo $user['rector'] ?></td>
 			<td class="no-phone"><?php echo $user['direccion'] ?></td>
