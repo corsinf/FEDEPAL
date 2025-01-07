@@ -9782,7 +9782,7 @@ class imPrivateArea
         $where_conditions = array();
         $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
         if ($id_condition) {
-            $where_conditions['id'] = $id_condition;
+            $where_conditions['arc_id'] = $id_condition;
         }
         return $this->_get_db_archivos($where_conditions, $from, $to);
     }
@@ -10685,29 +10685,21 @@ class imPrivateArea
     public function registerNewArchivo($post, $file)
     {
         // print_r($post);die();
+        $ruta_general = $this->patch_files($post);
         $nombre = $post['txt_titulo'];
         $ruta = '';
         $user = '';
         $tipo = $post['ddl_tipo'];
-        $padre = $post['ddl_carpeta'];
+        $padre_id = $post['ddl_carpeta'];
+        $padre_nom = $post['txt_nombre_carpeta'];
         $imSettings = Configuration::getSettings();
         if($post['ddl_tipo']=='archivo')
         {
-            $patch = '../files/';
-            if (!file_exists($patch)) {
-               mkdir($patch, 0777, true);
-            } 
-            $patch = '../files/'.str_replace(' ',"_", $padre);
-            if (!file_exists($patch)) {
-               mkdir($patch, 0777, true);
-            }
-
-            // print_r($file);die();
-
+           
             $uploadfile_temporal=$file['txt_archivo']['tmp_name'];
             // $tipoImg = explode('.',$file['txt_archivo']['name']);
             $imagen = str_replace(' ','_',$file['txt_archivo']['name']);
-            $nuevo_nom = $patch.'/'.$imagen;
+            $nuevo_nom = $ruta_general.'/'.$imagen;
             if (is_uploaded_file($uploadfile_temporal))
             {
                 move_uploaded_file($uploadfile_temporal,$nuevo_nom);
@@ -10715,8 +10707,37 @@ class imPrivateArea
             $ruta = $nuevo_nom;
         }
         
-       
-        return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre);
+        return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre_id);
+    }
+
+    function patch_files($post)
+    {
+        $patch = '../REPOSITORIO/';
+
+        if (!file_exists($patch)) {
+           mkdir($patch, 0777, true);
+        } 
+
+        $busca = true;
+        $id = $post['ddl_carpeta'];
+        $patch_Archivo = '';
+        while ($busca) {
+            $padre = $this->getArchivosById(array($id));
+            $patch_Archivo = str_replace(" ","_", $padre[0]['nombre']).'/'.$patch_Archivo;
+            $id = $padre[0]['id_padre'];
+            if($id==0)
+            {
+                $busca =false;
+            }
+        }
+         
+        $patch = $patch.$patch_Archivo;
+        // print_r($patch);die();
+        if (!file_exists($patch)) {
+           mkdir($patch, 0777, true);
+        }
+        return $patch;
+
     }
 
     private static function _check_password_policy(string $password): bool

@@ -1,7 +1,7 @@
 <script type="text/javascript">
 	function ocultar(tipo)
 	{
-		if(tipo=='Archivo')
+		if(tipo.toUpperCase()=='ARCHIVO')
 		{
 			$('#panel_archivo').css('display','block');
 		}else
@@ -9,6 +9,16 @@
 			$('#panel_archivo').css('display','none');
 		}
 
+	}
+
+	function colocar_nombre()
+	{
+		nombre = '';
+		if($('#ddl_carpeta').val()!='')
+		{
+			var nombre = $('#ddl_carpeta option:selected').text();
+		}
+		$('#txt_nombre_carpeta').val(nombre);
 	}
 </script>
 <div class="content-box border-left-2 border-color-1 background-white dynamicobjects">
@@ -19,13 +29,14 @@
 				<tr class="div-phone">
 					<td class="small div-phone" colspan="2">
 						<div class="padding-left fore-color-1">Carpeta Contenedora</div>
-						<select class="border border-mute-light background-transparent" style="width: 100%;" name="ddl_carpeta" id="ddl_carpeta">
+						<select class="border border-mute-light background-transparent" style="width: 100%;" name="ddl_carpeta" id="ddl_carpeta" onchange="colocar_nombre()">
 							<option value="">Seleccione carpeta</option>
 								<?php $i = 0; foreach ($carpetas as $user): $i++ ?>
 									<option value="<?php echo $user['id'] ?>"><?php echo $user['nombre'] ?></option>
 								<?php endforeach; ?>
 
 						</select>
+						<input type="hidden" name="txt_nombre_carpeta" id="txt_nombre_carpeta">
 					</td>
 				</tr>	
 				<tr class="div-phone">
