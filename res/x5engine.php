@@ -10962,8 +10962,10 @@ class imPrivateArea
         $padre_id = $post['ddl_carpeta'];
         $padre_nom = $post['txt_nombre_carpeta'];
         $imSettings = Configuration::getSettings();
-       
-        $ruta = $post['txt_url'];        
+        $ruta = $post['txt_url']; 
+        if (strpos($post['txt_url'],'drive.google.com') !== false) {
+              $ruta = str_replace('view','preview',$post['txt_url']); 
+        }       
         return $this->createvideos($nombre,$ruta,$user,$tipo,$padre_id);
     }
 
