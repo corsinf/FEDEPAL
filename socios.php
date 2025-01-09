@@ -334,9 +334,31 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 </div>
 </div><div id="imFooter_imTextObject_11_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_11">
 	<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imFooter_imTextObject_11_tab0" style="opacity: 1; ">
-		<div class="text-inner">
-			<div class="imTALeft"><div data-line-height="1" class="imTALeft"><span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span></div><div data-line-height="1.15" class="imTAJustify"><div><span class="fs11lh1-5 cf2"><a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a></span></div><div><a href="socios.php" class="imCssLink" onclick="return x5engine.utils.location('socios.php', null, false)">Portal de Socios</a></div><div><div><a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a></div></div></div></div>
-		</div>
+			<div class="text-inner">
+				<div class="imTALeft">
+					<div data-line-height="1" class="imTALeft">
+						<span class="fs15lh1-5"><b><span class="cf1">Servicios</span></b></span>
+					</div>
+					<div data-line-height="1.15" class="imTAJustify">
+						<div>
+							<span class="fs11lh1-5 cf2">
+								<a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)">Convenios</a>
+							</span>
+						</div>
+						<div>
+							<a href="socios.php" class="imCssLink" onclick="return x5engine.utils.location('socios.php', null, false)">Portal de Socios</a>
+						</div>
+						<div>
+							<div>
+								<a href="https://webmail.fedepal.ec/" target="_blank" class="imCssLink"><span class="fs11lh1-5">Webmail</span></a>
+							</div>
+						</div>
+						<div>
+							<a href="news.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)">Noticias</a>
+						</div>
+					</div>
+				</div>
+			</div>
 	</div>
 
 </div>
