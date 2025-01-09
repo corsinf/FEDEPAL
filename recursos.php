@@ -203,6 +203,45 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								border: 1px solid rgba(255, 99, 71, 0.5); /* (Opcional) Borde color tomate */
 								border-radius: 8px; /* (Opcional) Esquinas redondeadas */
 							}
+
+							#fancytree-container {
+								max-height: 500px;
+								overflow: auto;
+								border: 1px solid #ddd;
+								padding: 10px;
+							}
+
+							.fancytree-title {
+								white-space: nowrap;
+								overflow-x: auto;
+								display: inline-block;
+								max-width: 90%;
+								scrollbar-width: thin; 
+								scrollbar-color:rgba(49, 52, 118, 1) #f1f1f1; 
+							}
+
+							.fancytree-title::-webkit-scrollbar {
+								height: 8px; 
+							}
+
+							.fancytree-title::-webkit-scrollbar-thumb {
+								background: rgba(49, 52, 118, 1); 
+								border-radius: 10px; 
+							}
+
+							.fancytree-title::-webkit-scrollbar-thumb:hover {
+								background: #E68D24; 
+							}
+
+							.fancytree-title::-webkit-scrollbar-track {
+								background:rgb(120, 119, 119); 
+								border-radius: 10px;
+							}
+
+							.fancytree-title::-webkit-scrollbar-track:hover {
+								background:rgb(120, 119, 119);
+							}
+							
 						</style>
 
 						<div id="imCell_11" class=""> 
@@ -210,7 +249,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								<div class="container mt-5">
 									
 									<div class="row pt-3">
-										<div class="col-6">
+										<div class="col-12 col-md-6 pt-3 pt-md-0">
 											<div class="mb-3">
 												<input type="text" id="tree-search" class="form-control"
 													placeholder="Buscar archivos o carpetas...">
@@ -219,7 +258,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 											<div id="fancytree-container" class=""></div>
 										</div>
 
-										<div class="col-6">
+										<div class="col-12 col-md-6 pt-3 pt-md-0">
 											<div class="d-flex justify-content-center">
 												<iframe class="borde" src='' id="iframe_recursos_pdf" frameborder="0" width="900px" height="700px"></iframe>
 											</div>
