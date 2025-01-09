@@ -2405,6 +2405,18 @@ class Configuration
 
         return $imSettings;
     }
+
+     /**
+     * Get the configuration array
+     */
+    static public function setAccessXuser($data)
+    {
+        global $imSettings;
+
+        print_r($data);
+        print_r($imSettings);die();
+
+    }
 }
 
 
@@ -9259,10 +9271,21 @@ class imPrivateArea
             return -2;
 
         $user = $this->getUser($email, $pwd);
+
+        // print_r($user);die();
         if (is_array($user)) {
             if (!$user['validated']) {
                 return -5;
             } else if ($this->_setLoggedUser($user)) {
+                $acc = Configuration::getSettings();
+                if($user['socio']=='' || $user['socio']=='0')
+                {
+                    $_SESSION['session_access']= array('14','20');
+
+                }else{
+                    $_SESSION['session_access'] = array('12','14','13','17','18','20');
+                }
+
                 return 0;
             }
         }
@@ -9425,6 +9448,10 @@ class imPrivateArea
         //
         // The session can live only in the same browser
         //
+        if(isset($_SESSION['session_access']))
+        {
+            $imSettings['access']['waitingpages'] =  $_SESSION['session_access'];
+        }
 
         if (!isset($_SESSION[$this->session_type]) || $_SESSION[$this->session_type] == "" || !isset($_SESSION[$this->session_uid]) || $_SESSION[$this->session_uid] == "")
             return -3;
@@ -9433,8 +9460,9 @@ class imPrivateArea
             return -2;
 
         if ($this->_decode($_SESSION[$this->session_type], $this->salt) == "0" && $_SESSION[$this->session_uid] != "") {
+            if(count($imSettings['access']['waitingpages'])==0){ return -4;}
             if (!@in_array($page, $imSettings['access']['waitingpages']))
-                return -4;
+                return -8;
             return 0;
         }
         $uid = $this->_decode($_SESSION[$this->session_uid], $this->salt);
@@ -9588,7 +9616,8 @@ class imPrivateArea
                 "validated" => true,
                 "groups"    => $user['groups'],
                 "hash"      => self::_getUserHash($username, $password),
-                "crypt_encoding" => $crypt_encoding
+                "crypt_encoding" => $crypt_encoding,
+                "socio"     => 1,
             );
         }
         return null;
@@ -9832,7 +9861,7 @@ class imPrivateArea
             }
 
             return $this->db->select(array(
-                'select' => array('id', 'ts', 'ip', 'password', 'firstname', 'lastname', 'email', 'key', 'validated', 'crypt_encoding'),
+                'select' => array('id', 'ts', 'ip', 'password', 'firstname', 'lastname', 'email', 'key', 'validated', 'crypt_encoding','id_socio'),
                 'from' => $this->db_table,
                 'where' => $where_conditions,
                 'where_flat' => $flat_conditions
@@ -10030,7 +10059,8 @@ class imPrivateArea
                     "validated"   => $user['validated'],
                     'groups'      => isset($local_user['groups']) ? $local_user['groups'] : $default_groups_array,
                     "hash"        => self::_getUserHash($user['email'], $user['password']),
-                    'crypt_encoding' => $user['crypt_encoding']
+                    'crypt_encoding' => $user['crypt_encoding'],
+                    'socio'       => $user['id_socio']
                 );
             }
         }
@@ -10377,6 +10407,21 @@ class imPrivateArea
         return $this->db->affectedRows() > 0;
     }
 
+    public function validateSocioUserById($socio,$dbids = array())
+    {
+        // print_r($socio);print_r($dbids);die();
+        if (!is_array($dbids))
+            $dbids = array($dbids);
+        if (!count($dbids))
+            return false;
+        $this->db->update(array(
+            'update' => $this->db_table,
+            'set' => array('id_socio' => $socio),
+            'where' => array('id' => $dbids)
+        ));
+        return $this->db->affectedRows() > 0;
+    }
+
     /**
      * Validate the waiting users listed in $keys. It must be an array of DB keys.
      * This method is only available in the **Professional edition**.
@@ -10602,6 +10647,7 @@ class imPrivateArea
                     "lastname"  => array('type' => 'TEXT', "default" => "NULL"),
                     "email"     => array('type' => 'TEXT'),
                     "key"       => array('type' => 'VARCHAR(32)'),
+                    "id_socio"       => array('type' => 'VARCHAR(32)'),
                     "validated" => array('type' => 'INT(1)'),
                     "crypt_encoding" => array('type' => 'TEXT', 'null' => true, 'default' => null),
                     "cng_pwd_token" => array('type' => 'VARCHAR(' . 2 * self::CNG_PWD_TOKEN_LENGTH . ')', 'null' => true, 'unique' => true, 'default' => null),

@@ -1,5 +1,17 @@
 <?php require_once("res/x5engine.php"); ?>
-<?php imCheckAccess('13', ''); ?>
+<?php imCheckAccess('13', ''); 
+
+
+$imSettings['access']['dbid'] = '';
+$imSettings['access']['dbtable'] = 'w5_archivos';
+$imSettings['access']['datadbtable'] = 'w5_archivos_data';
+
+$db = getDbData($imSettings['access']['dbid']);
+$pa = new ImPrivateArea();
+$pa->setDBDataArchivos(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+$recursos = json_encode($pa->getArchivosRecursos());
+
+?>
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
@@ -313,6 +325,9 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
     </style>
 	
     <script>
+    	var recursos = <?php echo $recursos; ?>;
+
+    	console.log(recursos);
         $(document).ready(function() {
             $("#fancytree-container").fancytree({
                 extensions: ["edit", "filter"],

@@ -12,6 +12,17 @@ if (isset($_GET['validate'])) {
 	echo "<script>location.href='privatearea.php#user_" . $_GET['validate'] . "';</script>";
 	exit;
 }
+if (isset($_GET['validate_socio'])) {
+	$socio = 0;
+	if($_GET['validate_socio']==1){ $socio = 1; }	
+	// print_r($socio);die();
+	if(isset($_GET['id']))
+	{
+		$pa->validateSocioUserById($socio,$_GET['id']);
+	}
+	echo "<script>location.href='privatearea.php#user_" . $_GET['id'] . "';</script>";
+	exit;
+}
 if (isset($_GET['passwordemail'])) {
 	$pa->sendLostPasswordEmail($_GET['passwordemail'], $imSettings['access']['emailfrom']);
 	echo "<script>location.href='privatearea.php?ok';</script>";

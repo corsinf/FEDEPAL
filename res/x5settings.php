@@ -9,7 +9,7 @@
 $imSettings['general'] = array(
 	'site_id' => '34F325CCF42DC99D0E3D4119633B3D6B',
 	'url' => 'http://localhost/',
-	'homepage_url' => 'http://localhost/home.html',
+	'homepage_url' => 'http://localhost/FEDEPAL/home.html',
 	'icon' => '',
 	'version' => '2024.4.4.0',
 	'sitename' => 'Fedepal',

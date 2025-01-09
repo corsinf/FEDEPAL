@@ -20,7 +20,8 @@ $imSettings['access']['users'] = array(
 		'firstname' => 'Fernanda',
 		'lastname' => 'Garzón',
 		'email' => 'info@fedepal.ec',
-		'password' => '$2a$11$hKzINl9xl03Pin9iCFSp7uFp024M7sKKxOVh2mb3Bx7KS84hPv/s6',
+		// 'password' => '$2a$11$hKzINl9xl03Pin9iCFSp7uFp024M7sKKxOVh2mb3Bx7KS84hPv/s6',
+		'password' => '$2a$11$r65R7TpjKM2sGqaOty0PyeuNXG7VgS71aEdeaTl/sLWPzoqzPa1Jm',
 		'crypt_encoding' => 'csharp_bcrypt',
 		'db_stored' => false,
 		'page' => 'home.html'
@@ -50,8 +51,11 @@ $imSettings['access']['pages'] = array(
 );
 
 // Web registration pages
+
+// print_r($imSettings);die();
 $imSettings['access']['webregistrations_gid'] = '6n0xvqqc';
-$imSettings['access']['waitingpages'] = array('12', '14');
+$imSettings['access']['waitingpages'] = array();
+// $imSettings['access']['waitingpages'] = $accesos_usuario;
 $imSettings['access']['entrancepage'] = 'home.html';
 $imSettings['access']['dbid'] = '';
 $imSettings['access']['dbtable'] = 'w5_almkhpcw_access_management';

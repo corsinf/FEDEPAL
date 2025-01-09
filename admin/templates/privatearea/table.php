@@ -7,6 +7,7 @@
 			<th class="border-bottom-2 border-mute-light fore-color-1 no-phone no-tablet"><?php echo l10n("private_area_ip", "IP Address") ?></th>
 			<th class="border-bottom-2 border-mute-light fore-color-1 no-phone"><?php echo l10n("private_area_ts", "Registration date") ?></th>
 			<th class="border-bottom-2 border-mute-light fore-color-1 no-phone no-tablet"><?php echo l10n("private_area_status", "Status") ?></th>
+			<th class="border-bottom-2 border-mute-light fore-color-1 no-phone no-tablet">Socio</th>
 			<th class="border-bottom-2 border-mute-light fore-color-1"></th>
 		</tr>
 	</thead>
@@ -27,7 +28,14 @@
 			<td class="green no-phone no-tablet"><?php echo l10n("private_area_status_validated", "Validated") ?></td>
 			<?php else: ?>
 			<td class="no-phone no-tablet"><?php echo l10n("private_area_status_not_validated", "Not validated") ?></td>
-			<?php endif; ?>
+			<?php endif; ?>						
+			<td class="no-phone no-tablet">
+			<?php if($user['socio']==1):  ?>
+			<input type="checkbox" id="rbl_socio_<?php echo $user['id']; ?>" name="rbl_socio_<?php echo $user['id']; ?>" onclick="cambiar_estado('<?php echo $user['id']; ?>')" checked="true">
+			<?php else: ?>
+				<input type="checkbox" id="rbl_socio_<?php echo $user['id']; ?>" name="rbl_socio_<?php echo $user['id']; ?>" onclick="cambiar_estado('<?php echo $user['id']; ?>')">
+			<?php endif; ?>						
+			</td>
 			<td class="<?php echo $i % 2 ? 'even-dark' : 'odd-dark' ?>">
 				<?php if (!$user['validated']): ?>
 				<a class="fa margin-left icon-large fa-check fore-green" href="privatearea.php?validate=<?php echo $user['id'] ?>" onclick="return confirm('<?php echo str_replace("'", "\\'", l10n("private_area_confirm_validation", "Do you want to validate this user?")) ?>');" title="<?php echo l10n("private_area_validate_user", "Manually validate this user") ?>"></a>
@@ -41,4 +49,17 @@
 <?php endif; ?>
 	</tbody>
 </table>
+
+<script type="text/javascript">
+	function cambiar_estado(id)
+	{
+		if($('#rbl_socio_'+id).prop('checked'))
+		{
+			location.href = "privatearea.php?validate_socio=1&id="+id;
+		}else
+		{			
+			location.href = "privatearea.php?validate_socio=0&id="+id;
+		}
+	}	
+</script>
 

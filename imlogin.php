@@ -9,7 +9,7 @@ $pa->admin_email = 'mrubio@corsinf.com';
 $db = getDbData();
 if ($db === false)
 	die("Cannot find a database");
-$pa->setDBDataNews(ImDb::from_db_data($db), 'w5_almkhpcw_access_management', 'w5_almkhpcw_users_data');
+$pa->setDBData(ImDb::from_db_data($db), 'w5_almkhpcw_access_management', 'w5_almkhpcw_users_data');
 if (isset($_GET['waitingusers']) && ($headers = imRequestHeaders()) !== false) {
 	if (isset($_GET['wsx5callversion'])) {
 		$token = "";
@@ -75,6 +75,8 @@ if (isset($_GET['registernew']) && $_GET['registernew'] == 1 && checkJsAndSpam('
 }
 if (isset($_POST['imUname']) && isset($_POST['imPwd'])) {
 	$result = $pa->login($_POST['imUname'], $_POST['imPwd']);
+
+	// print_r($result);die();
 	if ($result < 0) {
 		header('Location: imlogin.php?loginstatus=' . $result);
 		exit();

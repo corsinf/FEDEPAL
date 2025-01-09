@@ -105,6 +105,14 @@ class ControlPanel {
             "text" => $loc->get("dashboard_title", "Dashboard"),
             "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "index.php"
         );
+         if (isset($settings['access']['entrancepage'])) {
+            $menu[] = array(
+                "url" => "privatearea.php",
+                "image" => "images/access_white.png",
+                "text" => $loc->get("private_area_title", "Access Management"),
+                "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "privatearea.php"
+            );
+        }
         $menu[] = array(
             "url" => "news.php",
             "image" => "images/news.png",
@@ -123,12 +131,12 @@ class ControlPanel {
             "text" => $loc->get("Archivos", "Archivos"),
             "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "archivos.php"
         );
-        $menu[] = array(
-            "url" => "roles.php",
-            "image" => "images/roles.png",
-            "text" => $loc->get("Roles", "Roles"),
-            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "roles.php"
-        );
+        // $menu[] = array(
+        //     "url" => "roles.php",
+        //     "image" => "images/roles.png",
+        //     "text" => $loc->get("Roles", "Roles"),
+        //     "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "roles.php"
+        // );
         $menu[] = array(
             "url" => "socios.php",
             "image" => "images/socios.png",
@@ -151,14 +159,7 @@ class ControlPanel {
                 "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "guestbook.php"
             );
         }
-        if (isset($settings['access']['entrancepage'])) {
-            $menu[] = array(
-                "url" => "privatearea.php",
-                "image" => "images/access_white.png",
-                "text" => $loc->get("private_area_title", "Access Management"),
-                "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "privatearea.php"
-            );
-        }
+       
         if (isset($settings['ecommerce']) && isset($settings['ecommerce']['database'])) {
             $menu[] = array(
                 "url" => "cart-orders.php",
