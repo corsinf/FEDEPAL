@@ -347,16 +347,13 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
     </style>
 	
     <script>
-    	var recursos = <?php echo $recursos; ?>;
+    	var recursos = <?= $recursos ?> ?? null;
 
-    	console.log(recursos);
         $(document).ready(function() {
             $("#fancytree-container").fancytree({
                 extensions: ["edit", "filter"],
                 //quicksearch: true,
-                source: { //function (event, data) {
-                    url: 'admin/archivos.php?listArchivos=true'
-                },
+                source: recursos,
                 checkbox: true, 
                 selectMode: 1, 
                 icons: true,

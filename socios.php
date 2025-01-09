@@ -1,5 +1,17 @@
 <?php require_once("res/x5engine.php"); ?>
-<?php imCheckAccess('14', ''); ?>
+<?php imCheckAccess('14', ''); 
+
+$imSettings['access']['dbid'] = '';
+$imSettings['access']['dbtable'] = 'w5_socios';
+$imSettings['access']['datadbtable'] = 'w5_socios_data';
+
+$db = getDbData($imSettings['access']['dbid']);
+$pa = new ImPrivateArea();
+$pa->setDBDataSocios(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+$socios = json_encode($pa->getSociosById());
+
+?>
+
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
@@ -384,45 +396,43 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		<script>
 			$(document).ready(function () {
 			var container = $("#pnl_portafolio_socios");
-			var url = "admin/socios.php?listSocios=true";
-			var id_categoria = "";
+			var data = <?= $socios ?>;
 
-			$.getJSON(url, function (data) {
-				if (data && Array.isArray(data)) {
+			if (data && Array.isArray(data)) {
 				data.forEach((item, index) => {
-					//console.log(item)
-					if(item.region == "Sierra"){
+					// Determinación de la categoría según la región
+					let id_categoria;
+					if (item.region === "Sierra") {
 						id_categoria = "087slr7i";
-					}else if(item.region == "Amazonía"){
+					} else if (item.region === "Amazonía") {
 						id_categoria = "z0yjwlp1";
 					}
 
+					// Construcción del bloque HTML
 					var block = `
 					<div class="portfolio__card ${item.id} overlay-effect-follow image-effect-zoom" data-index="${index}" data-ts=""
 						data-category-id="${id_categoria || ''}" data-category-text="${item.region || ''}">
 						<div class="portfolio__content">
-						<img src="${item.foto || 'images/Logo-Atenas-UE_efif7e52.png'}" alt="" width="800" height="777">
-						<div class="portfolio__card__bottom-bar">
-							<div class="portfolio__card__bottom-bar__title">${item.institucion || 'Título no disponible'}</div>
-						</div>
-						<div class="portfolio__card__overlay">
-							<div class="portfolio__card__overlay__content">
-							<div class="portfolio__card__overlay__title">${item.institucion || 'Título no disponible'}</div>
-							<div class="portfolio__card__overlay__button">
-								<a href="${item.url || '#'}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${item.url || '#'}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>
+							<img src="${item.foto || 'images/Logo-Atenas-UE_efif7e52.png'}" alt="" width="800" height="777">
+							<div class="portfolio__card__bottom-bar">
+								<div class="portfolio__card__bottom-bar__title">${item.institucion || 'Título no disponible'}</div>
 							</div>
+							<div class="portfolio__card__overlay">
+								<div class="portfolio__card__overlay__content">
+									<div class="portfolio__card__overlay__title">${item.institucion || 'Título no disponible'}</div>
+									<div class="portfolio__card__overlay__button">
+										<a href="${item.url || '#'}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${item.url || '#'}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>
+									</div>
+								</div>
 							</div>
-						</div>
 						</div>
 					</div>`;
+					// Agregar el bloque al contenedor
 					container.append(block);
 				});
-				} else {
-				console.error("La respuesta no contiene datos válidos.");
-				}
-			}).fail(function () {
-				console.error("Error al obtener los datos del JSON.");
-			});
+			} else {
+				console.error("Los datos no contienen un array válido.");
+			}
 			});
 		</script>
 
