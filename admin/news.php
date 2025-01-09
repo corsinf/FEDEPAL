@@ -11,18 +11,24 @@ $imSettings['access']['datadbtable'] = 'w5_news_data';
 
 $db = getDbData($imSettings['access']['dbid']);
 $pa = new ImPrivateArea();
-$pa->setDBDataNews(ImDb::from_db_data($db),$imSettings['access']['dbtable'],$imSettings['access']['datadbtable']);
+$pa->setDBDataNews(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+
+if (isset($_GET['listNews'])) {
+	echo json_encode($pa->getNewsById());
+	exit();
+}
+
 if (isset($_GET['validate'])) {
 	$pa->validateWaitingUserById($_GET['validate']);
 	echo "<script>location.href='news.php#user_" . $_GET['validate'] . "';</script>";
 	exit;
 }
+
 if (isset($_GET['saveNews'])) {
 
 	// print_r($_FILES);die();
-	$res = $pa->registerNewNews($_POST['txt_titulo'], $_POST['txt_body'],$_FILES);
-	if ($res > 0)
-	{
+	$res = $pa->registerNewNews($_POST['txt_titulo'], $_POST['txt_body'], $_FILES);
+	if ($res > 0) {
 		header('Location: news.php');
 	}
 	exit();
@@ -39,10 +45,9 @@ if (isset($_GET['delete'])) {
 	exit;
 }
 
-if (isset($_GET['insertar'])) 
-{
+if (isset($_GET['insertar'])) {
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Noticias","Gestor de noticias");
+	$mainT->pagetitle = l10n("Noticias", "Gestor de noticias");
 	$mainT->content = "";
 	$contentT = new Template("templates/news/addNews.php");
 	$contentT->cssClass = "privatearea";
@@ -55,11 +60,10 @@ if (isset($_GET['insertar']))
 
 	$mainT->content = $contentT->render();
 	echo $mainT->render();
-}else
-{
+} else {
 	// Load the main template
 	$mainT = Configuration::getControlPanel()->getMainTemplate();
-	$mainT->pagetitle = l10n("Noticias","Gestor de noticias");
+	$mainT->pagetitle = l10n("Noticias", "Gestor de noticias");
 	$mainT->content = "";
 	$contentT = new Template("templates/news/bodyNews.php");
 	$contentT->cssClass = "privatearea";
