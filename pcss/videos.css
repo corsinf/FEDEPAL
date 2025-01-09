@@ -5168,7 +5168,7 @@ h2#imPgTitle {
         top: 20px;
         left: 60px;
         width: 150px;
-        height: 94px;
+        height: 120px;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -5595,7 +5595,7 @@ h2#imPgTitle {
 
     #imFooter_imTextObject_11_wrapper {
         position: absolute;
-        top: -10px;
+        top: 10px;
         left: 3px;
         width: 220px;
         height: 174px;
