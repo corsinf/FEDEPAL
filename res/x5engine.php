@@ -10850,8 +10850,10 @@ class imPrivateArea
         if (is_uploaded_file($uploadfile_temporal))
         {
             move_uploaded_file($uploadfile_temporal,$nuevo_nom);
-        }       
-        return $this->createNews($titulo, $cuerpo, $nuevo_nom);
+        }
+        
+        $ruta = str_replace('../',"",$nuevo_nom); 
+        return $this->createNews($titulo, $cuerpo, $ruta);
     }
 
     public function registerNewSocios($data,$file)

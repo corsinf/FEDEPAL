@@ -37,6 +37,11 @@ $news = json_encode($pa->getNewsById());
 		<script src="res/x5engine.js?2024-4-8-0" data-files-version="2024-4-8-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_04/main.js"></script>
 		<script src="pluginAppObj/imFooter_pluginAppObj_12/main.js"></script>
+
+		<link rel="stylesheet" href="libs/bootstrap.min.css">
+
+		<script src="libs/bootstrap.bundle.min.js"></script>
+
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
 			x5engine.utils.currentPagePath = 'news.php';
@@ -53,6 +58,59 @@ $news = json_encode($pa->getNewsById());
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	</head>
 	<body> <!-- Google Tag Manager (noscript) -->
+
+	<style>
+		.news-card {
+			background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Gradiente suave de fondo */
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+			text-align: center;
+			transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		}
+
+		.news-card:hover {
+			transform: translateY(-15px); /* Efecto de flotación hacia arriba */
+			box-shadow: 0 12px 12px rgba(0, 0, 0, 0.25); /* Aumenta la sombra en hover */
+		}
+
+		.news-title {
+			font-size: 2rem;
+			font-weight: 700;
+			margin-bottom: 10px;
+			color: #313476;
+		}
+
+		.news-image {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			max-width: 300;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave para las imágenes */
+			margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+		}
+
+		.btn-read-more {
+			background: linear-gradient(135deg, #E68D24, #E68D24); /* Gradiente para el botón */
+			color: #ffffff; /* Color del texto */
+			text-decoration: none; /* Sin subrayado */
+			padding: 10px 20px; /* Espaciado interno del botón */
+			display: inline-block; /* Se comporta como bloque en línea */
+			font-weight: bold; /* Texto en negrita */
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra en el botón */
+			border: none; /* Elimina el borde del botón */
+			border-radius: 0px; /* Redondea ligeramente los bordes del botón */
+			width: 100%; /* El botón ocupará el ancho disponible */
+			/* max-width: 250px;  */
+			text-align: center; /* Centra el texto del botón */
+		}
+
+		.news-image {
+			width: 100%; /* Ajusta el ancho al contenedor */
+			height: 200px; /* Define una altura fija */
+			object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
+			border-radius: 5px; /* Opcional: añade bordes redondeados */
+		}
+
+	</style>
 
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR6L3QCK"
 
@@ -152,17 +210,70 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					<main id="imContent">
 						<a id="imGoToCont"></a>
 						<header>
-							<h2 id="imPgTitle">News</h2>
-							<div id="imBreadcrumb"><a href="home.html#Nosotros" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div>
+							<h2 id="imPgTitle">Noticias</h2>
+							<!-- <div id="imBreadcrumb"><a href="home.html#Nosotros" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div> -->
+
+							<div class="container my-5 pt-4">
+									<div class="row" id="pnl_noticias">
+										<!-- Tarjeta 1 -->
+										<!-- <div class="col-md-4 mb-4">
+											<div class="news-card">
+												<img src="https://via.placeholder.com/300" alt="Noticia 1" class="news-image">
+												<h4 class="news-title">Noticia 1</h4>
+												<p class="news-content">xxxx.</p>
+												
+												<a href="#" class="btn btn-read-more" data-bs-toggle="modal" data-bs-target="#modalNoticia1">Leer más</a>
+											</div>
+										</div> -->
+
+
+									</div>
+								</div>
+								
+								<!-- Modal General -->
+
+								<div class="modal fade" id="modalGeneral" tabindex="-1" aria-labelledby="modalGeneralLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="modalGeneralLabel"></h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body"></div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="modal fade" id="modalNoticia_general" tabindex="-1" aria-labelledby="modalNoticia_generalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="modalNoticia_generalLabel">Detalles de Noticia</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												Texto, imágenes o cualquier otro contenido necesario para Noticia.
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+											</div>
+										</div>
+									</div>
+								</div>
 						</header>
-						<div id="imPageRow_1" class="imPageRow">
+
+						<!-- <div id="imPageRow_1" class="imPageRow">
 						
-						</div>
-						<div id="imCell_2" class=""> <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imObjectImage_20_02"><div id="imObjectImage_20_02_container"><img src="images/large-4039486.webp" title="" alt="" width="1100" height="492" />
+						</div> -->
+
+						<!-- <div id="imCell_2" class=""> <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imObjectImage_20_02"><div id="imObjectImage_20_02_container"><img src="images/large-4039486.webp" title="" alt="" width="1100" height="492" />
 						</div></div></div><div id="imPageRow_2" class="imPageRow">
 						
-						</div>
-						<div id="imCell_1"></div>
+						</div> -->
+						<!-- <div id="imCell_1"></div> -->
 					</main>
 					<footer id="imFooter">
 						<div id="imFooterObjects"><div id="imFooter_imTextObject_06_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_06">
@@ -239,7 +350,44 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
 
 		<script>
-			console.log(<?= $news ?>)
+			$(document).ready(function () {
+			var container = $("#pnl_noticias");
+			var data = <?= $news ?>;
+			console.log(data)
+			if (data && Array.isArray(data)) {
+				data.forEach((item, index) => {
+					// Construcción del bloque HTML
+					var block = `
+						<div class="col-md-4 mb-4">
+							<div class="news-card">
+								<img src="${item.imagen || 'https://via.placeholder.com/300'}" alt="${item.titulo || 'Noticia'}" class="news-image">
+								<h4 class="news-title">${item.titulo || 'Título no disponible'}</h4>
+								<p class="news-content">${item.detalle || 'Contenido no disponible.'}</p>
+								<!-- Botón que activa el modal general -->
+								<a href="#" class="btn btn-read-more" onclick="abrirModal('${item.titulo}', '${item.detalle}', '${item.imagen}')">Leer más</a>
+							</div>
+						</div>`;
+					// Agregar el bloque al contenedor
+					container.append(block);
+				});
+			}
+			else {
+				console.error("Los datos no contienen un array válido.");
+			}
+			});
+
+			function abrirModal(titulo, detalle, imagen) {
+				// Actualiza el contenido del modal general
+				$('#modalGeneralLabel').text(titulo || 'Título no disponible');
+				$('#modalGeneral .modal-body').html(`
+					<img src="${imagen || 'https://via.placeholder.com/300'}" alt="${titulo}" style="width: 100%; height: auto; margin-bottom: 15px;">
+					<p>${detalle || 'Contenido no disponible.'}</p>
+				`);
+
+				// Muestra el modal general con Bootstrap
+				$('#modalGeneral').modal('show');
+			}
+
 		</script>
 
 	</body>
