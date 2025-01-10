@@ -1,5 +1,16 @@
 <?php require_once("res/x5engine.php"); ?>
-<?php imCheckAccess('20', ''); ?>
+<?php imCheckAccess('20', ''); 
+
+$imSettings['access']['dbid'] = '';
+$imSettings['access']['dbtable'] = 'w5_news';
+$imSettings['access']['datadbtable'] = 'w5_news_data';
+
+$db = getDbData($imSettings['access']['dbid']);
+$pa = new ImPrivateArea();
+$pa->setDBDataNews(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+$news = json_encode($pa->getNewsById());
+
+?>
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
@@ -226,5 +237,10 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		</div>
 		
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
+
+		<script>
+			console.log(<?= $news ?>)
+		</script>
+
 	</body>
 </html>
