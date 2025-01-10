@@ -61,53 +61,71 @@ $news = json_encode($pa->getNewsById());
 
 	<style>
 		.news-card {
-			background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Gradiente suave de fondo */
-			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+			background: linear-gradient(135deg, #ffffff, #f8f9fa); /* Gradiente suave */
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra */
 			text-align: center;
 			transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+			width: 100%;
+			height: 400px; /* Altura fija para las tarjetas */
+			padding: 15px;
+			border-radius: 8px; /* Redondeo uniforme */
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
 		}
 
 		.news-card:hover {
-			transform: translateY(-15px); /* Efecto de flotación hacia arriba */
-			box-shadow: 0 12px 12px rgba(0, 0, 0, 0.25); /* Aumenta la sombra en hover */
+			transform: translateY(-15px); /* Flotación */
+			box-shadow: 0 12px 12px rgba(0, 0, 0, 0.25); /* Sombra en hover */
 		}
 
 		.news-title {
-			font-size: 2rem;
+			font-size: 1.5rem;
 			font-weight: 700;
-			margin-bottom: 10px;
+			margin: 10px 0;
 			color: #313476;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap; /* Texto en una sola línea */
+		}
+
+		.news-content {
+			font-size: 1rem;
+			color: #555;
+			margin: 10px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3; /* Máximo 3 líneas */
+			-webkit-box-orient: vertical;
+			line-height: 1.4;
 		}
 
 		.news-image {
 			width: 100%;
-			height: auto;
+			height: 200px; /* Altura fija */
 			object-fit: cover;
-			max-width: 300;
-			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave para las imágenes */
-			margin-bottom: 10px; /* Espacio entre la imagen y el contenido */
+			border-radius: 5px; /* Bordes redondeados */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+			margin-bottom: 10px;
 		}
 
 		.btn-read-more {
-			background: linear-gradient(135deg, #E68D24, #E68D24); /* Gradiente para el botón */
-			color: #ffffff; /* Color del texto */
-			text-decoration: none; /* Sin subrayado */
-			padding: 10px 20px; /* Espaciado interno del botón */
-			display: inline-block; /* Se comporta como bloque en línea */
-			font-weight: bold; /* Texto en negrita */
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra en el botón */
-			border: none; /* Elimina el borde del botón */
-			border-radius: 0px; /* Redondea ligeramente los bordes del botón */
-			width: 100%; /* El botón ocupará el ancho disponible */
-			/* max-width: 250px;  */
-			text-align: center; /* Centra el texto del botón */
+			background: linear-gradient(135deg, #E68D24, #E68D24); /* Gradiente */
+			color: #ffffff;
+			text-decoration: none;
+			padding: 10px 20px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			width: 100%;
+			text-align: center;
+			transition: background 0.3s ease, transform 0.2s ease;
 		}
 
-		.news-image {
-			width: 100%; /* Ajusta el ancho al contenedor */
-			height: 200px; /* Define una altura fija */
-			object-fit: cover; /* Mantiene las proporciones y recorta si es necesario */
-			border-radius: 5px; /* Opcional: añade bordes redondeados */
+		.btn-read-more:hover {
+			background: #C6791E; /* Color más oscuro en hover */
+			transform: scale(1.05); /* Ligero aumento */
 		}
 
 	</style>
@@ -360,11 +378,11 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					var block = `
 						<div class="col-md-4 mb-4">
 							<div class="news-card">
-								<img src="${item.imagen || 'https://via.placeholder.com/300'}" alt="${item.titulo || 'Noticia'}" class="news-image">
-								<h4 class="news-title">${item.titulo || 'Título no disponible'}</h4>
-								<p class="news-content">${item.detalle || 'Contenido no disponible.'}</p>
-								<!-- Botón que activa el modal general -->
-								<a href="#" class="btn btn-read-more" onclick="abrirModal('${item.titulo}', '${item.detalle}', '${item.imagen}')">Leer más</a>
+								<img src="${item.imagen || 'https://via.placeholder.com/300'}" alt="${escapeHtml(item.titulo || 'Noticia')}" class="news-image">
+								<h4 class="news-title">${escapeHtml(item.titulo || 'Título no disponible')}</h4>
+								<p class="news-content">${escapeHtml(item.detalle || 'Contenido no disponible.')}</p>
+								<button href="#" class="btn btn-read-more" 
+								onclick="abrirModal('${escapeHtml(item.titulo)}', '${escapeHtml(item.detalle)}', '${item.imagen || ''}')">Leer más</button>
 							</div>
 						</div>`;
 					// Agregar el bloque al contenedor
@@ -375,6 +393,19 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				console.error("Los datos no contienen un array válido.");
 			}
 			});
+
+			// Función para escapar comillas en cadenas de texto
+			function escapeHtml(text) {
+				if (!text) return ''; // Maneja valores nulos o indefinidos
+				return text
+					.replace(/&/g, '&amp;')  // Escapar ampersand
+					.replace(/</g, '&lt;')  // Escapar menor que
+					.replace(/>/g, '&gt;')  // Escapar mayor que
+					.replace(/"/g, '&quot;') // Escapar comillas dobles
+					.replace(/'/g, '&#39;')  // Escapar comillas simples
+					.replace(/\r\n/g, '<br>') // Convertir saltos de línea en HTML
+					.replace(/\n/g, '<br>'); // Convertir saltos de línea adicionales
+			}
 
 			function abrirModal(titulo, detalle, imagen) {
 				// Actualiza el contenido del modal general
