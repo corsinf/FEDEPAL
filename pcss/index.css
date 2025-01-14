@@ -1,9 +1,14 @@
 @import'https://fonts.googleapis.com/css?family=Lato:700,regular,italic,700italic&display=swap';
 
+
+
+
 #imPageExtContainer {
-    background: rgba(230, 141, 36) url('../images/large-3350810.webp') repeat left top;
-    background-attachment: scroll
+    background: rgba(230, 141, 36, 0.1) url('../images/large-3350810.webp') no-repeat center center;
+    background-size: 90%; /* Ajusta el porcentaje según el tamaño deseado */
+    background-attachment: scroll;
 }
+
 
 #imPage {
     display: grid;
