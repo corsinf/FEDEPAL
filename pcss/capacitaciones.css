@@ -4365,15 +4365,17 @@ html:not(.no-cssanimations) #imCell_137.animated {
     transition: background-color .2s linear;
     position: relative;
     display: inline-block;
-    word-wrap: break-word;
-    max-width: 100%;
+    width: 200px;  /* Tamaño fijo en píxeles */
+    height: 50px;  /* Tamaño fijo en píxeles */
     border: solid;
     border-color: rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1);
     border-width: 0 0 0 0;
     border-radius: 0 0 0 0;
-    padding: 5px 5px 5px 5px;
-    color: rgba(255, 255, 255, 1)
+    padding: 5px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;  /* Centra el texto horizontalmente */
 }
+
 
 #imObjectButton_11_141_button:hover {
     background-color: rgba(184, 113, 29);
@@ -4413,19 +4415,21 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
 #imObjectButton_11_142_button {
     font: normal normal normal 20pt 'Lato';
-    background-color: rgba(230, 141, 36);
+    background-color: rgba(230, 141, 36, 1);
     transition: background-color .2s linear;
     position: relative;
     display: inline-block;
-    word-wrap: break-word;
-    max-width: 100%;
+    width: 200px;  /* Tamaño fijo en píxeles */
+    height: 50px;  /* Tamaño fijo en píxeles */
     border: solid;
     border-color: rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1);
     border-width: 0 0 0 0;
     border-radius: 0 0 0 0;
-    padding: 5px 5px 5px 5px;
-    color: rgba(255, 255, 255, 1)
+    padding: 5px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;  /* Centra el texto horizontalmente */
 }
+
 
 #imObjectButton_11_142_button:hover {
     background-color: rgba(49, 52, 118, 1);
@@ -5222,7 +5226,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
     }
 
     #imCell_141 {
-        padding-top: 10px;
+        padding-top: 25px;
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px
@@ -5256,7 +5260,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
     }
 
     #imCell_142 {
-        padding-top: 10px;
+        padding-top: 25px;
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px
@@ -7535,10 +7539,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imHeader_imObjectImage_03_wrapper {
         position: absolute;
-        top: 0;
+        top: -15px;
         left: 30px;
         width: 250px;
-        height: 100px;
+        height: 109px;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -10445,7 +10449,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(min-width:1150px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 0;
+        top: -13px;
         left: 10px;
         width: 198px;
         height: 86px;
@@ -10941,18 +10945,18 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(max-width:1149.9px) and (min-width:720px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 16px;
+        top: -10px;
         left: 10px;
-        width: 183px;
-        height: 31px;
+        width: 142px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.529% 0);
-        clip-path: inset(0 0 63.529% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
@@ -12079,18 +12083,18 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(max-width:479.9px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 21px;
+        top: -10px;
         left: 10px;
         width: 142px;
-        height: 24px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.636% 0);
-        clip-path: inset(0 0 63.636% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {

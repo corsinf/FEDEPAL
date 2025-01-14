@@ -5511,7 +5511,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
 }
 
 #imObjectImage_114 #imObjectImage_114_container {
-    width: 100px;
+    width: 135px;
     max-width: 100%;
     line-height: 0
 }
@@ -5817,7 +5817,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
 }
 
 #imObjectImage_113 #imObjectImage_113_container {
-    width: 60px;
+    width: 150px;
     max-width: 100%;
     line-height: 0
 }
@@ -6123,7 +6123,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
 }
 
 #imObjectImage_112 #imObjectImage_112_container {
-    width: 127px;
+    width: 150px;
     max-width: 100%;
     line-height: 0
 }
@@ -10089,10 +10089,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imHeader_imObjectImage_03_wrapper {
         position: absolute;
-        top: 0;
+        top: -15px;
         left: 30px;
         width: 250px;
-        height: 100px;
+        height: 109px;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -12999,7 +12999,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(min-width:1150px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 0;
+        top: -13px;
         left: 10px;
         width: 198px;
         height: 86px;
@@ -13495,18 +13495,18 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:1149.9px) and (min-width:720px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 16px;
+        top: -10px;
         left: 10px;
-        width: 183px;
-        height: 31px;
+        width: 142px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.529% 0);
-        clip-path: inset(0 0 63.529% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
@@ -14064,18 +14064,18 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:719.9px) and (min-width:480px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 19px;
-        left: 14px;
-        width: 183px;
-        height: 31px;
+        top: -10px;
+        left: 10px;
+        width: 142px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.529% 0);
-        clip-path: inset(0 0 63.529% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
@@ -14633,18 +14633,18 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:479.9px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 21px;
+        top: -10px;
         left: 10px;
         width: 142px;
-        height: 24px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.636% 0);
-        clip-path: inset(0 0 63.636% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {

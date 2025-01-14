@@ -84,7 +84,7 @@ x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_02_setting
 $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
 
 </script>
-</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
+</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.svg" title="" alt="" width="250" height="92" />
 </div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
@@ -95,7 +95,7 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall_puahdvcc.webp" title="" alt="" width="198" height="92" />
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall.svg" title="" alt="" width="198" height="92" />
 </a></div></div></div><div id="imStickyBar_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_02"><div id="imStickyBar_imMenuObject_02_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
@@ -148,7 +148,18 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imCell_2" class=""> <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imTextObject_16_02">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_16_02_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div><span class="fs20lh1-5 cf1"><b>Si deseas ser socio de FEDEPAL (Federación de Establecimientos de Educación Particular Laica), accede a los detalles sobre el proceso de afiliación.</b></span></div><div><span class="fs20lh1-5 cf1"><b><br></b></span></div><div><span class="fs20lh1-5 cf1"><b>La federación ofrece beneficios como capacitación, asesoría y recursos para instituciones educativas particulares laicas en Ecuador. </b></span></div><div><span class="fs20lh1-5 cf1"><b><br></b></span></div><div><span class="fs20lh1-5 cf1"><b>Además, en la sección de Afiliados podrás encontrar la política de membresías y la ficha de afiliación para el 2024​</b></span></div><div><span class="fs20lh1-5 cf1"><b><br></b></span></div><div><span class="cf1"><b><span class="fs20lh1-5">Muy Fácil solo llena este formulario, </span></b><span style="font-weight: 700;" class="fs20lh1-5">asegúrate</span><b><span class="fs20lh1-5"> de enviarlo a <a href="mailto:info@fedepal.ec?subject=AFILIACION&amp;body=Hola%20deseo%20ser%20socio,%20este%20es%20mi%20documentaci%C3%B3n" class="imCssLink">info@fedepal.ec</a> con la firma adjunta.</span></b></span></div><div><br></div>
+									<div>
+										<span class="fs20lh1-5 cf1"><p>Si deseas ser socio de FEDEPAL (Federación de Establecimientos de Educación Particular Laica), accede a los detalles sobre el proceso de afiliación.</p></span></div><div><span class="fs20lh1-5 cf1"><p><br></p></span></div><div>
+
+										<span class="fs20lh1-5 cf1"><p>La federación ofrece beneficios como capacitación, asesoría y recursos para instituciones educativas particulares laicas en Ecuador. </p></span></div><div>
+											
+										<span class="fs20lh1-5 cf1"><b><br></b></span></div><div>
+											
+										<span class="fs20lh1-5 cf1"><p>Además, en esta sección podrás encontrar la política de membresías y la ficha de afiliación para el 2024.</p></span></div><div>
+											
+										<span class="fs20lh1-5 cf1"><b><br></b></span></div><div><span class="cf1">
+											
+										<b><span class="fs20lh1-5">Muy Fácil solo llena este formulario, </span></b><span style="font-weight: 700;" class="fs20lh1-5">asegúrate</span><b><span class="fs20lh1-5"> de enviarlo a <a href="mailto:info@fedepal.ec?subject=AFILIACION&amp;body=Hola%20deseo%20ser%20socio,%20este%20es%20mi%20documentaci%C3%B3n" class="imCssLink">info@fedepal.ec</a> con la firma adjunta.</span></b></span></div><div><br></div>
 								</div>
 							</div>
 						
@@ -156,7 +167,30 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div><div id="imCell_6" class=""> <div id="imCellStyleGraphics_6"></div><div id="imCellStyleBorders_6"></div><div id="imTextObject_16_06">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_16_06_tab0" style="opacity: 1; ">
 								<div class="text-inner">
-									<div><b class="fs18lh1-5 cf1">REQUISITOS PARA LA AFILIACIÓN:</b></div><div><span class="fs18lh1-5 cf1"><br></span><div><span class="fs18lh1-5 cf1">1. Solicitud dirigida al Directorio de FEDEPAL, donde deben constar los siguientes datos:</span></div><div><span class="fs18lh1-5 cf1">• Nombre de la Institución.</span></div><div><span class="fs18lh1-5 cf1">• Dirección.</span></div><div><span class="fs18lh1-5 cf1">• Teléfono / móvil.</span></div><div><span class="fs18lh1-5 cf1">• Correo Electrónico Institucional.o Nombres y Apellidos completos del propietario y/o patrocinador - teléfono –correo electrónico.</span></div><div><span class="fs18lh1-5 cf1">• Nombres y Apellidos completos del Rector o Director – teléfono – correo electrónico.</span></div><div><span class="fs18lh1-5 cf1">• Nombres y Apellidos completos del Representante Legal – teléfono – correo electrónico.</span></div><div><span class="fs18lh1-5 cf1"> 2. Copia del permiso actualizado de funcionamiento.</span></div><div><span class="fs18lh1-5 cf1">3. Copia del último acuerdo de costos para la fijación de matrícula y pensiones.</span></div><div><span class="fs18lh1-5 cf1">4. Copia del RUC</span></div></div>
+									
+									<div><span class="fs18lh1-5 cf1"><br></span>
+									
+									<div><b class="fs18lh1-5 cf1">REQUISITOS PARA LA AFILIACIÓN:</b></div>
+									
+									<div><span class="fs18lh1-5 cf1">1. Solicitud dirigida al Directorio de FEDEPAL, donde deben constar los siguientes datos:</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Nombre de la Institución.</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Dirección.</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Teléfono / móvil.</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Correo Electrónico Institucional o Nombres y Apellidos completos del propietario y/o patrocinador – teléfono – correo electrónico.</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Nombres y Apellidos completos del Rector o Director – teléfono – correo electrónico.</span></div><div>
+										
+									<span style="padding-left: 4%;" class="fs18lh1-5 cf1">• Nombres y Apellidos completos del Representante Legal – teléfono – correo electrónico.</span></div><div>
+										
+									<span class="fs18lh1-5 cf1"> 2. Copia del permiso actualizado de funcionamiento.</span></div><div>
+										
+									<span class="fs18lh1-5 cf1">3. Copia del último acuerdo de costos para la fijación de matrícula y pensiones.</span></div><div>
+										
+									<span class="fs18lh1-5 cf1">4. Copia del RUC</span></div></div>
 								</div>
 							</div>
 						

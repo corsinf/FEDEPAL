@@ -176,14 +176,14 @@ class ControlPanel {
                 "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "cart-comments.php"
             );
         }
-        if (isset($settings['dynamicobjects']) && (count($settings['dynamicobjects']['pages']) || count($settings['dynamicobjects']['template']))) {
-            $menu[] = array(
-                "url" => "dynamicobjects.php",
-                "image" => "images/dynamic_white.png",
-                "text" => $loc->get("dynamicobj_name", "Dynamic objects"),
-                "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "dynamicobjects.php"
-            );
-        }
+        // if (isset($settings['dynamicobjects']) && (count($settings['dynamicobjects']['pages']) || count($settings['dynamicobjects']['template']))) {
+        //     $menu[] = array(
+        //         "url" => "dynamicobjects.php",
+        //         "image" => "images/dynamic_white.png",
+        //         "text" => $loc->get("dynamicobj_name", "Dynamic objects"),
+        //         "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "dynamicobjects.php"
+        //     );
+        // }
         if (isset($settings['admin']) && isset($settings['admin']['enable_notifications']) && $settings['admin']['enable_notifications'] === true) {
             $menu[] = array(
                 "url" => "notifications.php",
@@ -200,12 +200,12 @@ class ControlPanel {
                 "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "analytics.php"
             );
         }
-        $menu[] = array(
-            "url" => "sitetest.php",
-            "image" => "images/test_white.png",
-            "text" => $loc->get("admin_test", "Website Test"),
-            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "sitetest.php"
-        );
+        // $menu[] = array(
+        //     "url" => "sitetest.php",
+        //     "image" => "images/test_white.png",
+        //     "text" => $loc->get("admin_test", "Website Test"),
+        //     "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "sitetest.php"
+        // );
 
         // Add the plugin apps pages if available
         foreach ($settings['admin']['extra-links'] as $entry) {

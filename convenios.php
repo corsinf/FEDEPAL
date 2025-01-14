@@ -90,7 +90,7 @@ x5engine.boot.push(function(){x5engine.initMenu(imHeader_imMenuObject_02_setting
 $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSeparator').each(function () {    var $this = $(this), timeout = 0;    $this.on('mouseenter', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         clearTimeout(timeout);        setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeIn(); }, 250);    }).on('mouseleave', function () {        if($(this).parents('#imHeader_imMenuObject_02_container-menu-opened').length > 0) return;         timeout = setTimeout(function () { $this.children('ul, .multiple-column').stop(false, false).fadeOut(); }, 250);    });});});
 
 </script>
-</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.webp" title="" alt="" width="250" height="92" />
+</div><div id="imHeader_imObjectImage_03_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_03"><div id="imHeader_imObjectImage_03_container"><img src="images/cropped-logosmall.svg" title="" alt="" width="250" height="92" />
 </div></div></div><div id="imHeader_pluginAppObj_04_wrapper" class="template-object-wrapper"><!-- Login & Logout v.9 --><div id="imHeader_pluginAppObj_04">
         <a class="imLogoutAnchor defaultStyle " href="#">Salir</a>
         <script>
@@ -101,7 +101,7 @@ $(function () {$('#imHeader_imMenuObject_02_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall_puahdvcc.webp" title="" alt="" width="198" height="92" />
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectImage_01"><div id="imStickyBar_imObjectImage_01_container"><a href="home.html" onclick="return x5engine.utils.location('home.html', null, false)"><img src="images/cropped-logosmall.svg" title="" alt="" width="198" height="92" />
 </a></div></div></div><div id="imStickyBar_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_02"><div id="imStickyBar_imMenuObject_02_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
@@ -233,7 +233,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</script>
 						<div id="imCell_20" class="animable wobble"> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectImage_12_20"><div id="imObjectImage_12_20_container">
 
-						<a type="button" id="" onclick="x5engine.utils.location('recursos.php', null, false);"><img src="images/large-2761159.webp" title="" alt="" width="340" height="226" /></a>
+						<a type="button" id="" onclick="x5engine.utils.location('recursos.php', null, false);"><img src="images/large-2761159.gif" title="" alt="" width="340" height="226" /></a>
 					
 					</div></div></div>
 						<script>

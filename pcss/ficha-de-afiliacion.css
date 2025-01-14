@@ -1683,7 +1683,18 @@ h2#imPgTitle {
 
 #imPageRowGraphics_1 {
     background: transparent url('../images/large-865091.webp') no-repeat center center;
-    background-size: cover
+    background-size: cover;
+}
+
+#imPageRowGraphics_1::before {
+    content: ''; /* Crea el pseudo-elemento */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro semitransparente para oscurecer la imagen */
+    z-index: 1; /* Asegura que esté por encima de la imagen */
 }
 
 #imCell_2 {
@@ -1898,8 +1909,8 @@ h2#imPgTitle {
 
 #imTextObject_16_02_tab0 .fs20lh1-5 {
     vertical-align: baseline;
-    font-size: 20pt;
-    line-height: 40px
+    font-size: 15pt;
+    line-height: 25px
 }
 
 #imTextObject_16_02_tab0 .cf1 {
@@ -2154,7 +2165,7 @@ h2#imPgTitle {
 
 #imTextObject_16_06_tab0 .fs18lh1-5 {
     vertical-align: baseline;
-    font-size: 18pt;
+    font-size: 14pt;
     line-height: 36px
 }
 
@@ -2242,7 +2253,10 @@ h2#imPgTitle {
     border-width: 0 0 0 0;
     border-radius: 0 0 0 0;
     padding: 5px 5px 5px 5px;
-    color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1);
+    width: 500px;  /* Tamaño fijo en píxeles */
+    height: 50px;  /* Tamaño fijo en píxeles */
+    text-align: center;  /* Centra el texto horizontalmente */
 }
 
 #imObjectButton_16_05_button:hover {
@@ -2294,7 +2308,10 @@ h2#imPgTitle {
     border-width: 0 0 0 0;
     border-radius: 0 0 0 0;
     padding: 5px 5px 5px 5px;
-    color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1);
+    width: 500px;  /* Tamaño fijo en píxeles */
+    height: 50px;  /* Tamaño fijo en píxeles */
+    text-align: center;  /* Centra el texto horizontalmente */
 }
 
 #imObjectButton_16_04_button:hover {
@@ -2327,7 +2344,7 @@ h2#imPgTitle {
 
     #imCell_2 {
         padding-top: 10px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
         padding-left: 10px;
         padding-right: 10px
     }
@@ -2359,7 +2376,7 @@ h2#imPgTitle {
     }
 
     #imCell_6 {
-        padding-top: 10px;
+        padding-top: 0px;
         padding-bottom: 10px;
         padding-left: 10px;
         padding-right: 10px
@@ -3376,10 +3393,10 @@ h2#imPgTitle {
 
     #imHeader_imObjectImage_03_wrapper {
         position: absolute;
-        top: 0;
+        top: -15px;
         left: 30px;
         width: 250px;
-        height: 100px;
+        height: 109px;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -6286,7 +6303,7 @@ h2#imPgTitle {
 @media(min-width:1150px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 0;
+        top: -13px;
         left: 10px;
         width: 198px;
         height: 86px;
@@ -6782,18 +6799,18 @@ h2#imPgTitle {
 @media(max-width:1149.9px) and (min-width:720px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 16px;
+        top: -10px;
         left: 10px;
-        width: 183px;
-        height: 31px;
+        width: 142px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.529% 0);
-        clip-path: inset(0 0 63.529% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
@@ -7920,18 +7937,18 @@ h2#imPgTitle {
 @media(max-width:479.9px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 21px;
+        top: -10px;
         left: 10px;
         width: 142px;
-        height: 24px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.636% 0);
-        clip-path: inset(0 0 63.636% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
