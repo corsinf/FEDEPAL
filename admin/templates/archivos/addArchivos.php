@@ -56,12 +56,15 @@
 				</tr>		
 				
 				<tr class="div-phone" id="panel_archivo">
-					<td class="small div-phone">
-						<label for="attachment" style="display: block;">Archivo adjunto</label>
+					<td class="small div-phone" colspan="2">
+						<!-- <label for="attachment" style="display: block;">Archivo adjunto</label> -->
+						<label for="padding-left fore-color-1" style="display: block;">Ruta</label>
+						<input style="display: block;" class="border border-mute-light background-transparent" placeholder="Ruta" type="text" name="txt_archivo" id="txt_archivo" value="" style="width:100%;">
+
 					</td>
-					<td class="small div-phone">
-						<input type="file" name="txt_archivo" id="txt_archivo" style="display: block;">
-					</td>
+					<!-- <td class="small div-phone">
+						<input type="text" name="txt_archivo" id="txt_archivo" style="display: block;">
+					</td> -->
 				</tr>
 				<tr class="div-phone">				
 					<td class="small div-phone">

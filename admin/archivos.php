@@ -21,7 +21,9 @@ if (isset($_GET['validate'])) {
 
 if (isset($_GET['saveArchivo'])) {
 
-	$res = $pa->registerNewARchivo($_POST, $_FILES);
+	//$res = $pa->registerNewARchivo($_POST, $_FILES);
+	$res = $pa->registerNewARchivo($_POST);
+
 	if ($res > 0) {
 		header('Location: archivos.php');
 	}

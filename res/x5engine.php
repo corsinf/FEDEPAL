@@ -10925,7 +10925,35 @@ class imPrivateArea
         return $this->UpdateSocios($data,$ruta,$id);
     }
 
-    public function registerNewArchivo($post, $file)
+    // public function registerNewArchivo($post, $file)
+    // {
+    //     // print_r($post);die();
+    //     $ruta_general = $this->patch_files($post);
+    //     $nombre = $post['txt_titulo'];
+    //     $ruta = '';
+    //     $user = '';
+    //     $tipo = $post['ddl_tipo'];
+    //     $padre_id = $post['ddl_carpeta'];
+    //     $padre_nom = $post['txt_nombre_carpeta'];
+    //     $imSettings = Configuration::getSettings();
+    //     if($post['ddl_tipo']=='archivo')
+    //     {
+           
+    //         $uploadfile_temporal=$file['txt_archivo']['tmp_name'];
+    //         // $tipoImg = explode('.',$file['txt_archivo']['name']);
+    //         $imagen = str_replace(' ','_',$file['txt_archivo']['name']);
+    //         $nuevo_nom = $ruta_general.$imagen;
+    //         if (is_uploaded_file($uploadfile_temporal))
+    //         {
+    //             move_uploaded_file($uploadfile_temporal,$nuevo_nom);
+    //         }       
+    //         $ruta = $nuevo_nom;
+    //     }        
+    //     $ruta = str_replace('../',"",$ruta);        
+    //     return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre_id);
+    // }
+
+    public function registerNewArchivo($post)
     {
         // print_r($post);die();
         $ruta_general = $this->patch_files($post);
@@ -10936,20 +10964,14 @@ class imPrivateArea
         $padre_id = $post['ddl_carpeta'];
         $padre_nom = $post['txt_nombre_carpeta'];
         $imSettings = Configuration::getSettings();
-        if($post['ddl_tipo']=='archivo')
-        {
-           
-            $uploadfile_temporal=$file['txt_archivo']['tmp_name'];
-            // $tipoImg = explode('.',$file['txt_archivo']['name']);
-            $imagen = str_replace(' ','_',$file['txt_archivo']['name']);
-            $nuevo_nom = $ruta_general.$imagen;
-            if (is_uploaded_file($uploadfile_temporal))
-            {
-                move_uploaded_file($uploadfile_temporal,$nuevo_nom);
-            }       
-            $ruta = $nuevo_nom;
-        }        
-        $ruta = str_replace('../',"",$ruta);        
+        
+        $ruta = $post['txt_archivo'];
+        
+        if (strpos($post['txt_url'],'drive.google.com') !== false) {
+            $ruta = str_replace('view','preview',$post['txt_url']); 
+        } 
+
+        //$ruta = str_replace('../',"",$ruta);        
         return $this->createArchivos($nombre,$ruta,$user,$tipo,$padre_id);
     }
 
