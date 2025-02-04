@@ -119,18 +119,18 @@ class ControlPanel {
             "text" => $loc->get("Noticias", "Noticias"),
             "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "news.php"
         );
-        $menu[] = array(
-            "url" => "videos.php",
-            "image" => "images/dashboard_white.png",
-            "text" => $loc->get("Videos", "Videos"),
-            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "videos.php"
-        );
-         $menu[] = array(
-            "url" => "archivos.php",
-            "image" => "images/files.png",
-            "text" => $loc->get("Archivos", "Archivos"),
-            "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "archivos.php"
-        );
+        // $menu[] = array(
+        //     "url" => "videos.php",
+        //     "image" => "images/dashboard_white.png",
+        //     "text" => $loc->get("Videos", "Videos"),
+        //     "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "videos.php"
+        // );
+        //  $menu[] = array(
+        //     "url" => "archivos.php",
+        //     "image" => "images/files.png",
+        //     "text" => $loc->get("Archivos", "Archivos"),
+        //     "selected" => isset($_SERVER['PHP_SELF']) && basename($_SERVER['PHP_SELF']) == "archivos.php"
+        // );
         // $menu[] = array(
         //     "url" => "roles.php",
         //     "image" => "images/roles.png",

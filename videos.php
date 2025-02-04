@@ -370,10 +370,14 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				$("#fancytree-container").fancytree({
 					extensions: ["edit", "filter"],
 					//quicksearch: true,
-					source: videos,
+					source: { url: "api_google_drive.php?videos=true" },
 					checkbox: true, 
 					selectMode: 1, 
 					icons: true,
+					lazyLoad: function(event, data) {
+						var node = data.node;
+						data.result = { url: "api_google_drive.php?busqueda=" + node.key }; // Carga solo cuando se expande
+					},
 					select: function(event, data) {
 						var node = data.node; // Nodo seleccionado
 						var url = (data.node.data.url);

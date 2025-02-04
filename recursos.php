@@ -1,17 +1,21 @@
 <?php require_once("res/x5engine.php"); ?>
+
 <?php imCheckAccess('13', ''); 
 
+// Para conexion con bdd
+// $imSettings['access']['dbid'] = '';
+// $imSettings['access']['dbtable'] = 'w5_archivos';
+// $imSettings['access']['datadbtable'] = 'w5_archivos_data';
 
-$imSettings['access']['dbid'] = '';
-$imSettings['access']['dbtable'] = 'w5_archivos';
-$imSettings['access']['datadbtable'] = 'w5_archivos_data';
-
-$db = getDbData($imSettings['access']['dbid']);
-$pa = new ImPrivateArea();
-$pa->setDBDataArchivos(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
-$recursos = json_encode($pa->getArchivosRecursos());
+// $db = getDbData($imSettings['access']['dbid']);
+// $pa = new ImPrivateArea();
+// $pa->setDBDataArchivos(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
+// $recursos = json_encode($pa->getArchivosRecursos());
 
 ?>
+
+
+
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
@@ -250,12 +254,19 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 									
 									<div class="row pt-3">
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
+											<h6>DOCUMENTOS LEGALES NORMATIVOS</h6>
 											<div class="mb-3">
 												<input type="text" id="tree-search" class="form-control"
 													placeholder="Buscar archivos o carpetas...">
 											</div>
-
 											<div id="fancytree-container" class=""></div>
+
+											<h6 class="pt-3">CAPACITACIONES</h6>
+											<div class="mb-3">
+												<input type="text" id="tree-search-1" class="form-control"
+													placeholder="Buscar archivos o carpetas...">
+											</div>
+											<div id="fancytree-container-1" class=""></div>
 										</div>
 
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
@@ -386,16 +397,20 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
     </style>
 	
     <script>
-    	var recursos = <?= $recursos ?> ?? null;
+
 
         $(document).ready(function() {
             $("#fancytree-container").fancytree({
                 extensions: ["edit", "filter"],
                 //quicksearch: true,
-                source: recursos,
+                source: { url: "api_google_drive.php?documentos=true" },
                 checkbox: true, 
                 selectMode: 1, 
                 icons: true,
+				lazyLoad: function(event, data) {
+					var node = data.node;
+					data.result = { url: "api_google_drive.php?busqueda=" + node.key }; // Carga solo cuando se expande
+				},
                 select: function(event, data) {
                     var node = data.node; // Nodo seleccionado
                     var url = (data.node.data.url);
@@ -406,6 +421,41 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
             // Función de búsqueda
             $("#tree-search").on("keyup", function() {
                 var tree = $.ui.fancytree.getTree("#fancytree-container");
+                var match = $(this).val();
+                if (match) {
+                    tree.filterNodes(match, {
+                        autoExpand: true
+                    }); 
+                } else {
+                    tree.clearFilter();
+                }
+            });
+
+			/*
+				Capacitaciones
+			*/
+
+			$("#fancytree-container-1").fancytree({
+                extensions: ["edit", "filter"],
+                //quicksearch: true,
+                source: { url: "api_google_drive.php?capacitaciones=true" },
+                checkbox: true, 
+                selectMode: 1, 
+                icons: true,
+				lazyLoad: function(event, data) {
+					var node = data.node;
+					data.result = { url: "api_google_drive.php?busqueda=" + node.key }; // Carga solo cuando se expande
+				},
+                select: function(event, data) {
+                    var node = data.node; // Nodo seleccionado
+                    var url = (data.node.data.url);
+                    definir_ruta_iframe_referencias_laborales(url);
+                },
+            });
+
+            // Función de búsqueda
+            $("#tree-search-1").on("keyup", function() {
+                var tree = $.ui.fancytree.getTree("#fancytree-container-1");
                 var match = $(this).val();
                 if (match) {
                     tree.filterNodes(match, {
