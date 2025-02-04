@@ -7120,18 +7120,18 @@ h2#imPgTitle {
 @media(max-width:719.9px) and (min-width:480px) {
     #imStickyBar_imObjectImage_01_wrapper {
         position: absolute;
-        top: 19px;
-        left: 14px;
-        width: 183px;
-        height: 31px;
+        top: -10px;
+        left: 10px;
+        width: 142px;
+        height: 142px;
         text-align: center;
         z-index: 1002;
         overflow: hidden
     }
 
     #imStickyBar_imObjectImage_01_wrapper img {
-        -webkit-clip-path: inset(0 0 63.529% 0);
-        clip-path: inset(0 0 63.529% 0)
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0)
     }
 
     #imStickyBar_imCell_1 {
