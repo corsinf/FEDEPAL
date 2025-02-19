@@ -4,7 +4,7 @@
 #imPage {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 1150px minmax(0, 1fr);
-    grid-template-rows: 100px auto 180px
+    grid-template-rows: 100px auto auto
 }
 
 #imHeader {
@@ -39,7 +39,7 @@
     #imPage {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 720px minmax(0, 1fr);
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -75,7 +75,7 @@
     #imPage {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 480px minmax(0, 1fr);
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -111,7 +111,7 @@
     #imPage {
         display: grid;
         grid-template-columns: 0 minmax(0, 1fr) 0;
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -9434,10 +9434,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(min-width:1150px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 400px;
         width: 150px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -9481,7 +9481,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         top: 10px;
         left: 810px;
         width: 180px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -9603,8 +9603,8 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 900px;
+        top: 140px;
+        left: 792px;
         width: 220px;
         height: 50px;
         text-align: center;
@@ -9642,10 +9642,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(max-width:1149.9px) and (min-width:720px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 10px;
-        left: -200px;
+        top: 5px;
+        left: 250px;
         width: 140px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -9689,7 +9689,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         top: 5px;
         left: 470px;
         width: 200px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -9774,10 +9774,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_imTextObject_11_wrapper {
         position: absolute;
-        top: 1px;
+        top: 5px;
         left: 30px;
         width: 140px;
-        height: 174px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -9819,7 +9819,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
         top: 110px;
-        left: 710px;
+        left: 455px;
         width: 220px;
         height: 50px;
         text-align: center;
@@ -9857,10 +9857,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(max-width:719.9px) and (min-width:480px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
-        left: -1010px;
+        top: 220px;
+        left: 0px;
         width: 220px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -9904,7 +9904,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         top: 10px;
         left: 290px;
         width: 180px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -9992,7 +9992,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         top: 10px;
         left: 3px;
         width: 220px;
-        height: 174px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -10033,9 +10033,9 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 470px;
-        width: 220px;
+        top: 150px;
+        left: 310px;
+        width: 120px;
         height: 50px;
         text-align: center;
         z-index: 1006
@@ -10072,10 +10072,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 @media(max-width:479.9px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
-        left: -1650px;
+        top: 220px;
+        left: 0px;
         width: 220px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -10113,10 +10113,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_imTextObject_08_wrapper {
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 130px;
         width: 190px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -10195,10 +10195,10 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_imTextObject_11_wrapper {
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 1px;
         width: 180px;
-        height: 144px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -10236,9 +10236,9 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 310px;
-        width: 220px;
+        top: 160px;
+        left: 170px;
+        width: 120px;
         height: 50px;
         text-align: center;
         z-index: 1006

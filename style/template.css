@@ -63,6 +63,15 @@ body {
     cursor: pointer
 }
 
+.social-icon a {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño */
+    filter: brightness(1.1); /* Hace el texto un poco más brillante */
+}
+
 @media(min-width:1150px) {
     #imPageExtContainer {
         background-image: none;
@@ -113,7 +122,8 @@ body {
 
     #imFooter {
         background-image: none;
-        background-color: rgba(49, 52, 118, 1)
+        background-color: rgba(49, 52, 118, 1);
+        padding-bottom: 48px;
     }
 
     #imFooterObjects {
@@ -228,7 +238,8 @@ body {
 
     #imFooter {
         background-image: none;
-        background-color: rgba(49, 52, 118, 1)
+        background-color: rgba(49, 52, 118, 1);
+        padding-bottom: 35px;
     }
 
     #imFooterObjects {
@@ -343,7 +354,8 @@ body {
 
     #imFooter {
         background-image: none;
-        background-color: rgba(49, 52, 118, 1)
+        background-color: rgba(49, 52, 118, 1);
+        padding-bottom: 170px;
     }
 
     #imFooterObjects {
@@ -457,7 +469,8 @@ body {
 
     #imFooter {
         background-image: none;
-        background-color: rgba(49, 52, 118, 1)
+        background-color: rgba(49, 52, 118, 1);
+        padding-bottom: 160px;
     }
 
     #imFooterObjects {

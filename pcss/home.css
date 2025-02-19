@@ -4,7 +4,7 @@
 #imPage {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 1150px minmax(0, 1fr);
-    grid-template-rows: 100px auto 180px
+    grid-template-rows: 100px auto auto
 }
 
 #imHeader {
@@ -36,10 +36,16 @@
 }
 
 @media(max-width:1149.9px) and (min-width:720px) {
+    #imTextObject_02_tab0 .fs36lh1-5 {
+        vertical-align: baseline;
+        font-size: 36pt;
+        line-height: 72px
+    }
+
     #imPage {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 720px minmax(0, 1fr);
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -72,10 +78,17 @@
 }
 
 @media(max-width:719.9px) and (min-width:480px) {
+    #imTextObject_02_tab0 .fs36lh1-5 {
+        vertical-align: baseline;
+        font-size: 36pt;
+        line-height: 72px
+    }
+
+
     #imPage {
         display: grid;
         grid-template-columns: minmax(0, 1fr) 480px minmax(0, 1fr);
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -108,10 +121,16 @@
 }
 
 @media(max-width:479.9px) {
+    #imTextObject_02_tab0 .fs36lh1-5 {
+        vertical-align: baseline;
+        font-size: 29pt;
+        line-height: 72px
+    }
+
     #imPage {
         display: grid;
         grid-template-columns: 0 minmax(0, 1fr) 0;
-        grid-template-rows: 80px auto 180px
+        grid-template-rows: 80px auto auto
     }
 
     #imHeader {
@@ -197,53 +216,65 @@
     grid-row: 8/9
 }
 
+/* imagenes */
+
 #imCell_103 {
+    /* Izquierda, fila 9 */
     display: grid;
     grid-column: 2/50;
-    grid-row: 9/10
+    grid-row: 9/10;
 }
 
 #imCell_130 {
+    /* Centro, fila 9 */
     display: grid;
     grid-column: 50/98;
-    grid-row: 9/10
+    grid-row: 9/10;
 }
 
 #imCell_127 {
+    /* Derecha, fila 9 */
     display: grid;
     grid-column: 98/146;
-    grid-row: 9/10
+    grid-row: 9/10;
 }
 
 #imCell_131 {
+    /* Izquierda, fila 10 */
     display: grid;
     grid-column: 2/50;
-    grid-row: 10/11
+    grid-row: 10/11;
 }
 
 #imCell_101 {
+    /* Centro, fila 10 */
     display: grid;
     grid-column: 50/98;
-    grid-row: 10/11
+    grid-row: 10/11;
 }
 
 #imCell_129 {
+    /* Derecha, fila 10 */
     display: grid;
     grid-column: 98/146;
-    grid-row: 10/11
+    grid-row: 10/11;
 }
 
 #imCell_104 {
+    /* Izquierda, fila 11 */
     display: grid;
     grid-column: 26/74;
-    grid-row: 11/12
+    grid-row: 11/12;
 }
 
 #imCell_102 {
+    /* Derecha, fila 11 */
     display: grid;
     grid-column: 74/122;
-    grid-row: 11/12
+    grid-row: 11/12;
 }
+
+/* imagenes */
 
 #imCell_125 {
     display: grid;
@@ -4119,7 +4150,7 @@ html:not(.no-cssanimations) #imCell_130.animated {
 }
 
 #imObjectImage_130 #imObjectImage_130_container {
-    width: 469px;
+    width: 300px;
     max-width: 100%;
     line-height: 0
 }
@@ -4302,14 +4333,20 @@ html:not(.no-cssanimations) #imCell_127.animated {
 #imCellStyleDescription_103 {
     grid-row: row-desc/span 1;
     grid-column: 1/-1;
-    align-self: end;
+    align-self: stretch; /* Se adapta al alto disponible */
     box-sizing: border-box;
-    overflow: hidden
+    overflow: visible;
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    position: relative;
 }
 
-#imCellStyleDescription_103>div {
+#imCellStyleDescription_103 > div {
     position: relative;
-    padding: 20px 20px 20px 20px;
+    bottom: 30px; 
+    padding: 20px;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+
     text-align: center;
     font-family: Lato;
     font-size: 14pt;
@@ -4317,17 +4354,20 @@ html:not(.no-cssanimations) #imCell_127.animated {
     font-weight: normal;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(230, 141, 36);
-    z-index: 4
+    z-index: 5;
+    width: 70%; /* Ajusta el ancho */
+    box-sizing: border-box; /* Evita que el padding altere el tamaño */
+    margin: 0 auto 5px; /* Centra horizontalmente */
 }
 
 #imCellStyleDescription_103 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 1)
+    color: rgba(255, 255, 255, 1);
 }
 
 #imCellStyleDescription_103 a:hover,
 #imCellStyleDescription_103 a:active {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 #imCellStyleGraphics_103 {
@@ -4387,9 +4427,20 @@ html:not(.no-cssanimations) #imCell_103.animated {
 }
 
 #imObjectImage_103 #imObjectImage_103_container {
-    width: 469px;
+    width: 300px;
     max-width: 100%;
-    line-height: 0
+    height: 450px; /* Altura fija para recortar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Recorta la imagen que sobresalga */
+    line-height: 0;
+}
+
+#imObjectImage_103 #imObjectImage_103_container img {
+    width: 100%;
+    height: 100%; /* Ocupará toda la altura del contenedor */
+    object-fit: cover; /* Recorta solo el alto sin deformar la imagen */
 }
 
 #imObjectImage_103 {
@@ -4397,11 +4448,6 @@ html:not(.no-cssanimations) #imCell_103.animated {
     margin: 0 auto
 }
 
-#imObjectImage_103 #imObjectImage_103_container img {
-    width: 100%;
-    height: auto;
-    vertical-align: top
-}
 
 #imCell_101 {
     grid-template-columns: 100%;
@@ -6651,7 +6697,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_130 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_130 {
@@ -6671,9 +6717,9 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCellStyleDescription_130 {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 5px
+        margin-left: 32px;
+        margin-right: 31.9px;
+        margin-top: -20px
     }
 
     #imCellStyleBorders_130 {
@@ -6691,7 +6737,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_127 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_127 {
@@ -6731,7 +6777,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_103 {
@@ -6750,11 +6796,11 @@ html:not(.no-cssanimations) #imCell_124.animated {
         margin-bottom: 5px
     }
 
-    #imCellStyleDescription_103 {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 5px
-    }
+    /* #imCellStyleDescription_103 {
+        margin-left: 32px;
+        margin-right: 31.9px;
+        margin-top: -20px
+    } */
 
     #imCellStyleBorders_103 {
         border-top: 0;
@@ -6771,7 +6817,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_101 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_101 {
@@ -6811,7 +6857,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_129 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_129 {
@@ -6851,7 +6897,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_131 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_131 {
@@ -6891,7 +6937,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_104 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_104 {
@@ -6931,7 +6977,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_102 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_102 {
@@ -7487,7 +7533,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_130 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_130 {
@@ -7527,7 +7573,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_127 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_127 {
@@ -7567,7 +7613,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_103 {
@@ -7586,11 +7632,11 @@ html:not(.no-cssanimations) #imCell_124.animated {
         margin-bottom: 5px
     }
 
-    #imCellStyleDescription_103 {
+    /* #imCellStyleDescription_103 {
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 5px
-    }
+    } */
 
     #imCellStyleBorders_103 {
         border-top: 0;
@@ -7607,7 +7653,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_101 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_101 {
@@ -7647,7 +7693,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_129 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_129 {
@@ -7687,7 +7733,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_131 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_131 {
@@ -7727,7 +7773,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_104 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_104 {
@@ -7767,7 +7813,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_102 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_102 {
@@ -8323,7 +8369,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_130 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_130 {
@@ -8363,7 +8409,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_127 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_127 {
@@ -8403,7 +8449,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_103 {
@@ -8422,11 +8468,11 @@ html:not(.no-cssanimations) #imCell_124.animated {
         margin-bottom: 5px
     }
 
-    #imCellStyleDescription_103 {
+    /* #imCellStyleDescription_103 {
         margin-left: 5px;
         margin-right: 5px;
         margin-top: 5px
-    }
+    } */
 
     #imCellStyleBorders_103 {
         border-top: 0;
@@ -8443,7 +8489,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_101 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_101 {
@@ -8483,7 +8529,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_129 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_129 {
@@ -8523,7 +8569,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_131 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_131 {
@@ -8563,7 +8609,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_104 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_104 {
@@ -8603,7 +8649,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_102 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_102 {
@@ -9138,7 +9184,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_130 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_130 {
@@ -9171,7 +9217,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_127 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_127 {
@@ -9204,7 +9250,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_103 {
@@ -9221,9 +9267,9 @@ html:not(.no-cssanimations) #imCell_124.animated {
         width: 100%
     }
 
-    #imCellStyleDescription_103 {
+    /* #imCellStyleDescription_103 {
         position: relative
-    }
+    } */
 
     #imCellStyleGraphics_103 {
         box-sizing: border-box
@@ -9237,7 +9283,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_101 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_101 {
@@ -9270,7 +9316,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_129 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_129 {
@@ -9303,7 +9349,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_131 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_131 {
@@ -9336,7 +9382,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_104 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_104 {
@@ -9369,7 +9415,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_102 {
-        grid-template-rows: [row-title]min-content [row-content]auto [row-desc]minmax(min-content, 0)5px
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
     #imObjectImage_102 {
@@ -11984,10 +12030,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(min-width:1150px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
+        top: 10px;
         left: 400px;
         width: 150px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -12031,7 +12077,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
         top: 10px;
         left: 810px;
         width: 180px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -12112,7 +12158,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
         top: 20px;
         left: 60px;
         width: 150px;
-        height: 120px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -12153,8 +12199,8 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 900px;
+        top: 140px;
+        left: 792px;
         width: 220px;
         height: 50px;
         text-align: center;
@@ -12192,10 +12238,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:1149.9px) and (min-width:720px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 10px;
-        left: -200px;
+        top: 5px;
+        left: 250px;
         width: 140px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -12239,7 +12285,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
         top: 5px;
         left: 470px;
         width: 200px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -12324,10 +12370,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_imTextObject_11_wrapper {
         position: absolute;
-        top: 1px;
+        top: 5px;
         left: 30px;
         width: 140px;
-        height: 174px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -12369,7 +12415,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
         top: 110px;
-        left: 710px;
+        left: 455px;
         width: 220px;
         height: 50px;
         text-align: center;
@@ -12407,10 +12453,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:719.9px) and (min-width:480px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
-        left: -1010px;
+        top: 220px;
+        left: 0px;
         width: 220px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -12454,7 +12500,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
         top: 10px;
         left: 290px;
         width: 180px;
-        height: 74px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -12542,7 +12588,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
         top: 10px;
         left: 3px;
         width: 220px;
-        height: 174px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -12583,9 +12629,9 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 470px;
-        width: 220px;
+        top: 150px;
+        left: 310px;
+        width: 120px;
         height: 50px;
         text-align: center;
         z-index: 1006
@@ -12622,10 +12668,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 @media(max-width:479.9px) {
     #imFooter_imTextObject_06_wrapper {
         position: absolute;
-        top: 20px;
-        left: -1650px;
+        top: 220px;
+        left: 0px;
         width: 220px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1002;
         overflow: hidden
@@ -12663,10 +12709,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_imTextObject_08_wrapper {
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 130px;
         width: 190px;
-        height: 154px;
+        height: auto;
         text-align: center;
         z-index: 1003;
         overflow: hidden
@@ -12745,10 +12791,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_imTextObject_11_wrapper {
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 1px;
         width: 180px;
-        height: 144px;
+        height: auto;
         text-align: center;
         z-index: 1005;
         overflow: hidden
@@ -12786,9 +12832,9 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
     #imFooter_pluginAppObj_12_wrapper {
         position: absolute;
-        top: 110px;
-        left: 310px;
-        width: 220px;
+        top: 160px;
+        left: 170px;
+        width: 120px;
         height: 50px;
         text-align: center;
         z-index: 1006
