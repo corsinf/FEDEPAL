@@ -1,0 +1,47 @@
+    /* Usamos un estilo personalizado para aplicar el color exacto */
+    .custom-text-color {
+        color: rgba(52, 83, 139, 1);
+      }
+  
+      .btn_beneficios {
+      font: normal normal normal 16pt 'Lato';
+      background-color: rgba(230, 141, 36, 1);
+      transition: background-color 0.2s linear;
+      position: relative;
+      display: inline-block;
+      word-wrap: break-word;
+      max-width: 100%;
+      border: solid;
+      border-color: rgba(55, 71, 79, 1);
+      border-width: 0;
+      border-radius: 0;
+      padding: 20px 30px;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none; /* Evita el subrayado si es un <a> */
+  }
+  
+  .btn_beneficios:hover {  
+      background-color: rgba(184, 113, 29, 1);
+      cursor: pointer;
+  }
+  
+  #contenidotext {
+      opacity: 0;
+      transform: translateX(-50px); /* Comienza fuera de la pantalla, a la izquierda */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  #contenidotext.visible {
+      opacity: 1;
+      transform: translateX(0); /* Regresa a su posición normal */
+  }
+  .contenidotext1 {
+      opacity: 0;
+      transform: translateX(50px); /* Ahora inicia desplazado a la derecha */
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .contenidotext1.visible {
+      opacity: 1;
+      transform: translateX(0); /* Se mueve a su posición original */
+  }
