@@ -216,7 +216,7 @@
     grid-row: 8/9
 }
 
-/* imagenes */
+/* imagenes inicio */
 
 #imCell_103 {
     /* Izquierda, fila 9 */
@@ -263,18 +263,25 @@
 #imCell_104 {
     /* Izquierda, fila 11 */
     display: grid;
-    grid-column: 26/74;
+    grid-column: 2/50;
     grid-row: 11/12;
 }
 
 #imCell_102 {
     /* Derecha, fila 11 */
     display: grid;
-    grid-column: 74/122;
+    grid-column: 50/98;
     grid-row: 11/12;
 }
 
-/* imagenes */
+#imCell_999 {
+    /* Derecha, fila 11 */
+    display: grid;
+    grid-column: 98/146;
+    grid-row: 11/12;
+}
+
+/* imagenes fin */
 
 #imCell_125 {
     display: grid;
@@ -465,13 +472,19 @@
 
     #imCell_104 {
         display: grid;
-        grid-column: 26/74;
+        grid-column: 2/50;
         grid-row: 11/12
     }
 
     #imCell_102 {
         display: grid;
-        grid-column: 74/122;
+        grid-column: 50/98;
+        grid-row: 11/12
+    }
+
+    #imCell_999 {
+        display: grid;
+        grid-column: 98/146;
         grid-row: 11/12
     }
 
@@ -665,13 +678,19 @@
 
     #imCell_104 {
         display: grid;
-        grid-column: 26/74;
+        grid-column: 2/50;
         grid-row: 11/12
     }
 
     #imCell_102 {
         display: grid;
-        grid-column: 74/122;
+        grid-column: 50/98;
+        grid-row: 11/12
+    }
+
+    #imCell_999 {
+        display: grid;
+        grid-column: 98/146;
         grid-row: 11/12
     }
 
@@ -816,19 +835,19 @@
     #imCell_130 {
         display: grid;
         grid-column: 2/146;
-        grid-row: 8/9
+        grid-row: 9/10
     }
 
     #imCell_127 {
         display: grid;
         grid-column: 2/146;
-        grid-row: 9/10
+        grid-row: 10/11
     }
 
     #imCell_103 {
         display: grid;
         grid-column: 2/146;
-        grid-row: 10/11
+        grid-row: 8/9
     }
 
     #imCell_101 {
@@ -858,25 +877,31 @@
     #imCell_102 {
         display: grid;
         grid-column: 2/146;
-        grid-row: 15/16
+        grid-row: 16/17
+    }
+
+    #imCell_999 {
+        display: grid;
+        grid-column: 2/146;
+        grid-row: 17/16
     }
 
     #imCell_125 {
         display: grid;
         grid-column: 1/147;
-        grid-row: 16/17
+        grid-row: 17/18
     }
 
     #imCell_124 {
         display: grid;
         grid-column: 1/147;
-        grid-row: 17/18
+        grid-row: 18/19
     }
 
     #imCell_109 {
         display: grid;
         grid-column: 1/147;
-        grid-row: 18/19
+        grid-row: 19/20
     }
 
     #imCell_112 {
@@ -4991,6 +5016,12 @@ html:not(.no-cssanimations) #imCell_104.animated {
     box-sizing: border-box
 }
 
+#imCell_999 {
+    grid-template-columns: 100%;
+    position: relative;
+    box-sizing: border-box
+}
+
 #imObjectImage_102 {
     position: relative;
     align-self: center;
@@ -6980,6 +7011,17 @@ html:not(.no-cssanimations) #imCell_124.animated {
         grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
+    #imCell_999 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+        padding-right: 3px
+    }
+
+    #imCell_999 {
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+    }
+
     #imObjectImage_102 {
         padding-top: 0;
         padding-bottom: 0;
@@ -7815,6 +7857,18 @@ html:not(.no-cssanimations) #imCell_124.animated {
     #imCell_102 {
         grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
+
+    #imCell_999 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 2px;
+        padding-right: 2px
+    }
+
+    #imCell_999 {
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+    }
+
 
     #imObjectImage_102 {
         padding-top: 0;
@@ -8652,6 +8706,17 @@ html:not(.no-cssanimations) #imCell_124.animated {
         grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
+    #imCell_999 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 1px;
+        padding-right: 1px
+    }
+
+    #imCell_999 {
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+    }
+
     #imObjectImage_102 {
         padding-top: 0;
         padding-bottom: 0;
@@ -9415,6 +9480,17 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_102 {
+        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+    }
+
+    #imCell_999 {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    #imCell_999 {
         grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
     }
 
