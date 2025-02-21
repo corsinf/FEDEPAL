@@ -55,6 +55,8 @@ $socios = json_encode($pa->getSociosById());
 		})(window,document,'script','dataLayer','GTM-TR6L3QCK');</script>
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
+		<!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
+    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body> <!-- Google Tag Manager (noscript) -->
 
@@ -184,7 +186,7 @@ Inicio		</a>
 Capacitaciones		</a>
 </div>
 </div>
-</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label" >Afiliación</a></div></div>
+<li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label">Afiliación</a></div></div>
 	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
@@ -482,6 +484,15 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
 
 		<script>
+
+function checkIframePermission(url) {
+    return fetch(url, { method: 'HEAD', mode: 'no-cors' })
+        .then(() => true)  // Si la URL responde, asumimos que permite iframes
+        .catch(() => false); // Si falla, asumimos que NO permite iframes
+}
+
+			
+
 			$(document).ready(function () {
 			var container = $("#pnl_portafolio_socios");
 			var data = <?= $socios ?>;
@@ -494,6 +505,23 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						id_categoria = "087slr7i";
 					} else if (item.region === "Amazonía") {
 						id_categoria = "z0yjwlp1";
+					}
+					var itemUrl = item.url || '#';
+					var baseUrl = itemUrl.split('/').slice(0, 3).join('/'); // Obtiene "https://www.facebook.com"
+                    var estado = true;
+					checkIframePermission(itemUrl).then((canEmbed) => {
+						estado = canEmbed;
+					});
+
+					var linkHtml = '';
+					console.log(index+"-"+estado);
+
+					if (baseUrl.includes("facebook.com") || !estado ) {
+						// Si la URL es de Facebook, usar x5engine.imShowBox
+						linkHtml = `<a href="${itemUrl}" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña</a>`;
+					} else {
+						// Si la URL no es de Facebook, abrir en una nueva pestaña
+						linkHtml = `<a href="${itemUrl}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${baseUrl}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>`;
 					}
 
 					// Construcción del bloque HTML
@@ -509,7 +537,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								<div class="portfolio__card__overlay__content">
 									<div class="portfolio__card__overlay__title">${item.institucion || 'Título no disponible'}</div>
 									<div class="portfolio__card__overlay__button">
-										<a href="${item.url || '#'}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${item.url || '#'}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>
+										${linkHtml}
 									</div>
 								</div>
 							</div>
