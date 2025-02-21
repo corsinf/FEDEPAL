@@ -8,8 +8,8 @@
 
 $imSettings['general'] = array(
 	'site_id' => '34F325CCF42DC99D0E3D4119633B3D6B',
-	'url' => 'http://localhost/',
-	'homepage_url' => 'http://localhost/FEDEPAL/home.html',
+	'url' => 'https://localhost/',
+	'homepage_url' => 'https://localhost/FEDEPAL/home.html',
 	'icon' => '',
 	'version' => '2024.4.4.0',
 	'sitename' => 'Fedepal',
@@ -95,7 +95,7 @@ $couponData['products'] = array();
 $ecommerce->setPublicFolder('web');
 $ecommerce->setCouponData($couponData);
 $ecommerce->setSettings(array(
-	'page_url' => 'http://localhost/',
+	'page_url' => 'https://localhost/',
 	'force_sender' => false,
 	'mail_btn_css' => 'display: inline-block; text-decoration: none; color: rgba(255, 255, 255, 1); background-color: rgba(230, 141, 36, 1); padding: 5px 5px 5px 5px; border-style: solid; border-width: 0px 0px 0px 0px; border-color: rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;',
 	'email_opening' => 'Estimado cliente,<br /><br />Gracias por su pedido Se le recordamos de que el pago no ha todavía sido recibido.<br /><br />A continuación encontrará una lista de los productos pedidos, la información de facturación y de envío y las instrucciones para efectuar el pago.',
@@ -201,7 +201,7 @@ $imSettings['dynamicobjects'] = array(	'template' => array(
 			'folder' => 'web/DATOS',
 			'type' => 'page',
 			'defaultContent' => '<p>¡Haz clic aquASDASDASDASDASDí para introducir el texto por defecto!</p>',
-			'Page' => 'http://localhost/convenios.php',
+			'Page' => 'https://localhost/convenios.php',
 			'PageTitle' => 'Convenios',
 			'ObjectTitle' => '',
 			'subfolder' => 'DATOS',
