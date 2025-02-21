@@ -188,13 +188,15 @@
 Inicio		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
+	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="beneficios.html" class="label" >Beneficios</a></div></div></li></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="capacitaciones.html">
 Capacitaciones		</a>
 </div>
 </div>
+
+<li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label" >Afiliación</a></div></div>
 	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
@@ -218,10 +220,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					
 					<main id="imContent">
 						<a id="imGoToCont"></a>
-						<header>
-							<h2 id="imPgTitle">Recursos</h2>
-							<div id="imBreadcrumb"><a href="#"> Archivos</a></div>
-						</header>
+						
 
 						<div id="imPageRow_1" class="imPageRow">
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_1"><div id="imPageRowGraphicsVideo_1_wrapper"><video id="imPageRowGraphicsVideo_1" class="imPageRowGraphicsVideo" src="video/medium-185096.mp4" autoplay loop playsinline muted></video>

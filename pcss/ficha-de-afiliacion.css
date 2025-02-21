@@ -365,8 +365,13 @@
 }
 
 h2#imPgTitle {
-    position: relative;
-    float: left
+    text-align: center;
+    float: left;
+    vertical-align: baseline;
+    font-size: 36pt; 
+    line-height: 72px;
+    color: #E68D24;
+    font-family: 'Tahoma';
 }
 
 #imBreadcrumb {
@@ -3439,7 +3444,7 @@ h2#imPgTitle {
         top: 0;
         left: 1020px;
         width: 100px;
-        height: 100px;
+        height: 50px;
         text-align: center;
         z-index: 1004;
         overflow: hidden

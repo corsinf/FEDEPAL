@@ -242,13 +242,14 @@ if (isset($_POST['imUname']) && isset($_POST['imPwd'])) {
 Inicio		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Nosotros" class="label" onclick="return x5engine.utils.location('home.html#Nosotros', null, false)">Nosotros</a></div></div></li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="home.html#Delimitador" class="label" onclick="return x5engine.utils.location('home.html#Delimitador', null, false)">Directorio</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
+	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="beneficios.html" class="label" >Beneficios</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="capacitaciones.html">
 Capacitaciones		</a>
 </div>
 </div>
+</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label" >Afiliación</a></div></div>
 	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
