@@ -344,9 +344,14 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div>
 						<div id="imCell_121" class="animable rubberBand"> <div id="imCellStyleGraphics_121"></div><div id="imCellStyleBorders_121"></div><div id="imTextObject_14_121">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_14_121_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTACenter"><br></div><div class="imTACenter"><div><b><span class="fs36lh1-5 cf1">Agrupamos a las instituciones educativas particulares del país,</span></b></div><div><b><span class="fs36lh1-5 cf1">para fortalecer la educación privada a nivel nacional.</span></b></div></div>
+							<div class="text-inner">
+								<div class="imTACenter"><br></div>
+								<div class="imTACenter">
+									<div>
+										<b><span class="fs36lh1-5 cf1">Agrupamos a las instituciones educativas particulares del país, para fortalecer la educación privada a nivel nacional.</span></b>
+									</div>
 								</div>
+							</div>
 							</div>
 						
 						</div>
@@ -361,15 +366,35 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imPageRow_3" class="imPageRow">
 						
 						</div>
-						<div id="imCell_128" class=""> <div id="imCellStyleGraphics_128"></div><div id="imCellStyleBorders_128"></div><div id="imTextObject_14_128">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_14_128_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTAJustify"><span class="fs18lh1-5 cf1">FEDEPAL está afiliada a la Cámara de Comercio de Quito CCQ, tenemos un convenio a través del cual algunos beneficios de la CCQ son extendidos hacia las instituciones Federadas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Las IE Federadas reciben Asesoramiento sin costo en preguntas jurídicas educativas generales y consultas gratuitas en derecho educativo, a través de procedimientos previamente establecidos canalizados a través de Secretaría.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Con base a las necesidades y situaciones que se van presentando, organizamos charlas y conservatorios con temas específicos para solventar y apoyar a nuestros federados en diferentes áreas (laboral, tributaria, académica, tecnológica, entre otros)</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Asesoría Académica Pedagógica sin costo, bajo un procedimiento establecido, canalizados a través de Secretaría.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Eventos académicos, sociales y culturales, con temas de interés para la educación privada y la gestión de las instituciones educativas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Talleres y capacitaciones que engloban las necesidades educativas de nuestros asociados.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Alianzas con proveedores de servicios, plataformas y productos educativos, con tarifas preferenciales para las instituciones afiliadas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Representación de la Educación Particular frente a los entes del Estado (Presidencia de la República, Asamblea Nacional y Ministerio de Educación).</span></div>
+
+						<div id="imCell_128" class="">
+							<div id="imCellStyleGraphics_128"></div>
+							<div id="imCellStyleBorders_128"></div>
+							<div id="imTextObject_14_128">
+								<div data-index="0" class="text-tab-content grid-prop current-tab " id="imTextObject_14_128_tab0" style="opacity: 1; ">
+									<div class="text-inner">
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">FEDEPAL está afiliada a la Cámara de Comercio de Quito CCQ, tenemos un convenio a través del cual algunos beneficios de la CCQ son extendidos hacia las instituciones Federadas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Las IE Federadas reciben Asesoramiento sin costo en preguntas jurídicas educativas generales y consultas gratuitas en derecho educativo, a través de procedimientos previamente establecidos canalizados a través de Secretaría.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Con base a las necesidades y situaciones que se van presentando, organizamos charlas y conservatorios con temas específicos para solventar y apoyar a nuestros federados en diferentes áreas (laboral, tributaria, académica, tecnológica, entre otros)</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Asesoría Académica Pedagógica sin costo, bajo un procedimiento establecido, canalizados a través de Secretaría.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Eventos académicos, sociales y culturales, con temas de interés para la educación privada y la gestión de las instituciones educativas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Talleres y capacitaciones que engloban las necesidades educativas de nuestros asociados.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Alianzas con proveedores de servicios, plataformas y productos educativos, con tarifas preferenciales para las instituciones afiliadas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Representación de la Educación Particular frente a los entes del Estado (Presidencia de la República, Asamblea Nacional y Ministerio de Educación).</span></div>
+									</div>
 								</div>
+
 							</div>
-						
 						</div>
-						</div>
+
+
 					</main>
 					
 					<footer id="imFooter">

@@ -8,7 +8,7 @@ $imSettings['access']['datadbtable'] = 'w5_news_data';
 $db = getDbData($imSettings['access']['dbid']);
 $pa = new ImPrivateArea();
 $pa->setDBDataNews(ImDb::from_db_data($db), $imSettings['access']['dbtable'], $imSettings['access']['datadbtable']);
-$news = json_encode($pa->getNewsById());
+$news = json_encode($pa->getNewsQuery());
 
 ?>
 <!DOCTYPE html><!-- HTML5 -->
@@ -307,7 +307,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								<!-- Modal General -->
 
 								<div class="modal fade" id="modalGeneral" tabindex="-1" aria-labelledby="modalGeneralLabel" aria-hidden="true">
-									<div class="modal-dialog">
+									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
 											<div class="modal-header">
 												<h5 class="modal-title" id="modalGeneralLabel"></h5>
@@ -470,11 +470,25 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 			console.log(data)
 			if (data && Array.isArray(data)) {
 				data.forEach((item, index) => {
+					// Determinar el tipo de archivo
+					let mediaBlock = '';
+
+					if (item.imagen && /\.(jpg|jpeg|png|gif|webp)$/i.test(item.imagen)) {
+						mediaBlock = `<img src="${item.imagen}" alt="${escapeHtml(item.titulo || 'Archivo no disponible')}" class="news-image">`;
+					} else if (item.imagen && /\.pdf$/i.test(item.imagen)) {
+						mediaBlock = `<iframe class="news-image" src="${item.imagen}#toolbar=0&navpanes=0&scrollbar=0"></iframe>`;
+					} else if (item.imagen && /\.(doc|docx|xls|xlsx|ppt|pptx)$/i.test(item.imagen)) {
+						mediaBlock = `<a href="${item.imagen}" target="_blank" class="news-image btn btn-read-more">Ver documento</a>`;
+					} else {
+						// Si no hay archivo o el formato es desconocido, usar un placeholder
+						mediaBlock = `<img src="https://via.placeholder.com/300" alt="Archivo no disponible" class="news-image">`;
+					}
+
 					// Construcción del bloque HTML
 					var block = `
 						<div class="col-md-4 mb-4">
 							<div class="news-card">
-								<img src="${item.imagen || 'https://via.placeholder.com/300'}" alt="${escapeHtml(item.titulo || 'Noticia')}" class="news-image">
+								${mediaBlock}
 								<h4 class="news-title">${escapeHtml(item.titulo || 'Título no disponible')}</h4>
 								<p class="news-content">${escapeHtml(item.detalle || 'Contenido no disponible.')}</p>
 								<button href="#" class="btn btn-read-more" 
@@ -485,6 +499,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					container.append(block);
 				});
 			}
+
 			else {
 				console.error("Los datos no contienen un array válido.");
 			}
@@ -503,7 +518,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					.replace(/\n/g, '<br>'); // Convertir saltos de línea adicionales
 			}
 
-			function abrirModal(titulo, detalle, imagen) {
+			function abrirModal_1(titulo, detalle, imagen) {
 				// Actualiza el contenido del modal general
 				$('#modalGeneralLabel').text(titulo || 'Título no disponible');
 				$('#modalGeneral .modal-body').html(`
@@ -514,6 +529,37 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				// Muestra el modal general con Bootstrap
 				$('#modalGeneral').modal('show');
 			}
+
+			function abrirModal(titulo, detalle, archivo) {
+				// Obtener elementos del modal
+				$('#modalGeneralLabel').text(titulo || 'Título no disponible');
+				
+				let contenido = '';
+
+				if (archivo) {
+					if (archivo.match(/\.(jpeg|jpg|png|gif)$/i)) {
+						// Si es imagen
+						contenido = `<img src="${archivo}" alt="${titulo}" style="width: 100%; height: auto; margin-bottom: 15px;">`;
+					} else if (archivo.match(/\.(pdf)$/i)) {
+						// Si es PDF
+						contenido = `<iframe src="${archivo}" style="width: 100%; height: auto; margin-bottom: 15px;"></iframe>`;
+					} else {
+						// Si es otro archivo (Word, Excel, etc.)
+						contenido = `<a href="${archivo}" target="_blank" class="btn btn-read-more" style="width: 100%; height: auto; margin-bottom: 15px;">Abrir archivo</a>`;
+					}
+				}
+
+				// Agregar detalle si existe
+				contenido += `<p>${detalle || 'Contenido no disponible.'}</p>`;
+
+				// Actualizar contenido del modal
+				$('#modalGeneral .modal-body').html(contenido);
+
+				// Mostrar el modal con Bootstrap
+				$('#modalGeneral').modal('show');
+			}
+
+
 
 		</script>
 
