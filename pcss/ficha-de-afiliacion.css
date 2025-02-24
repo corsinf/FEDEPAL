@@ -22,11 +22,7 @@
     display: none
 }
 
-#imContent {
-    display: block;
-    grid-column: 1/4;
-    grid-row: 2/3
-}
+
 
 #imContentGraphics {
     display: block;
@@ -57,11 +53,7 @@
         display: none
     }
 
-    #imContent {
-        display: block;
-        grid-column: 1/4;
-        grid-row: 2/3
-    }
+   
 
     #imContentGraphics {
         display: block;
@@ -93,11 +85,6 @@
         display: none
     }
 
-    #imContent {
-        display: block;
-        grid-column: 1/4;
-        grid-row: 2/3
-    }
 
     #imContentGraphics {
         display: block;
@@ -129,11 +116,6 @@
         display: none
     }
 
-    #imContent {
-        display: block;
-        grid-column: 1/4;
-        grid-row: 2/3
-    }
 
     #imContentGraphics {
         display: block;
@@ -142,17 +124,8 @@
     }
 }
 
-#imContent {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px minmax(0, 1fr);
-    grid-template-rows: auto auto auto auto
-}
 
-#imContent>header {
-    display: block;
-    grid-column: 2/26;
-    grid-row: 1/2
-}
+
 
 #imGoToCont {
     display: block;
@@ -197,17 +170,9 @@
 }
 
 @media(max-width:1149.9px) and (min-width:720px) {
-    #imContent {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px 29.583px minmax(0, 1fr);
-        grid-template-rows: auto auto auto auto
-    }
+    
 
-    #imContent>header {
-        display: block;
-        grid-column: 2/26;
-        grid-row: 1/2
-    }
+   
 
     #imGoToCont {
         display: block;
@@ -253,17 +218,9 @@
 }
 
 @media(max-width:719.9px) and (min-width:480px) {
-    #imContent {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr) 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px 19.583px minmax(0, 1fr);
-        grid-template-rows: auto auto auto auto
-    }
+   
 
-    #imContent>header {
-        display: block;
-        grid-column: 2/26;
-        grid-row: 1/2
-    }
+    
 
     #imGoToCont {
         display: block;
@@ -309,17 +266,7 @@
 }
 
 @media(max-width:479.9px) {
-    #imContent {
-        display: grid;
-        grid-template-columns: 0 minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) 0;
-        grid-template-rows: auto auto auto auto auto
-    }
-
-    #imContent>header {
-        display: block;
-        grid-column: 2/26;
-        grid-row: 1/2
-    }
+    
 
     #imGoToCont {
         display: block;
@@ -2325,10 +2272,7 @@ h2#imPgTitle {
 }
 
 @media(min-width:1150px) {
-    #imContent {
-        padding-left: 5px;
-        padding-right: 5px
-    }
+   
 
     .imPageRow {
         margin-left: -5px;
@@ -2483,10 +2427,7 @@ h2#imPgTitle {
 }
 
 @media(max-width:1149.9px) and (min-width:720px) {
-    #imContent {
-        padding-left: 5px;
-        padding-right: 5px
-    }
+    
 
     .imPageRow {
         margin-left: -5px;
@@ -2641,10 +2582,7 @@ h2#imPgTitle {
 }
 
 @media(max-width:719.9px) and (min-width:480px) {
-    #imContent {
-        padding-left: 5px;
-        padding-right: 5px
-    }
+    
 
     .imPageRow {
         margin-left: -5px;
@@ -2799,10 +2737,7 @@ h2#imPgTitle {
 }
 
 @media(max-width:479.9px) {
-    #imContent {
-        padding-left: 5px;
-        padding-right: 5px
-    }
+    
 
     .imPageRow {
         margin-left: -5px;
