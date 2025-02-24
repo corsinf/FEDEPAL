@@ -63,9 +63,6 @@ $videos = json_encode($pa->getArchivosVideos());
 
 		<script src="libs/bootstrap.bundle.min.js"></script>
 		<script src="libs/jquery.fancytree-all-deps.min.js"></script>
-		<!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
 	</head>
 	<body> <!-- Google Tag Manager (noscript) -->
 
@@ -384,7 +381,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 														<a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Convenios</span></a>
 													</div>
 													<div>
-														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Recursos</span></a>
+														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Acuerdos Ministeriales</span></a>
 													</div>
 													<div>
 														<a href="videos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Videos</span></a>

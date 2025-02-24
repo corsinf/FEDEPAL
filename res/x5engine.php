@@ -9774,6 +9774,29 @@ class imPrivateArea
         return $this->_get_db_news($where_conditions, $from, $to);
     }
 
+    public function getNewsQuery($ids = array(), $from = "", $to = "")
+    {
+        if (is_string($ids)) {
+            if (strlen($ids)) {
+                $ids = array_map('trim', explode(',', $ids));
+            } else {
+                $ids = array();
+            }
+        }
+
+        $ids_count = count($ids);
+        $where_conditions = array();
+
+        $id_condition = $ids_count == 1 ? intval($ids[0]) : ($ids_count > 1 ? array_map('intval', $ids) : false);
+        if ($id_condition) {
+            $where_conditions['id'] = $id_condition;
+        }
+
+        return $this->_get_db_newsQuery($where_conditions, $from, $to);
+    }
+
+
+
     public function getSociosById($ids = array(), $from = "", $to = "")
     {
         if (is_string($ids)) {
@@ -9888,6 +9911,26 @@ class imPrivateArea
                 'where_flat' => $flat_conditions
             ));
         }
+        return false;
+    }
+
+    private function _news_query_sql($where_conditions = array(), $from = "", $to = "")
+    {
+        if ($this->db) {
+            $fecha = date('Y-m-d H:i:s', strtotime('-3 months'));
+            
+            $sql = "SELECT `id`, `titulo`, `fecha`, `detalle`, `imagen`, `estado` 
+                    FROM `fedepal`.`w5_news` 
+                    WHERE `fecha` >= '$fecha'
+                    ORDER BY `id` DESC;";
+
+            
+            //print_r($this->db->query($sql));die(); 
+
+            return $this->db->query($sql);
+
+        }
+        
         return false;
     }
 
@@ -10071,6 +10114,28 @@ class imPrivateArea
     {
         $news = array();
         $db_news = $this->_news_query($where_conditions, $from, $to);
+        if ($db_news) {
+            $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
+            $ecommerce = Configuration::getCart();
+            foreach ($db_news as $user) {
+                $news[] = array(                   
+                    "id"        => $user['id'],
+                    'titulo'    => $user['titulo'],
+                    "detalle"   => $user['detalle'],
+                    "imagen"    => $user['imagen'],
+                    "estado"    => $user['estado'],
+                    "fecha"    => $user['fecha'],
+                    
+                );
+            }
+        }
+        return $news;
+    }
+
+    private function _get_db_newsQuery($where_conditions = array(), $from = "", $to = "")
+    {
+        $news = array();
+        $db_news = $this->_news_query_sql($where_conditions, $from, $to);
         if ($db_news) {
             $default_groups_array = array(Configuration::getSettings()['access']['webregistrations_gid']);
             $ecommerce = Configuration::getCart();
