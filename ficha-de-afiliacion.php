@@ -275,7 +275,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
         </svg>
     </div>
 </header>
-
+ 
     <div class="container py-5" id="proceso">
         <div class="row justify-content-center">
             <div class="col-lg-10">
