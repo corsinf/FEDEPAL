@@ -1,15 +1,15 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
-		<title>Contactos - Fedepal</title>
+		<title>Ficha de Afiliación - Fedepal</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Corsinf" />
 		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.8 - www.websitex5.com" />
 		<meta property="og:locale" content="es" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://localhost/contactos.html" />
-		<meta property="og:title" content="Contactos" />
+		<meta property="og:url" content="http://localhost/ficha-de-afiliacion.php" />
+		<meta property="og:title" content="Ficha de afiliacion" />
 		<meta property="og:site_name" content="Fedepal" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
@@ -173,7 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921">
 												<div class="label-wrapper">
 													<div class="label-inner-wrapper"><a href="contactos.html" class="label"
-															onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a>
+															>Contactos</a>
 													</div>
 												</div>
 											</li>
@@ -236,7 +236,7 @@ Capacitaciones		</a>
 </div>
 </div>
 </li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label" >Afiliación</a></div></div>
-	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
+	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
 	'responsiveMenuEffect': 'slide',
