@@ -8304,7 +8304,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imStickyBar_imMenuObject_02-menu-opened .hamburger-menu-close-button {
@@ -8873,7 +8874,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imStickyBar_imMenuObject_02-menu-opened .hamburger-menu-close-button {
@@ -9437,6 +9439,7 @@ h2#imPgTitle {
         overflow-y: auto;
         height: calc(100% - 40px);
         width: 100%;
+        padding-left: 0;
     }
 
     #imStickyBar_imMenuObject_02-menu-opened .hamburger-menu-close-button {
