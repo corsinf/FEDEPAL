@@ -3498,7 +3498,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imHeader_imMenuObject_02-menu-opened .hamburger-menu-close-button {
@@ -4105,7 +4106,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imHeader_imMenuObject_02-menu-opened .hamburger-menu-close-button {
@@ -4709,7 +4711,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imHeader_imMenuObject_02-menu-opened .hamburger-menu-close-button {
@@ -4730,7 +4733,7 @@ h2#imPgTitle {
         top: 0;
         bottom: 0;
         right: 0;
-        width: 160px;
+        width: 220px;
         border-style: solid;
         border-width: 0 0 0 0;
         border-color: transparent transparent transparent transparent;
@@ -7996,7 +7999,8 @@ h2#imPgTitle {
         overflow-x: hidden;
         overflow-y: auto;
         height: calc(100% - 40px);
-        width: 100%
+        width: 100%;
+        padding-left: 0;
     }
 
     #imStickyBar_imMenuObject_02-menu-opened .hamburger-menu-close-button {

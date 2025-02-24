@@ -77,8 +77,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div id="imFooterBg"></div>
 				<div id="imPage">
 										<!-- Inicio Header -->
-
-										<header id="imHeader">
+					<header id="imHeader">
 						<h1 class="imHidden">Fedepal</h1>
 						<div id="imHeaderObjects">
 							<div id="imHeader_imMenuObject_02_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE -->
