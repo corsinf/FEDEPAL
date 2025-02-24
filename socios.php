@@ -56,7 +56,9 @@ $socios = json_encode($pa->getSociosById());
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 		<!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
-    	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="libs/bootstrap.min.css">
+		<script src="libs/bootstrap.bundle.min.js"></script>
 	</head>
 	<body> <!-- Google Tag Manager (noscript) -->
 
@@ -342,9 +344,14 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div>
 						<div id="imCell_121" class="animable rubberBand"> <div id="imCellStyleGraphics_121"></div><div id="imCellStyleBorders_121"></div><div id="imTextObject_14_121">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_14_121_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTACenter"><br></div><div class="imTACenter"><div><b><span class="fs36lh1-5 cf1">Agrupamos a las instituciones educativas particulares del país,</span></b></div><div><b><span class="fs36lh1-5 cf1">para fortalecer la educación privada a nivel nacional.</span></b></div></div>
+							<div class="text-inner">
+								<div class="imTACenter"><br></div>
+								<div class="imTACenter">
+									<div>
+										<b><span class="fs36lh1-5 cf1">Agrupamos a las instituciones educativas particulares del país, para fortalecer la educación privada a nivel nacional.</span></b>
+									</div>
 								</div>
+							</div>
 							</div>
 						
 						</div>
@@ -359,15 +366,35 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imPageRow_3" class="imPageRow">
 						
 						</div>
-						<div id="imCell_128" class=""> <div id="imCellStyleGraphics_128"></div><div id="imCellStyleBorders_128"></div><div id="imTextObject_14_128">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_14_128_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTAJustify"><span class="fs18lh1-5 cf1">FEDEPAL está afiliada a la Cámara de Comercio de Quito CCQ, tenemos un convenio a través del cual algunos beneficios de la CCQ son extendidos hacia las instituciones Federadas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Las IE Federadas reciben Asesoramiento sin costo en preguntas jurídicas educativas generales y consultas gratuitas en derecho educativo, a través de procedimientos previamente establecidos canalizados a través de Secretaría.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Con base a las necesidades y situaciones que se van presentando, organizamos charlas y conservatorios con temas específicos para solventar y apoyar a nuestros federados en diferentes áreas (laboral, tributaria, académica, tecnológica, entre otros)</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Asesoría Académica Pedagógica sin costo, bajo un procedimiento establecido, canalizados a través de Secretaría.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Eventos académicos, sociales y culturales, con temas de interés para la educación privada y la gestión de las instituciones educativas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Talleres y capacitaciones que engloban las necesidades educativas de nuestros asociados.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Alianzas con proveedores de servicios, plataformas y productos educativos, con tarifas preferenciales para las instituciones afiliadas.</span></div><div class="imTAJustify"><span class="fs18lh1-5"><br></span></div><div class="imTAJustify"><span class="fs18lh1-5 cf1">Representación de la Educación Particular frente a los entes del Estado (Presidencia de la República, Asamblea Nacional y Ministerio de Educación).</span></div>
+
+						<div id="imCell_128" class="">
+							<div id="imCellStyleGraphics_128"></div>
+							<div id="imCellStyleBorders_128"></div>
+							<div id="imTextObject_14_128">
+								<div data-index="0" class="text-tab-content grid-prop current-tab " id="imTextObject_14_128_tab0" style="opacity: 1; ">
+									<div class="text-inner">
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">FEDEPAL está afiliada a la Cámara de Comercio de Quito CCQ, tenemos un convenio a través del cual algunos beneficios de la CCQ son extendidos hacia las instituciones Federadas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Las IE Federadas reciben Asesoramiento sin costo en preguntas jurídicas educativas generales y consultas gratuitas en derecho educativo, a través de procedimientos previamente establecidos canalizados a través de Secretaría.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Con base a las necesidades y situaciones que se van presentando, organizamos charlas y conservatorios con temas específicos para solventar y apoyar a nuestros federados en diferentes áreas (laboral, tributaria, académica, tecnológica, entre otros)</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Asesoría Académica Pedagógica sin costo, bajo un procedimiento establecido, canalizados a través de Secretaría.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Eventos académicos, sociales y culturales, con temas de interés para la educación privada y la gestión de las instituciones educativas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Talleres y capacitaciones que engloban las necesidades educativas de nuestros asociados.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Alianzas con proveedores de servicios, plataformas y productos educativos, con tarifas preferenciales para las instituciones afiliadas.</span></div>
+
+										<div class="imTAJustify mb-3"><span class="fs18lh1-5 cf1">Representación de la Educación Particular frente a los entes del Estado (Presidencia de la República, Asamblea Nacional y Ministerio de Educación).</span></div>
+									</div>
 								</div>
+
 							</div>
-						
 						</div>
-						</div>
+
+
 					</main>
 					
 					<footer id="imFooter">
@@ -422,7 +449,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 														<a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Convenios</span></a>
 													</div>
 													<div>
-														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Recursos</span></a>
+														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Acuerdos Ministeriales</span></a>
 													</div>
 													<div>
 														<a href="videos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Videos</span></a>
@@ -484,15 +511,6 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
 
 		<script>
-
-function checkIframePermission(url) {
-    return fetch(url, { method: 'HEAD', mode: 'no-cors' })
-        .then(() => true)  // Si la URL responde, asumimos que permite iframes
-        .catch(() => false); // Si falla, asumimos que NO permite iframes
-}
-
-			
-
 			$(document).ready(function () {
 			var container = $("#pnl_portafolio_socios");
 			var data = <?= $socios ?>;
@@ -507,26 +525,25 @@ function checkIframePermission(url) {
 						id_categoria = "z0yjwlp1";
 					}
 					var itemUrl = item.url || '#';
-					var baseUrl = itemUrl.split('/').slice(0, 3).join('/'); // Obtiene "https://www.facebook.com"
-                    var estado = true;
-					checkIframePermission(itemUrl).then((canEmbed) => {
-						estado = canEmbed;
-					});
+					// var baseUrl = itemUrl.split('/').slice(0, 3).join('/'); // Obtiene "https://www.facebook.com"
+                    // var estado = true;
 
-					var linkHtml = '';
-					console.log(index+"-"+estado);
+					// var linkHtml = '';
+					
+					// if (baseUrl.includes("facebook.com") || !estado ) {
+					// 	// Si la URL es de Facebook, usar x5engine.imShowBox
+					// 	linkHtml = `<a href="${itemUrl}" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña</a>`;
+					// } else {
+					// 	// Si la URL no es de Facebook, abrir en una nueva pestaña
+						
+					// }
 
-					if (baseUrl.includes("facebook.com") || !estado ) {
-						// Si la URL es de Facebook, usar x5engine.imShowBox
-						linkHtml = `<a href="${itemUrl}" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña</a>`;
-					} else {
-						// Si la URL no es de Facebook, abrir en una nueva pestaña
-						linkHtml = `<a href="${itemUrl}" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: '${baseUrl}', width: 1920, height: 1080, description: ''}]}, 0, this);">Link</a>`;
-					}
+					linkHtml = `<a href="#" onclick="abrirVentanaEmergente('${itemUrl}'); return false;">Link</a>`;
+					//console.log(index+"-"+baseUrl);
 
 					// Construcción del bloque HTML
 					var block = `
-					<div class="portfolio__card ${item.id} overlay-effect-follow image-effect-zoom" data-index="${index}" data-ts=""
+					<div id="ifr_socios_${item.id}" class="portfolio__card ${item.id} overlay-effect-follow image-effect-zoom" data-index="${index}" data-ts=""
 						data-category-id="${id_categoria || ''}" data-category-text="${item.region || ''}">
 						<div class="portfolio__content">
 							<img src="${item.foto || 'images/Logo-Atenas-UE_efif7e52.png'}" alt="" width="800" height="777">
@@ -550,6 +567,30 @@ function checkIframePermission(url) {
 				console.error("Los datos no contienen un array válido.");
 			}
 			});
+
+			function abrirVentanaEmergente(url, width = 1920, height = 1080) {
+				// Obtener el tamaño de la pantalla
+				let screenWidth = window.screen.width;
+				let screenHeight = window.screen.height;
+
+				// Calcular la posición centrada
+				let left = (screenWidth - width) / 2;
+				let top = (screenHeight - height) / 2;
+
+				// Opciones de la ventana
+				let opciones = `width=${width},height=${height},top=${top},left=${left},resizable=yes,scrollbars=yes`;
+
+				// Abrir la ventana emergente
+				let nuevaVentana = window.open(url, "ventanaEmergente", opciones);
+
+				// Enfocar la ventana (si el navegador lo permite)
+				if (nuevaVentana) {
+					nuevaVentana.focus();
+				} else {
+					alert("Permite las ventanas emergentes para ver el contenido.");
+				}
+			}
+
 		</script>
 
 	</body>
