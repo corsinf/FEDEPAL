@@ -447,6 +447,7 @@
         grid-template-columns: minmax(0, 1fr) 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.25px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px 3.333px minmax(0, 1fr);
         grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto
     }
+  
 
     #imContent>header {
         display: block;
@@ -12645,4 +12646,19 @@ html:not(.no-cssanimations) #imCell_137.animated {
 
 #imPage.without-id_animation-in-progress {
     overflow: hidden
+}
+
+@media (max-width: 750px) {
+    #imTextObject_11_53_tab0 .fs72lh1-5 {
+        font-size: max(8vw, 40px) !important; /* Aumenta el tamaño para pantallas más pequeñas, pero no menor a 40px */
+        line-height: max(10vw, 50px) !important; /* Aumenta la altura de la línea proporcionalmente */
+    }
+}
+
+/* Ajustes para pantallas de 400px */
+@media (max-width: 400px) {
+    #imTextObject_11_53_tab0 .fs72lh1-5 {
+        font-size: max(10vw, 50px) !important;  /* Aumenta el tamaño para pantallas muy pequeñas, pero no menor a 50px */
+        line-height: max(12vw, 60px) !important; /* Ajusta la altura de la línea proporcionalmente */
+    }
 }
