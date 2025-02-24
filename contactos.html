@@ -220,10 +220,18 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imCell_101" class=""> <div id="imCellStyleGraphics_101"></div><div id="imCellStyleBorders_101"></div><div id="imCellStyleTitle_101">Es fácil llegar</div><!-- Google Maps v.16 --><div id="pluginAppObj_15_101">
 						          
 						<script>
-						(function(){
-							var gm = paGoogleMaps('pluginAppObj_15_101', false);
-							_jq(document).ready(function(){gm.createIFrame('https://www.google.com/maps/embed/v1/place?key=AIzaSyBpiGf-qNlzyMrRhEbxO8mZG5QvHYHvd2c&q=Quito&zoom=14&maptype=roadmap')});
-						})();
+					(function(){
+    var latitude = -0.1832524;  // Latitud de FEDEPAL
+    var longitude = -78.48057;  // Longitud de FEDEPAL
+    var placeName = encodeURIComponent("FEDEPAL - Federación de establecimientos de Educación Particular, Quito, Ecuador");
+
+    var mapUrl = `https://www.google.com/maps/embed/v1/place?key=AIzaSyBpiGf-qNlzyMrRhEbxO8mZG5QvHYHvd2c&q=${placeName}&center=${latitude},${longitude}&zoom=18&maptype=roadmap`;
+
+    var gm = paGoogleMaps('pluginAppObj_15_101', false);
+    _jq(document).ready(function(){
+        gm.createIFrame(mapUrl);
+    });
+})();
 						</script>
 						
 						        </div><div id="imCellStyleDescription_101"><div>Amplia el mapa y encuéntranos </div></div></div><div id="imCell_94" class=""> <div id="imCellStyleGraphics_94"></div><div id="imCellStyleBorders_94"></div><div id="imObjectImage_15_94"><div id="imObjectImage_15_94_container"><img src="images/Edificio-rosania.webp" title="" alt="" width="530" height="402" />
