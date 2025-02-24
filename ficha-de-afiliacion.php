@@ -51,6 +51,9 @@
         .border-violeta {
     border-color: rgb(49, 52, 118) !important;
 }
+.icon-violeta {
+    color: rgb(49, 52, 118) !important; /* Cambiar el color del ícono */
+}
 
 .bg-custom {
     background-color: rgb(49, 52, 118) !important; /* Color personalizado */
@@ -230,22 +233,24 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
     </div>
     <!-- Hero Section -->
     <header class="hero-bg position-relative text-white py-5 mb-5">
-        <div class="container py-5">
-            <h1 class="display-4 fw-bold text-center mb-4 titulo">Afiliación a FEDEPAL</h1>
-            <p class="lead text-center fs-4 fw-light mb-4 texto-parrafos-principal">Federación de Establecimientos de Educación Particular Laica</p>
-            <div class="text-center">
-                <a href="#proceso" class="btn btn-light btn-lg rounded-pill px-4 shadow-sm transition">
-                    Conoce el Proceso <i class="fas fa-arrow-right ms-2"></i>
-                </a>
-            </div>
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold text-center mb-4 titulo">Afiliación a FEDEPAL</h1>
+        <p class="lead text-center fs-4 fw-light mb-4 texto-parrafos-principal">
+            Federación de Establecimientos de Educación Particular Laica
+        </p>
+        <div class="text-center">
+            <a href="news.php" class="btn_ficha d-inline-block">
+                <i class="fas fa-newspaper me-2 icon-violeta"></i>Noticias FEDEPAL
+            </a>
         </div>
-        <div class="position-absolute bottom-0 start-0 w-100 overflow-hidden" style="height: 50px;">
-            <svg class="w-100 h-100" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M0 0 L100 100 L0 100 Z" fill="#f8f9fa"/>
-            </svg>
-        </div>
-    </header>
-    
+    </div>
+    <div class="position-absolute bottom-0 start-0 w-100 overflow-hidden" style="height: 50px;">
+        <svg class="w-100 h-100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M0 0 L100 100 L0 100 Z" fill="#f8f9fa"/>
+        </svg>
+    </div>
+</header>
+
     <div class="container py-5" id="proceso">
         <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -261,7 +266,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                             
                             <div class="col-md-4">
                                 <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 hover-translate-y">
-                                    <i class="fas fa-graduation-cap fa-2x text-warning mb-3"></i>
+                                    <i class="fas fa-graduation-cap fa-2x text-warning mb-3 icon-violeta"></i>
                                     <h4 class="fw-bold titulo">Capacitación</h4>
                                     <ul class="list-unstyled texto-parrafos mb-0">
                                         <li class="mb-2">Programas de desarrollo profesional</li>
@@ -274,7 +279,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                             
                             <div class="col-md-4">
                                 <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 hover-translate-y">
-                                    <i class="fas fa-hands-helping fa-2x text-warning mb-3"></i>
+                                    <i class="fas fa-hands-helping fa-2x text-warning mb-3 icon-violeta"></i>
                                     <h4 class="fw-bold titulo">Asesoría</h4>
                                     <ul class="list-unstyled texto-parrafos mb-0">
                                         <li class="mb-2">Soporte legal especializado</li>
@@ -287,7 +292,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                             
                             <div class="col-md-4">
                                 <div class="card h-100 border-0 shadow-sm text-center p-4 rounded-4 hover-translate-y">
-                                    <i class="fas fa-book-reader fa-2x text-warning mb-3"></i>
+                                    <i class="fas fa-book-reader fa-2x text-warning mb-3 icon-violeta"></i>
                                     <h4 class="fw-bold titulo">Recursos</h4>
                                     <ul class="list-unstyled texto-parrafos mb-0">
                                         <li class="mb-2">Materiales pedagógicos</li>
@@ -301,7 +306,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
     
                         <div class="alert bg-info bg-opacity-10 border-0 rounded-4 shadow-sm">
                             <div class="d-flex align-items-center p-3">
-                                <i class="fas fa-info-circle fa-2x text-info me-3"></i>
+                                <i class="fas fa-info-circle fa-2x text-info me-3 icon-violeta"></i>
                                 <div>
                                     <h5 class="fw-bold titulo mb-1">Proceso Simplificado</h5>
                                     <p class="texto-parrafos mb-0">Complete el formulario y envíelo a <a href="mailto:info@fedepal.ec" class="text-primary fw-bold text-decoration-none">info@fedepal.ec</a> junto con su firma digital.</p>
@@ -312,7 +317,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                         <h3 class="fw-bold titulo mt-5 mb-4">Requisitos para la Afiliación </h3>
                         
                         <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm mb-4 hover-translate-x">
-                            <h5 class="titulo"><i class="fas fa-file-alt me-2"></i>1. Solicitud al Directorio</h5>
+                            <h5 class="titulo"><i class="fas fa-file-alt me-2 icon-violeta"></i>1. Solicitud al Directorio</h5>
                             <div class="ms-4 mt-3">
                                 <ul class="list-unstyled texto-parrafos">
                                     <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Nombre de la Institución</li>
@@ -327,36 +332,32 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                         </div>
     
                         <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm mb-4 hover-translate-x">
-                            <h5 class="titulo"><i class="fas fa-certificate me-2"></i>2. Documentación Legal</h5>
+                            <h5 class="titulo"><i class="fas fa-certificate me-2 icon-violeta"></i>2. Documentación Legal</h5>
                             <p class="texto-parrafos mb-0">Copia del permiso actualizado de funcionamiento</p>
                         </div>
     
                         <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm mb-4 hover-translate-x">
-                            <h5 class="titulo"><i class="fas fa-file-invoice-dollar me-2"></i>3. Información Financiera</h5>
+                            <h5 class="titulo"><i class="fas fa-file-invoice-dollar me-2 icon-violeta"></i>3. Información Financiera</h5>
                             <p class="texto-parrafos mb-0">Copia del último acuerdo de costos para matrícula y pensiones</p>
                         </div>
     
                         <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm mb-4 hover-translate-x">
-                            <h5 class="titulo"><i class="fas fa-id-card me-2"></i>4. Documentación Fiscal</h5>
+                            <h5 class="titulo"><i class="fas fa-id-card me-2 icon-violeta"></i>4. Documentación Fiscal</h5>
                             <p class="texto-parrafos mb-0">Copia del RUC actualizado</p>
                         </div>
                         <div class="text-center mt-5">
                             <div class="row justify-content-center align-items-center g-3">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <button type="button" class="btn_ficha" onclick="x5engine.imShowBox({ media:[{type: 'iframe', url: 'https://docs.google.com/spreadsheets/d/1SNCD1P8B2v01W9bXbhKjbQSE-r_hUa1Xa9dCh1OFDFc/edit?usp=sharing', width: 1920, height: 1080, description: ''}]}, 0, this);">
                                         <i class="fas fa-file-alt me-2"></i>Ficha de Afiliación
                                     </button>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <button type="button" class="btn_ficha" onclick="x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/POLITICA-MEMBRESIAS-2024.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);">
                                         <i class="fas fa-info-circle me-2"></i>Política de Membresías
                                     </button>
                                 </div>
-                                <div class="col-md-4">
-                                    <a href="news.php" class="btn_ficha">
-                                        <i class="fas fa-newspaper me-2"></i>Noticias FEDEPAL
-                                    </a>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
