@@ -516,35 +516,59 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 			var data = <?= $socios ?>;
 
 			if (data && Array.isArray(data)) {
-				data.forEach((item, index) => {
-					// Determinación de la categoría según la región
-					let id_categoria;
-					if (item.region === "Sierra") {
-						id_categoria = "087slr7i";
-					} else if (item.region === "Amazonía") {
-						id_categoria = "z0yjwlp1";
+				// Lista de prioridad con sus IDs correspondientes
+				let prioridad = {
+					"Colegio Frances de Quito": [16],
+					"Colegio de America": [10],
+					"Colegio Dalcroze": [29],
+					"Colegio intisana": [24],
+					"APCH": [9],
+					"Rouuseau": [49],
+					"ISM": [27, 28],
+					"Planeta Azul": [53]
+				};
+
+				// Separar registros prioritarios y no prioritarios
+				let prioritarios = [];
+				let otros = [];
+
+				data.forEach(item => {
+					let agregado = false;
+					for (let key in prioridad) {
+						if (prioridad[key].includes(parseInt(item.id))) {
+							prioritarios.push(item);
+							agregado = true;
+							break;
+						}
 					}
-					var itemUrl = item.url || '#';
-					// var baseUrl = itemUrl.split('/').slice(0, 3).join('/'); // Obtiene "https://www.facebook.com"
-                    // var estado = true;
+					if (!agregado) {
+						otros.push(item);
+					}
+				});
 
-					// var linkHtml = '';
-					
-					// if (baseUrl.includes("facebook.com") || !estado ) {
-					// 	// Si la URL es de Facebook, usar x5engine.imShowBox
-					// 	linkHtml = `<a href="${itemUrl}" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña</a>`;
-					// } else {
-					// 	// Si la URL no es de Facebook, abrir en una nueva pestaña
-						
-					// }
+				// Ordenar prioritarios según la lista dada
+				let ordenados = [];
+				for (let key in prioridad) {
+					prioridad[key].forEach(id => {
+						let encontrado = prioritarios.find(item => parseInt(item.id) === id);
+						if (encontrado) ordenados.push(encontrado);
+					});
+				}
 
-					linkHtml = `<a href="#" onclick="abrirVentanaEmergente('${itemUrl}'); return false;">Link</a>`;
-					//console.log(index+"-"+baseUrl);
+				// Concatenar los prioritarios con los demás
+				let listaFinal = [...ordenados, ...otros];
 
-					// Construcción del bloque HTML
-					var block = `
+				// Renderizar los datos en la interfaz
+				listaFinal.forEach((item, index) => {
+					let id_categoria = (item.region === "Sierra") ? "087slr7i" : 
+									(item.region === "Amazonía") ? "z0yjwlp1" : "";
+					let itemUrl = item.url || '#';
+
+					let linkHtml = `<a href="#" onclick="abrirVentanaEmergente('${itemUrl}'); return false;">Link</a>`;
+
+					let block = `
 					<div id="ifr_socios_${item.id}" class="portfolio__card ${item.id} overlay-effect-follow image-effect-zoom" data-index="${index}" data-ts=""
-						data-category-id="${id_categoria || ''}" data-category-text="${item.region || ''}">
+						data-category-id="${id_categoria}" data-category-text="${item.region || ''}">
 						<div class="portfolio__content">
 							<img src="${item.foto || 'images/Logo-Atenas-UE_efif7e52.png'}" alt="" width="800" height="777">
 							<div class="portfolio__card__bottom-bar">
@@ -560,7 +584,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 							</div>
 						</div>
 					</div>`;
-					// Agregar el bloque al contenedor
+
 					container.append(block);
 				});
 			} else {

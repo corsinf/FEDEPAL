@@ -16,7 +16,8 @@ $imSettings['access']['users'] = array(
 	),
 	'info@fedepal.ec' => array(
 		'id' => 'm4830r87',
-		'groups' => array('isanheja'),
+		// 'groups' => array('isanheja'),
+		'groups' => array('av8g5bpd'),
 		'firstname' => 'Fernanda',
 		'lastname' => 'Garzón',
 		'email' => 'info@fedepal.ec',
@@ -24,7 +25,8 @@ $imSettings['access']['users'] = array(
 		'password' => '$2a$11$r65R7TpjKM2sGqaOty0PyeuNXG7VgS71aEdeaTl/sLWPzoqzPa1Jm',
 		'crypt_encoding' => 'csharp_bcrypt',
 		'db_stored' => false,
-		'page' => 'home.html'
+		// 'page' => 'home.html'
+		'page' => false
 	),
 	'paco@pepe.com' => array(
 		'id' => 'fpj6zs4l',
@@ -40,15 +42,16 @@ $imSettings['access']['users'] = array(
 );
 
 // Admins list
-$imSettings['access']['admins'] = array('3uhnijca', 'fpj6zs4l');
+$imSettings['access']['admins'] = array('3uhnijca', 'fpj6zs4l', 'm4830r87');
 
 // Page/Users permissions
-$imSettings['access']['pages'] = array(
-	'13' => array('m4830r87'),
-	'17' => array('m4830r87'),
-	'18' => array('m4830r87'),
-	'20' => array('m4830r87')
-);
+// Configuracion de website5
+// $imSettings['access']['pages'] = array(
+// 	'13' => array('m4830r87'),
+// 	'17' => array('m4830r87'),
+// 	'18' => array('m4830r87'),
+// 	'20' => array('m4830r87')
+// );
 
 // Web registration pages
 
