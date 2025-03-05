@@ -519,7 +519,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				// Lista de prioridad con sus IDs correspondientes
 				let prioridad = {
 					"Colegio Frances de Quito": [16],
-					"Colegio de America": [10],
+					"UNIDAD EDUCATIVA PARTICULAR DE AMÉRICA MARÍA A. CARRILLO DE MATA M.": [6],
 					"Colegio Dalcroze": [29],
 					"Colegio intisana": [24],
 					"APCH": [9],
