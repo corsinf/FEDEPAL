@@ -364,170 +364,238 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div>
 						<!-- Inicio imagenes -->
 
-						<div id="imCell_103" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Martha Cháves</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1726563945255.jpg"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>Presidente</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_103').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_103"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_130" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Karen Mejía</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/Karen-Mejia.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>Vicepresidente</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_130').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_130"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_127" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Gabriela Giraldo</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/Gabriela-Giraldo.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>Secretaria</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_127').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_127"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_131" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Jenny Vinueza</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/Jenny.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>Tesorera</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_131').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_131"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_101" class="animable fadeInLeft">
-							<div id="imCellStyleTitle_103">Nancy Torres</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1728947199867.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>2° Vocal Principal</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_101').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_101"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_129" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Giovanny Romero</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1726563945312.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>3° Vocal Principal</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_129').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_129"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_104" class="animable fadeInRight">
-							<div id="imCellStyleTitle_103">Adrián Mader</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1728917512616.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>1° Vocal Suplente</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_104').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_104"))
-								}, 100);
-							});
-						</script>
-						
-						<div id="imCell_102" class="animable fadeInLeft">
-							<div id="imCellStyleTitle_103">Elizabeth Guerrero</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1728917512654.webp"/>
-								</div>
-							</div>
-							<div id="imCellStyleDescription_103">
-								<div>2° Vocal Suplente</div>
-							</div>
-						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_102').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_102"))
-								}, 100);
-							});
-						</script>
+						<style>
+							.card-title-custom {
+								text-align: center;
+								font-family: Lato, sans-serif;
+								font-size: 22pt;
+								font-weight: bold;
+								color: rgba(49, 52, 118, 1);
+							}
+					
+							.img-container {
+								width: 100%;
+								max-width: 300px;
+								height: 450px; /* Altura fija */
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								overflow: hidden;
+								margin: 0 auto;
+								border-radius: 10px;
+							}
+					
+							.img-container img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+							}
+					
+							.description-badge {
+								position: absolute;
+								bottom: 15px;
+								left: 50%;
+								transform: translateX(-50%);
+								padding: 10px 15px;
+								font-size: 14pt;
+								font-family: Lato, sans-serif;
+								background-color: rgba(230, 141, 36, 1);
+								color: white;
+								border-radius: 8px;
+							}
 
-						<div id="imCell_999" class="animable fadeInLeft">
-							<div id="imCellStyleTitle_103">Carolina Erazo</div>
-							<div id="imObjectImage_103">
-								<div id="imObjectImage_103_container"><img src="images/1726563945370.webp"/>
+							.card-custom {
+								border: 3px solid rgba(49, 52, 118, 0.5);; /* Violeta oscuro */
+								border-radius: 15px;
+							}
+						</style>
+
+						<div id="imCell_103" class="">
+							<div class="container mt-5">
+								<div class="row justify-content-center">
+									
+									<!-- Card 1 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Martha Cháves</h5>
+											</div>
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1726563945255.jpg"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>Presidente</div>
+											</div>
+										</div>
+									</div>
+							
+									<!-- Card 2 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Karen Mejía</h5>
+											</div>
+												
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/Karen-Mejia.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>Vicepresidente</div>
+											</div>
+										</div>
+									</div>
+							
+									<!-- Card 3 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Gabriela Giraldo</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/Gabriela-Giraldo.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>Secretaria</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 4 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Jenny Vinueza</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/Jenny.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>Tesorera</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 10 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Carlos Pérez</h5>
+											</div>
+										
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1728917512576.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>1° Vocal Principal</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 5 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Nancy Torres</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1728947199867.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>2° Vocal Principal</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 6 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Giovanny Romero</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1726563945312.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>3° Vocal Principal</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 7 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Adrián Mader</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1728917512616.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>1° Vocal Suplente</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 8 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Elizabeth Guerrero</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1728917512654.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>2° Vocal Suplente</div>
+											</div>
+										</div>
+									</div>
+
+									<!-- Card 9 -->
+									<div class="col-md-4 mb-4">
+										<div class="card text-center shadow-lg card-custom">
+											<div class="card-header bg-transparent border-0">
+												<h5 class="card-title-custom">Carolina Erazo</h5>
+											</div>
+
+											<div id="imObjectImage_103">
+												<div id="imObjectImage_103_container"><img src="images/1726563945370.webp"/>
+												</div>
+											</div>
+											<div id="imCellStyleDescription_103">
+												<div>3° Vocal Suplente</div>
+											</div>
+										</div>
+									</div>
+
+									
+
+									<script>
+										x5engine.boot.push(function() {
+											x5engine.utils.onElementInViewPort($('.animacion').get(0), function() {
+												x5engine.utils.revealObject($(".animacion"))
+											}, 100);
+										});
+									</script>
 								</div>
 							</div>
-							<div id="imCellStyleDescription_103">
-								<div>3° Vocal Suplente</div>
-							</div>
 						</div>
-						<script>
-							x5engine.boot.push(function() {
-								x5engine.utils.onElementInViewPort($('#imCell_999').get(0), function() {
-									x5engine.utils.revealObject($("#imCell_999"))
-								}, 100);
-							});
-						</script>
-
-
-
+						
 						<!-- Fin imagenes -->
 						<div id="imPageRow_5" class="imPageRow">
 						<div id="Delimitador1"></div>

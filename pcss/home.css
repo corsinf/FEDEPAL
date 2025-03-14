@@ -221,7 +221,7 @@
 #imCell_103 {
     /* Izquierda, fila 9 */
     display: grid;
-    grid-column: 2/50;
+    grid-column: 2/146;
     grid-row: 9/10;
 }
 
@@ -436,7 +436,7 @@
 
     #imCell_103 {
         display: grid;
-        grid-column: 2/50;
+        grid-column: 2/146;
         grid-row: 9/10
     }
 
@@ -642,7 +642,7 @@
 
     #imCell_103 {
         display: grid;
-        grid-column: 2/50;
+        grid-column: 2/146;
         grid-row: 9/10
     }
 
@@ -6808,7 +6808,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+        grid-template-rows: [row-content]auto
     }
 
     #imObjectImage_103 {
@@ -7655,7 +7655,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+        grid-template-rows: [row-content]auto
     }
 
     #imObjectImage_103 {
@@ -8503,7 +8503,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+        grid-template-rows: [row-content]auto
     }
 
     #imObjectImage_103 {
@@ -9315,7 +9315,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
     }
 
     #imCell_103 {
-        grid-template-rows: [row-title]min-content [row-content]min-content [row-desc]min-content
+        grid-template-rows: [row-content]auto
     }
 
     #imObjectImage_103 {
