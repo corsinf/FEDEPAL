@@ -5,7 +5,7 @@ if (isset($_GET['landing_page'])) {
 	$pa->savePage($_GET['landing_page']);
 }
 $fromCart = false;
-$pa->admin_email = 'mrubio@corsinf.com';
+$pa->admin_email = 'rpilca@corsinf.com';
 $db = getDbData();
 if ($db === false)
 	die("Cannot find a database");

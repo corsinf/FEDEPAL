@@ -12577,6 +12577,35 @@ class ImSendEmail
         |  PHPMailer
         |--------------
          */
+
+        //Sirve para validar el SMTP
+        //  $email = new PHPMailer(true);
+
+        //  try {
+        //      $email->isSMTP();
+        //      $email->Host = $this->smtp_host;
+        //      $email->Port = $this->smtp_port;
+        //      $email->SMTPAuth = true;
+        //      $email->Username = $this->smtp_username;
+        //      $email->Password = $this->smtp_password;
+        //      $email->SMTPSecure = $this->smtp_encryption;
+         
+        //      $email->SMTPDebug = 2;
+        //      $email->Debugoutput = function($str, $level) {
+        //          echo "SMTP: $str<br>";
+        //      };
+         
+        //      if (!$email->smtpConnect()) {
+        //          echo "Falló la conexión SMTP<br>";
+        //      } else {
+        //          echo "Conexión SMTP exitosa<br>";
+        //      }
+        //  } catch (Exception $e) {
+        //      echo "Excepción: " . $email->ErrorInfo;
+        //  }
+ 
+        //  exit(); die();
+        
         if ($this->emailType == 'phpmailer') {
             $email = new PHPMailer(false);
             // SMTP support
