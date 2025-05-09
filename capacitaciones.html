@@ -49,6 +49,23 @@
 
 		<script src="libs/bootstrap.bundle.min.js"></script>
 		<script src="libs/jquery.fancytree-all-deps.min.js"></script>
+
+		<style>
+			.btn_capacitaciones {
+background-color: rgba(230, 141, 36, 1);  /* Color base */
+color: black;                             /* Texto normal */
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_capacitaciones:hover {
+background-color: rgba(184, 113, 29, 1);  /* Un poco más oscuro */
+color: white;                             /* Texto blanco en hover */
+}
+.btn_red_social_wpp {
+background-color: #25D366; /* Color verde oficial de WhatsApp */
+color: white;              /* Texto blanco para buen contraste */
+}
+		</style>
 	</head>
 	<body>
 
@@ -210,6 +227,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_11_53_tab0" style="opacity: 1; ">
 								<div class="text-inner">
 									<div class="imTALeft"><b><span class="fs72lh1-5 cf1">Capacitaciones</span></b></div><div class="imTACenter"><div><span class="fs20lh1-5 cf2"><br></span></div><div class="imTALeft"><span class="fs20lh1-5 cf2">Un equipo de expertos dedicado a ofrecer capacitaciones de excelencia a nuestros socios.</span></div></div><div class="imTACenter"><b><span class="fs60lh1-5 cf1 ff1"><br></span></b></div>
+									<a href="recursos.php" class="btn btn_capacitaciones">Recursos online</a>
 								</div>
 							</div>
 						
@@ -222,31 +240,68 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						
 						
 						<div id="imPageRow_3" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_3"></div></div>
-						</div>
-						<div id="imCell_140" class=""> <div id="imCellStyleGraphics_140"></div><div id="imCellStyleBorders_140"></div><div id="imTextObject_11_140">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_11_140_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTACenter"><span class="fs36lh1-5 cf1">AGENDE SU CITA</span></div>
+						<div class="container">
+							<!-- Appointment Section -->
+							<div class="appointment-section">
+								<h2 class="section-title">AGENDE SU CITA</h2>
+								<p>Estamos listos para atender sus necesidades y brindarle la mejor asesoría profesional.</p>
+								
+								<div class="contact-options">
+									<div class="contact-option">
+										<div class="option-icon">
+											<i class="fas fa-comments"></i>
+											<!-- Fallback for no FontAwesome -->
+											<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
+												<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+											</svg>
+										</div>
+										<h3 class="option-title">Contáctenos por WhatsApp</h3>
+										<p class="option-desc">Reciba atención inmediata a través de nuestro canal de WhatsApp. Respuesta garantizada en menos de 30 minutos.</p>
+										<a href="https://api.whatsapp.com/send?phone=+593999247290&text=Hola+requiero+informaci%C3%B3n+sobre+las+capacitaciones" class="btn btn_red_social_wpp">WhatsApp</a>
+									</div>
+									
+									<div class="contact-option">
+										<div class="option-icon">
+											<i class="fas fa-envelope"></i>
+											<!-- Fallback for no FontAwesome -->
+											<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
+												<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+												<polyline points="22,6 12,13 2,6"></polyline>
+											</svg>
+										</div>
+										<h3 class="option-title">Envíenos un Correo</h3>
+										<p class="option-desc">Prefiere comunicación por correo? Envíenos un mensaje y le responderemos en un plazo máximo de 24 horas.</p>
+										<button onclick="x5engine.utils.emailTo('124314','c.eepalfed@info','Capacitaciones','Hola%20requiero%20mayor%20informaci%C3%B3n%20sobre%20las%20capacitaciones')" class="btn btn_capacitaciones">Correo Electrónico</button>
+									</div>
 								</div>
 							</div>
-						
-						</div>
-						</div><div id="imCell_141" class=""> <div id="imCellStyleGraphics_141"></div><div id="imCellStyleBorders_141"></div><div id="imObjectButton_11_141"><button type="button" id="imObjectButton_11_141_button" onclick="x5engine.utils.location('https://api.whatsapp.com/send?phone=+593999247290&text=Hola+requiero+informaci%C3%B3n+sobre+las+capacitaciones');">Whatsapp</button></div></div><div id="imCell_142" class=""> <div id="imCellStyleGraphics_142"></div><div id="imCellStyleBorders_142"></div><div id="imObjectButton_11_142"><button type="button" id="imObjectButton_11_142_button" onclick="x5engine.utils.emailTo('124314','c.eepalfed@info','Capacitaciones','Hola%20requiero%20mayor%20informaci%C3%B3n%20sobre%20las%20capacitaciones');">Mail</button></div></div><div id="imPageRow_4" class="imPageRow">
-						
-						</div>
-						<div id="imCell_123" class=""> <div id="imCellStyleGraphics_123"></div><div id="imCellStyleBorders_123"></div><div id="imTextObject_11_123">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_11_123_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div data-line-height="1" class="lh1 imTACenter"><span class="fs40lh1 cf1">¿Te gustaría saber más?</span></div>
+							
+							<!-- More Information Section -->
+							<div class="more-info-section">
+								<h2 class="info-title">¿Te gustaría saber más?</h2>
+								
+								<div class="info-options">
+									<div class="info-card">
+										<img src="images/large-8754751.webp" alt="Contacto" class="info-card-image" height="100px">
+										<h3 class="info-card-title">Contáctenos</h3>
+										<p>Estamos disponibles para resolver todas sus dudas y brindarle la mejor atención.</p>
+										<a href="contactos.html" class="btn btn_capacitaciones">Contactar Ahora</a>
+									</div>
+									
+									<div class="info-card">
+										<img src="images/afiliacion.jpg" alt="Afiliación" class="info-card-image"  height="100px">
+										<h3 class="info-card-title">Afiliación</h3>
+										<p>Conozca los beneficios exclusivos de formar parte de nuestra comunidad.</p>
+										<a href="ficha-de-afiliacion.php" class="btn btn_capacitaciones">Ser Socio</a>
+									</div>
+									
+									
 								</div>
 							</div>
-						
 						</div>
-						</div><div id="imCell_129" class=""> <div id="imCellStyleGraphics_129"></div><div id="imCellStyleBorders_129"></div><div id="imObjectButton_11_129"><button type="button" id="imObjectButton_11_129_button" onclick="x5engine.utils.location('contactos.html', null, false);">NOS PUEDES CONTACTAR</button></div></div><div id="imCell_131" class=""> <div id="imCellStyleGraphics_131"></div><div id="imCellStyleBorders_131"></div><div id="imObjectButton_11_131"><button type="button" id="imObjectButton_11_131_button" onclick="x5engine.utils.location('ficha-de-afiliacion.php', null, false);">DESEAS SER SOCIO</button></div></div><div id="imCell_143" class=""> <div id="imCellStyleGraphics_143"></div><div id="imCellStyleBorders_143"></div><div id="imObjectImage_11_143"><div id="imObjectImage_11_143_container"><img src="images/large-8754751.webp" title="" alt="" width="344" height="229" />
-						</div></div></div><div id="imCell_133" class=""> <div id="imCellStyleGraphics_133"></div><div id="imCellStyleBorders_133"></div><div id="imObjectButton_11_133"><button type="button" id="imObjectButton_11_133_button" onclick="x5engine.utils.location('recursos.php', null, false);">RECURSOS ONLINE</button></div></div><div id="imPageRow_5" class="imPageRow">
-						
 						</div>
+					
+						
 
 						<div id="imCell_5" class=""> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imTextObject_18_05">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_18_05_tab0" style="opacity: 1; ">
@@ -455,7 +510,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				$("#fancytree-container").fancytree({
 					extensions: ["edit", "filter"],
 					//quicksearch: true,
-					source: { url: "api_google_drive.php?videos=true" },
+					source: { url: "api_google_drive.php?cronogramas=true" },
 					checkbox: true, 
 					selectMode: 1, 
 					icons: true,
