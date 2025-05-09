@@ -12668,3 +12668,284 @@ html:not(.no-cssanimations) #imCell_137.animated {
         line-height: max(12vw, 60px) !important; /* Ajusta la altura de la línea proporcionalmente */
     }
 }
+#imCell_5 {
+    display: grid;
+    grid-column: 2/26;
+    grid-row: 3/4
+}
+#imCell_5 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    height: 80vh;            /* Altura total del viewport */
+    width: 80vw;             /* Ancho total del viewport */
+    box-sizing: border-box;
+    padding: 20px;            /* Espacio interno opcional */
+    background-color: #ffffff; /* Opcional: fondo claro */
+}
+
+@media screen and (max-width: 767px) {
+    #imCell_5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;       /* Altura completa del viewport */
+      padding: 20px;
+      box-sizing: border-box;
+      flex-direction: column;
+    }
+  
+    #imCell_5 .container {
+      width: 100%;
+    }
+  
+    #imCell_5 iframe {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+#imCellStyleGraphics_5 {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    background-color: transparent
+}
+
+
+#imTextObject_18_05 {
+    position: relative;
+    align-self: start;
+    justify-self: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 3
+}
+
+#imTextObject_18_05 {
+    width: 100%
+}
+
+#imTextObject_18_05 {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px
+}
+
+#imTextObject_18_05_tab0 div {
+    line-height: 22px
+}
+
+#imTextObject_18_05_tab0 .imHeading1 {
+    line-height: 44px
+}
+
+#imTextObject_18_05_tab0 .imHeading2 {
+    line-height: 34px
+}
+
+#imTextObject_18_05_tab0 .imHeading3 {
+    line-height: 26px
+}
+
+#imTextObject_18_05_tab0 .imHeading4 {
+    line-height: 22px
+}
+
+#imTextObject_18_05_tab0 .imHeading5 {
+    line-height: 18px
+}
+
+#imTextObject_18_05_tab0 .imHeading6 {
+    line-height: 14px
+}
+
+#imTextObject_18_05_tab0 ul {
+    list-style: disc;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+#imTextObject_18_05_tab0 ul ul {
+    list-style: square;
+    padding: 0 0 0 20px
+}
+
+#imTextObject_18_05_tab0 ul ul ul {
+    list-style: circle
+}
+
+#imTextObject_18_05_tab0 ul li {
+    margin: 0 0 0 40px;
+    padding: 0
+}
+
+#imTextObject_18_05_tab0 ol {
+    list-style: decimal;
+    margin: 0;
+    padding: 0
+}
+
+#imTextObject_18_05_tab0 ol ol {
+    list-style: lower-alpha;
+    padding: 0 0 0 20px
+}
+
+#imTextObject_18_05_tab0 ol li {
+    margin: 0 0 0 40px;
+    padding: 0
+}
+
+#imTextObject_18_05_tab0 blockquote {
+    margin: 0 0 0 15px;
+    padding: 0;
+    border: none
+}
+
+#imTextObject_18_05_tab0 table {
+    border: none;
+    padding: 0;
+    border-collapse: collapse
+}
+
+#imTextObject_18_05_tab0 table td {
+    border: 1px solid #000;
+    word-wrap: break-word;
+    padding: 4px 3px 4px 3px;
+    margin: 0;
+    vertical-align: middle
+}
+
+#imTextObject_18_05_tab0 p {
+    margin: 0;
+    padding: 0
+}
+
+#imTextObject_18_05_tab0 .inline-block {
+    display: inline-block
+}
+
+#imTextObject_18_05_tab0 sup {
+    vertical-align: super;
+    font-size: smaller
+}
+
+#imTextObject_18_05_tab0 sub {
+    vertical-align: sub;
+    font-size: smaller
+}
+
+#imTextObject_18_05_tab0 img {
+    border: none;
+    margin: 0;
+    vertical-align: text-bottom
+}
+
+#imTextObject_18_05_tab0 .fleft {
+    float: left;
+    vertical-align: baseline
+}
+
+#imTextObject_18_05_tab0 .fright {
+    float: right;
+    vertical-align: baseline
+}
+
+#imTextObject_18_05_tab0 img.fleft {
+    margin-right: 15px
+}
+
+#imTextObject_18_05_tab0 img.fright {
+    margin-left: 15px
+}
+
+#imTextObject_18_05_tab0 .imTALeft {
+    text-align: left
+}
+
+#imTextObject_18_05_tab0 .imTARight {
+    text-align: right
+}
+
+#imTextObject_18_05_tab0 .imTACenter {
+    text-align: center
+}
+
+#imTextObject_18_05_tab0 .imTAJustify {
+    text-align: justify
+}
+
+#imTextObject_18_05_tab0 .imUl {
+    text-decoration: underline
+}
+
+#imTextObject_18_05_tab0 .imStrike {
+    text-decoration: line-through
+}
+
+#imTextObject_18_05_tab0 .imUlStrike {
+    text-decoration: underline line-through
+}
+
+#imTextObject_18_05_tab0 .imVt {
+    vertical-align: top
+}
+
+#imTextObject_18_05_tab0 .imVc {
+    vertical-align: middle
+}
+
+#imTextObject_18_05_tab0 .imVb {
+    vertical-align: bottom
+}
+
+#imTextObject_18_05_tab0 hr {
+    border-width: 1px 0 0 0;
+    border-style: solid
+}
+
+#imTextObject_18_05_tab0 .fs20lh1-5 {
+    vertical-align: baseline;
+    font-size: 20pt;
+    line-height: 40px
+}
+
+#imTextObject_18_05_tab0 .ff1 {
+    font-family: 'Quicksand'
+}
+
+#imTextObject_18_05 .text-container {
+    width: 100%
+}
+
+#imTextObject_18_05 .text-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    background-color: rgba(255, 255, 255, 1);
+    border-style: solid;
+    border-color: rgba(169, 169, 169, 1)
+}
+
+#imTextObject_18_05 .text-container .grid-prop.current-tab {
+    z-index: 1;
+    opacity: 1
+}
+
+#imTextObject_18_05 .text-container .grid-prop {
+    grid-area: 1/1/2/2;
+    opacity: 0;
+    box-sizing: border-box;
+    position: relative
+}
+
+#imTextObject_18_05 .text-container .text-tab-content.detach {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none
+}
