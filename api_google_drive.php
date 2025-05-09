@@ -79,6 +79,11 @@ if (isset($_GET['videos'])) {
     exit;
 }
 
+if (isset($_GET['cronogramas'])) {
+    echo json_encode($driveApi->listFilesAndFolders('115dDon8cRTKz9MlaWGlcXUcH18hBsifO'));
+    exit;
+}
+
 // // Definir las carpetas raíz
 // $folderId1 = "1NuFdLkaipA3PO-ZyW9kPrni-AnlCJbtQ";
 // $folderId2 = "1pGyjS10BxAZIXTavbW4OGTLlb1xFhJeW";

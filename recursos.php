@@ -307,12 +307,6 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 											</div>
 											<div id="fancytree-container" class=""></div>
 
-											<h6 class="pt-3">CAPACITACIONES</h6>
-											<div class="mb-3">
-												<input type="text" id="tree-search-1" class="form-control"
-													placeholder="Buscar archivos o carpetas...">
-											</div>
-											<div id="fancytree-container-1" class=""></div>
 										</div>
 
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
@@ -516,40 +510,6 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                 }
             });
 
-			/*
-				Capacitaciones
-			*/
-
-			$("#fancytree-container-1").fancytree({
-                extensions: ["edit", "filter"],
-                //quicksearch: true,
-                source: { url: "api_google_drive.php?capacitaciones=true" },
-                checkbox: true, 
-                selectMode: 1, 
-                icons: true,
-				lazyLoad: function(event, data) {
-					var node = data.node;
-					data.result = { url: "api_google_drive.php?busqueda=" + node.key }; // Carga solo cuando se expande
-				},
-                select: function(event, data) {
-                    var node = data.node; // Nodo seleccionado
-                    var url = (data.node.data.url);
-                    definir_ruta_iframe_referencias_laborales(url);
-                },
-            });
-
-            // Función de búsqueda
-            $("#tree-search-1").on("keyup", function() {
-                var tree = $.ui.fancytree.getTree("#fancytree-container-1");
-                var match = $(this).val();
-                if (match) {
-                    tree.filterNodes(match, {
-                        autoExpand: true
-                    }); 
-                } else {
-                    tree.clearFilter();
-                }
-            });
         });
 
         function definir_ruta_iframe_referencias_laborales(url) {

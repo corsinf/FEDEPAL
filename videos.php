@@ -228,12 +228,9 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div><div id="imPageRow_2" class="imPageRow">
 						
 						</div>
-						<div id="imCell_5" class=""> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imTextObject_18_05">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_18_05_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs20lh1-5 ff1">¿Te lo perdiste? No te preocupes. Uno de los beneficios de ser socio es que puedes acceder y revisarlo cuando quieras.</span></div>
-								</div>
-							</div>
+						<div id="imCell_5" class=""> 				
+						
+							
 
 							<style>
 								.borde {
@@ -243,10 +240,10 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								}
 
 								#fancytree-container {
-								max-height: 500px;
-								overflow: auto;
-								border: 1px solid #ddd;
-								padding: 10px;
+									max-height: 500px;
+									overflow: auto;
+									border: 1px solid #ddd;
+									padding: 10px;
 								}
 
 								.fancytree-title {
@@ -279,35 +276,47 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 								.fancytree-title::-webkit-scrollbar-track:hover {
 									background:rgb(120, 119, 119);
 								}
-
+								
 							</style>
 
-							<div id="imTextObject_13_11">
-								<div class="container mt-5">
+							<div id="">
+								<div class="container mt-0" >
+
+									<div data-index="0"  class="mb-4"  id="imTextObject_18_05_tab0" style="opacity: 1; " >
+										<div class="text-inner text-center">
+											<div><span class="fs20lh1-5 ff1 ">¿Te lo perdiste? No te preocupes. Uno de los beneficios de ser socio es que puedes acceder y revisarlo cuando quieras.</span></div>
+										</div>
+									</div>
 									
-									<div class="row pt-3">
+									<div class="row pt-4">
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
+											<h6>CAPACITACIONES VIDEOS</h6>
 											<div class="mb-3">
 												<input type="text" id="tree-search" class="form-control"
 													placeholder="Buscar archivos o carpetas...">
 											</div>
-
 											<div id="fancytree-container" class=""></div>
+
+											<h6 class="pt-3">CAPACITACIONES</h6>
+											<div class="mb-3">
+												<input type="text" id="tree-search-1" class="form-control"
+													placeholder="Buscar archivos o carpetas...">
+											</div>
+											<div id="fancytree-container-1" class=""></div>
 										</div>
 
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
 											<div class="d-flex justify-content-center">
-												<iframe class="borde" src='' id="iframe_recursos_pdf" frameborder="0" width="900px" height="400px"></iframe>
+												<iframe class="borde" src='' id="iframe_recursos_pdf" frameborder="0" width="900px" height="700px"></iframe>
 											</div>
 										</div>
 									</div>
-								</div>							
+									
+								</div>										
 							</div>
 						
 						</div>
-						</div><div id="imPageRow_3" class="imPageRow">
 						
-						</div>
 
 						<!-- <div id="imCell_3" class=""> 
 							<div id="imCellStyleGraphics_3"></div>
@@ -448,9 +457,6 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 		</style>
 		
 		<script>
-    		var videos = <?= $videos ?> ?? null;
-
-
 			$(document).ready(function() {
 				$("#fancytree-container").fancytree({
 					extensions: ["edit", "filter"],
@@ -473,6 +479,41 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 				// Función de búsqueda
 				$("#tree-search").on("keyup", function() {
 					var tree = $.ui.fancytree.getTree("#fancytree-container");
+					var match = $(this).val();
+					if (match) {
+						tree.filterNodes(match, {
+							autoExpand: true
+						}); 
+					} else {
+						tree.clearFilter();
+					}
+				});
+
+				/*
+				Capacitaciones
+				*/
+
+				$("#fancytree-container-1").fancytree({
+					extensions: ["edit", "filter"],
+					//quicksearch: true,
+					source: { url: "api_google_drive.php?capacitaciones=true" },
+					checkbox: true, 
+					selectMode: 1, 
+					icons: true,
+					lazyLoad: function(event, data) {
+						var node = data.node;
+						data.result = { url: "api_google_drive.php?busqueda=" + node.key }; // Carga solo cuando se expande
+					},
+					select: function(event, data) {
+						var node = data.node; // Nodo seleccionado
+						var url = (data.node.data.url);
+						definir_ruta_iframe_referencias_laborales(url);
+					},
+				});
+
+				// Función de búsqueda
+				$("#tree-search-1").on("keyup", function() {
+					var tree = $.ui.fancytree.getTree("#fancytree-container-1");
 					var match = $(this).val();
 					if (match) {
 						tree.filterNodes(match, {
