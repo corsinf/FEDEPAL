@@ -421,7 +421,7 @@
     #imPageRow_2 {
         display: block;
         grid-column: 1/147;
-        grid-row: 3/7
+        grid-row: 3/7;
     }
 
     #imPageRow_3 {
@@ -579,7 +579,7 @@
         display: block;
         grid-column: 1/147;
         grid-row: 7/8;
-        background: white !important;
+        
     }
 
     #imPageRow_4 {
@@ -12678,20 +12678,20 @@ html:not(.no-cssanimations) #imCell_137.animated {
     display: flex;
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
-    height: 80vh;            /* Altura total del viewport */
+    height: 75vh;            /* Altura total del viewport */
     width: 74vw;             /* Ancho total del viewport */
     box-sizing: border-box;
     padding: 0px;            /* Espacio interno opcional */
     background-color: #ffffff; /* Opcional: fondo claro */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 775px) {
     #imCell_5 {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 80vh;            /* Altura total del viewport */
-        width: 80vw;             /* Ancho total del viewport */
+        height: 119vh;            /* Altura total del viewport */
+        width: 92vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12699,18 +12699,75 @@ html:not(.no-cssanimations) #imCell_137.animated {
   
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 720px) {
     #imCell_5 {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 100px;            /* Altura total del viewport */
-        width: 80vw;             /* Ancho total del viewport */
+        height: 119vh;            /* Altura total del viewport */
+        width: 65vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
     }
+  
   }
+  @media screen and (max-width: 650px) {
+    #imCell_5 {
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        height: 122vh;            /* Altura total del viewport */
+        width: 76vw;             /* Ancho total del viewport */
+        box-sizing: border-box;
+        padding: 0px;            /* Espacio interno opcional */
+        background-color: #ffffff; /* Opcional: fondo claro */
+    }
+  
+  }
+
+  @media screen and (max-width: 530px) {
+    #imCell_5 {
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        height: 119vh;            /* Altura total del viewport */
+        width: 88vw;             /* Ancho total del viewport */
+        box-sizing: border-box;
+        padding: 0px;            /* Espacio interno opcional */
+        background-color: #ffffff; /* Opcional: fondo claro */
+    }
+  
+  }
+
+  @media screen and (max-width: 480px) {
+    #imCell_5 {
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        height: 123vh;            /* Altura total del viewport */
+        width: 94vw;             /* Ancho total del viewport */
+        box-sizing: border-box;
+        padding: 0px;            /* Espacio interno opcional */
+        background-color: #ffffff; /* Opcional: fondo claro */
+    }
+  
+  }
+
+  @media screen and (max-width: 420px) {
+    #imCell_5 {
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        height: 132vh;            /* Altura total del viewport */
+        width: 94vw;             /* Ancho total del viewport */
+        box-sizing: border-box;
+        padding: 0px;            /* Espacio interno opcional */
+        background-color: #ffffff; /* Opcional: fondo claro */
+    }
+  
+  }
+
 
 #imCellStyleGraphics_5 {
     grid-row: 1/-1;
@@ -12980,7 +13037,22 @@ body {
     padding: 0 15px;
 }
 
-/* Appointment Section */
+/* New styles for paragraphs */
+.texto-parrafos {
+    color: rgba(52, 83, 139, 1);
+    vertical-align: baseline;
+    font-size: 14px; /* Changed from 14pt to 14px for web compatibility */
+    line-height: 28px;
+    
+}
+
+/* New styles for titles */
+.titulo {
+    color: #E68D24;
+    font-family: 'Tahoma', sans-serif; /* Added sans-serif as fallback */
+}
+
+/* Existing styles remain the same */
 .appointment-section {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
@@ -13005,7 +13077,6 @@ body {
     position: absolute;
     width: 60px;
     height: 4px;
-    background-color: var(--accent-color);
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -13054,54 +13125,6 @@ body {
     margin-bottom: 20px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: none;
-    outline: none;
-}
-
-.btn-primary {
-    background-color: var(--primary-color);
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.btn-secondary {
-    background-color: var(--light-color);
-    color: var(--dark-color);
-}
-
-.btn-secondary:hover {
-    background-color: #dde4e6;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.btn-accent {
-    background-color: var(--accent-color);
-    color: white;
-}
-
-.btn-accent:hover {
-    background-color: #e67e22;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* More Information Section */
 .more-info-section {
     text-align: center;
     padding: 60px 0;
@@ -13114,8 +13137,6 @@ body {
     margin-bottom: 50px;
     position: relative;
 }
-
-
 
 .info-options {
     display: flex;
@@ -13155,9 +13176,9 @@ body {
 
 .info-card-image {
     width: 100%;
-    max-width: 300px;     /* Ancho fijo deseado */
-    height: 200px;        /* Alto fijo deseado */
-    object-fit: cover;    /* Recorta para llenar el contenedor */
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 6px;
     margin-bottom: 20px;
 }
