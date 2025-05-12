@@ -12678,7 +12678,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
     display: flex;
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
-    height: 75vh;            /* Altura total del viewport */
+    height: 70vh;            /* Altura total del viewport */
     width: 74vw;             /* Ancho total del viewport */
     box-sizing: border-box;
     padding: 0px;            /* Espacio interno opcional */
@@ -12690,7 +12690,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 119vh;            /* Altura total del viewport */
+        height: 117vh;            /* Altura total del viewport */
         width: 92vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -12704,7 +12704,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 119vh;            /* Altura total del viewport */
+        height: 117vh;            /* Altura total del viewport */
         width: 65vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -12717,7 +12717,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 122vh;            /* Altura total del viewport */
+        height: 120vh;            /* Altura total del viewport */
         width: 76vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -12731,7 +12731,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 119vh;            /* Altura total del viewport */
+        height: 117vh;            /* Altura total del viewport */
         width: 88vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -12745,7 +12745,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 123vh;            /* Altura total del viewport */
+        height: 120vh;            /* Altura total del viewport */
         width: 94vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -12759,7 +12759,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 132vh;            /* Altura total del viewport */
+        height: 129vh;            /* Altura total del viewport */
         width: 94vw;             /* Ancho total del viewport */
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
@@ -13127,7 +13127,7 @@ body {
 
 .more-info-section {
     text-align: center;
-    padding: 60px 0;
+    padding: 10px 0;
 }
 
 .info-title {
