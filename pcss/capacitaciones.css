@@ -12671,15 +12671,14 @@ html:not(.no-cssanimations) #imCell_137.animated {
 }
 #imCell_5 {
     display: grid;
-    grid-column: 2/8;
+    grid-column: 1/296;
     grid-row: 3/4
 }
 #imCell_5 {
     display: flex;
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;      /* Centra verticalmente */
-    height: 70vh;            /* Altura total del viewport */
-    width: 74vw;             /* Ancho total del viewport */
+
     box-sizing: border-box;
     padding: 0px;            /* Espacio interno opcional */
     background-color: #ffffff; /* Opcional: fondo claro */
@@ -12690,8 +12689,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 117vh;            /* Altura total del viewport */
-        width: 92vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12704,8 +12702,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 117vh;            /* Altura total del viewport */
-        width: 65vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12717,8 +12714,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 120vh;            /* Altura total del viewport */
-        width: 76vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12731,8 +12727,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 117vh;            /* Altura total del viewport */
-        width: 88vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12745,8 +12740,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 120vh;            /* Altura total del viewport */
-        width: 94vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -12759,8 +12753,7 @@ html:not(.no-cssanimations) #imCell_137.animated {
         display: flex;
         justify-content: center;  /* Centra horizontalmente */
         align-items: center;      /* Centra verticalmente */
-        height: 129vh;            /* Altura total del viewport */
-        width: 94vw;             /* Ancho total del viewport */
+
         box-sizing: border-box;
         padding: 0px;            /* Espacio interno opcional */
         background-color: #ffffff; /* Opcional: fondo claro */
@@ -13054,7 +13047,7 @@ body {
 
 /* Existing styles remain the same */
 .appointment-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, rgba(49, 52, 118, 1), #3f51b5);
     color: white;
     padding: 60px 0;
     text-align: center;
@@ -13133,7 +13126,7 @@ body {
 .info-title {
     font-size: 40px;
     font-weight: 700;
-    color: var(--dark-color);
+    color: rgba(49, 52, 118, 0.5);
     margin-bottom: 50px;
     position: relative;
 }
@@ -13153,7 +13146,7 @@ body {
     background-color: white;
     border-radius: 8px;
     padding: 30px 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(49, 52, 118, 0.08);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -13171,7 +13164,7 @@ body {
     left: 0;
     width: 100%;
     height: 5px;
-    background-color: var(--primary-color);
+    background-color: rgba(49, 52, 118, 0.9);
 }
 
 .info-card-image {
@@ -13187,7 +13180,6 @@ body {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: var(--dark-color);
 }
 
 /* Responsive Design */
@@ -13209,3 +13201,8 @@ body {
     }
 }
 
+
+.custom-text-color-naranja {
+    color: #E68D24;
+    font-family: 'Tahoma', sans-serif; /* Added sans-serif as fallback */
+}

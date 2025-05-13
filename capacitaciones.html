@@ -71,6 +71,22 @@ background-color: rgba(230, 141, 36, 1);  /* Color base */
     text-align: center;  /* Centra el texto horizontalmente */
 }
 
+		#btn_capacitaciones {
+			font: normal normal bold 16pt 'Lato';
+			background-color: rgba(230, 141, 36);
+			transition: background-color .2s linear;
+			position: relative;
+			display: inline-block;
+			word-wrap: break-word;
+			max-width: 100%;
+			border: solid;
+			border-color: rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1);
+			border-width: 0 0 0 0;
+			border-radius: 0 0 0 0;
+			padding: 20px 30px 20px 30px;
+			color: rgba(255, 255, 255, 1);
+		}
+
 .btn_capacitaciones:hover {
 background-color: rgba(184, 113, 29, 1);  /* Un poco más oscuro */
 color: white;    
@@ -257,16 +273,11 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div>
 						<div id="imCell_53" class=""> <div id="imCellStyleGraphics_53"></div><div id="imCellStyleBorders_53"></div><div id="imTextObject_11_53">
 							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_11_53_tab0" style="opacity: 1; ">
-								<div class="text-inner">
+								<div class="text-inner text-center">
 									<div class="imTALeft"><b><span class="fs72lh1-5 cf1">Capacitaciones</span></b></div><div class="imTACenter"><div><span class="fs20lh1-5 cf2"><br></span></div><div class="imTALeft"><span class="fs20lh1-5 cf2">Un equipo de expertos dedicado a ofrecer capacitaciones de excelencia a nuestros socios.</span></div></div><div class="imTACenter"><b><span class="fs60lh1-5 cf1 ff1"><br></span></b></div>
-									<a href="ficha-de-afiliacion.php" class="btn btn_capacitaciones">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-membership">
-											<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-											<circle cx="8.5" cy="7" r="4"></circle>
-											<path d="M20 8v6"></path>
-											<path d="M23 11h-6"></path>
-										</svg>
-										Ser Socio
+									<a href="videos.php" id="btn_capacitaciones" class="btn">
+									
+										CAPACITACIONES
 									</a>
 								</div>
 							</div>
@@ -274,98 +285,33 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						</div>
 						</div><div id="imPageRow_2" class="imPageRow">
 						</div>
-						<div id="imPageRow_3" class="imPageRow">
-							<div class="container">
-								<!-- Appointment Section -->
-								<div class="appointment-section">
-									<h2 class="section-title titulo">AGENDE SU CITA</h2>
-									<p class="texto-parrafos" style="color: white;">Estamos listos para atender sus necesidades y brindarle la mejor asesoría profesional.</p>
-									
-									<div class="contact-options">
-										<div class="contact-option">
-											<div class="option-icon">
-												<i class="fas fa-comments"></i>
-												<!-- Fallback for no FontAwesome -->
-												<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
-													<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-												</svg>
-											</div>
-											<h3 class="option-title titulo">Contáctenos por WhatsApp</h3>
-											<p class="option-desc texto-parrafos">Reciba atención inmediata a través de nuestro canal de WhatsApp. Respuesta garantizada en menos de 30 minutos.</p>
-											<a href="https://api.whatsapp.com/send?phone=+593999247290&text=Hola+requiero+informaci%C3%B3n+sobre+las+capacitaciones" class="btn btn_red_social_wpp">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-													<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-												</svg>
-												WhatsApp
-											</a>
-										</div>
-										
-										<div class="contact-option">
-											<div class="option-icon">
-												<i class="fas fa-envelope"></i>
-												<!-- Fallback for no FontAwesome -->
-												<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
-													<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-													<polyline points="22,6 12,13 2,6"></polyline>
-												</svg>
-											</div>
-											<h3 class="option-title titulo">Envíenos un Correo</h3>
-											<p class="option-desc texto-parrafos">Prefiere comunicación por correo? Envíenos un mensaje y le responderemos en un plazo máximo de 24 horas.</p>
-											<button onclick="x5engine.utils.emailTo('124314','c.eepalfed@info','Capacitaciones','Hola%20requiero%20mayor%20informaci%C3%B3n%20sobre%20las%20capacitaciones')" class="btn btn_capacitaciones">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-													<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-													<polyline points="22,6 12,13 2,6"></polyline>
-												</svg>
-												Correo Electrónico
-											</button>
-										</div>
-									</div>
-								</div>
-								
-								<!-- More Information Section -->
-								<div class="more-info-section">
-									<h2 class="info-title titulo">¿Te gustaría saber más?</h2>
-									
-									<div class="info-options">
-										<div class="info-card">
-											<img src="images/large-8754751.webp" alt="Contacto" class="info-card-image" height="100px">
-											<h3 class="info-card-title titulo">Contáctenos</h3>
-											<p class="texto-parrafos">Estamos disponibles para resolver todas sus dudas y brindarle la mejor atención.</p>
-											<a href="contactos.html" class="btn btn_capacitaciones">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-													<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-												</svg>
-												Contactar Ahora
-											</a>
-										</div>
-										
-										<div class="info-card">
-											<img src="images/afiliacion.jpg" alt="Afiliación" class="info-card-image" height="100px">
-											<h3 class="info-card-title titulo">Afiliación</h3>
-											<p class="texto-parrafos">Conozca los beneficios exclusivos de formar parte de nuestra comunidad.</p>
-											<a href="ficha-de-afiliacion.php" class="btn btn_capacitaciones">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-													<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-													<circle cx="8.5" cy="7" r="4"></circle>
-													<path d="M20 8v6"></path>
-													<path d="M23 11h-6"></path>
-												</svg>
-												Ser Socio
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					
-						
 
-						<div id="imCell_5" class=""> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imTextObject_18_05">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_18_05_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div><span class="fs20lh1-5 ff1 titulo">Cronograma de actividades</span></div>
+						<div id="imCell_5" class=""> 
+							
+							
+							<div id="imTextObject_18_05">
+					
+								<style>
+									
+									.full-row-padding {
+										width: 100vw !important;
+										padding: 3rem !important;
+										background-color: rgba(49, 52, 118, 1) !important;
+										margin: 0vw !important;
+										margin-left: -5px !important;
+									}
+
+
+								</style>
+
+								<div class="w-100 full-row-padding" style="opacity: 1;">
+									<div>
+										<div>
+										<h2 class="text-center titulo fw-bold">CRONOGRAMA DE ACTIVIDADES</h2>
+										</div>
+									</div>
 								</div>
-							</div>
+
 
 							<style>
 								.borde {
@@ -414,8 +360,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 
 							</style>
 
-							<div id="imTextObject_13_11">
-								<div class="container mt-2">
+								<div class="container mt-3">
 									
 									<div class="row pt-3">
 										<div class="col-12 col-md-6 pt-3 pt-md-0">
@@ -434,6 +379,89 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 										</div>
 									</div>
 								</div>							
+
+
+
+							<div class="container mb-3">
+								<!-- Appointment Section -->
+								<div class="appointment-section">
+									<h2 class="section-title titulo">AGENDE SU CITA</h2>
+									<p class="texto-parrafos" style="color: white;">Estamos listos para atender sus necesidades y brindarle la mejor asesoría profesional.</p>
+									
+									<div class="contact-options">
+										<div class="contact-option">
+											<div class="option-icon">
+												<i class="fas fa-comments"></i>
+												<!-- Fallback for no FontAwesome -->
+												<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
+													<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+												</svg>
+											</div>
+											<h3 class="option-title titulo">Contáctenos por WhatsApp</h3>
+											<p class="option-desc texto-parrafos">Reciba atención inmediata a través de nuestro canal de WhatsApp. Respuesta garantizada en menos de 30 minutos.</p>
+											<a href="https://api.whatsapp.com/send?phone=+593999247290&text=Hola+requiero+informaci%C3%B3n+sobre+las+capacitaciones" class="btn btn_red_social_wpp">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+												</svg>
+												WhatsApp
+											</a>
+										</div>
+										
+										<div class="contact-option">
+											<div class="option-icon">
+												<i class="fas fa-envelope"></i>
+												<!-- Fallback for no FontAwesome -->
+												<svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" stroke-width="2" fill="none">
+													<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+													<polyline points="22,6 12,13 2,6"></polyline>
+												</svg>
+											</div>
+											<h3 class="option-title titulo">Envíenos un Correo</h3>
+											<p class="option-desc texto-parrafos">Prefiere comunicación por correo? Envíenos un mensaje y le responderemos en un plazo máximo de 24 horas.</p>
+											<button onclick="x5engine.utils.emailTo('124314','c.eepalfed@info','Capacitaciones','Hola%20requiero%20mayor%20informaci%C3%B3n%20sobre%20las%20capacitaciones')" class="btn btn_capacitaciones">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+													<polyline points="22,6 12,13 2,6"></polyline>
+												</svg>
+												Correo Electrónico
+											</button>
+										</div>
+									</div>
+								</div>
+								
+								<!-- More Information Section -->
+								<div class="more-info-section">
+									<h2 class="info-title titulo custom-text-color-naranja">¿Te gustaría saber más?</h2>
+									
+									<div class="info-options">
+										<div class="info-card">
+											<img src="images/large-8754751.webp" alt="Contacto" class="info-card-image" height="100px">
+											<h3 class="info-card-title titulo">Contáctenos</h3>
+											<p class="texto-parrafos">Estamos disponibles para resolver todas sus dudas y brindarle la mejor atención.</p>
+											<a href="contactos.html" class="btn btn_capacitaciones">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+												</svg>
+												Contactar Ahora
+											</a>
+										</div>
+										
+										<div class="info-card">
+											<img src="images/afiliacion.jpg" alt="Afiliación" class="info-card-image" height="100px">
+											<h3 class="info-card-title titulo">Afiliación</h3>
+											<p class="texto-parrafos">Conozca los beneficios exclusivos de formar parte de nuestra comunidad.</p>
+											<a href="ficha-de-afiliacion.php" class="btn btn_capacitaciones">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+													<path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+													<circle cx="8.5" cy="7" r="4"></circle>
+													<path d="M20 8v6"></path>
+													<path d="M23 11h-6"></path>
+												</svg>
+												Ser Socio
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						
 						</div>
