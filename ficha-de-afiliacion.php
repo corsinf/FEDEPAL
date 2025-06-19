@@ -352,6 +352,9 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                                     <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Datos del propietario/patrocinador</li>
                                     <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Información del Rector o Director</li>
                                     <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Datos del Representante Legal</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>LUAE</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Cédula del Representante Legal</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i>Logo institucional en formato ilustrador</li>
                                 </ul>
                             </div>
                         </div>
@@ -444,7 +447,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 														<a href="convenios.php" class="imCssLink" onclick="return x5engine.utils.location('convenios.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Convenios</span></a>
 													</div>
 													<div>
-														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Acuerdos Ministeriales</span></a>
+														<a href="recursos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Normativa Ministerial</span></a>
 													</div>
 													<div>
 														<a href="videos.php" class="imCssLink" onclick="return x5engine.utils.location('news.php', null, false)"><span class="imTAJustify fs11lh1-5 cf2">Videos</span></a>
