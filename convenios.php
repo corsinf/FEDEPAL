@@ -218,72 +218,161 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						        </div></div><div id="imPageRow_2" class="imPageRow">
 						
 						</div>
-						<div id="imCell_10" class="animable bounce"> <div id="imCellStyleGraphics_10"></div><div id="imCellStyleBorders_10"></div><div id="imObjectImage_12_10"><div id="imObjectImage_12_10_container"><a href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/unibe.webp" title="" alt="" width="192" height="181" />
-						</a></div></div><div id="imCellStyleDescription_10"><div>Convenio UNIB-E</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_10').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_10"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_5" class="animable bounce"> <div id="imCellStyleGraphics_5"></div><div id="imCellStyleBorders_5"></div><div id="imObjectImage_12_05"><div id="imObjectImage_12_05_container"><a href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large_blob.webp" title="" alt="" width="196" height="196" />
-						</a></div></div><div id="imCellStyleDescription_5"><div>Convenio UIDE</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_5').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_5"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_9" class="animable bounce"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imObjectImage_12_09"><div id="imObjectImage_12_09_container"><a href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/images.webp" title="" alt="" width="237" height="213" />
-						</a></div></div><div id="imCellStyleDescription_9"><div>Convenio Fundación Movistar</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_9').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_9"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_14" class="animable bounce"> <div id="imCellStyleGraphics_14"></div><div id="imCellStyleBorders_14"></div><div id="imObjectImage_12_14"><div id="imObjectImage_12_14_container"><a href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/EdinunLogo2019.webp" title="" alt="" width="230" height="138" />
-						</a></div></div><div id="imCellStyleDescription_14"><div>Convenio EDINUN</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_14').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_14"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_12" class="animable bounce"> <div id="imCellStyleGraphics_12"></div><div id="imCellStyleBorders_12"></div><div id="imObjectImage_12_12"><div id="imObjectImage_12_12_container"><a href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/uce.webp" title="" alt="" width="237" height="237" />
-						</a></div></div><div id="imCellStyleDescription_12"><div>Convenio UCE</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_12').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_12"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_13" class="animable bounce"> <div id="imCellStyleGraphics_13"></div><div id="imCellStyleBorders_13"></div><div id="imObjectImage_12_13"><div id="imObjectImage_12_13_container"><a href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/logo_uasb2.webp" title="" alt="" width="210" height="180" />
-						</a></div></div><div id="imCellStyleDescription_13"><div>Convenio UASB</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_13').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_13"))
-								}, 100);
-							});
-						</script>
+						<div id="imCell_5" class=""> 
+							<section class="convenios-section">
+        <div class="container">
+            <div class="convenios-grid">
+                <div class="convenios-container" id="convenios-container">
+                    <!-- UNIB-E -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large_blob.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UIDE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UIDE -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/images.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio Fundación Movistar</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fundación Movistar -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top"href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/unibe.webp" >
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UNIB-E</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- EDINUN -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/uce.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UCE</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- UCE -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                             <a class="card-img-top" href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/logo_uasb2.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UASB</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UASB -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/EdinunLogo2019.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio EDINUN</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CCQ -->
+                    <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Servicios-y-Beneficios-CCQ.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/Loco-CCQ-nvi.webp">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio CCQ</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Convenio-de-Cooperación-UNIR.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-de-Cooperación-UNIR.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_UNIR.png">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UNIR</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-RIMANA-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_Rimana.png">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio RIMANA</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Convenio-EATA-FEDEPAL-firmado.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-EATA-FEDEPAL-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_EATA.png">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio EATA</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Convenio-Diglo.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Diglo.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_DIGLO.jpeg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio DIGLO</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Convenio-REP.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-REP.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_REP.jpeg">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio REP</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/Convenio-Santander.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Santander.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_UNISANT_VECTORES.png">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio UNIVERSIDAD SANTANDER</h5>
+                            </div>
+                        </div>
+                    </div>
+					 <div class="convenio-item">
+                        <div class="card convenio-card">
+                            <a class="card-img-top" href="files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_EDUCADORES_COOPERATIVA.png">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title titulo">Convenio COOPERATIVA EDUCADORES </h5>
+                            </div>
+                        </div>
+                    </div>
+					 
+                </div>
+            </div>
+        </div>
+    </section>
+						</div>
 						<div id="imPageRow_3" class="imPageRow">
 						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_3"></div></div><script>x5engine.boot.push(function () {tsParticles.load('imPageRowGraphics_3', {  "autoPlay": true,  "background": {    "color": {      "value": "#FFFFFF"    },    "image": "",    "position": "50% 50%",    "repeat": "no-repeat",    "size": "cover",    "opacity": 1  },  "backgroundMask": {    "composite": "destination-out",    "cover": {      "color": {        "value": "#fff"      },      "opacity": 1    },    "enable": false  },  "detectRetina": true,  "duration": 0,  "fpsLimit": 60,  "interactivity": {    "detectsOn": "canvas",    "events": {      "onHover": {        "enable": true,        "mode": "repulse",        "parallax": {          "enable": false,          "force": 2,          "smooth": 10        }      },      "resize": true    },    "modes": {      "attract": {        "distance": 200,        "duration": 0.4,        "easing": "ease-out-quad",        "factor": 1,        "maxSpeed": 50,        "speed": 1      },      "bounce": {        "distance": 200      },      "bubble": {        "distance": 400,        "duration": 2,        "mix": false,        "opacity": 0.8,        "size": 40      },      "connect": {        "distance": 80,        "links": {          "opacity": 0.5        },        "radius": 60      },      "grab": {        "distance": 400,        "links": {          "blink": false,          "consent": false,          "opacity": 1        }      },      "light": {        "area": {          "gradient": {            "start": {              "value": "#ffffff"            },            "stop": {              "value": "#000000"            }          },          "radius": 1000        },        "shadow": {          "color": {            "value": "#000000"          },          "length": 2000        }      },      "push": {        "default": true,        "groups": [],        "quantity": 4      },      "remove": {        "quantity": 2      },      "repulse": {        "distance": 200,        "duration": 0.4,        "factor": 100,        "speed": 1,        "maxSpeed": 50,        "easing": "ease-out-quad"      },      "slow": {        "factor": 3,        "radius": 200      },      "trail": {        "delay": 1,        "pauseOnStop": false,        "quantity": 1      },      "absorbers": {        "color": {          "value": "#ff0000"        },        "draggable": false,        "opacity": 1,        "destroy": true,        "orbits": false,        "size": {          "random": {            "enable": true,            "minimumValue": 5          },          "value": {            "min": 5,            "max": 10          },          "density": 5,          "limit": 50        }      }    }  },  "manualParticles": [],  "motion": {    "disable": false,    "reduce": {      "factor": 4,      "value": true    }  },  "particles": {    "bounce": {      "horizontal": {        "random": {          "enable": false,          "minimumValue": 0.1        },        "value": 1      },      "vertical": {        "random": {          "enable": false,          "minimumValue": 0.1        },        "value": 1      }    },    "collisions": {      "bounce": {        "horizontal": {          "random": {            "enable": false,            "minimumValue": 0.1          },          "value": 1        },        "vertical": {          "random": {            "enable": false,            "minimumValue": 0.1          },          "value": 1        }      },      "enable": false,      "mode": "bounce",      "overlap": {        "enable": true,        "retries": 0      }    },    "color": {      "value": "#FFFFFF",      "animation": {        "h": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        },        "s": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        },        "l": {          "count": 0,          "enable": false,          "offset": 0,          "speed": 1,          "sync": true        }      }    },    "destroy": {      "mode": "none",      "split": {        "count": 1,        "factor": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": 3        },        "rate": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": {            "min": 4,            "max": 9          }        },        "sizeOffset": true      }    },    "gradient": [],    "groups": {},    "life": {      "count": 0,      "delay": {        "random": {          "enable": false,          "minimumValue": 0        },        "value": 0,        "sync": false      },      "duration": {        "random": {          "enable": false,          "minimumValue": 0.0001        },        "value": 0,        "sync": false      }    },    "links": {      "blink": false,      "color": {        "value": "#20124D"      },      "consent": false,      "distance": 150,      "enable": true,      "frequency": 1,      "opacity": 0.4,      "shadow": {        "blur": 5,        "color": {          "value": "#00ff00"        },        "enable": false      },      "triangles": {        "enable": false,        "frequency": 1      },      "width": 1,      "warp": false    },    "move": {      "angle": {        "offset": 0,        "value": 90      },      "attract": {        "distance": 200,        "enable": false,        "rotate": {          "x": 600,          "y": 1200        }      },      "decay": 0,      "distance": {},      "direction": "none",      "drift": 0,      "enable": true,      "gravity": {        "acceleration": 9.81,        "enable": false,        "inverse": false,        "maxSpeed": 50      },      "path": {        "clamp": true,        "delay": {          "random": {            "enable": false,            "minimumValue": 0          },          "value": 0        },        "enable": false,        "options": {}      },      "outModes": {        "default": "out",        "bottom": "out",        "left": "out",        "right": "out",        "top": "out"      },      "random": false,      "size": false,      "speed": 2,      "spin": {        "acceleration": 0,        "enable": false      },      "straight": false,      "trail": {        "enable": false,        "length": 10,        "fillColor": {          "value": "#000000"        }      },      "vibrate": false,      "warp": false    },    "number": {      "density": {        "enable": false,        "area": 800,        "factor": 1000      },      "limit": 0,      "value": 80    },    "opacity": {      "random": {        "enable": true,        "minimumValue": 0.1      },      "value": {        "min": 0.1,        "max": 0.5      },      "animation": {        "count": 0,        "enable": true,        "speed": 3,        "sync": false,        "destroy": "none",        "startValue": "random",        "minimumValue": 0.1      }    },    "orbit": {      "animation": {        "count": 0,        "enable": false,        "speed": 1,        "sync": false      },      "enable": false,      "opacity": 1,      "rotation": {        "random": {          "enable": false,          "minimumValue": 0        },        "value": 45      },      "width": 1    },    "reduceDuplicates": false,    "repulse": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "enabled": false,      "distance": 1,      "duration": 1,      "factor": 1,      "speed": 1    },    "roll": {      "darken": {        "enable": false,        "value": 0      },      "enable": false,      "enlighten": {        "enable": false,        "value": 0      },      "mode": "vertical",      "speed": 25    },    "rotate": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "animation": {        "enable": false,        "speed": 0,        "sync": false      },      "direction": "clockwise",      "path": false    },    "shadow": {      "blur": 0,      "color": {        "value": "#000000"      },      "enable": false,      "offset": {        "x": 0,        "y": 0      }    },    "shape": {      "options": {"character": { "value": [ "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z" ], "font": "Verdana", "style": "", "weight": "400", "fill": true }},      "type": "char"    },    "size": {      "random": {        "enable": true,        "minimumValue": 1      },      "value": {        "min": 1,        "max": 50      },      "animation": {        "count": 0,        "enable": false,        "speed": 20,        "sync": false,        "destroy": "none",        "startValue": "random",        "minimumValue": 0.1      }    },    "stroke": {      "width": 0    },    "tilt": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "animation": {        "enable": false,        "speed": 0,        "sync": false      },      "direction": "clockwise",      "enable": false    },    "twinkle": {      "lines": {        "enable": false,        "frequency": 0.05,        "opacity": 1      },      "particles": {        "enable": false,        "frequency": 0.05,        "opacity": 1      }    },    "wobble": {      "distance": 5,      "enable": false,      "speed": 50    },    "zIndex": {      "random": {        "enable": false,        "minimumValue": 0      },      "value": 0,      "opacityRate": 1,      "sizeRate": 1,      "velocityRate": 1    }  },  "pauseOnBlur": true,  "pauseOnOutsideViewport": true,  "responsive": [],  "themes": [],  "zLayers": 100});});</script>
 						</div>
-						<div id="imCell_21" class="animable bounce"> <div id="imCellStyleGraphics_21"></div><div id="imCellStyleBorders_21"></div><div id="imObjectImage_12_21"><div id="imObjectImage_12_21_container"><a href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Servicios-y-Beneficios-CCQ.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/Loco-CCQ-nvi.webp" title="" alt="" width="340" height="192" />
-						</a></div></div><div id="imCellStyleDescription_21"><div>Convenio UCE</div></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_21').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_21"))
-								}, 100);
-							});
-						</script>
+						
 						<div id="imCell_20" class="animable wobble"> <div id="imCellStyleGraphics_20"></div><div id="imCellStyleBorders_20"></div><div id="imObjectImage_12_20"><div id="imObjectImage_12_20_container">
 
 						<a type="button" id="" onclick="x5engine.utils.location('recursos.php', null, false);"><img src="images/large-2761159.gif" title="" alt="" width="340" height="226" /></a>

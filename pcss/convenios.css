@@ -11766,3 +11766,107 @@ html:not(.no-cssanimations) #imCell_18.animated {
 #imPage.without-id_animation-in-progress {
     overflow: hidden
 }
+
+#imCell_5 {
+    display: grid;
+    grid-column: 1/296;
+    grid-row: 6/5;
+}
+#imCell_5 {
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+
+    box-sizing: border-box;
+    padding: 0px;            /* Espacio interno opcional */
+    background-color: #ffffff; /* Opcional: fondo claro */
+}
+
+.convenios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.convenio-item {
+    flex: 0 0 calc(33.333% - 1.33rem);
+    max-width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.convenio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.convenio-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.convenio-card .card-img-top {
+    height: 180px;
+    width: 100%;
+    padding: 20px;
+    background: #fafbfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    object-position: center;
+}
+
+.convenio-card .card-img-top img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 2rem 1.5rem;
+    background: white;
+    text-align: center;
+}
+
+.card-title.titulo {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+/* Responsive ajustes */
+@media (max-width: 992px) {
+    .convenio-item {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .convenio-item {
+        flex: 0 0 100%;
+    }
+
+    .card-body {
+        padding: 1.5rem 1rem;
+    }
+
+    .convenio-card .card-img-top {
+        height: 150px;
+        padding: 20px;
+    }
+}

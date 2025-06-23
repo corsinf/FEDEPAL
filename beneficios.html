@@ -53,6 +53,13 @@
 		<link rel="stylesheet" href="libs/bootstrap.min.css">
 		<script src="libs/bootstrap.bundle.min.js"></script>
 
+		 <style>
+			.custom-text-color-naranja {
+  color: #e68d24;
+}
+        
+    </style>
+
   
   </head>
   
@@ -367,7 +374,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                               Con temas de interés que contribuyen a la gestión de las instituciones educativas afiliadas.
                             </p>
                             <div class="text-center mt-3 mt-md-4">
-                              <a href="fotos.php" class="btn_beneficios fw-bold rounded-1 shadow">Más información</a>
+                              <a href="ficha-de-afiliacion.html" class="btn_beneficios fw-bold rounded-1 shadow">Más información</a>
                             </div>
                           </div>
                         </div>
@@ -377,41 +384,85 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 
                   <!-- Divisor -->
                   <!-- <hr class="my-5" style="border-top: 1px solid rgba(52,83,139,1);"> -->
-                  <div class="m-4"></div>
-
-                  <!-- Row 4: (En ambas resoluciones: imagen primero, texto después) -->
-                  <div id="contenidotext" class="row d-flex justify-content-center">
-                    <div class="col-12">
-                      <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4" style="background: rgba(52, 83, 139, 0.25); color: white;">
-                        <div class="row g-3 g-md-4 align-items-center">
-                          <!-- Imagen: Primero en todas las resoluciones -->
-                          <div class="col-12 col-md-6 order-1 d-flex justify-content-center align-items-center">
-                            <img
-                              src="images/be_reconocimiento.svg"
-                              class="rounded-circle shadow-lg img-fluid border-custom border-3" 
-                              style="width: 200px; height: 200px; object-fit: cover;"
-                              alt="Imagen 1">
-                          </div>
-                          <!-- Texto: Después en todas las resoluciones -->
-                          <div class="col-12 col-md-6 order-2 text-center text-md-start px-3 px-md-5">
-                            <h3 class="mb-2 mb-md-3 text-center custom-text-color-naranja fs-6 fs-md-5 fw-bold lh-sm lh-md-base">
-                              RECONOCIMIENTOS POR ANIVERSARIOS
-                            </h3>
-                            <p class="fs-6 fs-md-5 lh-sm lh-md-base custom-text-color">
-                              Entrega de placas de aniversario a las instituciones educativas federadas.
-                            </p>
-                            <div class="text-center mt-3 mt-md-4">
-                              <a href="ficha-de-afiliacion.php" class="btn_beneficios fw-bold rounded-1 shadow">Más información</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
+                 <div id="contenidotext" class="row d-flex justify-content-center">
+        <div class="col-12">
+            <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4 services-section" style="background: rgba(52, 83, 139, 0.05); position: relative; overflow: hidden;">
+                
+                <!-- Elementos flotantes de fondo -->
+                <div class="floating-elements">
+                    <i class="fas fa-lightbulb floating-icon" style="font-size: 3rem;"></i>
+                    <i class="fas fa-graduation-cap floating-icon" style="font-size: 2.5rem;"></i>
+                    <i class="fas fa-chart-line floating-icon" style="font-size: 3.5rem;"></i>
+                    <i class="fas fa-balance-scale floating-icon" style="font-size: 2.8rem;"></i>
                 </div>
-              </div>
-              <!-- fin -->
+
+                <!-- Header de la sección -->
+                <div class="text-center mb-4 mb-md-5">
+                    <h1 class="section-title mb-2 mb-md-3 fs-2 fs-md-1 fw-bold " style="color: #e68d24;">Servicio de Asesorías Gratuitas</h1>
+                    <p class="section-subtitle fs-5 fs-md-4 mb-3 mb-md-4 custom-text-color">Servicios profesionales especializados para instituciones educativas</p>
+                    <div class="highlight-text d-inline-block px-3 px-md-4 py-2 rounded-pill fw-bold fs-6 fs-md-5 custom-text-color">
+                        Aprovechar los recursos en tiempos de austeridad, es otra forma de ganar
+                    </div>
+                </div>
+
+                <!-- Grid de servicios -->
+                <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                    
+                    <!-- Asesorías Legales -->
+                     <!-- Asesorías Legales -->
+                    <div class="col-12 col-lg-4">
+                        <div class="service-card h-100 p-4 p-md-5 text-center">
+                            <div class="service-icon-container mx-auto mb-3 mb-md-4">
+                                <img src="images/Asesorías Legales en Derecho Educativo.jpg" alt="Asesorías Legales" class="service-image">
+                            </div>
+                            <h3 class="service-title mb-2 mb-md-3 fs-6 fs-md-5 fw-bold text-uppercase custom-text-color-naranja">Asesorías Legales en Derecho Educativo</h3>
+                            <p class="service-description fs-6 fs-md-5 mb-3 mb-md-4 custom-text-color">Asesorías gratuitas previa cita, relacionadas con:</p>
+                            <ul class="service-list list-unstyled text-start">
+                                <li class="mb-2 custom-text-color">Resolución de conflictos</li>
+                                <li class="mb-2 custom-text-color">Asuntos societarios</li>
+                                <li class="mb-2 custom-text-color">Procedimientos disciplinarios</li>
+                                <li class="mb-2 custom-text-color">Procesos penales en el contexto educativo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Asesorías Académico-Pedagógicas -->
+                    <div class="col-12 col-lg-4">
+                        <div class="service-card h-100 p-4 p-md-5 text-center">
+                            <div class="service-icon-container mx-auto mb-3 mb-md-4">
+                                <img src="images/Asesorías Académico - Pedagógicas.jpg" alt="Asesorías Académicas" class="service-image">
+                            </div>
+                            <h3 class="service-title mb-2 mb-md-3 fs-6 fs-md-5 fw-bold text-uppercase custom-text-color-naranja">Asesorías Académico - Pedagógicas</h3>
+                            <p class="service-description fs-6 fs-md-5 mb-3 mb-md-4 custom-text-color">Asesorías gratuitas previa cita, relacionadas con:</p>
+                            <ul class="service-list list-unstyled text-start">
+                                <li class="mb-2 custom-text-color">Mallas curriculares</li>
+                                <li class="mb-2 custom-text-color">Planificación</li>
+                                <li class="mb-2 custom-text-color">Capacitación docente</li>
+                                <li class="mb-2 custom-text-color">Normativas emitidas por el Mineduc</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Asesorías Administrativo-Financieras -->
+                    <div class="col-12 col-lg-4">
+                        <div class="service-card h-100 p-4 p-md-5 text-center">
+                            <div class="service-icon-container mx-auto mb-3 mb-md-4">
+                                <img src="images/Asesorías Administrativo - Financieras.jpg" alt="Asesorías Financieras" class="service-image">
+                            </div>
+                            <h3 class="service-title mb-2 mb-md-3 fs-6 fs-md-5 fw-bold text-uppercase custom-text-color-naranja">Asesorías Administrativo - Financieras</h3>
+                            <p class="service-description fs-6 fs-md-5 mb-3 mb-md-4 custom-text-color">Asesorías gratuitas previa cita, relacionadas con:</p>
+                            <ul class="service-list list-unstyled text-start">
+                                <li class="mb-2 custom-text-color">Gestión administrativa</li>
+                                <li class="mb-2 custom-text-color">Cartera y Costos</li>
+                                <li class="mb-2 custom-text-color">Presupuesto</li>
+                                <li class="mb-2 custom-text-color">Talento Humano</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
                
             </div>
 
