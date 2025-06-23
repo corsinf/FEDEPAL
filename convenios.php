@@ -226,7 +226,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- UNIB-E -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/large_blob.webp">
+                            <a class="card-img-top" href="files/CONVENIO-UIDE-1.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UIDE-1.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/large_blob.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UIDE</h5>
@@ -237,7 +237,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- UIDE -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/images.webp">
+                            <a class="card-img-top" href="files/Fundacion-Movistar.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Fundacion-Movistar.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/images.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio Fundación Movistar</h5>
@@ -248,7 +248,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- Fundación Movistar -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top"href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/unibe.webp" >
+                            <a class="card-img-top"href="files/CONVENIO-UNIB_kevm487e.E.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UNIB_kevm487e.E.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/unibe.webp" >
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UNIB-E</h5>
@@ -260,7 +260,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- EDINUN -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/uce.webp">
+                            <a class="card-img-top" href="files/CONVENIO-UCE-2.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-UCE-2.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/uce.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UCE</h5>
@@ -271,7 +271,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- UCE -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                             <a class="card-img-top" href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/logo_uasb2.webp">
+                             <a class="card-img-top" href="files/CONVENIO-U.A.S.B.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-U.A.S.B.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/logo_uasb2.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UASB</h5>
@@ -282,7 +282,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- UASB -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/EdinunLogo2019.webp">
+                            <a class="card-img-top" href="files/CONVENIO-EDINUN.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-EDINUN.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/EdinunLogo2019.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio EDINUN</h5>
@@ -293,7 +293,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     <!-- CCQ -->
                     <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Servicios-y-Beneficios-CCQ.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/Loco-CCQ-nvi.webp">
+                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Servicios-y-Beneficios-CCQ.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/Loco-CCQ-nvi.webp">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio CCQ</h5>
@@ -302,7 +302,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Convenio-de-Cooperación-UNIR.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-de-Cooperación-UNIR.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_UNIR.png">
+                            <a class="card-img-top" href="files/Convenio-de-Cooperación-UNIR.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-de-Cooperación-UNIR.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_UNIR.png">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UNIR</h5>
@@ -311,7 +311,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-RIMANA-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_Rimana.png">
+                            <a class="card-img-top" href="files/Servicios-y-Beneficios-CCQ.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-RIMANA-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_Rimana.png">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio RIMANA</h5>
@@ -321,7 +321,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Convenio-EATA-FEDEPAL-firmado.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-EATA-FEDEPAL-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_EATA.png">
+                            <a class="card-img-top" href="files/Convenio-EATA-FEDEPAL-firmado.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-EATA-FEDEPAL-firmado.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_EATA.png">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio EATA</h5>
@@ -330,7 +330,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Convenio-Diglo.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Diglo.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_DIGLO.jpeg">
+                            <a class="card-img-top" href="files/Convenio-Diglo.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Diglo.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_DIGLO.jpeg">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio DIGLO</h5>
@@ -339,7 +339,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Convenio-REP.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-REP.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_REP.jpeg">
+                            <a class="card-img-top" href="files/Convenio-REP.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-REP.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_REP.jpeg">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio REP</h5>
@@ -348,7 +348,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/Convenio-Santander.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Santander.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_UNISANT_VECTORES.png">
+                            <a class="card-img-top" href="files/Convenio-Santander.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/Convenio-Santander.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_UNISANT_VECTORES.png">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio UNIVERSIDAD SANTANDER</h5>
@@ -357,7 +357,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                     </div>
 					 <div class="convenio-item">
                         <div class="card convenio-card">
-                            <a class="card-img-top" href="files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/LOGO_EDUCADORES_COOPERATIVA.png">
+                            <a class="card-img-top" href="files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_EDUCADORES_COOPERATIVA.png">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title titulo">Convenio COOPERATIVA EDUCADORES </h5>

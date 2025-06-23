@@ -15927,6 +15927,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
   transform: translateX(-50px);
   /* Comienza fuera de la pantalla, a la izquierda */
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  
 }
 
 #contenidotext.visible {
@@ -15958,6 +15959,10 @@ html:not(.no-cssanimations) #imCell_124.animated {
 
 .custom-text-color-naranja {
   color: #e68d24;
+}
+
+.service-section {
+background: rgba(52, 83, 139, 0.25);
 }
 
 .service-title {
@@ -16035,7 +16040,7 @@ html:not(.no-cssanimations) #imCell_124.animated {
 .service-card {
   background: #ffffff;
   border-radius: 20px;
-  padding: 40px 30px;
+  padding: 20px 30px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease;
