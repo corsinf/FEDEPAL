@@ -360,7 +360,7 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
                             <a class="card-img-top" href="files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf" onclick="return x5engine.imShowBox({ media:[{type: 'iframe', url: 'files/CONVENIO-FEDEPAL-EDUCADORES-COOPERATIVA.pdf', width: 1920, height: 1080, description: ''}]}, 0, this);"><img src="images/convenios/LOGO_EDUCADORES_COOPERATIVA.png">
                             </a>
                             <div class="card-body">
-                                <h5 class="card-title titulo">Convenio COOPERATIVA EDUCADORES </h5>
+                                <h5 class="card-title titulo">Convenio EDUCADORES COOPERATIVA</h5>
                             </div>
                         </div>
                     </div>
