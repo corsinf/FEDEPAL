@@ -172,6 +172,99 @@
             width: 100px;
         }
 
+		.hero-section {
+    background: linear-gradient(rgb(49, 52, 118), rgb(49, 52, 118)), url(https://source.unsplash.com/1600x600/?education,school) center / cover;
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="30" cy="25" r="1.5" fill="rgba(255,255,255,0.03)"/><circle cx="60" cy="15" r="1" fill="rgba(255,255,255,0.04)"/><circle cx="80" cy="35" r="1.2" fill="rgba(255,255,255,0.03)"/><circle cx="20" cy="50" r="1" fill="rgba(255,255,255,0.05)"/><circle cx="70" cy="60" r="1.5" fill="rgba(255,255,255,0.04)"/><circle cx="40" cy="75" r="1" fill="rgba(255,255,255,0.03)"/><circle cx="90" cy="80" r="1.3" fill="rgba(255,255,255,0.05)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.5;
+    animation: float 6s ease-in-out infinite;
+	color: white;
+}
+
+.shape:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.shape:nth-child(2) {
+    top: 20%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.shape:nth-child(3) {
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.shape:nth-child(4) {
+    bottom: 10%;
+    right: 10%;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(180deg); 
+    }
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.05); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+		
+
     </style>
 
 		<script>
@@ -340,91 +433,124 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 					</div>
 				
 					<main id="imContent">
+						<div class="hero-section">
+        <div class="floating-shapes">
+            <div class="shape">
+                <i class="fas fa-medal" style="font-size: 60px; color: rgba(255,165,0,0.3);"></i>
+            </div>
+            <div class="shape">
+                <i class="fas fa-trophy" style="font-size: 50px; color: rgba(255,255,255,0.2);"></i>
+            </div>
+            <div class="shape">
+                <i class="fas fa-award" style="font-size: 70px; color: rgba(255,165,0,0.2);"></i>
+            </div>
+            <div class="shape">
+                <i class="fas fa-star" style="font-size: 40px; color: rgba(255,255,255,0.3);"></i>
+            </div>
+        </div>
+        
+        <div class="container text-center hero-content">
+            <h1 class="display-4 fw-bold mb-3 titulo">PLACAS DE ANIVERSARIO</h1>
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <i class="fas fa-award fa-3x icon-award"></i>
+            </div>
+            <div>
+                <p class="texto-parrafos-principal fw-light texto-justificado" style="max-width: 800px; margin: 0 auto;">
+  Celebramos los hitos más importantes de nuestra trayectoria con estas placas conmemorativas que representan décadas de excelencia educativa y compromiso institucional.
+</p>
+            </div>
+        </div>
+		</div>
 
- <div class="container py-5">
+ <div class="container py-5 pt-4">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card border-0 rounded-4 shadow">
+                <div class="card border-0 rounded-4 ">
                     <div class="card-body p-5">
-                        <h2 class="titulo fw-bold mb-3 text-center">Placas de Aniversario</h2>
-                        
-                        <div class="alert bg-info bg-opacity-10 border-0 rounded-4 shadow-sm mb-5">
-                            <div class="d-flex align-items-center p-3">
-                                <i class="fas fa-award fa-2x text-info me-3 icon-violeta"></i>
-                                <div>
-                                    <h5 class="fw-bold titulo mb-1">Reconocimientos Empresariales</h5>
-                                    <p class="texto-parrafos mb-0">Celebramos los hitos más importantes de nuestra trayectoria con estas placas conmemorativas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                      <div class="container">
+                     <div class="container">
   <div class="row justify-content-center">
-    <!-- Placa 1 -->
-    <div class="col-md-6 d-flex justify-content-center mb-4">
-      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Dalcroze.png', 'Placa Dalcroze')">
-        <img src="images/placasAniversarios/Placa_Dalcroze.png" alt="Placa Dalcroze" class="placa-image">
-        <div class="placa-overlay">
-          <h3 class="placa-title">Placa Dalcroze</h3>
-        </div>
+  <!-- Placa 1 -->
+  <div class="col-md-6 col-lg-5 mb-4 d-flex justify-content-center">
+    <div class="card placa-card" onclick="openModal('images/placasAniversarios/Placa_Dalcroze.png', 'Placa Dalcroze')">
+      <div class="card-body text-center">
+        <h5 class=" titulo">Placa Dalcroze</h5>
+      </div>
+      <img src="images/placasAniversarios/Placa_Dalcroze.png" class="card-img-top placa-image" alt="Placa Dalcroze">
+      <div class="card-body text-center">
+        <p class="card-text texto-parrafos">Esta placa conmemora el legado educativo de Dalcroze, símbolo de innovación institucional.</p>
       </div>
     </div>
+  </div>
 
-    <!-- Placa 2 -->
-    <div class="col-md-6 d-flex justify-content-center mb-4">
-      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Socrates.png', 'Placa Socrates')">
-        <img src="images/placasAniversarios/Placa_Socrates.png" alt="Placa Socrates" class="placa-image">
-        <div class="placa-overlay">
-          <h3 class="placa-title">Placa Socrates</h3>
-        </div>
+  <!-- Placa 2 -->
+  <div class="col-md-6 col-lg-5 mb-4 d-flex justify-content-center">
+    <div class="card placa-card" onclick="openModal('images/placasAniversarios/Placa_Socrates.png', 'Placa Socrates')">
+      <div class="card-body text-center">
+        <h5 class=" titulo">Placa Sócrates</h5>
+      </div>
+      <img src="images/placasAniversarios/Placa_Socrates.png" class="card-img-top placa-image" alt="Placa Socrates">
+      <div class="card-body text-center">
+        <p class="card-text texto-parrafos">Esta placa conmemora el legado educativo de Sócrates, símbolo de innovación institucional.</p>
       </div>
     </div>
+  </div>
 
-    <!-- Placa 3 -->
-    <div class="col-md-6 d-flex justify-content-center mb-4">
-      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Thomas_Russell.png', 'Placa Thomas Russell')">
-        <img src="images/placasAniversarios/Placa_Thomas_Russell.png" alt="Placa Thomas Russell" class="placa-image">
-        <div class="placa-overlay">
-          <h3 class="placa-title">Placa Thomas Russell</h3>
+  <!-- Placa 3 -->
+  <div class="col-md-6 col-lg-5 d-flex justify-content-center">
+    <div class="card placa-card" onclick="openModal('images/placasAniversarios/Placa_Thomas_Russell.png', 'Placa Thomas Russell')">
+      <div class="card-body text-center">
+        <h5 class=" titulo">Placa Thomas Russell</h5>
+      </div>
+      <img src="images/placasAniversarios/Placa_Thomas_Russell.png" class="card-img-top placa-image" alt="Placa Thomas Russell">
+      <div class="card-body text-center">
+        <p class="card-text texto-parrafos">Esta placa conmemora el legado educativo de Thomas Russell, símbolo de innovación institucional</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="container">
+  <div class="row justify-content-center">
+    <!-- ocupa 10 de 12 columnas, dejando margen igual a izquierda y derecha -->
+    <div class="col-10">
+      <div class="border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm hover-translate-y">
+        <div class="d-flex align-items-start">
+          <i class="fas fa-trophy me-3 icon-violeta fa-2x"></i>
+          <div>
+            <h5 class="titulo mb-2">Compromiso con la Excelencia</h5>
+            <p class="texto-parrafos mb-0">Cada placa reconoce el esfuerzo diario de nuestro equipo y reafirma nuestro compromiso con la excelencia académica y el servicio de calidad.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-                        
-                        <div class="text-center mt-5">
-                            <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm hover-translate-y d-inline-block">
-                                <div class="d-flex align-items-center">
-                                    <i class="fas fa-trophy me-3 icon-violeta fa-2x"></i>
-                                    <div class="text-start">
-                                        <h5 class="titulo mb-1">Compromiso con la Excelencia</h5>
-                                        <p class="texto-parrafos mb-0">Cada reconocimiento representa nuestro compromiso continúo con la calidad y el servicio.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 					
 					</main>
 
 					<!-- Modal para mostrar imagen ampliada -->
    <!-- Modal para mostrar imagen ampliada -->
-   <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered">
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+      <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 60vh;">
         <img id="modalImage" src="" alt="Imagen" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
       </div>
     </div>
   </div>
 </div>
+
 
 
     

@@ -417,6 +417,11 @@
         grid-column: 2/26;
         grid-row: 6/7
     }
+     #imCell_10 {
+        display: grid;
+        grid-column: 2/26;
+        grid-row: 7/7
+    }
 
     #imPageRow_1 {
         display: block;
@@ -2663,6 +2668,13 @@ html:not(.no-cssanimations) #imCell_8.animated {
         border-left: 0;
         border-right: 0
     }
+
+    #imCellStyleBorders_10 {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0
+    }
 }
 
 @media(max-width:1149.9px) and (min-width:720px) {
@@ -2803,6 +2815,26 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-column: 1/-1
     }
 
+    #imCell_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 6px;
+        padding-right: 6px
+    }
+
+    #imCell_10 {
+        grid-template-rows: [row-title]min-content [row-content]auto
+    }
+
+    #pluginAppObj_17_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: row-content/span 1;
+        grid-column: 1/-1
+    }
+
     #imCellStyleTitle_9 {
         margin-top: 5px;
         margin-left: 5px;
@@ -2810,7 +2842,21 @@ html:not(.no-cssanimations) #imCell_8.animated {
         margin-bottom: 5px
     }
 
+    #imCellStyleTitle_10 {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+
     #imCellStyleBorders_9 {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0
+    }
+
+    #imCellStyleBorders_10 {
         border-top: 0;
         border-bottom: 0;
         border-left: 0;
@@ -3029,6 +3075,17 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-template-rows: [row-title]min-content [row-content]auto
     }
 
+    #imCell_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 4px;
+        padding-right: 4px
+    }
+
+    #imCell_10 {
+        grid-template-rows: [row-title]min-content [row-content]auto
+    }
+
     #pluginAppObj_17_08 {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -3060,6 +3117,12 @@ html:not(.no-cssanimations) #imCell_8.animated {
     }
 
     #imCellStyleBorders_8 {
+        border-top: 0;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0
+    }
+    #imCellStyleBorders_10 {
         border-top: 0;
         border-bottom: 0;
         border-left: 0;
@@ -3209,6 +3272,17 @@ html:not(.no-cssanimations) #imCell_8.animated {
     }
 
     #imCell_8 {
+        grid-template-rows: [row-title]min-content [row-content]auto
+    }
+
+    #imCell_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px
+    }
+
+    #imCell_10 {
         grid-template-rows: [row-title]min-content [row-content]auto
     }
 
