@@ -1,17 +1,15 @@
-<?php require_once("res/x5engine.php"); ?>
-<?php imCheckAccess('17', ''); ?>
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
-		<title>Fotos - Fedepal</title>
+		<title>Fotos de placas aniversario - Fedepal</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Corsinf" />
 		<meta name="generator" content="Incomedia WebSite X5 Pro 2024.4.8 - www.websitex5.com" />
 		<meta property="og:locale" content="es" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://localhost/fotos.php" />
-		<meta property="og:title" content="Fotos" />
+		<meta property="og:url" content="http://localhost/ficha-de-afiliacion.php" />
+		<meta property="og:title" content="Ficha de afiliacion" />
 		<meta property="og:site_name" content="Fedepal" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
@@ -19,31 +17,170 @@
 		<link rel="stylesheet" href="style/print.css?2024-4-8-0" media="print" />
 		<link rel="stylesheet" href="style/style.css?2024-4-8-0" media="screen,print" />
 		<link rel="stylesheet" href="style/template.css?2024-4-8-0" media="screen" />
-		<link rel="stylesheet" href="appsresources/swiper_0vov1qwg.min.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_06/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_07/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_08/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_09/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_17_10/custom.css" media="screen, print" />
+		<style type="text/css">#pluginAppObj_15_95 { width: 100%; }</style>
+		<style type="text/css">#pluginAppObj_15_98 { width: 100%; }</style>
+		<link rel="stylesheet" href="pluginAppObj/pluginAppObj_15_101/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imHeader_pluginAppObj_04/custom.css" media="screen, print" />
 		<link rel="stylesheet" href="pluginAppObj/imFooter_pluginAppObj_12/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/fotos.css?2024-4-8-0-638709142514138313" media="screen,print" />
 		<script src="res/jquery.js?2024-4-8-0"></script>
 		<script src="res/x5engine.js?2024-4-8-0" data-files-version="2024-4-8-0"></script>
-		<script src="appsresources/swiper3.js"></script>
-		<script src="pluginAppObj/pluginAppObj_17_06/main.js"></script>
-		<script src="pluginAppObj/pluginAppObj_17_07/main.js"></script>
-		<script src="pluginAppObj/pluginAppObj_17_08/main.js"></script>
-		<script src="pluginAppObj/pluginAppObj_17_09/main.js"></script>
-		<script src="pluginAppObj/pluginAppObj_17_10/main.js"></script>
+		<script src="appsresources/googleMapsPA.js"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_04/main.js"></script>
 		<script src="pluginAppObj/imFooter_pluginAppObj_12/main.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="pcss/ficha-de-afiliacion.css?2024-4-8-0-638709142486792236" media="screen,print" />
+
+        <style>
+        .hero-bg {
+            background: linear-gradient(rgb(49, 52, 118), rgb(49, 52, 118)),
+            url('https://source.unsplash.com/1600x600/?education,school') center/cover;
+
+
+        }
+
+.bg-custom {
+    background-color: rgb(49, 52, 118) !important; /* Color personalizado */
+    color: white !important; /* Texto blanco para mejor contraste */
+}
+
+
+        .btn_ficha{
+            font: normal normal normal 16pt 'Lato';
+    background-color: rgba(230, 141, 36);
+    transition: background-color .2slinear;
+    position: relative;
+    display: inline-block;
+    word-wrap: break-word;
+    max-width: 100%;
+    border: solid;
+    border-color: rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1) rgba(55, 71, 79, 1);
+    border-width: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    padding: 20px 30px 20px 30px;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+        }
+
+        .btn_ficha:hover {
+    background-color: rgba(210, 127, 31, 1);
+}
+
+   .texto-parrafos{
+    color: rgba(52, 83, 139, 1);
+    vertical-align: baseline;
+    font-size: 14pt;
+    line-height: 28px;
+   }
+   .titulo{
+    color: #E68D24;
+    font-family: 'Tahoma';
+   }
+
+   .texto-parrafos-principal{
+    color: white;
+    vertical-align: baseline;
+    font-size: 14pt;
+    line-height: 28px;
+   }
+
+ 
+        
+        .border-violeta {
+            border-color: #8e44ad !important;
+        }
+        
+        .icon-violeta {
+            color: #8e44ad;
+        }
+        
+        .hover-translate-y {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-translate-y:hover {
+            transform: translateY(-5px);
+        }
+        
+        .placa-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .placa-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .placa-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .placa-card:hover .placa-image {
+            transform: scale(1.05);
+        }
+        
+        .placa-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.8);
+            padding: 20px;
+            color: white;
+        }
+        
+        .placa-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+        }
+        
+        @media (max-width: 768px) {
+            .placa-image {
+                height: 250px;
+            }
+            
+            .galeria-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1.5rem;
+            }
+            
+            .galeria-grid .placa-card:nth-child(3) {
+                grid-column: 1;
+            }
+        }
+        
+        .decorative-line {
+            height: 4px;
+            background: linear-gradient(90deg, #8e44ad, #3498db, #e74c3c);
+            border-radius: 2px;
+            margin: 0 auto;
+            width: 100px;
+        }
+
+    </style>
+
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
-			x5engine.utils.currentPagePath = 'fotos.php';
+			x5engine.utils.currentPagePath = 'contactos.html';
+			x5engine.boot.push(function () { if(x5engine.utils.getCurrentBrowser().indexOf('Edge') < 0 ) { x5engine.eventBinder('#imPageExtContainer, #imHeaderBg, #imFooterBg, #imFixedDivBg', '#imContentGraphics, #imHeaderObjects, #imFooterObjects, #imSideBarObjects, #imStickyBarGraphics, #imStickyBarObjects, #imCartContainer, #imPageToTop, #imMnMn, .showbox-bg, [id^="imCell_"]', function() { x5engine.utils.location('contactos.html#Contacts', null, false); }, function () { $('#imPageExtContainer, #imHeaderBg, #imFooterBg, #imFixedDivBg').css('cursor', 'pointer'); }, function () { $('#imPageExtContainer, #imHeaderBg, #imFooterBg, #imFixedDivBg').css('cursor', 'default'); }); } });
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		<link rel="icon" href="favicon.png?2024-4-8-0-638709142509915372" type="image/png" />
+		<link rel="icon" href="favicon.png?2024-4-8-0-638709142487969718" type="image/png" />
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -53,7 +190,7 @@
 		<!-- End Google Tag Manager -->
 		<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=GTM-TR6L3QCK"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'GTM-TR6L3QCK');</script>
 	    <!-- <link rel="stylesheet" href="libs/bootstrap.min.css"> -->
-    	
+		
 		<link rel="stylesheet" href="libs/bootstrap.min.css">
 		<script src="libs/bootstrap.bundle.min.js"></script>
 	</head>
@@ -64,11 +201,7 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- End Google Tag Manager (noscript) -->
-		<div id="imPageExtContainer">
-			<div id="imPageIntContainer">
-				<div id="imHeaderBg"></div>
-				<div id="imFooterBg"></div>
-				<div id="imPage">
+		
 					<!-- Inicio Header -->
 
 					<header id="imHeader">
@@ -123,7 +256,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921">
 												<div class="label-wrapper">
 													<div class="label-inner-wrapper"><a href="contactos.html" class="label"
-															onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a>
+															>Contactos</a>
 													</div>
 												</div>
 											</li>
@@ -161,7 +294,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</header>
 
 					<!-- Fin header -->
-					 
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
@@ -179,7 +311,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 Inicio		</a>
 </div>
 </div>
-	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Nosotros" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="beneficios.html" class="label" >Beneficios</a></div></div></li></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
+	</li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Beneficios" data-link-hash="-1827235661"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="beneficios.html" class="label" >Beneficios</a></div></div></li><li class="imMnMnMiddle imPage" data-link-paths=",/capacitaciones.html">
 <div class="label-wrapper">
 <div class="label-inner-wrapper">
 		<a class="label" href="capacitaciones.html">
@@ -187,7 +319,7 @@ Capacitaciones		</a>
 </div>
 </div>
 </li><li class="imMnMnMiddle imLevel" data-link-paths=",/home.html,/" data-link-anchor="Delimitador" data-link-hash="267966236"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="ficha-de-afiliacion.php" class="label" >Afiliación</a></div></div>
-	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label" onclick="return x5engine.utils.location('contactos.html', null, false)">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
+	</li><li class="imMnMnLast imLevel" data-link-paths=",/contactos.html" data-link-hash="-1004161921"><div class="label-wrapper"><div class="label-inner-wrapper"><a href="contactos.html" class="label">Contactos</a></div></div></li></ul></div></div><!-- UNSEARCHABLE END --><script>
 var imStickyBar_imMenuObject_02_settings = {
 	'menuId': 'imStickyBar_imMenuObject_02',
 	'responsiveMenuEffect': 'slide',
@@ -206,205 +338,96 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 						<div id="imSideBarObjects"><div id="imSideBar_imObjectImage_01_wrapper" class="template-object-wrapper"><div id="imSideBar_imObjectImage_01"><div id="imSideBar_imObjectImage_01_container"><img src="images/empty-GT_imagea-1-.webp" title="" alt="" width="140" height="140" />
 </div></div></div></div>
 					</div>
-					<div id="imContentGraphics"></div>
+				
 					<main id="imContent">
-						<a id="imGoToCont"></a>
-						<div id="imPageRow_1" class="imPageRow">
-						<div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden;"><div id="imPageRowGraphics_1"></div></div>
-						</div>
-						<div id="imCell_2" class=""> <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imTextObject_17_02">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_17_02_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imTACenter"><span class="fs28lh1-5"><b><span class="cf1">NUESTRAS MEMORIAS </span></b></span></div><div class="imTACenter"><span class="fs28lh1-5"><b><span class="cf1">MOMENTOS QUE VIVIMOS EN FEDEPAL</span></b></span></div>
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imPageRow_2" class="imPageRow">
-						
-						</div>
-						<div id="imCell_6" class="animable fadeInDown"> <div id="imCellStyleGraphics_6"></div><div id="imCellStyleBorders_6"></div><div id="imCellStyleTitle_6">Sesión Solemne</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_06">
-						        <div id="swiper_pluginAppObj_17_06" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.10-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.36.52-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_06/WhatsApp-Image-2024-09-09-at-8.42.32-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
-						        </div>
-						        <script>
-						            animatedslider_pluginAppObj_17_06();
-						        </script>
-						       </div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_6').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_6"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_7" class="animable fadeInDown"> <div id="imCellStyleGraphics_7"></div><div id="imCellStyleBorders_7"></div><div id="imCellStyleTitle_7">Asamblea de Socios</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_07">
-						        <div id="swiper_pluginAppObj_17_07" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-1.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-2.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-3.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-4.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_07/A-5.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
-						        </div>
-						        <script>
-						            animatedslider_pluginAppObj_17_07();
-						        </script>
-						       </div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_7').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_7"))
-								}, 100);
-							});
-						</script>
-						<div id="imPageRow_3" class="imPageRow">
-						
-						</div>
-						<div id="imCell_9" class="animable fadeInDown"> <div id="imCellStyleGraphics_9"></div><div id="imCellStyleBorders_9"></div><div id="imCellStyleTitle_9">Día del Maestro</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_09">
-						        <div id="swiper_pluginAppObj_17_09" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen1.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen2.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen3.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen4.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_09/Imagen5.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
-						        </div>
-						        <script>
-						            animatedslider_pluginAppObj_17_09();
-						        </script>
-						       </div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_9').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_9"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_8" class="animable fadeInDown"> <div id="imCellStyleGraphics_8"></div><div id="imCellStyleBorders_8"></div><div id="imCellStyleTitle_8">Café Directivos</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_08">
-						        <div id="swiper_pluginAppObj_17_08" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.57-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.14.59-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-5.15.00-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_08/WhatsApp-Image-2024-09-18-at-6.15.19-PM.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
-						        </div>
-						        <script>
-						            animatedslider_pluginAppObj_17_08();
-						        </script>
-						       </div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_8').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_8"))
-								}, 100);
-							});
-						</script>
-						<div id="imCell_10" class="animable fadeInDown"> <div id="imCellStyleGraphics_10"></div><div id="imCellStyleBorders_10"></div><div id="imCellStyleTitle_10">Fotos 2025</div><!-- Swiper Animated Slider v.22 --><div id="pluginAppObj_17_10">
-						        <div id="swiper_pluginAppObj_17_10" class="horizontal">
-						            <div class='swiper-container main'><div class='swiper-wrapper'><div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-1.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-2.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-3.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-4.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-5.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-6.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-7.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-8.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-9.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-10.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-11.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-12.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-13.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-14.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						<div class='swiper-slide' style='background-image:url(pluginAppObj/pluginAppObj_17_10/A-15.webp)'>
-						<div class='slide-content-wrapper'><div class='slide-content'></div></div>
-						</div>
-						</div><div class='swiper-button-prev'></div><div class='swiper-button-next'></div><div class='swiper-pagination'></div></div>
-						        </div>
-						        <script>
-						            animatedslider_pluginAppObj_17_10();
-						        </script>
-						       </div></div>
-						<script>
-							x5engine.boot.push(function () {
-								x5engine.utils.onElementInViewPort($('#imCell_10').get(0), function () {
-									x5engine.utils.revealObject($("#imCell_10"))
-								}, 100);
-							});
-						</script>
 
+ <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 rounded-4 shadow">
+                    <div class="card-body p-5">
+                        <h2 class="titulo fw-bold mb-3 text-center">Placas de Aniversario</h2>
+                        
+                        <div class="alert bg-info bg-opacity-10 border-0 rounded-4 shadow-sm mb-5">
+                            <div class="d-flex align-items-center p-3">
+                                <i class="fas fa-award fa-2x text-info me-3 icon-violeta"></i>
+                                <div>
+                                    <h5 class="fw-bold titulo mb-1">Reconocimientos Empresariales</h5>
+                                    <p class="texto-parrafos mb-0">Celebramos los hitos más importantes de nuestra trayectoria con estas placas conmemorativas.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                      <div class="container">
+  <div class="row justify-content-center">
+    <!-- Placa 1 -->
+    <div class="col-md-6 d-flex justify-content-center mb-4">
+      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Dalcroze.png', 'Placa Dalcroze')">
+        <img src="images/placasAniversarios/Placa_Dalcroze.png" alt="Placa Dalcroze" class="placa-image">
+        <div class="placa-overlay">
+          <h3 class="placa-title">Placa Dalcroze</h3>
+        </div>
+      </div>
+    </div>
 
+    <!-- Placa 2 -->
+    <div class="col-md-6 d-flex justify-content-center mb-4">
+      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Socrates.png', 'Placa Socrates')">
+        <img src="images/placasAniversarios/Placa_Socrates.png" alt="Placa Socrates" class="placa-image">
+        <div class="placa-overlay">
+          <h3 class="placa-title">Placa Socrates</h3>
+        </div>
+      </div>
+    </div>
 
-						<div id="imPageRow_4" class="imPageRow">
-						
-						</div>
-						
+    <!-- Placa 3 -->
+    <div class="col-md-6 d-flex justify-content-center mb-4">
+      <div class="placa-card" onclick="openModal('images/placasAniversarios/Placa_Thomas_Russell.png', 'Placa Thomas Russell')">
+        <img src="images/placasAniversarios/Placa_Thomas_Russell.png" alt="Placa Thomas Russell" class="placa-image">
+        <div class="placa-overlay">
+          <h3 class="placa-title">Placa Thomas Russell</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+                        
+                        <div class="text-center mt-5">
+                            <div class="ps-4 border-start border-4 border-violeta bg-white p-4 rounded-3 shadow-sm hover-translate-y d-inline-block">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-trophy me-3 icon-violeta fa-2x"></i>
+                                    <div class="text-start">
+                                        <h5 class="titulo mb-1">Compromiso con la Excelencia</h5>
+                                        <p class="texto-parrafos mb-0">Cada reconocimiento representa nuestro compromiso continúo con la calidad y el servicio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+					
 					</main>
+
+					<!-- Modal para mostrar imagen ampliada -->
+   <!-- Modal para mostrar imagen ampliada -->
+   <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close ms-auto m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <img id="modalImage" src="" alt="Imagen" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
 					<footer id="imFooter">
 						<div id="imFooterObjects">
 							<div id="imFooter_imTextObject_06_wrapper" class="template-object-wrapper">
@@ -510,11 +533,37 @@ $(function () {$('#imStickyBar_imMenuObject_02_container ul li').not('.imMnMnSep
 							</div>
 						</div>
 					</footer>
+
 				</div>
 				<span class="imHidden"><a href="#imGoToCont" title="Lea esta página de nuevo">Regreso al contenido</a></span>
 			</div>
 		</div>
 		
 		<noscript class="imNoScript"><div class="alert alert-red">Para utilizar este sitio tienes que habilitar JavaScript.</div></noscript>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openModal(imageSrc, title) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('modalImage').alt = title;
+            
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            modal.show();
+        }
+        
+        function closeModal() {
+            const modal = bootstrap.Modal.getInstance(document.getElementById('imageModal'));
+            if (modal) {
+                modal.hide();
+            }
+        }
+        
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 	</body>
+
 </html>

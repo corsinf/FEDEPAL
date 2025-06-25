@@ -190,6 +190,13 @@
     grid-row: 4/5
 }
 
+
+#imCell_10 {
+    display: grid;
+    grid-column: 2/14;
+    grid-row: 6/5
+}
+
 #imPageRow_1 {
     display: block;
     grid-column: 1/27;
@@ -259,6 +266,12 @@
         display: grid;
         grid-column: 14/26;
         grid-row: 4/5
+    }
+
+    #imCell_10 {
+        display: grid;
+        grid-column: 2/14;
+        grid-row: 6/5
     }
 
     #imPageRow_1 {
@@ -2221,6 +2234,21 @@ html:not(.no-cssanimations) #imCell_7.animated {
     z-index: 4
 }
 
+#imCellStyleTitle_10 {
+    grid-row: row-title/span 1;
+    grid-column: 1/-1;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 4
+}
+
 #imCellStyleGraphics_9 {
     grid-row: 1/-1;
     grid-column: 1/-1;
@@ -2228,6 +2256,12 @@ html:not(.no-cssanimations) #imCell_7.animated {
 }
 
 #imCellStyleBorders_9 {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    z-index: 2
+}
+
+#imCellStyleBorders_10 {
     grid-row: 1/-1;
     grid-column: 1/-1;
     z-index: 2
@@ -2292,6 +2326,21 @@ html:not(.no-cssanimations) #imCell_9.animated {
     z-index: 3
 }
 
+#imCell_10 {
+    grid-template-columns: 100%;
+    position: relative;
+    box-sizing: border-box
+}
+
+#pluginAppObj_17_10 {
+    position: relative;
+    align-self: start;
+    justify-self: center;
+    max-width: 100%;
+    box-sizing: border-box;
+    z-index: 3
+}
+
 #imCellStyleTitle_8 {
     grid-row: row-title/span 1;
     grid-column: 1/-1;
@@ -2313,10 +2362,50 @@ html:not(.no-cssanimations) #imCell_9.animated {
     background-color: transparent
 }
 
+#imCellStyleGraphics_10 {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    background-color: transparent
+}
+
 #imCellStyleBorders_8 {
     grid-row: 1/-1;
     grid-column: 1/-1;
     z-index: 2
+}
+html:not(.no-cssanimations) #imCell_10.animated {
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1
+}
+
+@-webkit-keyframes imCell_10-anim-fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes imCell_10-anim-fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
 }
 
 html:not(.no-cssanimations) #imCell_8.animated {
@@ -2526,7 +2615,26 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-template-rows: [row-title]min-content [row-content]auto
     }
 
+     #imCell_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px
+    }
+
+    #imCell_10 {
+        grid-template-rows: [row-title]min-content [row-content]auto
+    }
+
     #pluginAppObj_17_08 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: row-content/span 1;
+        grid-column: 1/-1
+    }
+     #pluginAppObj_17_10 {
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
@@ -2536,6 +2644,13 @@ html:not(.no-cssanimations) #imCell_8.animated {
     }
 
     #imCellStyleTitle_8 {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+
+    #imCellStyleTitle_10 {
         margin-top: 5px;
         margin-left: 5px;
         margin-right: 5px;
@@ -2721,8 +2836,22 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-row: row-content/span 1;
         grid-column: 1/-1
     }
+    #pluginAppObj_17_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: row-content/span 1;
+        grid-column: 1/-1
+    }
 
     #imCellStyleTitle_8 {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+    #imCellStyleTitle_10 {
         margin-top: 5px;
         margin-left: 5px;
         margin-right: 5px;
@@ -2908,8 +3037,22 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-row: row-content/span 1;
         grid-column: 1/-1
     }
+    #pluginAppObj_17_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: row-content/span 1;
+        grid-column: 1/-1
+    }
 
     #imCellStyleTitle_8 {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 5px
+    }
+     #imCellStyleTitle_10 {
         margin-top: 5px;
         margin-left: 5px;
         margin-right: 5px;
@@ -3077,8 +3220,20 @@ html:not(.no-cssanimations) #imCell_8.animated {
         grid-row: row-content/span 1;
         grid-column: 1/-1
     }
+    #pluginAppObj_17_10 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        grid-row: row-content/span 1;
+        grid-column: 1/-1
+    }
 
     #imCellStyleTitle_8 {
+        position: relative;
+        width: 100%
+    }
+    #imCellStyleTitle_10 {
         position: relative;
         width: 100%
     }
